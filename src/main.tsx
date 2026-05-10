@@ -5,6 +5,8 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
+import CaseStudyLabamu from './pages/CaseStudyLabamu.tsx'
+import CaseStudyMyBeepr from './pages/CaseStudyMyBeepr.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -12,6 +14,8 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/case-study/labamu" element={<CaseStudyLabamu />} />
+        <Route path="/case-study/mybeepr" element={<CaseStudyMyBeepr />} />
       </Routes>
     </HashRouter>
   </StrictMode>,
