@@ -49,7 +49,7 @@ export function TechStackSection() {
     <section className="py-24 px-4" id="stack">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
-          number="(04)"
+          number="(05)"
           eyebrow="TECHNOLOGY STACK"
           headline="Technical Expertise"
           subheadline="Comprehensive toolkit spanning mobile native, cross-platform, web, and cloud infrastructure."

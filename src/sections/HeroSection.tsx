@@ -1,5 +1,5 @@
 import { FadeIn } from '@/components/FadeIn';
-import { ArrowRight, Calendar, MapPin, Clock } from 'lucide-react';
+import { ArrowRight, Calendar, MapPin, Clock, Download } from 'lucide-react';
 import { NeuralFlowShader } from '@/components/NeuralFlowShader';
 
 const tagPills = [
@@ -95,6 +95,10 @@ export function HeroSection() {
                 <a href="#projects"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
                   View My Work <ArrowRight className="w-4 h-4" />
+                </a>
+                <a href="/resume.pdf" download
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 hover:border-slate-500 transition-all text-sm">
+                  <Download className="w-4 h-4" /> Download Resume
                 </a>
                 <a href="mailto:oeganx1999@gmail.com"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 hover:border-slate-500 transition-all text-sm">
