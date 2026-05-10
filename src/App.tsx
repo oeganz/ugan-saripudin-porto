@@ -1,25 +1,35 @@
+import { lazy, Suspense } from 'react'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { HeroSection } from '@/sections/HeroSection'
 import { StatsSection } from '@/sections/StatsSection'
-import { ADLCSection } from '@/sections/ADLCSection'
-import { ProjectsSection } from '@/sections/ProjectsSection'
-import { ExperienceSection } from '@/sections/ExperienceSection'
-import { TechStackSection } from '@/sections/TechStackSection'
-import { ContactSection } from '@/sections/ContactSection'
+
+// Lazy load heavy sections
+const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
+const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
+const ExperienceSection = lazy(() => import('@/sections/ExperienceSection').then(m => ({ default: m.ExperienceSection })))
+const TechStackSection = lazy(() => import('@/sections/TechStackSection').then(m => ({ default: m.TechStackSection })))
+const ContactSection = lazy(() => import('@/sections/ContactSection').then(m => ({ default: m.ContactSection })))
 
 export default function App() {
   return (
     <div className="min-h-screen bg-slate-900">
+      {/* Skip to main content for accessibility */}
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-sky-400 focus:text-slate-900 focus:rounded-lg focus:font-semibold">
+        Skip to main content
+      </a>
+
       <Navbar />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <StatsSection />
-        <ADLCSection />
-        <ProjectsSection />
-        <ExperienceSection />
-        <TechStackSection />
-        <ContactSection />
+        <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
+          <ADLCSection />
+          <ProjectsSection />
+          <ExperienceSection />
+          <TechStackSection />
+          <ContactSection />
+        </Suspense>
       </main>
       <Footer />
     </div>

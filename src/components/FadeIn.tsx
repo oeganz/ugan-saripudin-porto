@@ -3,11 +3,21 @@ import type { ReactNode } from 'react'
 
 const ease: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94]
 
+// Respect user's reduced motion preference
+const prefersReducedMotion = typeof window !== 'undefined'
+  ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  : false
+
 export function FadeIn({
   children, direction = 'up', delay = 0, duration = 0.6, className = '',
 }: {
   children: ReactNode; direction?: 'up' | 'none'; delay?: number; duration?: number; className?: string;
 }) {
+  // Skip animation if user prefers reduced motion
+  if (prefersReducedMotion) {
+    return <div className={className}>{children}</div>
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: direction === 'up' ? 30 : 0 }}
@@ -26,6 +36,10 @@ export function StaggerContainer({
 }: {
   children: ReactNode; staggerDelay?: number; className?: string; initialDelay?: number;
 }) {
+  if (prefersReducedMotion) {
+    return <div className={className}>{children}</div>
+  }
+
   return (
     <motion.div
       initial="hidden"
@@ -40,6 +54,10 @@ export function StaggerContainer({
 }
 
 export function StaggerItem({ children, className = '' }: { children: ReactNode; className?: string }) {
+  if (prefersReducedMotion) {
+    return <div className={className}>{children}</div>
+  }
+
   return (
     <motion.div
       variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease } } }}

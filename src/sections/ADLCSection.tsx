@@ -84,8 +84,8 @@ export function ADLCSection() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-slate-700/40">
-                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-500">Particulars</th>
-                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-500">SDLC</th>
+                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-400">Particulars</th>
+                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-400">SDLC</th>
                     <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-sky-400">
                       <div>ADLC</div>
                       <div className="text-[9px] text-sky-500/70 font-normal normal-case tracking-normal mt-1">
@@ -105,7 +105,7 @@ export function ADLCSection() {
                       className={`${i % 2 === 0 ? 'bg-slate-800/20' : ''} border-b border-slate-700/20 last:border-0`}
                     >
                       <td className="py-3 px-3 text-slate-200 font-medium">{row.aspect}</td>
-                      <td className="py-3 px-3 text-slate-500">{row.sdlc}</td>
+                      <td className="py-3 px-3 text-slate-400">{row.sdlc}</td>
                       <td className="py-3 px-3 text-cyan-400">{row.adlc}</td>
                     </motion.tr>
                   ))}
