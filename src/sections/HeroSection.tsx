@@ -15,7 +15,7 @@ export function HeroSection() {
       <NeuralFlowShader />
       <div className="absolute inset-0 bg-slate-900/80 z-10" />
 
-      <div className="relative z-20 max-w-6xl mx-auto px-6 py-32 w-full">
+      <div className="relative z-20 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
           {/* LEFT: Profile Photo with Glow Ring */}
           <FadeIn delay={0.1}>

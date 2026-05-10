@@ -12,7 +12,13 @@
       "Bash(pnpm run:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(grep -n \"max-w-\" src/sections/*.tsx)",
+      "Bash(find src/sections -name \"*.tsx\" -exec sed -i 's/max-w-6xl/max-w-7xl/g' {} \\\\;)",
+      "Bash(find src/sections -name \"*.tsx\" -exec sed -i 's/max-w-5xl/max-w-7xl/g' {} \\\\;)",
+      "Bash(find src/sections -name \"*.tsx\" -exec sed -i 's/max-w-4xl/max-w-7xl/g' {} \\\\;)",
+      "Bash(find src/sections -name \"*.tsx\" -exec sed -i 's/max-w-\\\\[1200px\\\\]/max-w-7xl/g' {} \\\\;)",
+      "Bash(find src/sections -name \"*.tsx\" -exec sed -i 's/max-w-\\\\[1100px\\\\]/max-w-7xl/g' {} \\\\;)"
     ]
   }
 }

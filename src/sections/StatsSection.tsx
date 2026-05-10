@@ -13,7 +13,7 @@ const stats = [
 export function StatsSection() {
   return (
     <section className="py-16 px-4 bg-slate-800/30 border-y border-slate-700/30" id="stats">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">
             <p className="text-xs font-medium uppercase tracking-[1px] text-sky-400 mb-3">Impact at Scale</p>

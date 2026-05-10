@@ -8,7 +8,7 @@ const tools = [
 export function RemoteCredentialsSection() {
   return (
     <section className="py-24 px-4 bg-slate-800/20" id="remote-credentials">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
           <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-3">(03) REMOTE CREDENTIALS</p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-50 mb-4">Remote-First, Async-Native</h2>

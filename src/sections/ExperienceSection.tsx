@@ -103,7 +103,7 @@ const colorMap: Record<string, { border: string; badge: string; dot: string; glo
 export function ExperienceSection() {
   return (
     <section className="py-24 px-4 bg-slate-800/10" id="experience">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(03)"
           eyebrow="PROFESSIONAL EXPERIENCE"

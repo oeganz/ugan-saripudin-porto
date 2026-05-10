@@ -33,7 +33,7 @@ export function ADLCSection() {
 
   return (
     <section id="adlc-ecosystem" className="bg-slate-900 py-[100px] md:py-[140px] relative">
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <SectionHeader number="(01)" eyebrow="ADLC ECOSYSTEM" headline="My AI-Driven Development Lifecycle"
           subheadline="A comprehensive approach to building software with AI agents integrated at every stage — from design to continuous improvement." />
         <StaggerContainer staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-24">
@@ -66,7 +66,7 @@ export function ADLCSection() {
         </div>
 
         {/* SDLC vs ADLC Comparison */}
-        <div className="max-w-[1100px] mx-auto">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

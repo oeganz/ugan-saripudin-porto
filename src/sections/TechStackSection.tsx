@@ -47,7 +47,7 @@ const categories = [
 export function TechStackSection() {
   return (
     <section className="py-24 px-4" id="stack">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(04)"
           eyebrow="TECHNOLOGY STACK"
