@@ -25,11 +25,13 @@ create index if not exists articles_tags_idx on public.articles using gin (tags)
 
 alter table public.articles enable row level security;
 
+drop policy if exists "Published articles are publicly readable" on public.articles;
 create policy "Published articles are publicly readable"
   on public.articles
   for select
-  using (status = 'published');
+  using (status = 'published' AND (published_at IS NULL OR published_at <= NOW()));
 
+drop policy if exists "Authenticated users can manage articles" on public.articles;
 create policy "Authenticated users can manage articles"
   on public.articles
   for all
