@@ -7,8 +7,8 @@ import { useScrolled } from '@/hooks/useScrolled'
 const navLinks = [
   { label: 'My Profile', href: '#about' },
   { label: '(01) ADLC', href: '#adlc-ecosystem' },
-  { label: '(02) Insights', href: '#insights' },
-  { label: '(03) Projects', href: '#projects' },
+  { label: '(02) Insights', href: '#insights', page: '/insights' },
+  { label: '(03) Projects', href: '#projects', page: '/projects' },
   { label: '(04) Experience', href: '#experience' },
   { label: '(05) Stack', href: '#stack' },
   { label: '(06) Contact', href: '#contact' },
@@ -67,43 +67,54 @@ export function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-0.5">
             {isHome && navLinks.map((l) => (
-              <a
-                key={l.href}
-                href={l.href}
-                onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
-                className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all duration-200 ${
-                  isActive(l.href)
-                    ? 'text-sky-400 bg-sky-400/10'
-                    : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/50'
-                }`}
+              <div key={l.href} className="flex items-center"
               >
-                {l.label}
-                {/* Animated underline */}
-                {isActive(l.href) && (
-                  <motion.div
-                    layoutId="activeNav"
-                    className="absolute bottom-0 left-2 right-2 h-px bg-sky-400"
-                    transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                  />
+                <a
+                  href={l.href}
+                  onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
+                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all duration-200 ${
+                    isActive(l.href)
+                      ? 'text-sky-400 bg-sky-400/10'
+                      : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/50'
+                  }`}
+                >
+                  {l.label}
+                  {/* Animated underline */}
+                  {isActive(l.href) && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-2 right-2 h-px bg-sky-400"
+                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                    />
+                  )}
+                </a>
+                {l.page && (
+                  <Link
+                    to={l.page}
+                    title={`Open ${l.label.replace(/^\(\d+\)\s*/, '')} page`}
+                    className="px-1 py-2 text-slate-500 hover:text-sky-400 transition-colors"
+                  >
+                    <ArrowUpRight size={10} />
+                  </Link>
                 )}
-              </a>
+              </div>
             ))}
             {!isHome && (
               <>
-                <Link to="/" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all">
+                <Link to="/" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                >
                   Home
                 </Link>
-                <Link to="/insights" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all">
+                <Link to="/insights" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                >
                   Insights
+                </Link>
+                <Link to="/projects" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                >
+                  Projects
                 </Link>
               </>
             )}
-            <Link
-              to="/projects"
-              className="ml-2 px-3 py-2 rounded-md text-xs font-medium text-sky-400/80 hover:text-sky-400 hover:bg-sky-400/10 transition-all flex items-center gap-0.5 border border-sky-400/20 hover:border-sky-400/40"
-            >
-              All Projects <ArrowUpRight size={10} />
-            </Link>
           </div>
 
           {/* CTA */}
@@ -137,13 +148,22 @@ export function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${
                     isActive(l.href)
                       ? 'text-sky-400 bg-sky-400/10'
                       : 'text-slate-300 hover:text-slate-50 hover:bg-slate-800/60'
                   }`}
                 >
-                  {l.label}
+                  <span>{l.label}</span>
+                  {l.page && (
+                    <Link
+                      to={l.page}
+                      onClick={(e) => e.stopPropagation()}
+                      className="text-slate-500 hover:text-sky-400 transition-colors"
+                    >
+                      <ArrowUpRight size={14} />
+                    </Link>
+                  )}
                 </a>
               ))}
               {!isHome && (
@@ -154,11 +174,11 @@ export function Navbar() {
                   <Link to="/insights" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
                     Insights
                   </Link>
+                  <Link to="/projects" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
+                    Projects
+                  </Link>
                 </>
               )}
-              <Link to="/projects" className="px-4 py-3 rounded-lg text-sm font-medium text-sky-400 hover:bg-sky-400/10 transition-all flex items-center gap-1" onClick={() => setOpen(false)}>
-                All Projects <ArrowUpRight size={14} />
-              </Link>
               <a href="mailto:oeganx1999@gmail.com" className="mt-3 px-4 py-3 bg-sky-400 text-slate-900 text-sm font-bold rounded-lg text-center" onClick={() => setOpen(false)}>
                 Let&apos;s Talk
               </a>
