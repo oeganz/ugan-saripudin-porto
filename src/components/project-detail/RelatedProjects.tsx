@@ -39,14 +39,20 @@ export function RelatedProjects({ currentProject, heroImages }: RelatedProjectsP
         <div className="grid md:grid-cols-3 gap-6">
           {related.map((project, i) => (
             <FadeIn key={project.id} delay={i * 0.1}>
-              <Link to={`/#/projects/${project.id}`}
+              <Link to={`/projects/${project.id}`}
                 className="group block rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all overflow-hidden">
                 <div className="relative h-40 bg-slate-700 overflow-hidden">
-                  <img
-                    src={heroImages[project.id] || ''}
-                    alt={project.name}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-                  />
+                  {heroImages[project.id] ? (
+                    <img
+                      src={heroImages[project.id]}
+                      alt={project.name}
+                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center bg-slate-800">
+                      <span className="text-2xl font-bold text-slate-600">{project.name.charAt(0)}</span>
+                    </div>
+                  )}
                 </div>
                 <div className="p-4">
                   <div className="flex items-center justify-between mb-2">
