@@ -4,7 +4,6 @@ interface ProjectStatsProps {
   metrics: Record<string, string>;
   status: 'active' | 'inactive' | 'internal' | 'discontinued';
   platform: string[];
-  category: string;
 }
 
 const statusColors: Record<string, string> = {
@@ -20,7 +19,7 @@ const platformIcons: Record<string, string> = {
   Web: 'W',
 };
 
-export function ProjectStats({ metrics, status, platform, category }: ProjectStatsProps) {
+export function ProjectStats({ metrics, status, platform }: ProjectStatsProps) {
   const displayMetrics = Object.entries(metrics).slice(0, 4);
 
   return (

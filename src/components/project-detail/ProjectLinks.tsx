@@ -3,10 +3,9 @@ import { ExternalLink } from 'lucide-react';
 
 interface ProjectLinksProps {
   urls: Record<string, string>;
-  name: string;
 }
 
-export function ProjectLinks({ urls, name }: ProjectLinksProps) {
+export function ProjectLinks({ urls }: ProjectLinksProps) {
   const hasLinks = Object.values(urls).some(Boolean);
   if (!hasLinks) return null;
 

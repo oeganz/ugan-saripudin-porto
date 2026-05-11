@@ -56,7 +56,6 @@ export default function ProjectDetailPage() {
           name={project.name}
           company={project.company}
           timeline={project.timeline}
-          role={project.role}
           roleLevel={project.roleLevel}
           heroImage={heroImage}
         />
@@ -66,7 +65,6 @@ export default function ProjectDetailPage() {
           metrics={project.metrics}
           status={project.status}
           platform={project.platform}
-          category={project.category}
         />
 
         {/* Overview */}
@@ -102,7 +100,7 @@ export default function ProjectDetailPage() {
         <ProjectMetrics metrics={project.metrics} />
 
         {/* Links */}
-        <ProjectLinks urls={project.urls} name={project.name} />
+        <ProjectLinks urls={project.urls} />
 
         {/* Related Projects */}
         <RelatedProjects currentProject={project} heroImages={heroImages} />
