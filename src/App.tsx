@@ -9,7 +9,6 @@ const CTOValueSection = lazy(() => import('@/sections/CTOValueSection').then(m =
 const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
 const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
-const FeaturedCaseStudiesSection = lazy(() => import('@/sections/FeaturedCaseStudiesSection').then(m => ({ default: m.FeaturedCaseStudiesSection })))
 const ExperienceSection = lazy(() => import('@/sections/ExperienceSection').then(m => ({ default: m.ExperienceSection })))
 const TestimonialsSection = lazy(() => import('@/sections/TestimonialsSection').then(m => ({ default: m.TestimonialsSection })))
 const TechStackSection = lazy(() => import('@/sections/TechStackSection').then(m => ({ default: m.TechStackSection })))
@@ -32,7 +31,7 @@ export default function App() {
           <ADLCSection />
           <InsightsSection />
           <ProjectsSection />
-          <FeaturedCaseStudiesSection />
+          {/* <FeaturedCaseStudiesSection /> */}
           <ExperienceSection />
           <TestimonialsSection />
           <TechStackSection />
