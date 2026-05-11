@@ -3,46 +3,96 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 
 const vs = `varying vec2 vUv; void main(){vUv=uv;gl_Position=vec4(position,1.0);}`
+
 const fs = `
-precision mediump float;uniform float uTime;uniform vec2 uRes;varying vec2 vUv;
-vec3 m(vec3 x){return x-floor(x*(1./289.))*289.;}
-vec3 p(vec3 x){return m(((x*34.)+1.)*x);}
-float sn(vec2 v){
-  vec4 C=vec4(.211324865405187,.366025403784439,-.577350269189626,.024390243902439);
-  vec2 i=floor(v+dot(v,C.yy));vec2 x0=v-i+dot(i,C.xx);vec2 i1=(x0.x>x0.y)?vec2(1.,0.):vec2(0.,1.);
-  vec4 x12=x0.xyxy+C.xxzz;x12.xy-=i1;i=m(i);vec3 px=p(p(i.y+vec3(0.,i1.y,1.))+i.x+vec3(0.,i1.x,1.));
-  vec3 x=2.*fract(px*C.www)-1.;vec3 h=abs(x)-.5;vec3 ox=floor(x+.5);vec3 a0=x-ox;
-  x=130.*dot(pow(a0,vec3(2.))+pow(h,vec3(2.)),vec3(1.79284291400159-.85373472095314*(a0*a0+h*h)));
-  return 130.*dot(x,vec3(1.));
+precision mediump float;
+uniform float uTime;
+varying vec2 vUv;
+
+float hash(vec2 p){
+  return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);
 }
-float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*sn(p);p*=2.;a*=.5;}return v;}
+
+float noise(vec2 p){
+  vec2 i=floor(p);
+  vec2 f=fract(p);
+  f=f*f*(3.0-2.0*f);
+  float a=hash(i);
+  float b=hash(i+vec2(1.0,0.0));
+  float c=hash(i+vec2(0.0,1.0));
+  float d=hash(i+vec2(1.0,1.0));
+  return mix(mix(a,b,f.x),mix(c,d,f.x),f.y);
+}
+
+float fbm(vec2 p){
+  float v=0.0;
+  float a=0.5;
+  vec2 shift=vec2(100.0);
+  mat2 rot=mat2(cos(0.5),sin(0.5),-sin(0.5),cos(0.5));
+  for(int i=0;i<5;i++){
+    v+=a*noise(p);
+    p=rot*p*2.0+shift;
+    a*=0.5;
+  }
+  return v;
+}
+
 void main(){
-  vec2 uv=vUv;float t=uTime*.05;
-  vec3 bg=vec3(.059,.09,.164);
-  float l1=0.,l2=0.;
-  for(float i=0.;i<4.;i++){float fi=i+1.;vec2 p=uv*fi*3.;
-    p+=vec2(t*fi*.3,t*fi*.2);float n1=fbm(p+vec2(fi*10.)),n2=fbm(p*.8+vec2(fi*20.,t));
-    l1+=smoothstep(.02,0.,abs(n1))*(1./fi);l2+=smoothstep(.025,0.,abs(n2*.7))*(1./fi);}
-  vec3 cc=vec3(.133,.827,.933)*l1*.3;
-  vec3 sc=vec3(.22,.745,.973)*l2*.2;
-  float glw=1.-length(uv-.5)*1.2;glw=max(glw,0.);glw=glw*glw*.08;
-  vec3 gc=vec3(.22,.745,.973)*glw;
+  vec2 uv=vUv;
+  float t=uTime*0.05;
+
+  vec3 bg=vec3(0.059,0.09,0.164);
+  float l1=0.0;
+  float l2=0.0;
+
+  for(float i=0.0;i<4.0;i++){
+    float fi=i+1.0;
+    vec2 p=uv*fi*3.0;
+    p+=vec2(t*fi*0.3,t*fi*0.2);
+    float n1=fbm(p+vec2(fi*10.0));
+    float n2=fbm(p*0.8+vec2(fi*20.0,t));
+    l1+=smoothstep(0.02,0.0,abs(n1-0.5))*(1.0/fi);
+    l2+=smoothstep(0.025,0.0,abs(n2*0.7-0.5))*(1.0/fi);
+  }
+
+  vec3 cc=vec3(0.133,0.827,0.933)*l1*0.3;
+  vec3 sc=vec3(0.22,0.745,0.973)*l2*0.2;
+
+  float glw=1.0-length(uv-0.5)*1.2;
+  glw=max(glw,0.0);
+  glw=glw*glw*0.08;
+  vec3 gc=vec3(0.22,0.745,0.973)*glw;
+
   vec3 col=bg+cc+sc+gc;
-  float vig=1.-length(uv-.5)*.8;vig=smoothstep(0.,1.,vig);col*=vig;
-  gl_FragColor=vec4(col,1.);
-}`
+
+  float vig=1.0-length(uv-0.5)*0.8;
+  vig=smoothstep(0.0,1.0,vig);
+  col*=vig;
+
+  gl_FragColor=vec4(col,1.0);
+}
+`
 
 function ShaderPlane() {
   const meshRef = useRef<THREE.Mesh>(null)
   const matRef = useRef<THREE.ShaderMaterial>(null)
   const uniforms = useMemo(() => ({
     uTime: { value: 0 },
-    uRes: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
   }), [])
-  useFrame((state) => { if (matRef.current) matRef.current.uniforms.uTime.value = state.clock.elapsedTime })
+  useFrame((state) => {
+    if (matRef.current) {
+      matRef.current.uniforms.uTime.value = state.clock.elapsedTime
+    }
+  })
   return (
-    <mesh ref={meshRef}><planeGeometry args={[2, 2]} />
-      <shaderMaterial ref={matRef} vertexShader={vs} fragmentShader={fs} uniforms={uniforms} />
+    <mesh ref={meshRef}>
+      <planeGeometry args={[2, 2]} />
+      <shaderMaterial
+        ref={matRef}
+        vertexShader={vs}
+        fragmentShader={fs}
+        uniforms={uniforms}
+      />
     </mesh>
   )
 }
@@ -50,7 +100,12 @@ function ShaderPlane() {
 export function NeuralFlowShader() {
   return (
     <div className="absolute inset-0 z-0">
-      <Canvas orthographic camera={{ zoom: 1, position: [0, 0, 1] }} gl={{ antialias: false, alpha: false }} dpr={[1, 1.5]}>
+      <Canvas
+        orthographic
+        camera={{ zoom: 1, position: [0, 0, 1] }}
+        gl={{ antialias: false, alpha: false }}
+        dpr={[1, 1.5]}
+      >
         <ShaderPlane />
       </Canvas>
     </div>
