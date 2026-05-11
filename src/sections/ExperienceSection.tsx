@@ -105,7 +105,7 @@ export function ExperienceSection() {
     <section className="py-24 px-4 bg-slate-800/10" id="experience">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
-          number="(03)"
+          number="(04)"
           eyebrow="PROFESSIONAL EXPERIENCE"
           headline="Career Timeline"
           subheadline="10+ years of progressive growth from Android Developer to AI Native Engineering Lead, delivering platforms at scale across 4 organizations."

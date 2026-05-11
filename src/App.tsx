@@ -10,7 +10,6 @@ const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ def
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
 const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
 const ExperienceSection = lazy(() => import('@/sections/ExperienceSection').then(m => ({ default: m.ExperienceSection })))
-const TestimonialsSection = lazy(() => import('@/sections/TestimonialsSection').then(m => ({ default: m.TestimonialsSection })))
 const TechStackSection = lazy(() => import('@/sections/TechStackSection').then(m => ({ default: m.TechStackSection })))
 const ContactSection = lazy(() => import('@/sections/ContactSection').then(m => ({ default: m.ContactSection })))
 
@@ -33,7 +32,8 @@ export default function App() {
           <ProjectsSection />
           {/* <FeaturedCaseStudiesSection /> */}
           <ExperienceSection />
-          <TestimonialsSection />
+          {/* Social proof hidden */}
+          {/* <TestimonialsSection /> */}
           <TechStackSection />
           <ContactSection />
         </Suspense>

@@ -23,7 +23,7 @@ export function ContactSection() {
     <section className="py-20 px-4" id="contact">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
-          number="(05)"
+          number="(06)"
           eyebrow="GET IN TOUCH"
           headline="Let&apos;s Connect"
           subheadline="Available for AI-native engineering leadership, mobile & web development, and technical consulting."

@@ -71,7 +71,7 @@ export function ProjectsSection() {
         {/* Header */}
         <div className="flex items-end justify-between mb-10">
           <SectionHeader
-            number="(02)"
+            number="(03)"
             eyebrow="FEATURED PROJECTS"
             headline="Flagship Projects"
             subheadline="The most impactful projects delivered across 9+ years — from 50M+ download telecom apps to award-winning insurance platforms."
