@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { HashRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { injectSpeedInsights } from '@vercel/speed-insights'
 import './index.css'
 import App from './App.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
@@ -16,6 +17,8 @@ import ArticleEditorPage from './pages/admin/ArticleEditorPage.tsx'
 import { ProtectedRoute } from './components/admin/ProtectedRoute.tsx'
 
 const adminPath = import.meta.env.VITE_ADMIN_PATH || 'admin'
+
+injectSpeedInsights()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
