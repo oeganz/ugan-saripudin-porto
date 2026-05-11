@@ -23,7 +23,8 @@ void main(){
   for(float i=0.;i<4.;i++){float fi=i+1.;vec2 p=uv*fi*3.;
     p+=vec2(t*fi*.3,t*fi*.2);float n1=fbm(p+vec2(fi*10.)),n2=fbm(p*.8+vec2(fi*20.,t));
     l1+=smoothstep(.02,0.,abs(n1))*(1./fi);l2+=smoothstep(.025,0.,abs(n2*.7))*(1./fi);}
-  vec3 cc=vec3(.133,.827,.933)*l1*.3,sc=vec3(.22,.745,.973)*l2*.2;
+  vec3 cc=vec3(.133,.827,.933)*l1*.3;
+  vec3 sc=vec3(.22,.745,.973)*l2*.2;
   float glw=1.-length(uv-.5)*1.2;glw=max(glw,0.);glw=glw*glw*.08;
   vec3 gc=vec3(.22,.745,.973)*glw;
   vec3 col=bg+cc+sc+gc;
