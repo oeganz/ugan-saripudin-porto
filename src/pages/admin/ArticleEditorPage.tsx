@@ -6,7 +6,7 @@ import { z } from 'zod'
 import { supabase } from '@/lib/supabase'
 import { slugify } from '@/lib/slugify'
 import { calculateReadingTime } from '@/lib/readingTime'
-import type { Article, ArticleFormData } from '@/types/article'
+import type { ArticleStatus } from '@/types/article'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -116,7 +116,7 @@ export default function ArticleEditorPage() {
       setValue('content', data.content)
       setValue('cover_image', data.cover_image || '')
       setValue('author', data.author)
-      setValue('status', data.status)
+      setValue('status', data.status as ArticleStatus)
       setValue('meta_title', data.meta_title || '')
       setValue('meta_description', data.meta_description || '')
       setValue('og_image', data.og_image || '')
@@ -142,7 +142,7 @@ export default function ArticleEditorPage() {
 
     try {
       // Prepare article data
-      const articleData: Partial<Article> = {
+      const articleData = {
         title: data.title,
         slug: data.slug,
         excerpt: data.excerpt || null,
@@ -154,7 +154,7 @@ export default function ArticleEditorPage() {
         meta_description: data.meta_description || null,
         og_image: data.og_image || null,
         tags: data.tags,
-        reading_time: data.reading_time || 0,
+        reading_time: data.reading_time || undefined,
         published_at: data.published_at ? new Date(data.published_at).toISOString() : null,
       }
 

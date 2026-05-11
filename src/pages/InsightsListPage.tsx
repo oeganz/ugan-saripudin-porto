@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
-import type { Article } from '@/types/article'
+import type { Article, ArticleStatus } from '@/types/article'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { SectionHeader } from '@/components/SectionHeader'
@@ -37,7 +37,10 @@ export default function InsightsListPage() {
     if (error) {
       console.error('Error fetching articles:', error)
     } else {
-      setArticles(data || [])
+      setArticles((data || []).map(article => ({
+        ...article,
+        status: article.status as ArticleStatus
+      })))
     }
 
     setLoading(false)

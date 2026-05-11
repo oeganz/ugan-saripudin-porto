@@ -36,7 +36,10 @@ export default function ArticleListPage() {
     if (error) {
       console.error('Error fetching articles:', error)
     } else {
-      setArticles(data || [])
+      setArticles((data || []).map(article => ({
+        ...article,
+        status: article.status as ArticleStatus
+      })))
     }
 
     setLoading(false)

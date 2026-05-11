@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
-import type { Article } from '@/types/article'
+import type { Article, ArticleStatus } from '@/types/article'
 import { SectionHeader } from '@/components/SectionHeader'
 import { ArticleCard } from '@/components/ArticleCard'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
@@ -28,7 +28,10 @@ export function InsightsSection() {
     if (error) {
       console.error('Error fetching articles:', error)
     } else {
-      setArticles(data || [])
+      setArticles((data || []).map(article => ({
+        ...article,
+        status: article.status as ArticleStatus
+      })))
     }
 
     setLoading(false)

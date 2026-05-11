@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
 import { sanitizeHTML } from '@/lib/sanitize'
-import type { Article } from '@/types/article'
+import type { Article, ArticleStatus } from '@/types/article'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { SEOHead } from '@/components/SEOHead'
@@ -29,7 +29,7 @@ export default function ArticleDetailPage() {
     const { data, error } = await supabase
       .from('articles')
       .select('*')
-      .eq('slug', slug)
+      .eq('slug', slug!)
       .eq('status', 'published')
       .lte('published_at', new Date().toISOString())
       .single()
@@ -37,8 +37,14 @@ export default function ArticleDetailPage() {
     if (error) {
       console.error('Error fetching article:', error)
     } else if (data) {
-      setArticle(data)
-      fetchRelatedArticles(data)
+      setArticle({
+        ...data,
+        status: data.status as ArticleStatus
+      })
+      fetchRelatedArticles({
+        ...data,
+        status: data.status as ArticleStatus
+      })
     }
 
     setLoading(false)
@@ -58,7 +64,10 @@ export default function ArticleDetailPage() {
       .limit(3)
 
     if (data) {
-      setRelatedArticles(data)
+      setRelatedArticles(data.map(article => ({
+        ...article,
+        status: article.status as ArticleStatus
+      })))
     }
   }
 
