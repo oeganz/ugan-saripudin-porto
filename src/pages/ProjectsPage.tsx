@@ -30,6 +30,15 @@ const statusColors: Record<string, string> = {
   discontinued: 'bg-red-400/20 text-red-400',
 };
 
+const projectImages: Record<string, string> = {
+  axisnet: '/images/proj-axisnet.jpg',
+  mybeepr: '/images/proj-mybeepr.jpg',
+  'aku-berbagi': '/images/proj-akuberbagi.jpg',
+  agriaku: '/images/proj-agriaku.jpg',
+  labamu: '/images/proj-labamu.jpg',
+  'go-great': '/images/proj-gogreat.jpg',
+};
+
 const heroMetric = (p: Project): { label: string; value: string } | null => {
   if (p.metrics.downloads) return { label: 'Downloads', value: p.metrics.downloads };
   if (p.metrics.hospitals) return { label: 'Hospitals', value: p.metrics.hospitals };
@@ -150,8 +159,8 @@ export default function ProjectsPage() {
                   <Link to={`/projects/${project.id}`} className="group h-full rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col">
                     {/* Image */}
                     <div className="relative h-44 bg-slate-800 overflow-hidden">
-                      {project.screenshots.length > 0 ? (
-                        <img src={project.screenshots[0]} alt={project.name}
+                      {(projectImages[project.id] || project.screenshots.length > 0) ? (
+                        <img src={projectImages[project.id] || project.screenshots[0]} alt={project.name}
                           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                           loading="lazy"
                           onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }} />
