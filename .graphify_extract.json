@@ -1,0 +1,5267 @@
+{
+  "nodes": [
+    {
+      "id": "portfolio_deliverables_document",
+      "label": "Portfolio Research - Complete Deliverables",
+      "file_type": "document",
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "portfolio_master_research_document",
+      "label": "Portfolio Master Research Document",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asset_inventory_document",
+      "label": "Portfolio Asset Inventory",
+      "file_type": "document",
+      "source_file": ".reference/ASSET_INVENTORY.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "web_dev_prompt_document",
+      "label": "Web Development Prompt - Portfolio Projects List Page",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ai_dataset_prompt_document",
+      "label": "AI Dataset Prompt - Portfolio Project Generator",
+      "file_type": "document",
+      "source_file": ".reference/AI_DATASET_PROMPT.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "portfolio_final_data_json",
+      "label": "portfolio_final_data.json",
+      "file_type": "document",
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 10",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_project",
+      "label": "AXISnet - 50M+ Downloads",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 216",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_project",
+      "label": "MyBeepr - Australia's HealthTech Platform",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 139",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "aku_berbagi_project",
+      "label": "Aku Berbagi - Generali's Wakaf Innovation",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 54",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_project",
+      "label": "Agriaku - Funded AgriTech Startup",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 97",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_project",
+      "label": "Labamu - Standard Chartered Backed",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 159",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "go_great_project",
+      "label": "Go Great - Award Winner",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 197",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "generali_indonesia",
+      "label": "Generali Indonesia",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 54",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pt_axis",
+      "label": "PT AXIS (XL Axiata)",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 216",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_digital",
+      "label": "Agriaku Digital",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 97",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sc_ventures",
+      "label": "SC Ventures / Standard Chartered",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 159",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "great_eastern_life",
+      "label": "Great Eastern Life",
+      "file_type": "document",
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 197",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "nextjs_tech_stack",
+      "label": "Next.js 14+ with App Router",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 260",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tailwind_css",
+      "label": "Tailwind CSS",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 261",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "framer_motion",
+      "label": "Framer Motion",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 262",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "design_system_rationale",
+      "label": "Design System Rationale",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 175-198",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "tech_stack_recommendation_rationale",
+      "label": "Tech Stack Recommendation Rationale",
+      "file_type": "document",
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 258-266",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "featured_projects_strategy",
+      "label": "Featured Projects Strategy",
+      "file_type": "document",
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 51-92",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "recruiter_impact_metrics",
+      "label": "Recruiter Impact Metrics",
+      "file_type": "document",
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 205-229",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_icon",
+      "label": "Absensi App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/absensi_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_icon",
+      "label": "AgriAku App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/agriaku_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_icon",
+      "label": "ASABRI App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/asabri_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_icon",
+      "label": "AXISnet App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/axisnet_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_icon",
+      "label": "Bluegaz App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/bluegaz_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lautnusantara_icon",
+      "label": "Laut Nusantara App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/lautnusantara_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mobilegrosir_icon",
+      "label": "M-Grosir App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/mobilegrosir_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_icon",
+      "label": "My Infra App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/myinfra_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mytelkominfra_icon",
+      "label": "My Telkom Infra App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/mytelkominfra_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "netgear_icon",
+      "label": "NETgear App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/netgear_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sahabat_icon",
+      "label": "Sahabat App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/sahabat_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skillbridge_icon",
+      "label": "Skillbridge App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/skillbridge_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "smarco_icon",
+      "label": "SMARCO App Icon",
+      "file_type": "image",
+      "source_file": ".reference/icons/smarco_icon.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asset_1_logo",
+      "label": "Telkom Infra Infrastructure Photo",
+      "file_type": "image",
+      "source_file": ".reference/logos/asset_1.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkominfra_logo",
+      "label": "Telkom Infra Logo",
+      "file_type": "image",
+      "source_file": ".reference/logos/telkominfra_logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_playstore",
+      "label": "Absensi Telkominfra APKpure Page",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/absensi_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_playstore",
+      "label": "AgriAku Mitra Google Play Page",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/agriaku_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_playstore_top",
+      "label": "AgriAku Mitra Google Play Header",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/agriaku_playstore_top.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_playstore",
+      "label": "ASABRI Mobile V2 Google Play Page",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/asabri_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_playstore",
+      "label": "AXISnet Google Play Page",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/axisnet_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkominfra_company",
+      "label": "Telkom Infra Company",
+      "file_type": "image",
+      "source_file": ".reference/logos/telkominfra_logo.webp",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_company",
+      "label": "AgriAku Digital Indonesia",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/agriaku_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_company",
+      "label": "PT ASABRI",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/asabri_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_company",
+      "label": "AXIS Telecom",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/axisnet_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "portfolio_reference_icons",
+      "label": "Portfolio Reference Icons Collection",
+      "file_type": "image",
+      "source_file": ".reference/icons/",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "portfolio_reference_playstore",
+      "label": "Portfolio Play Store Pages Collection",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_playstore",
+      "label": "Blu Gas & Power App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lautnusantara_playstore",
+      "label": "Laut Nusantara App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mobilegrosir_apkpage",
+      "label": "Mobile Grosir App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/mobilegrosir_apkpage.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_playstore",
+      "label": "My Infra App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mytelkominfra_playstore",
+      "label": "My TelkomInfra App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "netgear_playstore",
+      "label": "NETgear App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/netgear_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sahabat_playstore",
+      "label": "Sahabat Berbagi App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "skillbridge_playstore",
+      "label": "SkillBridge AI Educational App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "smarco_playstore",
+      "label": "Smarco Superstore App",
+      "file_type": "image",
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_screenshot_01",
+      "label": "Absensi App Screenshot 01 - Telkom Infra Login",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_screenshot_02",
+      "label": "Absensi App Screenshot 02 - Check In",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/absensi_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_screenshot_03",
+      "label": "Absensi App Screenshot 03 - Check Out",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/absensi_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_screenshot_04",
+      "label": "Absensi App Screenshot 04 - Attendance List",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/absensi_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "absensi_screenshot_05",
+      "label": "Absensi App Screenshot 05 - History Report",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/absensi_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_screenshot_01",
+      "label": "AgriAku Screenshot 01 - Splash Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/agriaku_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_screenshot_02",
+      "label": "AgriAku Screenshot 02 - Product Catalog",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/agriaku_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_screenshot_03",
+      "label": "AgriAku Screenshot 03 - Delivery Options",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/agriaku_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_screenshot_04",
+      "label": "AgriAku Screenshot 04 - Order Details",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/agriaku_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agriaku_screenshot_05",
+      "label": "AgriAku Screenshot 05 - Rice Field Background",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/agriaku_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_screenshot_01",
+      "label": "ASABRI Screenshot 01 - Welcome Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkom_infra",
+      "label": "Telkom Infra",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "xl_smart",
+      "label": "XL SMART",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "a2sv",
+      "label": "A2SV Developer",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sprout",
+      "label": "SPROUT Developer",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pt_asuransi_jiwa_generali",
+      "label": "PT Asuransi Jiwa Generali Indonesia",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri",
+      "label": "ASABRI (Asuransi Sosial Angkatan Bersenjata Republik Indonesia)",
+      "file_type": "document",
+      "source_file": ".reference/screenshots/asabri_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "google_play_store",
+      "label": "Google Play Store",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "apkpure",
+      "label": "APKPure",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gas_utility",
+      "label": "Gas Utility Management",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "fishery_technology",
+      "label": "Fishery Technology",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wholesale_commerce",
+      "label": "Wholesale Commerce",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/mobilegrosir_apkpage.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "customer_sentiment",
+      "label": "Customer Sentiment Analysis",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "employee_portal",
+      "label": "Employee Portal",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "network_management",
+      "label": "Network Management",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/netgear_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insurance_community",
+      "label": "Insurance Community",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ai_education",
+      "label": "AI Education",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "social_shopping",
+      "label": "Social Shopping",
+      "file_type": "document",
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "attendance_system",
+      "label": "Attendance System",
+      "file_type": "document",
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agricultural_ecommerce",
+      "label": "Agricultural E-Commerce",
+      "file_type": "document",
+      "source_file": ".reference/screenshots/agriaku_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "military_insurance",
+      "label": "Military Insurance",
+      "file_type": "document",
+      "source_file": ".reference/screenshots/asabri_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_screenshot_02",
+      "label": "ASABRI Group Photo Event",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_screenshot_03",
+      "label": "ASABRI Contact Us Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_screenshot_04",
+      "label": "ASABRI Rice Paddy Landscape",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "asabri_screenshot_05",
+      "label": "ASABRI Blank White Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_hero_banner",
+      "label": "AXIS Net Hero Banner Campaign",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_screenshot_01",
+      "label": "AXIS Net New Look Dashboard",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_screenshot_02",
+      "label": "AXIS Net Playground Games Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_screenshot_03",
+      "label": "AXIS Net Blank Purple Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_screenshot_04",
+      "label": "AXIS Net Services Menu Grid",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "axisnet_screenshot_05",
+      "label": "AXIS Net Pushpin on Dots",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_screenshot_01",
+      "label": "Blu Gas e Power Logo Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_screenshot_02",
+      "label": "Blu Geometric Background Top",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_screenshot_03",
+      "label": "Blu Geometric Background Bottom",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_screenshot_04",
+      "label": "Blu Full Geometric Pattern",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bluegaz_screenshot_05",
+      "label": "Blu Blank Gray Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gogreat_feature_illustration",
+      "label": "GoGREAT Feature Illustration",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/gogreat_feature_illustration.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gogreat_hero_banner",
+      "label": "GoGREAT Hero Banner Family Insurance",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/gogreat_hero_banner.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_hero_01",
+      "label": "Kuis Milioner PUBG Game Characters",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_hero_02",
+      "label": "Kuis Milioner MLBB Hero Characters",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_hero_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_hero_03",
+      "label": "Kuis Milioner Free Fire Character Banner",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_hero_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "project_asabri",
+      "label": "ASABRI Mobile App Project",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "project_axisnet",
+      "label": "AXIS Net Mobile App Project",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "project_bluegaz",
+      "label": "Blu Gas e Power Mobile App Project",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/bluegaz_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "project_gogreat",
+      "label": "GoGREAT Mobile App Project",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/gogreat_hero_banner.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "project_kuismilioner",
+      "label": "Kuis Milioner Gaming Quiz App Project",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_product_01_resident_evil_requiem",
+      "label": "Resident Evil Requiem Game Poster",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_product_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_product_02_blizzard_gift_card",
+      "label": "Blizzard Entertainment Gift Card",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_product_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_product_03_bilibili_icon",
+      "label": "Bilibili App Icon",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_product_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_product_04_cherry_icon",
+      "label": "Cherry Brand Icon",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_product_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_product_05_halo_soldier",
+      "label": "Halo Sci-Fi Soldier Character Art",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/kuismilioner_product_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_app",
+      "label": "KuisMilioner Quiz App",
+      "file_type": "image",
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_feature_cards",
+      "label": "Labamu Website Testimonial Section",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/labamu_feature_cards.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_feature_devices",
+      "label": "Labamu Multi-Device Showcase",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/labamu_feature_devices.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_feature_phone",
+      "label": "Labamu Mobile App Showcase",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/labamu_feature_phone.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_feature_testimonial",
+      "label": "Labamu FAQ Section",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/labamu_feature_testimonial.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_platform",
+      "label": "Labamu Business Management Platform",
+      "file_type": "image",
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lautnusantara_screenshot_01_fish_map",
+      "label": "Laut Nusantara Peta Ikan Feature",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lautnusantara_screenshot_02_play_store",
+      "label": "Laut Nusantara Google Play Store Page",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lautnusantara_app",
+      "label": "Laut Nusantara Fishing App",
+      "file_type": "image",
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_screenshot_01_onboarding",
+      "label": "myBeepr App Onboarding Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mybeepr_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_screenshot_02_chat_interface",
+      "label": "myBeepr Clinical Chat Interface",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mybeepr_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_screenshot_03_clinical_photography",
+      "label": "myBeepr Clinical Photography Feature",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mybeepr_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_screenshot_04_secure_communication",
+      "label": "myBeepr Secure Communication Feature",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mybeepr_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_app",
+      "label": "myBeepr Healthcare Communication App",
+      "file_type": "image",
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_screenshot_01_login",
+      "label": "MyInfra App Login Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/myinfra_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_screenshot_02_dashboard",
+      "label": "MyInfra Dashboard Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/myinfra_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_screenshot_03_profile",
+      "label": "MyInfra Profile Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/myinfra_screenshot_03.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_screenshot_04_login_variant",
+      "label": "MyInfra Login Variant Screen",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/myinfra_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "myinfra_app",
+      "label": "MyInfra Infrastructure Management App",
+      "file_type": "image",
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mytelkominfra_screenshot_01",
+      "label": "MyTelkom Infra App Grid Menu",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mytelkominfra_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mytelkominfra_app",
+      "label": "MyTelkom Infra Application",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mytelkominfra_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "western_health",
+      "label": "Western Health Organization",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mybeepr_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "xlsmart",
+      "label": "XLSMART Developer",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_02.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkom_indonesia",
+      "label": "Telkom Indonesia",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/mytelkominfra_screenshot_01.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mytelkominfra_screenshot_02",
+      "label": "MyTelkomInfra document page with logo and footer",
+      "file_type": "image",
+      "source_file": "mytelkominfra_screenshot_02.jpg"
+    },
+    {
+      "id": "netgear_screenshot_01",
+      "label": "NETgear tagging task detail screen showing Ericsson HP Proliant DL380 G7 equipment with movement status",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_01.jpg"
+    },
+    {
+      "id": "netgear_screenshot_02",
+      "label": "NETgear task waiting list showing Movement+Collection tasks for PDH Microwave and LTE Equipment",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "id": "netgear_screenshot_03",
+      "label": "NETgear engineer operations dashboard with task counts and asset management menu",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_03.jpg"
+    },
+    {
+      "id": "netgear_screenshot_04",
+      "label": "NETgear splash screen with orange gradient and logo",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_04.jpg"
+    },
+    {
+      "id": "netgear_screenshot_05",
+      "label": "NETgear splash screen variant with orange gradient and logo",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_05.jpg"
+    },
+    {
+      "id": "netgear_screenshot_06",
+      "label": "NETgear login screen with username and password fields version 1202",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_06.jpg"
+    },
+    {
+      "id": "sahabat_screenshot_01",
+      "label": "Sahabat Berbagi onboarding screen with Islamic illustration and tagline Kebaikan Tanpa Batas",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_01.jpg"
+    },
+    {
+      "id": "sahabat_screenshot_02",
+      "label": "Sahabat Berbagi home dashboard showing user Rehan Budi with donation potential Rp 2.4B and Silver tier",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "id": "sahabat_screenshot_03",
+      "label": "Sahabat Berbagi payment screen with credit card and e-wallet options including OVO Gopay DANA LinkAja ShopeePay",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "sahabat_screenshot_04",
+      "label": "Sahabat Berbagi donation calculator with wakaf value age payment period and frequency inputs",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_04.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_01",
+      "label": "Skillbridge home screen greeting user Yohannes with streak indicator",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_01.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_02",
+      "label": "Skillbridge lock screen with three empty circles for PIN or pattern entry",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_02.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_03",
+      "label": "Skillbridge Satlbridge splash screen with atom logo and network pattern",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_03.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_04",
+      "label": "Skillbridge physics quiz question about transverse sinusoidal wave motion",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_04.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_05",
+      "label": "Skillbridge AI Bot chat interface showing conversation about the learning platform",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "id": "skillbridge_screenshot_06",
+      "label": "Skillbridge Grade 12 Physics Unit 1 Introduction course cover",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_06.jpg"
+    },
+    {
+      "id": "smarco_screenshot_01",
+      "label": "SMARCO splash screen with red and green S logo",
+      "file_type": "image",
+      "source_file": "smarco_screenshot_01.jpg"
+    },
+    {
+      "id": "smarco_screenshot_02",
+      "label": "SMARCO social feed with category tabs For You Style Groceries Automotive and user posts",
+      "file_type": "image",
+      "source_file": "smarco_screenshot_02.jpg"
+    },
+    {
+      "id": "smarco_screenshot_03",
+      "label": "SMARCO post detail showing waffle image by Sri Nurindah Sari with like comment and share actions",
+      "file_type": "image",
+      "source_file": "smarco_screenshot_03.jpg"
+    },
+    {
+      "id": "netgear_app",
+      "label": "NETgear mobile application for engineer operations and asset management",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_03.jpg"
+    },
+    {
+      "id": "sahabat_berbagi_app",
+      "label": "Sahabat Berbagi Islamic donation and wakaf mobile application",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_01.jpg"
+    },
+    {
+      "id": "skillbridge_app",
+      "label": "Skillbridge AI-powered learning platform mobile application",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "id": "smarco_app",
+      "label": "SMARCO social commerce mobile application",
+      "file_type": "image",
+      "source_file": "smarco_screenshot_01.jpg"
+    },
+    {
+      "id": "ericsson_equipment",
+      "label": "Ericsson HP Proliant DL380 G7 server equipment",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_01.jpg"
+    },
+    {
+      "id": "pdh_microwave",
+      "label": "PDH Microwave telecommunications equipment",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "id": "lte_equipment",
+      "label": "LTE telecommunications equipment",
+      "file_type": "image",
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "id": "rehan_budi",
+      "label": "User Rehan Budi with Silver tier in Sahabat Berbagi",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "id": "yohannes",
+      "label": "User Yohannes in Skillbridge app",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_01.jpg"
+    },
+    {
+      "id": "sri_nurindah_sari",
+      "label": "User Sri Nurindah Sari posting on SMARCO",
+      "file_type": "image",
+      "source_file": "smarco_screenshot_03.jpg"
+    },
+    {
+      "id": "ovo_payment",
+      "label": "OVO e-wallet payment method",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "gopay_payment",
+      "label": "Gopay e-wallet payment method",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "dana_payment",
+      "label": "DANA e-wallet payment method",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "linkaja_payment",
+      "label": "LinkAja e-wallet payment method",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "shopeepay_payment",
+      "label": "ShopeePay e-wallet payment method",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "credit_card",
+      "label": "Credit card payment with Mastercard Visa JCB",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "ai_bot",
+      "label": "Skillbridge AI Bot assistant",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "id": "grade12_physics",
+      "label": "Grade 12 Physics educational content",
+      "file_type": "image",
+      "source_file": "skillbridge_screenshot_06.jpg"
+    },
+    {
+      "id": "wakaf_daarut_tauhiid",
+      "label": "Wakaf Daarut Tauhiid donation destination",
+      "file_type": "image",
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "smarco_screenshot_04",
+      "label": "Smarco E-Commerce App - Product Listing",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "smarco_screenshot_05",
+      "label": "Smarco E-Commerce App - Product Detail Page",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "smarco_screenshot_06",
+      "label": "Smarco E-Commerce App - User Profile",
+      "file_type": "image",
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "akuberbagi_website",
+      "label": "Aku Berbagi Charity Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/akuberbagi_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "bhayangkari_youtube",
+      "label": "Bhayangkari YouTube Channel Screenshot",
+      "file_type": "image",
+      "source_file": ".reference/websites/bhayangkari_youtube.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "gogreat_website",
+      "label": "Great Eastern GoGreat Insurance Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/gogreat_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kuismilioner_website",
+      "label": "Kuis Milioner Game Voucher Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/kuismilioner_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "labamu_website",
+      "label": "Labamu Business Growth Platform Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/labamu_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "mybeepr_website",
+      "label": "myBeepr Clinical Communication App Listing",
+      "file_type": "image",
+      "source_file": ".reference/websites/mybeepr_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pancaagri_forest_bg",
+      "label": "Panca Agri Forest Background Image",
+      "file_type": "image",
+      "source_file": ".reference/websites/pancaagri_forest_bg.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pancaagri_hero_plantation",
+      "label": "Panca Agri Palm Oil Plantation Hero Image",
+      "file_type": "image",
+      "source_file": ".reference/websites/pancaagri_hero_plantation.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pancaagri_palmoil_aerial",
+      "label": "Panca Agri Palm Oil Aerial Photography",
+      "file_type": "image",
+      "source_file": ".reference/websites/pancaagri_palmoil_aerial.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pancaagri_website",
+      "label": "PT Panca Agro Niaga Lestari Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/pancaagri_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkominfra_hero_ship",
+      "label": "Telkom Infra Marine Cable Ship Hero Image",
+      "file_type": "image",
+      "source_file": ".reference/websites/telkominfra_hero_ship.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "telkominfra_website",
+      "label": "Telkom Infra Corporate Website",
+      "file_type": "image",
+      "source_file": ".reference/websites/telkominfra_website.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pancaagri_company",
+      "label": "PT Panca Agro Niaga Lestari - Agricultural Company",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ecommerce_ui_pattern",
+      "label": "E-Commerce Mobile UI Pattern",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "insurance_website_pattern",
+      "label": "Insurance Product Website Pattern",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "charity_website_pattern",
+      "label": "Charity Donation Website Pattern",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agricultural_website_pattern",
+      "label": "Agricultural Corporate Website Pattern",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corporate_website_pattern",
+      "label": "Corporate Infrastructure Website Pattern",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "flash_sale_feature",
+      "label": "Flash Sale E-Commerce Feature",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "product_detail_feature",
+      "label": "Product Detail Page Feature",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "user_profile_feature",
+      "label": "User Profile Dashboard Feature",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "referral_system_feature",
+      "label": "Referral Code System Feature",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "green_color_theme",
+      "label": "Green Color Theme Design",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "red_color_theme",
+      "label": "Red Color Theme Design",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "blue_color_theme",
+      "label": "Blue Color Theme Design",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "indonesian_market",
+      "label": "Indonesian Digital Market",
+      "file_type": "image",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "portfolio_deliverables_document",
+      "target": "portfolio_master_research_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 11",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_deliverables_document",
+      "target": "web_dev_prompt_document",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 12",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_deliverables_document",
+      "target": "portfolio_final_data_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 10",
+      "weight": 1.0
+    },
+    {
+      "source": "ai_dataset_prompt_document",
+      "target": "portfolio_final_data_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/AI_DATASET_PROMPT.md",
+      "source_location": "line 7",
+      "weight": 1.0
+    },
+    {
+      "source": "web_dev_prompt_document",
+      "target": "portfolio_final_data_json",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 280",
+      "weight": 1.0
+    },
+    {
+      "source": "web_dev_prompt_document",
+      "target": "asset_inventory_document",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_project",
+      "target": "pt_axis",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 216",
+      "weight": 1.0
+    },
+    {
+      "source": "aku_berbagi_project",
+      "target": "generali_indonesia",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 54",
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_project",
+      "target": "agriaku_digital",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 97",
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_project",
+      "target": "sc_ventures",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 159",
+      "weight": 1.0
+    },
+    {
+      "source": "go_great_project",
+      "target": "great_eastern_life",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 197",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "axisnet_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 216",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "mybeepr_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 139",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "aku_berbagi_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 54",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "agriaku_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 97",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "labamu_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 159",
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_master_research_document",
+      "target": "go_great_project",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md",
+      "source_location": "line 197",
+      "weight": 1.0
+    },
+    {
+      "source": "web_dev_prompt_document",
+      "target": "nextjs_tech_stack",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 260",
+      "weight": 1.0
+    },
+    {
+      "source": "web_dev_prompt_document",
+      "target": "tailwind_css",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 261",
+      "weight": 1.0
+    },
+    {
+      "source": "web_dev_prompt_document",
+      "target": "framer_motion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 262",
+      "weight": 1.0
+    },
+    {
+      "source": "design_system_rationale",
+      "target": "web_dev_prompt_document",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 175-198",
+      "weight": 1.0
+    },
+    {
+      "source": "tech_stack_recommendation_rationale",
+      "target": "nextjs_tech_stack",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 258-266",
+      "weight": 1.0
+    },
+    {
+      "source": "tech_stack_recommendation_rationale",
+      "target": "tailwind_css",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 258-266",
+      "weight": 1.0
+    },
+    {
+      "source": "tech_stack_recommendation_rationale",
+      "target": "framer_motion",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md",
+      "source_location": "line 258-266",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "axisnet_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 53-58",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "mybeepr_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 60-66",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "aku_berbagi_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 68-72",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "agriaku_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 74-78",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "labamu_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 80-85",
+      "weight": 1.0
+    },
+    {
+      "source": "featured_projects_strategy",
+      "target": "go_great_project",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 87-91",
+      "weight": 1.0
+    },
+    {
+      "source": "recruiter_impact_metrics",
+      "target": "portfolio_deliverables_document",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md",
+      "source_location": "line 205-229",
+      "weight": 1.0
+    },
+    {
+      "source": "asset_inventory_document",
+      "target": "axisnet_project",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/ASSET_INVENTORY.md",
+      "source_location": "line 34-35",
+      "weight": 1.0
+    },
+    {
+      "source": "asset_inventory_document",
+      "target": "agriaku_project",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/ASSET_INVENTORY.md",
+      "source_location": "line 37-38",
+      "weight": 1.0
+    },
+    {
+      "source": "asset_inventory_document",
+      "target": "mybeepr_project",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/ASSET_INVENTORY.md",
+      "source_location": "line 40-43",
+      "weight": 1.0
+    },
+    {
+      "source": "asset_inventory_document",
+      "target": "labamu_project",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/ASSET_INVENTORY.md",
+      "source_location": "line 45-48",
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_icon",
+      "target": "telkominfra_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/icons/absensi_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_icon",
+      "target": "telkominfra_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/icons/myinfra_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_icon",
+      "target": "telkominfra_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/icons/mytelkominfra_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "netgear_icon",
+      "target": "telkominfra_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/icons/netgear_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_icon",
+      "target": "agriaku_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/icons/agriaku_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_playstore",
+      "target": "agriaku_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/agriaku_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_playstore_top",
+      "target": "agriaku_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/agriaku_playstore_top.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_icon",
+      "target": "asabri_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/icons/asabri_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_playstore",
+      "target": "asabri_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/asabri_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_icon",
+      "target": "axisnet_company",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/icons/axisnet_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_playstore",
+      "target": "axisnet_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/axisnet_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_playstore",
+      "target": "telkominfra_company",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/playstore_pages/absensi_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asset_1_logo",
+      "target": "telkominfra_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/logos/asset_1.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_logo",
+      "target": "telkominfra_company",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/logos/telkominfra_logo.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_icon",
+      "target": "agriaku_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.5,
+      "source_file": ".reference/icons/smarco_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_icon",
+      "target": "agriaku_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/icons/lautnusantara_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_icon",
+      "target": "axisnet_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/icons/bluegaz_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mobilegrosir_icon",
+      "target": "axisnet_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/icons/mobilegrosir_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sahabat_icon",
+      "target": "asabri_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/icons/sahabat_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skillbridge_icon",
+      "target": "asabri_company",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/icons/skillbridge_icon.webp",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "portfolio_reference_icons",
+      "target": "portfolio_reference_playstore",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_playstore",
+      "target": "gas_utility",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_playstore",
+      "target": "google_play_store",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_playstore",
+      "target": "fishery_technology",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_playstore",
+      "target": "xl_smart",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_playstore",
+      "target": "google_play_store",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/lautnusantara_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mobilegrosir_apkpage",
+      "target": "wholesale_commerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mobilegrosir_apkpage.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mobilegrosir_apkpage",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mobilegrosir_apkpage.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_playstore",
+      "target": "customer_sentiment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_playstore",
+      "target": "telkom_infra",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_playstore",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_playstore",
+      "target": "employee_portal",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_playstore",
+      "target": "telkom_infra",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_playstore",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "netgear_playstore",
+      "target": "network_management",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/netgear_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "netgear_playstore",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/netgear_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sahabat_playstore",
+      "target": "insurance_community",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sahabat_playstore",
+      "target": "pt_asuransi_jiwa_generali",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sahabat_playstore",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/sahabat_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skillbridge_playstore",
+      "target": "ai_education",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skillbridge_playstore",
+      "target": "a2sv",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "skillbridge_playstore",
+      "target": "google_play_store",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/skillbridge_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_playstore",
+      "target": "social_shopping",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_playstore",
+      "target": "sprout",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_playstore",
+      "target": "apkpure",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/smarco_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_01",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_01",
+      "target": "telkom_infra",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_02",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_03",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_04",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_05",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/absensi_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_01",
+      "target": "agricultural_ecommerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/agriaku_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_02",
+      "target": "agricultural_ecommerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/agriaku_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_03",
+      "target": "agricultural_ecommerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/agriaku_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_04",
+      "target": "agricultural_ecommerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/agriaku_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_05",
+      "target": "agricultural_ecommerce",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/agriaku_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_01",
+      "target": "military_insurance",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_01",
+      "target": "asabri",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_playstore",
+      "target": "mytelkominfra_playstore",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_playstore",
+      "target": "myinfra_playstore",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_01",
+      "target": "absensi_screenshot_02",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_02",
+      "target": "absensi_screenshot_03",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/absensi_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_03",
+      "target": "absensi_screenshot_04",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/absensi_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "absensi_screenshot_04",
+      "target": "absensi_screenshot_05",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/absensi_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_01",
+      "target": "agriaku_screenshot_02",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/agriaku_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_02",
+      "target": "agriaku_screenshot_03",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/agriaku_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_03",
+      "target": "agriaku_screenshot_04",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/agriaku_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agriaku_screenshot_04",
+      "target": "agriaku_screenshot_05",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/agriaku_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkom_infra",
+      "target": "attendance_system",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkom_infra",
+      "target": "employee_portal",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/playstore_pages/mytelkominfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkom_infra",
+      "target": "customer_sentiment",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "google_play_store",
+      "target": "apkpure",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "apkpure",
+      "target": "google_play_store",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_02",
+      "target": "project_asabri",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_03",
+      "target": "project_asabri",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_04",
+      "target": "project_asabri",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_05",
+      "target": "project_asabri",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_hero_banner",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_01",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_02",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_03",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_04",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_05",
+      "target": "project_axisnet",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_01",
+      "target": "project_bluegaz",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_02",
+      "target": "project_bluegaz",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_03",
+      "target": "project_bluegaz",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_04",
+      "target": "project_bluegaz",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_05",
+      "target": "project_bluegaz",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_feature_illustration",
+      "target": "project_gogreat",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/gogreat_feature_illustration.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_hero_banner",
+      "target": "project_gogreat",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/gogreat_hero_banner.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_01",
+      "target": "project_kuismilioner",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_02",
+      "target": "project_kuismilioner",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_hero_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_03",
+      "target": "project_kuismilioner",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_hero_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_01",
+      "target": "axisnet_screenshot_02",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/axisnet_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_01",
+      "target": "axisnet_screenshot_04",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/screenshots/axisnet_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_02",
+      "target": "bluegaz_screenshot_03",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "bluegaz_screenshot_02",
+      "target": "bluegaz_screenshot_04",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_feature_illustration",
+      "target": "gogreat_hero_banner",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/gogreat_feature_illustration.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_01",
+      "target": "kuismilioner_hero_02",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_01",
+      "target": "kuismilioner_hero_03",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_hero_02",
+      "target": "kuismilioner_hero_03",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/kuismilioner_hero_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_hero_banner",
+      "target": "axisnet_screenshot_01",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_03",
+      "target": "asabri_screenshot_04",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.5,
+      "source_file": ".reference/screenshots/asabri_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "project_asabri",
+      "target": "project_axisnet",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "project_axisnet",
+      "target": "project_bluegaz",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "project_bluegaz",
+      "target": "project_gogreat",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "project_gogreat",
+      "target": "project_kuismilioner",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.5,
+      "source_file": ".reference/screenshots/gogreat_hero_banner.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "asabri_screenshot_05",
+      "target": "bluegaz_screenshot_05",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.5,
+      "source_file": ".reference/screenshots/asabri_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "axisnet_screenshot_03",
+      "target": "asabri_screenshot_05",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "source_file": ".reference/screenshots/axisnet_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_app",
+      "target": "kuismilioner_product_01_resident_evil_requiem",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_product_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_app",
+      "target": "kuismilioner_product_02_blizzard_gift_card",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_product_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_app",
+      "target": "kuismilioner_product_03_bilibili_icon",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_product_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_app",
+      "target": "kuismilioner_product_04_cherry_icon",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_product_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_app",
+      "target": "kuismilioner_product_05_halo_soldier",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_product_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_platform",
+      "target": "labamu_feature_cards",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/labamu_feature_cards.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_platform",
+      "target": "labamu_feature_devices",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/labamu_feature_devices.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_platform",
+      "target": "labamu_feature_phone",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/labamu_feature_phone.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_platform",
+      "target": "labamu_feature_testimonial",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/labamu_feature_testimonial.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_app",
+      "target": "lautnusantara_screenshot_01_fish_map",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_app",
+      "target": "lautnusantara_screenshot_02_play_store",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_app",
+      "target": "xlsmart",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/lautnusantara_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_app",
+      "target": "mybeepr_screenshot_01_onboarding",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mybeepr_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_app",
+      "target": "mybeepr_screenshot_02_chat_interface",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mybeepr_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_app",
+      "target": "mybeepr_screenshot_03_clinical_photography",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mybeepr_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_app",
+      "target": "mybeepr_screenshot_04_secure_communication",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mybeepr_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_app",
+      "target": "western_health",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mybeepr_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_app",
+      "target": "myinfra_screenshot_01_login",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/myinfra_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_app",
+      "target": "myinfra_screenshot_02_dashboard",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/myinfra_screenshot_02.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_app",
+      "target": "myinfra_screenshot_03_profile",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/myinfra_screenshot_03.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_app",
+      "target": "myinfra_screenshot_04_login_variant",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/myinfra_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_app",
+      "target": "mytelkominfra_screenshot_01",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mytelkominfra_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mytelkominfra_app",
+      "target": "telkom_indonesia",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/mytelkominfra_screenshot_01.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_app",
+      "target": "mytelkominfra_app",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_product_01_resident_evil_requiem",
+      "target": "kuismilioner_product_05_halo_soldier",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_product_02_blizzard_gift_card",
+      "target": "kuismilioner_product_03_bilibili_icon",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_screenshot_02_chat_interface",
+      "target": "mybeepr_screenshot_04_secure_communication",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_screenshot_03_clinical_photography",
+      "target": "mybeepr_screenshot_02_chat_interface",
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_feature_cards",
+      "target": "labamu_feature_testimonial",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lautnusantara_screenshot_01_fish_map",
+      "target": "lautnusantara_screenshot_02_play_store",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "myinfra_screenshot_01_login",
+      "target": "myinfra_screenshot_04_login_variant",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/screenshots",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_01",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_01.jpg"
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_02",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_03",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_03.jpg"
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_04",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_04.jpg"
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_05",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_05.jpg"
+    },
+    {
+      "source": "netgear_app",
+      "target": "netgear_screenshot_06",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_06.jpg"
+    },
+    {
+      "source": "sahabat_berbagi_app",
+      "target": "sahabat_screenshot_01",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_01.jpg"
+    },
+    {
+      "source": "sahabat_berbagi_app",
+      "target": "sahabat_screenshot_02",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "source": "sahabat_berbagi_app",
+      "target": "sahabat_screenshot_03",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_berbagi_app",
+      "target": "sahabat_screenshot_04",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_04.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_01",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_01.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_02",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_02.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_03",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_03.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_04",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_04.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_05",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "skillbridge_screenshot_06",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_06.jpg"
+    },
+    {
+      "source": "smarco_app",
+      "target": "smarco_screenshot_01",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "smarco_screenshot_01.jpg"
+    },
+    {
+      "source": "smarco_app",
+      "target": "smarco_screenshot_02",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "smarco_screenshot_02.jpg"
+    },
+    {
+      "source": "smarco_app",
+      "target": "smarco_screenshot_03",
+      "relation": "has_screenshot",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "smarco_screenshot_03.jpg"
+    },
+    {
+      "source": "netgear_screenshot_01",
+      "target": "ericsson_equipment",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_01.jpg"
+    },
+    {
+      "source": "netgear_screenshot_02",
+      "target": "pdh_microwave",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "source": "netgear_screenshot_02",
+      "target": "lte_equipment",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_02",
+      "target": "rehan_budi",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "source": "skillbridge_screenshot_01",
+      "target": "yohannes",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_01.jpg"
+    },
+    {
+      "source": "smarco_screenshot_03",
+      "target": "sri_nurindah_sari",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "smarco_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "credit_card",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "ovo_payment",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "gopay_payment",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "dana_payment",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "linkaja_payment",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "shopeepay_payment",
+      "relation": "shows_payment_method",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "skillbridge_screenshot_05",
+      "target": "ai_bot",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "source": "skillbridge_screenshot_06",
+      "target": "grade12_physics",
+      "relation": "depicts",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "skillbridge_screenshot_06.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_03",
+      "target": "wakaf_daarut_tauhiid",
+      "relation": "donation_destination",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "netgear_screenshot_04",
+      "target": "netgear_screenshot_05",
+      "relation": "similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "netgear_screenshot_04.jpg"
+    },
+    {
+      "source": "netgear_screenshot_05",
+      "target": "netgear_screenshot_06",
+      "relation": "precedes_login",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "netgear_screenshot_05.jpg"
+    },
+    {
+      "source": "sahabat_screenshot_01",
+      "target": "sahabat_screenshot_02",
+      "relation": "precedes_dashboard",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "sahabat_screenshot_01.jpg"
+    },
+    {
+      "source": "skillbridge_screenshot_03",
+      "target": "skillbridge_screenshot_02",
+      "relation": "precedes_lock_screen",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "skillbridge_screenshot_03.jpg"
+    },
+    {
+      "source": "smarco_screenshot_01",
+      "target": "smarco_screenshot_02",
+      "relation": "precedes_feed",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "smarco_screenshot_01.jpg"
+    },
+    {
+      "source": "smarco_screenshot_02",
+      "target": "smarco_screenshot_03",
+      "relation": "precedes_post_detail",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "smarco_screenshot_02.jpg"
+    },
+    {
+      "source": "skillbridge_app",
+      "target": "grade12_physics",
+      "relation": "provides_course",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "skillbridge_screenshot_06.jpg"
+    },
+    {
+      "source": "sahabat_berbagi_app",
+      "target": "wakaf_daarut_tauhiid",
+      "relation": "supports_donation_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "source": "rehan_budi",
+      "target": "sahabat_berbagi_app",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "source": "yohannes",
+      "target": "skillbridge_app",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "skillbridge_screenshot_01.jpg"
+    },
+    {
+      "source": "sri_nurindah_sari",
+      "target": "smarco_app",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "smarco_screenshot_03.jpg"
+    },
+    {
+      "source": "smarco_screenshot_04",
+      "target": "smarco_app",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_05",
+      "target": "smarco_app",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_06",
+      "target": "smarco_app",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_04",
+      "target": "flash_sale_feature",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_05",
+      "target": "product_detail_feature",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_06",
+      "target": "user_profile_feature",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_06",
+      "target": "referral_system_feature",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_04",
+      "target": "green_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_05",
+      "target": "green_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_06",
+      "target": "green_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_04",
+      "target": "ecommerce_ui_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_05",
+      "target": "ecommerce_ui_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_06",
+      "target": "ecommerce_ui_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_06.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "akuberbagi_website",
+      "target": "charity_website_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/akuberbagi_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "akuberbagi_website",
+      "target": "green_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/akuberbagi_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_website",
+      "target": "insurance_website_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/gogreat_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_website",
+      "target": "red_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/gogreat_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_website",
+      "target": "blue_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/labamu_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_website",
+      "target": "pancaagri_company",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/pancaagri_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_forest_bg",
+      "target": "pancaagri_company",
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/pancaagri_forest_bg.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_hero_plantation",
+      "target": "pancaagri_company",
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/pancaagri_hero_plantation.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_palmoil_aerial",
+      "target": "pancaagri_company",
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/pancaagri_palmoil_aerial.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_website",
+      "target": "agricultural_website_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/pancaagri_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_website",
+      "target": "green_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/pancaagri_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_website",
+      "target": "telkominfra_company",
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/telkominfra_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_hero_ship",
+      "target": "telkominfra_company",
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/telkominfra_hero_ship.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_website",
+      "target": "corporate_website_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/telkominfra_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_website",
+      "target": "red_color_theme",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/telkominfra_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kuismilioner_website",
+      "target": "ecommerce_ui_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/kuismilioner_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mybeepr_website",
+      "target": "ecommerce_ui_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": ".reference/websites/mybeepr_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_app",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "akuberbagi_website",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/akuberbagi_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "gogreat_website",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/gogreat_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "labamu_website",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/labamu_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_company",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/pancaagri_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "telkominfra_company",
+      "target": "indonesian_market",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/websites/telkominfra_website.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_04",
+      "target": "smarco_screenshot_05",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "smarco_screenshot_05",
+      "target": "smarco_screenshot_06",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/screenshots/smarco_screenshot_05.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_forest_bg",
+      "target": "pancaagri_hero_plantation",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/websites/pancaagri_forest_bg.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_hero_plantation",
+      "target": "pancaagri_palmoil_aerial",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": ".reference/websites/pancaagri_hero_plantation.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pancaagri_forest_bg",
+      "target": "pancaagri_palmoil_aerial",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/websites/pancaagri_forest_bg.jpg",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "top_six_featured_projects",
+      "label": "Top 6 Featured Projects for Recruiter Impact",
+      "nodes": [
+        "axisnet_project",
+        "mybeepr_project",
+        "aku_berbagi_project",
+        "agriaku_project",
+        "labamu_project",
+        "go_great_project"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md"
+    },
+    {
+      "id": "portfolio_documentation_suite",
+      "label": "Portfolio Documentation Suite",
+      "nodes": [
+        "portfolio_deliverables_document",
+        "portfolio_master_research_document",
+        "asset_inventory_document",
+        "web_dev_prompt_document",
+        "ai_dataset_prompt_document"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/PORTFOLIO_DELIVERABLES.md"
+    },
+    {
+      "id": "recommended_tech_stack",
+      "label": "Recommended Tech Stack for Portfolio",
+      "nodes": [
+        "nextjs_tech_stack",
+        "tailwind_css",
+        "framer_motion"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/web_dev_prompt.md"
+    },
+    {
+      "id": "fintech_projects",
+      "label": "FinTech / InsurTech Projects",
+      "nodes": [
+        "aku_berbagi_project",
+        "labamu_project",
+        "go_great_project"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/portfolio_master_research.md"
+    },
+    {
+      "id": "telkominfra_app_ecosystem",
+      "label": "Telkom Infra App Ecosystem",
+      "nodes": [
+        "absensi_icon",
+        "myinfra_icon",
+        "mytelkominfra_icon",
+        "netgear_icon",
+        "telkominfra_logo",
+        "asset_1_logo"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/icons/"
+    },
+    {
+      "id": "agriaku_app_ecosystem",
+      "label": "AgriAku App Ecosystem",
+      "nodes": [
+        "agriaku_icon",
+        "agriaku_playstore",
+        "agriaku_playstore_top",
+        "smarco_icon",
+        "lautnusantara_icon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/"
+    },
+    {
+      "id": "axisnet_app_ecosystem",
+      "label": "AXISnet App Ecosystem",
+      "nodes": [
+        "axisnet_icon",
+        "axisnet_playstore",
+        "bluegaz_icon",
+        "mobilegrosir_icon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/"
+    },
+    {
+      "id": "asabri_app_ecosystem",
+      "label": "ASABRI App Ecosystem",
+      "nodes": [
+        "asabri_icon",
+        "asabri_playstore",
+        "sahabat_icon",
+        "skillbridge_icon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/"
+    },
+    {
+      "id": "portfolio_reference_assets",
+      "label": "Portfolio Reference Assets",
+      "nodes": [
+        "portfolio_reference_icons",
+        "portfolio_reference_playstore"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/"
+    },
+    {
+      "id": "telkom_infra_app_ecosystem",
+      "label": "Telkom Infra App Ecosystem",
+      "nodes": [
+        "myinfra_playstore",
+        "mytelkominfra_playstore",
+        "absensi_screenshot_01",
+        "absensi_screenshot_02",
+        "absensi_screenshot_03",
+        "absensi_screenshot_04",
+        "absensi_screenshot_05",
+        "telkom_infra"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/playstore_pages/myinfra_playstore.jpg"
+    },
+    {
+      "id": "agriaku_app_flow",
+      "label": "AgriAku App User Flow",
+      "nodes": [
+        "agriaku_screenshot_01",
+        "agriaku_screenshot_02",
+        "agriaku_screenshot_03",
+        "agriaku_screenshot_04",
+        "agriaku_screenshot_05",
+        "agricultural_ecommerce"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/agriaku_screenshot_01.jpg"
+    },
+    {
+      "id": "absensi_app_flow",
+      "label": "Absensi App User Flow",
+      "nodes": [
+        "absensi_screenshot_01",
+        "absensi_screenshot_02",
+        "absensi_screenshot_03",
+        "absensi_screenshot_04",
+        "absensi_screenshot_05",
+        "attendance_system"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/absensi_screenshot_01.jpg"
+    },
+    {
+      "id": "playstore_apps_collection",
+      "label": "Play Store Apps Collection",
+      "nodes": [
+        "bluegaz_playstore",
+        "lautnusantara_playstore",
+        "skillbridge_playstore",
+        "google_play_store"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/bluegaz_playstore.jpg"
+    },
+    {
+      "id": "apkpure_apps_collection",
+      "label": "APKPure Apps Collection",
+      "nodes": [
+        "mobilegrosir_apkpage",
+        "myinfra_playstore",
+        "mytelkominfra_playstore",
+        "netgear_playstore",
+        "sahabat_playstore",
+        "smarco_playstore",
+        "apkpure"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/playstore_pages/mobilegrosir_apkpage.jpg"
+    },
+    {
+      "id": "asabri_screenshots_group",
+      "label": "ASABRI Screenshot Collection",
+      "nodes": [
+        "asabri_screenshot_02",
+        "asabri_screenshot_03",
+        "asabri_screenshot_04",
+        "asabri_screenshot_05"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg"
+    },
+    {
+      "id": "axisnet_screenshots_group",
+      "label": "AXIS Net Screenshot Collection",
+      "nodes": [
+        "axisnet_hero_banner",
+        "axisnet_screenshot_01",
+        "axisnet_screenshot_02",
+        "axisnet_screenshot_03",
+        "axisnet_screenshot_04",
+        "axisnet_screenshot_05"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/axisnet_hero_banner.jpg"
+    },
+    {
+      "id": "bluegaz_screenshots_group",
+      "label": "Blu Gas e Power Screenshot Collection",
+      "nodes": [
+        "bluegaz_screenshot_01",
+        "bluegaz_screenshot_02",
+        "bluegaz_screenshot_03",
+        "bluegaz_screenshot_04",
+        "bluegaz_screenshot_05"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_01.jpg"
+    },
+    {
+      "id": "gogreat_screenshots_group",
+      "label": "GoGREAT Screenshot Collection",
+      "nodes": [
+        "gogreat_feature_illustration",
+        "gogreat_hero_banner"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/gogreat_hero_banner.jpg"
+    },
+    {
+      "id": "kuismilioner_screenshots_group",
+      "label": "Kuis Milioner Screenshot Collection",
+      "nodes": [
+        "kuismilioner_hero_01",
+        "kuismilioner_hero_02",
+        "kuismilioner_hero_03"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg"
+    },
+    {
+      "id": "mobile_app_portfolio_projects",
+      "label": "Mobile App Portfolio Projects",
+      "nodes": [
+        "project_asabri",
+        "project_axisnet",
+        "project_bluegaz",
+        "project_gogreat",
+        "project_kuismilioner"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/screenshots/asabri_screenshot_02.jpg"
+    },
+    {
+      "id": "gaming_hero_banners",
+      "label": "Gaming Hero Banner Collection",
+      "nodes": [
+        "kuismilioner_hero_01",
+        "kuismilioner_hero_02",
+        "kuismilioner_hero_03"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots/kuismilioner_hero_01.jpg"
+    },
+    {
+      "id": "geometric_backgrounds",
+      "label": "Geometric Background Pattern Collection",
+      "nodes": [
+        "bluegaz_screenshot_02",
+        "bluegaz_screenshot_03",
+        "bluegaz_screenshot_04"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots/bluegaz_screenshot_04.jpg"
+    },
+    {
+      "id": "kuismilioner_product_showcase",
+      "label": "KuisMilioner Quiz Prize Catalog",
+      "nodes": [
+        "kuismilioner_app",
+        "kuismilioner_product_01_resident_evil_requiem",
+        "kuismilioner_product_02_blizzard_gift_card",
+        "kuismilioner_product_03_bilibili_icon",
+        "kuismilioner_product_04_cherry_icon",
+        "kuismilioner_product_05_halo_soldier"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "labamu_website_sections",
+      "label": "Labamu Website Feature Sections",
+      "nodes": [
+        "labamu_platform",
+        "labamu_feature_cards",
+        "labamu_feature_devices",
+        "labamu_feature_phone",
+        "labamu_feature_testimonial"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "mybeepr_feature_set",
+      "label": "myBeepr Healthcare App Features",
+      "nodes": [
+        "mybeepr_app",
+        "mybeepr_screenshot_01_onboarding",
+        "mybeepr_screenshot_02_chat_interface",
+        "mybeepr_screenshot_03_clinical_photography",
+        "mybeepr_screenshot_04_secure_communication",
+        "western_health"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "myinfra_app_screens",
+      "label": "MyInfra Mobile App Screens",
+      "nodes": [
+        "myinfra_app",
+        "myinfra_screenshot_01_login",
+        "myinfra_screenshot_02_dashboard",
+        "myinfra_screenshot_03_profile",
+        "myinfra_screenshot_04_login_variant"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "lautnusantara_app_presence",
+      "label": "Laut Nusantara App Store Presence",
+      "nodes": [
+        "lautnusantara_app",
+        "lautnusantara_screenshot_01_fish_map",
+        "lautnusantara_screenshot_02_play_store",
+        "xlsmart"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "telkom_infra_ecosystem",
+      "label": "Telkom Indonesia Infrastructure Apps",
+      "nodes": [
+        "myinfra_app",
+        "mytelkominfra_app",
+        "telkom_indonesia"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/screenshots"
+    },
+    {
+      "id": "netgear_app_flow",
+      "label": "NETgear application user flow",
+      "nodes": [
+        "netgear_app",
+        "netgear_screenshot_04",
+        "netgear_screenshot_05",
+        "netgear_screenshot_06",
+        "netgear_screenshot_03",
+        "netgear_screenshot_02",
+        "netgear_screenshot_01"
+      ],
+      "relation": "user_journey",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "netgear_screenshot_03.jpg"
+    },
+    {
+      "id": "sahabat_app_flow",
+      "label": "Sahabat Berbagi application user flow",
+      "nodes": [
+        "sahabat_berbagi_app",
+        "sahabat_screenshot_01",
+        "sahabat_screenshot_02",
+        "sahabat_screenshot_04",
+        "sahabat_screenshot_03"
+      ],
+      "relation": "user_journey",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "sahabat_screenshot_02.jpg"
+    },
+    {
+      "id": "skillbridge_app_flow",
+      "label": "Skillbridge application user flow",
+      "nodes": [
+        "skillbridge_app",
+        "skillbridge_screenshot_03",
+        "skillbridge_screenshot_02",
+        "skillbridge_screenshot_01",
+        "skillbridge_screenshot_05",
+        "skillbridge_screenshot_04",
+        "skillbridge_screenshot_06"
+      ],
+      "relation": "user_journey",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "skillbridge_screenshot_05.jpg"
+    },
+    {
+      "id": "smarco_app_flow",
+      "label": "SMARCO application user flow",
+      "nodes": [
+        "smarco_app",
+        "smarco_screenshot_01",
+        "smarco_screenshot_02",
+        "smarco_screenshot_03"
+      ],
+      "relation": "user_journey",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "smarco_screenshot_02.jpg"
+    },
+    {
+      "id": "payment_methods",
+      "label": "Sahabat Berbagi supported payment methods",
+      "nodes": [
+        "sahabat_berbagi_app",
+        "credit_card",
+        "ovo_payment",
+        "gopay_payment",
+        "dana_payment",
+        "linkaja_payment",
+        "shopeepay_payment"
+      ],
+      "relation": "payment_ecosystem",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "sahabat_screenshot_03.jpg"
+    },
+    {
+      "id": "netgear_equipment_tasks",
+      "label": "NETgear equipment management tasks",
+      "nodes": [
+        "netgear_app",
+        "ericsson_equipment",
+        "pdh_microwave",
+        "lte_equipment"
+      ],
+      "relation": "asset_management",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "netgear_screenshot_02.jpg"
+    },
+    {
+      "id": "portfolio_apps",
+      "label": "Mobile application portfolio projects",
+      "nodes": [
+        "netgear_app",
+        "sahabat_berbagi_app",
+        "skillbridge_app",
+        "smarco_app"
+      ],
+      "relation": "project_collection",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "netgear_screenshot_03.jpg"
+    },
+    {
+      "id": "smarco_app_screens",
+      "label": "Smarco App Screen Collection",
+      "nodes": [
+        "smarco_screenshot_04",
+        "smarco_screenshot_05",
+        "smarco_screenshot_06"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg"
+    },
+    {
+      "id": "pancaagri_visual_assets",
+      "label": "Panca Agri Visual Asset Collection",
+      "nodes": [
+        "pancaagri_forest_bg",
+        "pancaagri_hero_plantation",
+        "pancaagri_palmoil_aerial",
+        "pancaagri_website"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/pancaagri_website.jpg"
+    },
+    {
+      "id": "telkominfra_visual_assets",
+      "label": "Telkom Infra Visual Asset Collection",
+      "nodes": [
+        "telkominfra_hero_ship",
+        "telkominfra_website"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".reference/websites/telkominfra_website.jpg"
+    },
+    {
+      "id": "green_theme_projects",
+      "label": "Green Themed Design Projects",
+      "nodes": [
+        "smarco_screenshot_04",
+        "smarco_screenshot_05",
+        "smarco_screenshot_06",
+        "akuberbagi_website",
+        "pancaagri_website"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg"
+    },
+    {
+      "id": "red_theme_projects",
+      "label": "Red Themed Design Projects",
+      "nodes": [
+        "gogreat_website",
+        "telkominfra_website"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": ".reference/websites/gogreat_website.jpg"
+    },
+    {
+      "id": "indonesian_portfolio_projects",
+      "label": "Indonesian Market Portfolio Projects",
+      "nodes": [
+        "smarco_app",
+        "akuberbagi_website",
+        "gogreat_website",
+        "labamu_website",
+        "pancaagri_company",
+        "telkominfra_company",
+        "kuismilioner_website"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": ".reference/screenshots/smarco_screenshot_04.jpg"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

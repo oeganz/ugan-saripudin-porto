@@ -1,0 +1,5 @@
+E:\work\Ugansaripudin-porto\ugan-saripudin-porto\.reference\AI_DATASET_PROMPT.md
+E:\work\Ugansaripudin-porto\ugan-saripudin-porto\.reference\ASSET_INVENTORY.md
+E:\work\Ugansaripudin-porto\ugan-saripudin-porto\.reference\PORTFOLIO_DELIVERABLES.md
+E:\work\Ugansaripudin-porto\ugan-saripudin-porto\.reference\portfolio_master_research.md
+E:\work\Ugansaripudin-porto\ugan-saripudin-porto\.reference\web_dev_prompt.md

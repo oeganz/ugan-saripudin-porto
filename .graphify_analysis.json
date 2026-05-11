@@ -1,0 +1,439 @@
+{
+  "communities": {
+    "0": [
+      "absensi_screenshot_01",
+      "absensi_screenshot_02",
+      "absensi_screenshot_03",
+      "absensi_screenshot_04",
+      "absensi_screenshot_05",
+      "apkpure",
+      "attendance_system",
+      "customer_sentiment",
+      "employee_portal",
+      "insurance_community",
+      "mobilegrosir_apkpage",
+      "myinfra_playstore",
+      "mytelkominfra_playstore",
+      "netgear_playstore",
+      "network_management",
+      "pt_asuransi_jiwa_generali",
+      "sahabat_playstore",
+      "smarco_playstore",
+      "social_shopping",
+      "sprout",
+      "telkom_infra",
+      "wholesale_commerce"
+    ],
+    "1": [
+      "asabri_screenshot_02",
+      "asabri_screenshot_03",
+      "asabri_screenshot_04",
+      "asabri_screenshot_05",
+      "axisnet_hero_banner",
+      "axisnet_screenshot_01",
+      "axisnet_screenshot_02",
+      "axisnet_screenshot_03",
+      "axisnet_screenshot_04",
+      "axisnet_screenshot_05",
+      "bluegaz_screenshot_01",
+      "bluegaz_screenshot_02",
+      "bluegaz_screenshot_03",
+      "bluegaz_screenshot_04",
+      "bluegaz_screenshot_05",
+      "project_asabri",
+      "project_axisnet",
+      "project_bluegaz"
+    ],
+    "2": [
+      "akuberbagi_website",
+      "charity_website_pattern",
+      "ecommerce_ui_pattern",
+      "flash_sale_feature",
+      "green_color_theme",
+      "kuismilioner_website",
+      "mybeepr_website",
+      "product_detail_feature",
+      "referral_system_feature",
+      "smarco_app",
+      "smarco_screenshot_01",
+      "smarco_screenshot_02",
+      "smarco_screenshot_03",
+      "smarco_screenshot_04",
+      "smarco_screenshot_05",
+      "smarco_screenshot_06",
+      "sri_nurindah_sari",
+      "user_profile_feature"
+    ],
+    "3": [
+      "absensi_icon",
+      "absensi_playstore",
+      "asset_1_logo",
+      "blue_color_theme",
+      "corporate_website_pattern",
+      "gogreat_website",
+      "indonesian_market",
+      "insurance_website_pattern",
+      "labamu_website",
+      "myinfra_icon",
+      "mytelkominfra_icon",
+      "netgear_icon",
+      "red_color_theme",
+      "telkominfra_company",
+      "telkominfra_hero_ship",
+      "telkominfra_logo",
+      "telkominfra_website"
+    ],
+    "4": [
+      "agriaku_digital",
+      "agriaku_project",
+      "aku_berbagi_project",
+      "asset_inventory_document",
+      "axisnet_project",
+      "featured_projects_strategy",
+      "generali_indonesia",
+      "go_great_project",
+      "great_eastern_life",
+      "labamu_project",
+      "mybeepr_project",
+      "portfolio_master_research_document",
+      "pt_axis",
+      "sc_ventures"
+    ],
+    "5": [
+      "credit_card",
+      "dana_payment",
+      "gopay_payment",
+      "linkaja_payment",
+      "ovo_payment",
+      "rehan_budi",
+      "sahabat_berbagi_app",
+      "sahabat_screenshot_01",
+      "sahabat_screenshot_02",
+      "sahabat_screenshot_03",
+      "sahabat_screenshot_04",
+      "shopeepay_payment",
+      "wakaf_daarut_tauhiid"
+    ],
+    "6": [
+      "ai_dataset_prompt_document",
+      "design_system_rationale",
+      "framer_motion",
+      "nextjs_tech_stack",
+      "portfolio_deliverables_document",
+      "portfolio_final_data_json",
+      "recruiter_impact_metrics",
+      "tailwind_css",
+      "tech_stack_recommendation_rationale",
+      "web_dev_prompt_document"
+    ],
+    "7": [
+      "ericsson_equipment",
+      "lte_equipment",
+      "netgear_app",
+      "netgear_screenshot_01",
+      "netgear_screenshot_02",
+      "netgear_screenshot_03",
+      "netgear_screenshot_04",
+      "netgear_screenshot_05",
+      "netgear_screenshot_06",
+      "pdh_microwave"
+    ],
+    "8": [
+      "ai_bot",
+      "grade12_physics",
+      "skillbridge_app",
+      "skillbridge_screenshot_01",
+      "skillbridge_screenshot_02",
+      "skillbridge_screenshot_03",
+      "skillbridge_screenshot_04",
+      "skillbridge_screenshot_05",
+      "skillbridge_screenshot_06",
+      "yohannes"
+    ],
+    "9": [
+      "a2sv",
+      "ai_education",
+      "bluegaz_playstore",
+      "fishery_technology",
+      "gas_utility",
+      "google_play_store",
+      "lautnusantara_playstore",
+      "skillbridge_playstore",
+      "xl_smart"
+    ],
+    "10": [
+      "myinfra_app",
+      "myinfra_screenshot_01_login",
+      "myinfra_screenshot_02_dashboard",
+      "myinfra_screenshot_03_profile",
+      "myinfra_screenshot_04_login_variant",
+      "mytelkominfra_app",
+      "mytelkominfra_screenshot_01",
+      "telkom_indonesia"
+    ],
+    "11": [
+      "gogreat_feature_illustration",
+      "gogreat_hero_banner",
+      "kuismilioner_hero_01",
+      "kuismilioner_hero_02",
+      "kuismilioner_hero_03",
+      "project_gogreat",
+      "project_kuismilioner"
+    ],
+    "12": [
+      "agriaku_company",
+      "agriaku_icon",
+      "agriaku_playstore",
+      "agriaku_playstore_top",
+      "lautnusantara_icon",
+      "smarco_icon"
+    ],
+    "13": [
+      "agriaku_screenshot_01",
+      "agriaku_screenshot_02",
+      "agriaku_screenshot_03",
+      "agriaku_screenshot_04",
+      "agriaku_screenshot_05",
+      "agricultural_ecommerce"
+    ],
+    "14": [
+      "kuismilioner_app",
+      "kuismilioner_product_01_resident_evil_requiem",
+      "kuismilioner_product_02_blizzard_gift_card",
+      "kuismilioner_product_03_bilibili_icon",
+      "kuismilioner_product_04_cherry_icon",
+      "kuismilioner_product_05_halo_soldier"
+    ],
+    "15": [
+      "mybeepr_app",
+      "mybeepr_screenshot_01_onboarding",
+      "mybeepr_screenshot_02_chat_interface",
+      "mybeepr_screenshot_03_clinical_photography",
+      "mybeepr_screenshot_04_secure_communication",
+      "western_health"
+    ],
+    "16": [
+      "agricultural_website_pattern",
+      "pancaagri_company",
+      "pancaagri_forest_bg",
+      "pancaagri_hero_plantation",
+      "pancaagri_palmoil_aerial",
+      "pancaagri_website"
+    ],
+    "17": [
+      "asabri_company",
+      "asabri_icon",
+      "asabri_playstore",
+      "sahabat_icon",
+      "skillbridge_icon"
+    ],
+    "18": [
+      "axisnet_company",
+      "axisnet_icon",
+      "axisnet_playstore",
+      "bluegaz_icon",
+      "mobilegrosir_icon"
+    ],
+    "19": [
+      "labamu_feature_cards",
+      "labamu_feature_devices",
+      "labamu_feature_phone",
+      "labamu_feature_testimonial",
+      "labamu_platform"
+    ],
+    "20": [
+      "lautnusantara_app",
+      "lautnusantara_screenshot_01_fish_map",
+      "lautnusantara_screenshot_02_play_store",
+      "xlsmart"
+    ],
+    "21": [
+      "asabri",
+      "asabri_screenshot_01",
+      "military_insurance"
+    ],
+    "22": [
+      "portfolio_reference_icons",
+      "portfolio_reference_playstore"
+    ],
+    "23": [
+      "mytelkominfra_screenshot_02"
+    ],
+    "24": [
+      "bhayangkari_youtube"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13,
+    "1": 0.16,
+    "2": 0.17,
+    "3": 0.12,
+    "4": 0.23,
+    "5": 0.19,
+    "6": 0.27,
+    "7": 0.24,
+    "8": 0.27,
+    "9": 0.22,
+    "10": 0.29,
+    "11": 0.48,
+    "12": 0.33,
+    "13": 0.6,
+    "14": 0.47,
+    "15": 0.47,
+    "16": 0.53,
+    "17": 0.4,
+    "18": 0.4,
+    "19": 0.5,
+    "20": 0.67,
+    "21": 0.67,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0
+  },
+  "gods": [
+    {
+      "id": "telkominfra_company",
+      "label": "Telkom Infra Company",
+      "degree": 10
+    },
+    {
+      "id": "project_axisnet",
+      "label": "AXIS Net Mobile App Project",
+      "degree": 8
+    },
+    {
+      "id": "sahabat_screenshot_03",
+      "label": "Sahabat Berbagi payment screen with credit card and e-wallet options including OVO Gopay DANA LinkAja ShopeePay",
+      "degree": 8
+    },
+    {
+      "id": "skillbridge_app",
+      "label": "Skillbridge AI-powered learning platform mobile application",
+      "degree": 8
+    },
+    {
+      "id": "smarco_app",
+      "label": "SMARCO social commerce mobile application",
+      "degree": 8
+    },
+    {
+      "id": "portfolio_master_research_document",
+      "label": "Portfolio Master Research Document",
+      "degree": 7
+    },
+    {
+      "id": "web_dev_prompt_document",
+      "label": "Web Development Prompt - Portfolio Projects List Page",
+      "degree": 7
+    },
+    {
+      "id": "apkpure",
+      "label": "APKPure",
+      "degree": 7
+    },
+    {
+      "id": "project_bluegaz",
+      "label": "Blu Gas e Power Mobile App Project",
+      "degree": 7
+    },
+    {
+      "id": "featured_projects_strategy",
+      "label": "Featured Projects Strategy",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Sahabat Berbagi Islamic donation and wakaf mobile application",
+      "target": "Wakaf Daarut Tauhiid donation destination",
+      "source_files": [
+        "sahabat_screenshot_01.jpg",
+        "sahabat_screenshot_03.jpg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "supports_donation_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Wakaf Daarut Tauhiid donation destination` unexpectedly reaches hub `Sahabat Berbagi Islamic donation and wakaf mobile application`"
+    },
+    {
+      "source": "User Rehan Budi with Silver tier in Sahabat Berbagi",
+      "target": "Sahabat Berbagi Islamic donation and wakaf mobile application",
+      "source_files": [
+        "sahabat_screenshot_02.jpg",
+        "sahabat_screenshot_01.jpg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `User Rehan Budi with Silver tier in Sahabat Berbagi` unexpectedly reaches hub `Sahabat Berbagi Islamic donation and wakaf mobile application`"
+    },
+    {
+      "source": "Skillbridge AI-powered learning platform mobile application",
+      "target": "Grade 12 Physics educational content",
+      "source_files": [
+        "skillbridge_screenshot_05.jpg",
+        "skillbridge_screenshot_06.jpg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "provides_course",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `Grade 12 Physics educational content` unexpectedly reaches hub `Skillbridge AI-powered learning platform mobile application`"
+    },
+    {
+      "source": "User Yohannes in Skillbridge app",
+      "target": "Skillbridge AI-powered learning platform mobile application",
+      "source_files": [
+        "skillbridge_screenshot_01.jpg",
+        "skillbridge_screenshot_05.jpg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `User Yohannes in Skillbridge app` unexpectedly reaches hub `Skillbridge AI-powered learning platform mobile application`"
+    },
+    {
+      "source": "User Sri Nurindah Sari posting on SMARCO",
+      "target": "SMARCO social commerce mobile application",
+      "source_files": [
+        "smarco_screenshot_03.jpg",
+        "smarco_screenshot_01.jpg"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; peripheral node `User Sri Nurindah Sari posting on SMARCO` unexpectedly reaches hub `SMARCO social commerce mobile application`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `SMARCO social commerce mobile application` connect `Community 2` to `Community 3`?",
+      "why": "High betweenness centrality (0.015) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `APKPure` connect `Community 0` to `Community 9`?",
+      "why": "High betweenness centrality (0.015) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 8 inferred relationships involving `Telkom Infra Company` (e.g. with `Absensi App Icon` and `My Infra App Icon`) actually correct?",
+      "why": "`Telkom Infra Company` has 8 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `AXIS Net Mobile App Project` (e.g. with `ASABRI Mobile App Project` and `Blu Gas e Power Mobile App Project`) actually correct?",
+      "why": "`AXIS Net Mobile App Project` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `Skillbridge AI-powered learning platform mobile application` (e.g. with `Grade 12 Physics educational content` and `User Yohannes in Skillbridge app`) actually correct?",
+      "why": "`Skillbridge AI-powered learning platform mobile application` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `SMARCO social commerce mobile application` (e.g. with `User Sri Nurindah Sari posting on SMARCO` and `Indonesian Digital Market`) actually correct?",
+      "why": "`SMARCO social commerce mobile application` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `AI Dataset Prompt - Portfolio Project Generator`, `Generali Indonesia`, `PT AXIS (XL Axiata)` to the rest of the system?",
+      "why": "72 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
