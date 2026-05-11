@@ -7,10 +7,11 @@ import { useScrolled } from '@/hooks/useScrolled'
 const navLinks = [
   { label: 'My Profile', href: '#about' },
   { label: '(01) ADLC', href: '#adlc-ecosystem' },
-  { label: '(02) Projects', href: '#projects' },
-  { label: '(03) Experience', href: '#experience' },
-  { label: '(04) Stack', href: '#stack' },
-  { label: '(05) Contact', href: '#contact' },
+  { label: '(02) Insights', href: '#insights' },
+  { label: '(03) Projects', href: '#projects' },
+  { label: '(04) Experience', href: '#experience' },
+  { label: '(05) Stack', href: '#stack' },
+  { label: '(06) Contact', href: '#contact' },
 ]
 
 export function Navbar() {
@@ -82,9 +83,14 @@ export function Navbar() {
               </a>
             ))}
             {!isHome && (
-              <Link to="/" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all">
-                Home
-              </Link>
+              <>
+                <Link to="/" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all">
+                  Home
+                </Link>
+                <Link to="/insights" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all">
+                  Insights
+                </Link>
+              </>
             )}
             <Link
               to="/projects"
@@ -135,9 +141,14 @@ export function Navbar() {
                 </a>
               ))}
               {!isHome && (
-                <Link to="/" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
-                  Home
-                </Link>
+                <>
+                  <Link to="/" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
+                    Home
+                  </Link>
+                  <Link to="/insights" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
+                    Insights
+                  </Link>
+                </>
               )}
               <Link to="/projects" className="px-4 py-3 rounded-lg text-sm font-medium text-sky-400 hover:bg-sky-400/10 transition-all flex items-center gap-1" onClick={() => setOpen(false)}>
                 All Projects <ArrowUpRight size={14} />
