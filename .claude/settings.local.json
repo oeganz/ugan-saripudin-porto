@@ -53,10 +53,21 @@
       "Bash(awk '/featured: true/ {for\\(i=1;i<=10;i++\\) {print line[i%10]} print} {line[NR%10]=$0}' src/data/projects.ts)",
       "Bash(pkill -f \"vite\")",
       "Bash(npx tsc *)",
-      "Bash(npx playwright *)"
+      "Bash(npx playwright *)",
+      "Bash(curl -s -L \"https://play.l.google.com/store/apps/details?id=com.axis.net\" -o /tmp/axisnet.html)",
+      "Read(//tmp/**)",
+      "WebFetch(domain:play.google.com)",
+      "WebFetch(domain:mybeepr.com)",
+      "WebFetch(domain:labamu.co.id)",
+      "WebFetch(domain:agriaku.com)",
+      "WebFetch(domain:itunes.apple.com)",
+      "Bash(file public/images/*.jpg)",
+      "WebFetch(domain:github.com)",
+      "Bash(rm -f public/images/*-hero.jpg public/images/axisnet-hero.jpg public/images/lautnusantara-hero.jpg && ls public/images/proj-*.jpg public/images/proj-*.png 2>/dev/null)"
     ],
     "additionalDirectories": [
-      "\\tmp"
+      "\\tmp",
+      "E:\\work\\Ugansaripudin-porto\\ugan-saripudin-porto\\public\\images"
     ]
   },
   "enableAllProjectMcpServers": true,
