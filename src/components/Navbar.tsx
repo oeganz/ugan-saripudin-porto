@@ -101,17 +101,44 @@ export function Navbar() {
             ))}
             {!isHome && (
               <>
-                <Link to="/" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                <Link
+                  to="/"
+                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname === '/' ? 'text-sky-400 bg-sky-400/10' : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/50'}`}
                 >
                   Home
+                  {loc.pathname === '/' && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-2 right-2 h-px bg-sky-400"
+                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                    />
+                  )}
                 </Link>
-                <Link to="/insights" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                <Link
+                  to="/insights"
+                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname.includes('/insights') ? 'text-sky-400 bg-sky-400/10' : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/50'}`}
                 >
                   Insights
+                  {loc.pathname.includes('/insights') && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-2 right-2 h-px bg-sky-400"
+                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                    />
+                  )}
                 </Link>
-                <Link to="/projects" className="px-3 py-2 rounded-md text-xs font-medium text-slate-400 hover:text-slate-100 hover:bg-slate-800/50 transition-all"
+                <Link
+                  to="/projects"
+                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname.includes('/projects') ? 'text-sky-400 bg-sky-400/10' : 'text-slate-400 hover:text-slate-100 hover:bg-slate-800/50'}`}
                 >
                   Projects
+                  {loc.pathname.includes('/projects') && (
+                    <motion.div
+                      layoutId="activeNav"
+                      className="absolute bottom-0 left-2 right-2 h-px bg-sky-400"
+                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
+                    />
+                  )}
                 </Link>
               </>
             )}
@@ -168,14 +195,14 @@ export function Navbar() {
               ))}
               {!isHome && (
                 <>
-                  <Link to="/" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
-                    Home
+                  <Link to="/" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname === '/' ? 'text-sky-400 bg-sky-400/10' : 'text-slate-300 hover:text-slate-50 hover:bg-slate-800/60'}`} onClick={() => setOpen(false)}>
+                    <span>Home</span>
                   </Link>
-                  <Link to="/insights" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
-                    Insights
+                  <Link to="/insights" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname.includes('/insights') ? 'text-sky-400 bg-sky-400/10' : 'text-slate-300 hover:text-slate-50 hover:bg-slate-800/60'}`} onClick={() => setOpen(false)}>
+                    <span>Insights</span>
                   </Link>
-                  <Link to="/projects" className="px-4 py-3 rounded-lg text-sm font-medium text-slate-300 hover:text-slate-50 hover:bg-slate-800/60 transition-all" onClick={() => setOpen(false)}>
-                    Projects
+                  <Link to="/projects" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname.includes('/projects') ? 'text-sky-400 bg-sky-400/10' : 'text-slate-300 hover:text-slate-50 hover:bg-slate-800/60'}`} onClick={() => setOpen(false)}>
+                    <span>Projects</span>
                   </Link>
                 </>
               )}
