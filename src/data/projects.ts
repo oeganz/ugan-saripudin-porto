@@ -258,7 +258,10 @@ export const projects: Project[] = [
     },
     techStack: ['React', 'Vue.js', 'JavaScript', 'REST API'],
     urls: { website: 'https://gogreat.greateasternlife.co.id/shop/home' },
-    screenshots: [],
+    screenshots: [
+      '/images/projects/screenshots/gogreat_hero_banner.jpg',
+      '/images/projects/screenshots/gogreat_feature_illustration.jpg',
+    ],
     status: 'active',
     featured: true,
   },
@@ -438,7 +441,11 @@ export const projects: Project[] = [
     metrics: { status: 'Domain repurposed' },
     techStack: ['React', 'Vue.js', 'Node.js', 'JavaScript'],
     urls: { website: 'https://milikumi.com/' },
-    screenshots: [],
+    screenshots: [
+      '/images/projects/screenshots/kuismilioner_hero_01.jpg',
+      '/images/projects/screenshots/kuismilioner_product_01.jpg',
+      '/images/projects/screenshots/kuismilioner_product_02.jpg',
+    ],
     status: 'inactive',
   },
   {
@@ -549,7 +556,11 @@ export const projects: Project[] = [
     metrics: { distribution: 'Internal Enterprise' },
     techStack: ['Java', 'Android SDK', 'SQLite', 'RESTful API', 'GPS', 'Barcode Scanner'],
     urls: { company: 'https://www.pancaagri.co.id' },
-    screenshots: [],
+    screenshots: [
+      '/images/projects/screenshots/myinfra_screenshot_01.jpg',
+      '/images/projects/screenshots/myinfra_screenshot_02.jpg',
+      '/images/projects/screenshots/myinfra_screenshot_03.jpg',
+    ],
     status: 'internal',
   },
   {

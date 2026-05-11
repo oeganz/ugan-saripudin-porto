@@ -20,6 +20,16 @@ const heroImages: Record<string, string> = {
   agriaku: '/images/proj-agriaku.jpg',
   labamu: '/images/proj-labamu.jpg',
   'go-great': '/images/proj-gogreat.jpg',
+  asabri: '/images/projects/screenshots/asabri_screenshot_01.jpg',
+  bluegaz: '/images/projects/screenshots/bluegaz_screenshot_01.jpg',
+  smarco: '/images/projects/screenshots/smarco_screenshot_01.jpg',
+  'sahabat-berbagi': '/images/projects/screenshots/sahabat_screenshot_01.jpg',
+  skillbridge: '/images/projects/screenshots/skillbridge_screenshot_01.jpg',
+  'kuis-milioner': '/images/projects/screenshots/kuismilioner_hero_01.jpg',
+  'laut-nusantara': '/images/projects/screenshots/lautnusantara_screenshot_01.jpg',
+  'my-telkominfra': '/images/projects/screenshots/mytelkominfra_screenshot_01.jpg',
+  absensi: '/images/projects/screenshots/absensi_screenshot_01.jpg',
+  'net-gear': '/images/projects/screenshots/netgear_screenshot_01.jpg',
 };
 
 export default function ProjectDetailPage() {
