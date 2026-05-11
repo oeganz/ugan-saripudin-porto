@@ -147,7 +147,7 @@ export default function ProjectsPage() {
               const metric = heroMetric(project);
               return (
                 <FadeIn key={project.id} delay={i * 0.05}>
-                  <div className="group h-full rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col">
+                  <Link to={`/projects/${project.id}`} className="group h-full rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col">
                     {/* Image */}
                     <div className="relative h-44 bg-slate-800 overflow-hidden">
                       {project.screenshots.length > 0 ? (
@@ -237,7 +237,7 @@ export default function ProjectsPage() {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </FadeIn>
               );
             })}

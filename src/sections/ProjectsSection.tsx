@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { FadeIn } from '@/components/FadeIn';
 import { SectionHeader } from '@/components/SectionHeader';
 import { featuredProjects } from '@/data/projects';
@@ -108,7 +109,7 @@ export function ProjectsSection() {
 
               return (
                 <FadeIn key={project.id} delay={i * 0.08}>
-                  <div className="group w-[340px] md:w-[400px] flex-shrink-0 snap-start rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col">
+                  <Link to={`/#/projects/${project.id}`} className="group w-[340px] md:w-[400px] flex-shrink-0 snap-start rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col">
                     {/* Image */}
                     <div className="relative h-52 bg-slate-800 overflow-hidden">
                       <img
@@ -198,7 +199,7 @@ export function ProjectsSection() {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </Link>
                 </FadeIn>
               );
             })}

@@ -5,6 +5,7 @@ import { HelmetProvider } from 'react-helmet-async'
 import './index.css'
 import App from './App.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
+import ProjectDetailPage from './pages/ProjectDetailPage.tsx'
 import CaseStudyLabamu from './pages/CaseStudyLabamu.tsx'
 import CaseStudyMyBeepr from './pages/CaseStudyMyBeepr.tsx'
 import InsightsListPage from './pages/InsightsListPage.tsx'
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')!).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/:slug" element={<ProjectDetailPage />} />
           <Route path="/case-study/labamu" element={<CaseStudyLabamu />} />
           <Route path="/case-study/mybeepr" element={<CaseStudyMyBeepr />} />
           <Route path="/insights" element={<InsightsListPage />} />
