@@ -5,7 +5,6 @@ import { HeroSection } from '@/sections/HeroSection'
 import { StatsSection } from '@/sections/StatsSection'
 
 // Lazy load heavy sections
-const CTOValueSection = lazy(() => import('@/sections/CTOValueSection').then(m => ({ default: m.CTOValueSection })))
 const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
 const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
@@ -26,7 +25,6 @@ export default function App() {
         <HeroSection />
         <StatsSection />
         <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
-          <CTOValueSection />
           <ADLCSection />
           <InsightsSection />
           <ProjectsSection />
