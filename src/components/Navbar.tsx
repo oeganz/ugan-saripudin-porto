@@ -21,22 +21,28 @@ export function Navbar() {
   const loc = useLocation()
   const isHome = loc.pathname === '/'
 
-  // Active section detection via IntersectionObserver
+  // Active section detection via scroll
   useEffect(() => {
     if (!isHome) return
-    const sections = navLinks.map(l => l.href.slice(1)).filter(Boolean)
-    const observers: IntersectionObserver[] = []
-    sections.forEach(id => {
-      const el = document.getElementById(id)
-      if (!el) return
-      const obs = new IntersectionObserver(
-        ([entry]) => { if (entry.isIntersecting) setActiveSection('#' + id) },
-        { threshold: 0.3 }
-      )
-      obs.observe(el)
-      observers.push(obs)
-    })
-    return () => observers.forEach(o => o.disconnect())
+    const handleScroll = () => {
+      const offset = window.innerHeight * 0.35 + 64 // navbar height + viewport midpoint
+      let closest: string | null = null
+      let closestDist = Infinity
+      navLinks.forEach(l => {
+        const id = l.href.slice(1)
+        const el = document.getElementById(id)
+        if (!el) return
+        const dist = Math.abs(el.getBoundingClientRect().top - offset)
+        if (dist < closestDist) {
+          closestDist = dist
+          closest = l.href
+        }
+      })
+      if (closest) setActiveSection(closest)
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll() // initial
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [isHome])
 
   const handleHashLink = (href: string) => {
