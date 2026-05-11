@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { FadeIn } from '@/components/FadeIn';
@@ -57,7 +58,13 @@ export default function ProjectDetailPage() {
   const heroImage = heroImages[project.id] || '/images/projects/screenshots/' + project.id + '_screenshot_01.jpg';
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className="min-h-screen bg-slate-900"
+    >
       <Navbar />
 
       <main>
@@ -78,10 +85,10 @@ export default function ProjectDetailPage() {
         />
 
         {/* Overview */}
-        <section className="py-24 px-4">
+        <section className="py-20 px-6">
           <div className="max-w-4xl mx-auto">
             <FadeIn>
-              <h2 className="text-3xl font-bold text-slate-100 mb-6">Overview</h2>
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Overview</h2>
               <p className="text-lg text-slate-300 leading-relaxed">{project.description}</p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {project.platform.map(p => (
@@ -117,6 +124,6 @@ export default function ProjectDetailPage() {
       </main>
 
       <Footer />
-    </div>
+    </motion.div>
   );
 }

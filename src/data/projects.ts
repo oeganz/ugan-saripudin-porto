@@ -154,7 +154,9 @@ export const projects: Project[] = [
     },
     techStack: ['React', 'Node.js', 'Payment Gateway', 'Sharia-compliant Architecture'],
     urls: { website: 'https://akuberbagi.com' },
-    screenshots: [],
+    screenshots: [
+      '/images/proj-akuberbagi.jpg',
+    ],
     status: 'active',
     featured: true,
   },
