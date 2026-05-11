@@ -73,10 +73,7 @@ export default function ProjectDetailPage() {
         <main>
           {/* Hero */}
           <ProjectHero
-            name={project.name}
-            company={project.company}
-            timeline={project.timeline}
-            roleLevel={project.roleLevel}
+            project={project}
             heroImage={heroImage}
           />
 
