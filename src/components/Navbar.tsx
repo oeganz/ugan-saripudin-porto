@@ -50,7 +50,7 @@ export function Navbar() {
   return (
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 h-16 transition-all duration-300 ${isScrolled ? 'bg-slate-900/95 shadow-xl shadow-black/20' : 'bg-slate-900/70'} backdrop-blur-2xl border-b border-slate-700/30`}>
-        <div className="max-w-6xl mx-auto px-6 h-full flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="text-sm font-bold tracking-tight group">
             <span className="text-slate-50 group-hover:text-sky-400 transition-colors">Ugan</span>{' '}

@@ -11,7 +11,7 @@ import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
 export default function InsightsListPage() {
   const [articles, setArticles] = useState<Article[]>([])
   const [loading, setLoading] = useState(true)
-  const [searchParams] = useSearchParams()
+  const [searchParams, setSearchParams] = useSearchParams()
   const tagFilter = searchParams.get('tag')
 
   useEffect(() => {
@@ -64,8 +64,8 @@ export default function InsightsListPage() {
 
           {allTags.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-12">
-              <a
-                href="/insights"
+              <button
+                onClick={() => setSearchParams({})}
                 className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                   !tagFilter
                     ? 'bg-sky-400 text-slate-900'
@@ -73,11 +73,11 @@ export default function InsightsListPage() {
                 }`}
               >
                 All
-              </a>
+              </button>
               {allTags.map((tag) => (
-                <a
+                <button
                   key={tag}
-                  href={`/insights?tag=${encodeURIComponent(tag)}`}
+                  onClick={() => setSearchParams({ tag })}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     tagFilter === tag
                       ? 'bg-sky-400 text-slate-900'
@@ -85,7 +85,7 @@ export default function InsightsListPage() {
                   }`}
                 >
                   {tag}
-                </a>
+                </button>
               ))}
             </div>
           )}
