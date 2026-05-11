@@ -1,6 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import { ScrollToTop } from '@/components/ScrollToTop'
 import { HeroSection } from '@/sections/HeroSection'
 import { StatsSection } from '@/sections/StatsSection'
 
@@ -14,29 +15,32 @@ const ContactSection = lazy(() => import('@/sections/ContactSection').then(m => 
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-900">
-      {/* Skip to main content for accessibility */}
-      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-sky-400 focus:text-slate-900 focus:rounded-lg focus:font-semibold">
-        Skip to main content
-      </a>
+    <>
+      <ScrollToTop />
+      <div className="min-h-screen bg-slate-900">
+        {/* Skip to main content for accessibility */}
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-sky-400 focus:text-slate-900 focus:rounded-lg focus:font-semibold">
+          Skip to main content
+        </a>
 
-      <Navbar />
-      <main id="main-content">
-        <HeroSection />
-        <StatsSection />
-        <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
-          <ADLCSection />
-          <InsightsSection />
-          <ProjectsSection />
-          {/* <FeaturedCaseStudiesSection /> */}
-          <ExperienceSection />
-          {/* Social proof hidden */}
-          {/* <TestimonialsSection /> */}
-          <TechStackSection />
-          <ContactSection />
-        </Suspense>
-      </main>
-      <Footer />
-    </div>
+        <Navbar />
+        <main id="main-content">
+          <HeroSection />
+          <StatsSection />
+          <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
+            <ADLCSection />
+            <InsightsSection />
+            <ProjectsSection />
+            {/* <FeaturedCaseStudiesSection /> */}
+            <ExperienceSection />
+            {/* Social proof hidden */}
+            {/* <TestimonialsSection /> */}
+            <TechStackSection />
+            <ContactSection />
+          </Suspense>
+        </main>
+        <Footer />
+      </div>
+    </>
   )
 }

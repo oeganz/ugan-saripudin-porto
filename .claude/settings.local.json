@@ -50,7 +50,10 @@
       "Read(//e/e/work/Ugansaripudin-porto/ugan-saripudin-porto/src/data/**)",
       "Bash(curl -s http://localhost:3005)",
       "Bash(npx -y @21st-dev/magic@latest --version)",
-      "Bash(awk '/featured: true/ {for\\(i=1;i<=10;i++\\) {print line[i%10]} print} {line[NR%10]=$0}' src/data/projects.ts)"
+      "Bash(awk '/featured: true/ {for\\(i=1;i<=10;i++\\) {print line[i%10]} print} {line[NR%10]=$0}' src/data/projects.ts)",
+      "Bash(pkill -f \"vite\")",
+      "Bash(npx tsc *)",
+      "Bash(npx playwright *)"
     ],
     "additionalDirectories": [
       "\\tmp"

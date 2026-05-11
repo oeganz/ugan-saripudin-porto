@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { ScrollToTop } from '@/components/ScrollToTop';
 import { FadeIn } from '@/components/FadeIn';
 import { ProjectHero } from '@/components/project-detail/ProjectHero';
 import { ProjectStats } from '@/components/project-detail/ProjectStats';
@@ -40,6 +41,7 @@ export default function ProjectDetailPage() {
   if (!project) {
     return (
       <div className="min-h-screen bg-slate-900">
+        <ScrollToTop />
         <Navbar />
         <main className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
@@ -58,72 +60,74 @@ export default function ProjectDetailPage() {
   const heroImage = heroImages[project.id] || '/images/projects/screenshots/' + project.id + '_screenshot_01.jpg';
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-      className="min-h-screen bg-slate-900"
-    >
-      <Navbar />
+    <div className="min-h-screen bg-slate-900">
+      <ScrollToTop />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Navbar />
 
-      <main>
-        {/* Hero */}
-        <ProjectHero
-          name={project.name}
-          company={project.company}
-          timeline={project.timeline}
-          roleLevel={project.roleLevel}
-          heroImage={heroImage}
-        />
+        <main>
+          {/* Hero */}
+          <ProjectHero
+            name={project.name}
+            company={project.company}
+            timeline={project.timeline}
+            roleLevel={project.roleLevel}
+            heroImage={heroImage}
+          />
 
-        {/* Stats Bar */}
-        <ProjectStats
-          metrics={project.metrics}
-          status={project.status}
-          platform={project.platform}
-        />
+          {/* Stats Bar */}
+          <ProjectStats
+            metrics={project.metrics}
+            status={project.status}
+            platform={project.platform}
+          />
 
-        {/* Overview */}
-        <section className="py-20 px-6">
-          <div className="max-w-4xl mx-auto">
-            <FadeIn>
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Overview</h2>
-              <p className="text-lg text-slate-300 leading-relaxed">{project.description}</p>
-              <div className="mt-6 flex flex-wrap gap-2">
-                {project.platform.map(p => (
-                  <span key={p} className="px-3 py-1 rounded-full bg-sky-400/10 text-sky-400 text-sm border border-sky-400/30">
-                    {p}
+          {/* Overview */}
+          <section className="py-20 px-6">
+            <div className="max-w-4xl mx-auto">
+              <FadeIn>
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Overview</h2>
+                <p className="text-lg text-slate-300 leading-relaxed">{project.description}</p>
+                <div className="mt-6 flex flex-wrap gap-2">
+                  {project.platform.map(p => (
+                    <span key={p} className="px-3 py-1 rounded-full bg-sky-400/10 text-sky-400 text-sm border border-sky-400/30">
+                      {p}
+                    </span>
+                  ))}
+                  <span className="px-3 py-1 rounded-full bg-slate-700/50 text-slate-300 text-sm">
+                    {project.category}
                   </span>
-                ))}
-                <span className="px-3 py-1 rounded-full bg-slate-700/50 text-slate-300 text-sm">
-                  {project.category}
-                </span>
-              </div>
-            </FadeIn>
-          </div>
-        </section>
+                </div>
+              </FadeIn>
+            </div>
+          </section>
 
-        {/* Features */}
-        <ProjectFeatures features={project.features} industry={project.industry} />
+          {/* Features */}
+          <ProjectFeatures features={project.features} industry={project.industry} />
 
-        {/* Screenshots */}
-        <ProjectScreenshots screenshots={project.screenshots} projectName={project.name} />
+          {/* Screenshots */}
+          <ProjectScreenshots screenshots={project.screenshots} projectName={project.name} />
 
-        {/* Tech Stack */}
-        <ProjectTechStack techStack={project.techStack} />
+          {/* Tech Stack */}
+          <ProjectTechStack techStack={project.techStack} />
 
-        {/* Impact Metrics */}
-        <ProjectMetrics metrics={project.metrics} />
+          {/* Impact Metrics */}
+          <ProjectMetrics metrics={project.metrics} />
 
-        {/* Links */}
-        <ProjectLinks urls={project.urls} />
+          {/* Links */}
+          <ProjectLinks urls={project.urls} />
 
-        {/* Related Projects */}
-        <RelatedProjects currentProject={project} heroImages={heroImages} />
-      </main>
+          {/* Related Projects */}
+          <RelatedProjects currentProject={project} heroImages={heroImages} />
+        </main>
 
-      <Footer />
-    </motion.div>
+        <Footer />
+      </motion.div>
+    </div>
   );
 }
