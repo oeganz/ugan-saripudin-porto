@@ -1,19 +1,17 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
 import { FadeIn } from '@/components/FadeIn';
 import { ProjectHero } from '@/components/project-detail/ProjectHero';
-import { ProjectStats } from '@/components/project-detail/ProjectStats';
+import { ProjectInfoBar } from '@/components/project-detail/ProjectInfoBar';
 import { ProjectFeatures } from '@/components/project-detail/ProjectFeatures';
-import { ProjectScreenshots } from '@/components/project-detail/ProjectScreenshots';
 import { ProjectTechStack } from '@/components/project-detail/ProjectTechStack';
-import { ProjectMetrics } from '@/components/project-detail/ProjectMetrics';
-import { ProjectLinks } from '@/components/project-detail/ProjectLinks';
 import { RelatedProjects } from '@/components/project-detail/RelatedProjects';
 import { projects } from '@/data/projects';
 import { ArrowLeft } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const heroImages: Record<string, string> = {
   axisnet: '/images/proj-axisnet.jpg',
@@ -70,56 +68,53 @@ export default function ProjectDetailPage() {
         <Navbar />
 
         <main>
-          {/* Hero */}
+          {/* Hero with background image */}
           <ProjectHero
             project={project}
             heroImage={heroImage}
           />
 
-          {/* Stats Bar */}
-          <ProjectStats
+          {/* Compact info bar: Platform + Metrics + Store Links */}
+          <ProjectInfoBar
             metrics={project.metrics}
             status={project.status}
             platform={project.platform}
+            urls={project.urls}
           />
 
           {/* Overview */}
-          <section className="py-20 px-6">
+          <section className="py-16 px-6">
             <div className="max-w-4xl mx-auto">
               <FadeIn>
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-6">Overview</h2>
-                <p className="text-lg text-slate-300 leading-relaxed">{project.description}</p>
-                <div className="mt-6 flex flex-wrap gap-2">
-                  {project.platform.map(p => (
-                    <span key={p} className="px-3 py-1 rounded-full bg-sky-400/10 text-sky-400 text-sm border border-sky-400/30">
-                      {p}
-                    </span>
-                  ))}
-                  <span className="px-3 py-1 rounded-full bg-slate-700/50 text-slate-300 text-sm">
-                    {project.category}
-                  </span>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-8 rounded-lg bg-slate-700/40 flex items-center justify-center">
+                    <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold text-slate-200">Overview</h2>
                 </div>
+                <p className="text-base md:text-lg text-slate-300 leading-relaxed">{project.description}</p>
               </FadeIn>
             </div>
           </section>
 
           {/* Features */}
-          <ProjectFeatures features={project.features} industry={project.industry} />
-
-          {/* Screenshots */}
-          <ProjectScreenshots screenshots={project.screenshots} projectName={project.name} />
+          <section className="py-16 px-4 bg-slate-800/20">
+            <div className="max-w-7xl mx-auto">
+              <ProjectFeatures features={project.features} industry={project.industry} />
+            </div>
+          </section>
 
           {/* Tech Stack */}
           <ProjectTechStack techStack={project.techStack} />
 
-          {/* Impact Metrics */}
-          <ProjectMetrics metrics={project.metrics} />
-
-          {/* Links */}
-          <ProjectLinks urls={project.urls} />
-
           {/* Related Projects */}
-          <RelatedProjects currentProject={project} heroImages={heroImages} />
+          <section className="py-16 px-4 bg-slate-800/20">
+            <div className="max-w-7xl mx-auto">
+              <RelatedProjects currentProject={project} heroImages={heroImages} />
+            </div>
+          </section>
         </main>
 
         <Footer />
