@@ -28,12 +28,30 @@ const statusColors: Record<string, string> = {
 };
 
 const projectImages: Record<string, string> = {
+  // Featured - hero images
   axisnet: '/images/proj-axisnet.jpg',
   mybeepr: '/images/proj-mybeepr.jpg',
   'aku-berbagi': '/images/proj-akuberbagi.jpg',
   agriaku: '/images/proj-agriaku.jpg',
   labamu: '/images/proj-labamu.jpg',
   'go-great': '/images/proj-gogreat.jpg',
+  // Others - first screenshot
+  asabri: '/images/projects/screenshots/asabri_screenshot_01.jpg',
+  bluegaz: '/images/projects/screenshots/bluegaz_screenshot_01.jpg',
+  smarco: '/images/projects/screenshots/smarco_screenshot_01.jpg',
+  'sahabat-berbagi': '/images/projects/screenshots/sahabat_screenshot_01.jpg',
+  skillbridge: '/images/projects/screenshots/skillbridge_screenshot_01.jpg',
+  'kuis-milioner': '/images/projects/screenshots/kuismilioner_hero_01.jpg',
+  'laut-nusantara': '/images/projects/screenshots/lautnusantara_screenshot_01.jpg',
+  absensi: '/images/projects/screenshots/absensi_screenshot_01.jpg',
+  'net-gear': '/images/projects/screenshots/netgear_screenshot_01.jpg',
+  'edu-assessment': '/images/projects/screenshots/eduassessment_screenshot_01.jpg',
+  'great-survey': '/images/projects/screenshots/greatsurvey_screenshot_01.jpg',
+  'great-chat': '/images/projects/screenshots/greatchat_screenshot_01.jpg',
+  'great-face-recognition': '/images/projects/screenshots/greatface_screenshot_01.jpg',
+  'virtual-showroom': '/images/projects/screenshots/virtualshowroom_screenshot_01.jpg',
+  'chatbot-flow': '/images/projects/screenshots/chatbotflow_screenshot_01.jpg',
+  cms: '/images/projects/screenshots/cms_screenshot_01.jpg',
 };
 
 const metricColor = (val: string): string => {
