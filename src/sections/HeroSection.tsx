@@ -41,7 +41,7 @@ export function HeroSection() {
           <div className="flex-1 text-center md:text-left">
             {/* Label */}
             <FadeIn>
-              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">Engineering Lead · Mobile & Web Platforms</p>
+              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">Engineering Lead · AI & Mobile Platforms</p>
             </FadeIn>
 
             <FadeIn delay={0.15}>
@@ -66,7 +66,8 @@ export function HeroSection() {
 
             <FadeIn delay={0.25}>
               <p className="mt-5 text-base text-slate-400 max-w-2xl leading-relaxed">
-                Engineering lead who builds platforms serving millions — and the workflows that let teams ship reliably. Led{' '}
+                Engineering lead who builds platforms serving millions — with{' '}
+                <span className="text-sky-400 font-semibold">AI-driven workflows</span> that let teams ship reliably. Led{' '}
                 <span className="text-slate-200 font-semibold">12 developers</span> through a monolith-to-microservices migration serving{' '}
                 <span className="text-sky-400 font-semibold">100K+ SMEs</span> (18 months, zero incidents).{' '}
                 <span className="text-slate-200 font-semibold">10+ years</span> spanning HealthTech (16 Australian hospitals), FinTech ($46M-funded marketplace), and InsurTech (award-winning platform). 12 months fully remote contract with Australian stakeholders.

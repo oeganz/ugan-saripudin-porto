@@ -11,7 +11,7 @@ const experiences = [
     color: 'amber',
     icon: Zap,
     isPresent: true,
-    description: <>Architecting <span className="text-sky-400 font-semibold">spec-driven workflows</span>, <span className="text-sky-400 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-sky-400 font-semibold">1M+ download SME platform</span>. Led <span className="text-sky-400 font-semibold">3 engineering pods (12 developers)</span> through systematic tooling adoption.</>,
+    description: <>Architecting <span className="text-sky-400 font-semibold">AI-driven spec workflows</span>, <span className="text-sky-400 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-sky-400 font-semibold">1M+ download SME platform</span>. Led <span className="text-sky-400 font-semibold">3 engineering pods (12 developers)</span> through systematic AI adoption.</>,
     highlights: [
       <>Reduced documentation overhead by <span className="text-sky-400 font-semibold">40%</span> via spec-driven workflows</>,
       <><span className="text-sky-400 font-semibold">Zero production incidents</span> in 18 months with automated quality gates</>,
@@ -46,7 +46,7 @@ const experiences = [
     isPresent: false,
     description: <>Designed <span className="text-sky-400 font-semibold">system architecture</span> and spec-driven workflow patterns. Collaborated with <span className="text-sky-400 font-semibold">Product Managers and clients</span> to translate business requirements into technical specifications.</>,
     highlights: [
-      <>Established <span className="text-sky-400 font-semibold">spec-driven development approach</span> adopted across teams</>,
+      <>Established <span className="text-sky-400 font-semibold">AI-driven spec workflow</span> adopted across 3+ teams</>,
       <><span className="text-sky-400 font-semibold">Cross-functional collaboration</span> with Product and clients</>,
       <><span className="text-sky-400 font-semibold">Full-stack delivery</span> across multiple client projects</>,
     ],
@@ -102,7 +102,7 @@ const colorMap: Record<string, { border: string; badge: string; dot: string; glo
 
 export function ExperienceSection() {
   return (
-    <section className="py-24 px-4 bg-slate-800/10" id="experience">
+    <section className="py-24 px-4" id="experience">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(04)"

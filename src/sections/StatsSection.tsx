@@ -12,7 +12,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-4 bg-slate-800/30 border-y border-slate-700/30" id="stats">
+    <section className="py-16 px-4" id="stats">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">

@@ -38,7 +38,9 @@ export function InsightsSection() {
   }
 
   return (
-    <section id="insights" className="bg-slate-900 py-[100px] md:py-[140px] relative">
+    <section id="insights" className="bg-slate-900 py-[100px] md:py-[140px] relative overflow-hidden">
+      {/* Subtle sky mesh */}
+      <div className="absolute inset-0 pointer-events-none opacity-30" style={{backgroundImage: 'radial-gradient(circle at 80% 30%, rgba(14,165,233,0.03) 0%, transparent 50%), radial-gradient(circle at 20% 70%, rgba(14,165,233,0.02) 0%, transparent 40%)'}} />
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           number="(02)"
