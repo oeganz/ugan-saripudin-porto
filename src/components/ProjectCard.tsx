@@ -83,7 +83,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
     <FadeIn key={project.id} delay={index * 0.08}>
       <Link
         to={`/projects/${project.id}`}
-        className={`group h-full ${cardClass} rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col`}
+        className={`group h-full ${cardClass} rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col cursor-pointer`}
       >
         {/* Image */}
         <div className={`relative ${variant === 'carousel' ? 'h-52' : 'h-44'} bg-slate-800 overflow-hidden`}>

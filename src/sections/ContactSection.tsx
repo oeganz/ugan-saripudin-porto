@@ -55,7 +55,7 @@ export function ContactSection() {
               </div>
               <div>
                 <div className="text-xs text-slate-500">Location</div>
-                <div className="text-sm text-slate-200 font-medium">Tangerang, Indonesia</div>
+                <div className="text-sm text-slate-200 font-medium">Indonesia</div>
               </div>
             </div>
             <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30">
@@ -73,7 +73,7 @@ export function ContactSection() {
         <FadeIn delay={0.2}>
           <div className="flex flex-wrap justify-start gap-3 mt-8">
             {[
-              { icon: Github, label: 'GitHub', url: 'https://github.com/ugan' },
+              { icon: Github, label: 'oeganz | ganzapps', url: 'https://github.com/oeganz' },
               { icon: Linkedin, label: 'LinkedIn', url: 'https://linkedin.com/in/ugan' },
             ].map((s) => (
               <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer"
