@@ -4,8 +4,6 @@ import { Footer } from '@/components/Footer'
 import { ScrollToTop } from '@/components/ScrollToTop'
 import { HeroSection } from '@/sections/HeroSection'
 import { StatsSection } from '@/sections/StatsSection'
-import { RemoteCredentialsSection } from '@/sections/RemoteCredentialsSection'
-
 // Lazy load heavy sections
 const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
@@ -28,7 +26,6 @@ export default function App() {
         <main id="main-content">
           <HeroSection />
           <StatsSection />
-          <RemoteCredentialsSection />
           <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
             <ADLCSection />
             <InsightsSection />
