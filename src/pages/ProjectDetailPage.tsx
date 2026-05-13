@@ -8,7 +8,6 @@ import { ProjectHero } from '@/components/project-detail/ProjectHero';
 import { ProjectInfoBar } from '@/components/project-detail/ProjectInfoBar';
 import { ProjectFeatures } from '@/components/project-detail/ProjectFeatures';
 import { ProjectTechStack } from '@/components/project-detail/ProjectTechStack';
-import { RelatedProjects } from '@/components/project-detail/RelatedProjects';
 import { projects } from '@/data/projects';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -118,12 +117,7 @@ export default function ProjectDetailPage() {
           {/* Tech Stack */}
           <ProjectTechStack techStack={project.techStack} />
 
-          {/* Related Projects */}
-          <section className="py-16 px-4 bg-slate-800/20">
-            <div className="max-w-7xl mx-auto">
-              <RelatedProjects currentProject={project} heroImages={heroImages} />
-            </div>
-          </section>
+
         </main>
 
         <Footer />
