@@ -51,17 +51,10 @@ export function InsightsSection() {
         ) : articles.length === 0 ? (
           <FadeIn delay={0.2}>
             <div className="text-center">
-              <div className="inline-flex flex-col items-center gap-3 px-8 py-6 rounded-xl bg-slate-800/30 border border-slate-700/50">
-                <p className="text-base text-slate-300 font-medium">
-                  Articles coming soon — ask me about these systems in a call
+              <div className="inline-flex items-center gap-3 px-8 py-5 rounded-xl bg-slate-800/30 border border-slate-700/50">
+                <p className="text-sm text-slate-400">
+                  Technical articles in progress — focused on shipping production systems.
                 </p>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm"
-                >
-                  Schedule a Call
-                  <ArrowUpRight size={16} />
-                </a>
               </div>
             </div>
           </FadeIn>

@@ -128,7 +128,7 @@ export default function CaseStudyLabamu() {
                   <div>
                     <h3 className="text-xl font-bold text-slate-50 mb-2">ADLC Framework Implementation</h3>
                     <p className="text-slate-400 mb-3">
-                      Established AI-native workflows across all development phases:
+                      Established spec-driven workflows across all development phases:
                     </p>
                     <ul className="space-y-2 text-slate-400 text-sm">
                       <li>• AI-assisted code reviews and refactoring suggestions</li>

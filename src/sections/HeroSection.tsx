@@ -3,10 +3,11 @@ import { ArrowRight, MapPin, Clock } from 'lucide-react';
 import { NeuralFlowShader } from '@/components/NeuralFlowShader';
 
 const tagPills = [
-  '40% Documentation Cut',
+  '50M+ Downloads Delivered',
   'Zero Incidents 18mo',
   '12 Devs Led',
-  '1M+ Downloads',
+  'Australia Remote Contract',
+  '100K+ SMEs Platform',
 ];
 
 export function HeroSection() {
@@ -40,7 +41,7 @@ export function HeroSection() {
           <div className="flex-1 text-center md:text-left">
             {/* Label */}
             <FadeIn>
-              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">AI Native Engineering Lead</p>
+              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">Engineering Lead · Mobile & Web Platforms</p>
             </FadeIn>
 
             <FadeIn delay={0.15}>
@@ -65,9 +66,10 @@ export function HeroSection() {
 
             <FadeIn delay={0.25}>
               <p className="mt-5 text-base text-slate-400 max-w-2xl leading-relaxed">
-                I architect the systems that make AI-driven development production-grade — not the models, but the workflows, governance, and infrastructure around them.{' '}
-                <span className="text-slate-200 font-semibold">10+ years</span> of engineering leadership delivering platforms at scale (
-                <span className="text-sky-400 font-semibold">1M+ to 3M+ users</span>), with deep expertise in microservices architecture, CI/CD pipeline design, and cross-platform delivery.
+                Engineering lead who builds platforms serving millions — and the workflows that let teams ship reliably. Led{' '}
+                <span className="text-slate-200 font-semibold">12 developers</span> through a monolith-to-microservices migration serving{' '}
+                <span className="text-sky-400 font-semibold">100K+ SMEs</span> (18 months, zero incidents).{' '}
+                <span className="text-slate-200 font-semibold">10+ years</span> spanning HealthTech (16 Australian hospitals), FinTech ($46M-funded marketplace), and InsurTech (award-winning platform). 12 months fully remote contract with Australian stakeholders.
               </p>
             </FadeIn>
 

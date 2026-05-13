@@ -69,7 +69,7 @@ export function ADLCSection() {
     <section id="adlc-ecosystem" className="bg-slate-900 py-[100px] md:py-[140px] relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Engineering Leader Value Proposition */}
-        <SectionHeader number="(01)" eyebrow="FOR ENGINEERING LEADERS" headline="AI-Native Delivery Without Losing Control"
+        <SectionHeader number="(01)" eyebrow="FOR ENGINEERING LEADERS" headline="Delivery Without Losing Control"
           subheadline="Accelerate your team's output while maintaining quality, visibility, and governance. Proven at scale with 1M+ users and zero production incidents." />
         <StaggerContainer staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {valueCards.map((card) => (

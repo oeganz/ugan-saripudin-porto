@@ -45,7 +45,7 @@ export function CTOValueSection() {
         <SectionHeader
           number="(00)"
           eyebrow="FOR ENGINEERING LEADERS"
-          headline="AI-Native Delivery Without Losing Control"
+          headline="Delivery Without Losing Control"
           subheadline="Accelerate your team's output while maintaining quality, visibility, and governance. Proven at scale with 1M+ users and zero production incidents."
         />
 
