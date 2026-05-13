@@ -35,7 +35,7 @@ const projectImages: Record<string, string> = {
   agriaku: '/images/proj-agriaku.jpg',
   labamu: '/images/proj-labamu.jpg',
   'go-great': '/images/proj-gogreat.jpg',
-  // Others - first screenshot
+  // Others - screenshots
   asabri: '/images/projects/screenshots/asabri_screenshot_01.jpg',
   bluegaz: '/images/projects/screenshots/bluegaz_screenshot_01.jpg',
   smarco: '/images/projects/screenshots/smarco_screenshot_01.jpg',
@@ -43,15 +43,15 @@ const projectImages: Record<string, string> = {
   skillbridge: '/images/projects/screenshots/skillbridge_screenshot_01.jpg',
   'kuis-milioner': '/images/projects/screenshots/kuismilioner_hero_01.jpg',
   'laut-nusantara': '/images/projects/screenshots/lautnusantara_screenshot_01.jpg',
-  absensi: '/images/projects/screenshots/absensi_screenshot_01.jpg',
+  'my-telkominfra': '/images/projects/screenshots/mytelkominfra_screenshot_01.jpg',
   'net-gear': '/images/projects/screenshots/netgear_screenshot_01.jpg',
-  'edu-assessment': '/images/projects/screenshots/eduassessment_screenshot_01.jpg',
-  'great-survey': '/images/projects/screenshots/greatsurvey_screenshot_01.jpg',
-  'great-chat': '/images/projects/screenshots/greatchat_screenshot_01.jpg',
-  'great-face-recognition': '/images/projects/screenshots/greatface_screenshot_01.jpg',
-  'virtual-showroom': '/images/projects/screenshots/virtualshowroom_screenshot_01.jpg',
-  'chatbot-flow': '/images/projects/screenshots/chatbotflow_screenshot_01.jpg',
-  cms: '/images/projects/screenshots/cms_screenshot_01.jpg',
+  // Generated images (no originals available)
+  absensi: '/images/projects/screenshots/absensi_screenshot_01.jpg',
+  mobilegrosir: '/images/projects/screenshots/mobilegrosir_screenshot_01.jpg',
+  sacti: '/images/projects/screenshots/sacti_screenshot_01.jpg',
+  'ime-mobile': '/images/projects/screenshots/ime_mobile_screenshot_01.jpg',
+  'konsultasi-bhayangkari': '/images/projects/screenshots/konsultasi_bhayangkari_screenshot_01.jpg',
+  sentiment: '/images/projects/screenshots/sentiment_screenshot_01.jpg',
 };
 
 const metricColor = (val: string): string => {
@@ -85,6 +85,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
   const metricLabel = m.downloads ? m.downloads :
     m.hospitals ? `${m.hospitals} Hospitals` :
     m.heritage_funds ? m.heritage_funds :
+    m.certification ? m.certification :
     m.funding ? (m.funding.includes('total') ? '$46M+ Funded' : m.funding) :
     m.entrepreneurs_trained ? `${m.entrepreneurs_trained} Entrepreneurs` :
     m.award ? 'CX Champion 2024' :
