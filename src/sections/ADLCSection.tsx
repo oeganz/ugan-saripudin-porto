@@ -3,6 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader'
 import { Card } from '@/components/Card'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
 import { ADLCFlowDiagram } from '@/components/ADLCFlowDiagram'
+import { OldWayNewWayChat } from '@/components/OldWayNewWayChat'
 
 import {
   Palette, Database, Cog, Server, ClipboardCheck,
@@ -150,8 +151,13 @@ export function ADLCSection() {
         </StaggerContainer>
 
         {/* ADLC Flow Diagram */}
-        <div className="mb-16">
+        <div className="mb-24">
           <ADLCFlowDiagram />
+        </div>
+
+        {/* Old Way vs New Way — Chat Style */}
+        <div className="mb-24">
+          <OldWayNewWayChat />
         </div>
 
         {/* SDLC vs ADLC Comparison */}
