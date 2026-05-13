@@ -766,6 +766,40 @@ export const projects: Project[] = [
     ],
     status: 'internal',
   },
+  {
+    id: 'mds-moments',
+    name: 'MDS Moments',
+    company: 'PT Gudang Garam Tbk',
+    timeline: '2021 - 2022',
+    role: 'Android Developer',
+    roleLevel: 'android',
+    category: 'Enterprise',
+    industry: 'Enterprise',
+    platform: ['Android', 'Web'],
+    description:
+      'Progressive Web App (PWA) serving as a sales force automation platform for PT Gudang Garam Tbk, one of Indonesia\'s largest cigarette manufacturers with IDR 22.9T in annual revenue. MDS Moments enables merchant engagement, sales tracking, field force management, and real-time performance analytics for thousands of sales representatives across the Indonesian archipelago.',
+    features: [
+      'Progressive Web App (PWA) for Android and iOS',
+      'Sales force automation and field tracking',
+      'Merchant engagement and visit management',
+      'Real-time sales performance dashboard',
+      'Order processing and inventory tracking',
+      'GPS-based route optimization for sales reps',
+      'Photo documentation and selfie verification',
+      'Offline-first architecture with sync capability',
+      'Role-based access control (admin, supervisor, sales rep)',
+      'Push notifications for task assignments',
+    ],
+    metrics: {
+      parent_revenue: 'IDR 22.9T',
+      company_size: '30,000+ employees',
+      app_type: 'Internal PWA',
+    },
+    techStack: ['Java', 'Android SDK', 'PWA', 'JavaScript', 'REST API', 'GPS', 'Push Notifications', 'Offline-First'],
+    urls: { website: 'https://mds-moments.id/' },
+    screenshots: ['/images/projects/screenshots/mds_moments_screenshot_01.jpg'],
+    status: 'internal',
+  },
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);

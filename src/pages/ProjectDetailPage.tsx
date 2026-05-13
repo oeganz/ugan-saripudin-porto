@@ -37,6 +37,7 @@ const heroImages: Record<string, string> = {
   'virtual-showroom': '/images/projects/screenshots/virtualshowroom_screenshot_01.jpg',
   'chatbot-flow': '/images/projects/screenshots/chatbotflow_screenshot_01.jpg',
   cms: '/images/projects/screenshots/cms_screenshot_01.jpg',
+  'mds-moments': '/images/projects/screenshots/mds_moments_screenshot_01.jpg',
 };
 
 export default function ProjectDetailPage() {

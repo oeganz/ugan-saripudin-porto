@@ -1,6 +1,6 @@
 import { FadeIn } from '@/components/FadeIn';
 import { SectionHeader } from '@/components/SectionHeader';
-import { Mail, MapPin, Phone, Github, Linkedin, Clock } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 function LiveClock() {
@@ -38,15 +38,6 @@ export function ContactSection() {
               <div>
                 <div className="text-xs text-slate-500">Email</div>
                 <div className="text-sm text-slate-200 font-medium truncate">oeganz1999@gmail.com</div>
-              </div>
-            </a>
-            <a href="tel:+6281294113547" className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all group">
-              <div className="w-9 h-9 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-400/20 transition-colors">
-                <Phone className="w-4 h-4 text-sky-400" />
-              </div>
-              <div>
-                <div className="text-xs text-slate-500">Phone</div>
-                <div className="text-sm text-slate-200 font-medium">+62 812-9411-3547</div>
               </div>
             </a>
             <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30">

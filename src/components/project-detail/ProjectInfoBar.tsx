@@ -67,6 +67,9 @@ const metricLabels: Record<string, string> = {
   award_cx: 'Award',
   min_premium: 'From',
   claims_time: 'Claims',
+  parent_revenue: 'Revenue',
+  company_size: 'Company Size',
+  app_type: 'Type',
 };
 
 export function ProjectInfoBar({ metrics, platform, urls }: ProjectInfoBarProps) {

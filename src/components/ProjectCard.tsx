@@ -52,6 +52,7 @@ const projectImages: Record<string, string> = {
   'ime-mobile': '/images/projects/screenshots/ime_mobile_screenshot_01.jpg',
   'konsultasi-bhayangkari': '/images/projects/screenshots/konsultasi_bhayangkari_screenshot_01.jpg',
   sentiment: '/images/projects/screenshots/sentiment_screenshot_01.jpg',
+  'mds-moments': '/images/projects/screenshots/mds_moments_screenshot_01.jpg',
 };
 
 const metricColor = (val: string): string => {
@@ -92,7 +93,9 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
     m.smes_served ? `${m.smes_served} SMEs Served` :
     m.partner_agents ? `23,390+ Partners` :
     m.award_cx ? 'CX Champion 2024' :
-    m.award_engagement ? 'Digital Engagement Champion' : '';
+    m.award_engagement ? 'Digital Engagement Champion' :
+    m.parent_revenue ? m.parent_revenue :
+    m.app_type ? m.app_type : '';
 
   const cardClass = variant === 'carousel'
     ? 'w-[340px] md:w-[400px] flex-shrink-0 snap-start'
