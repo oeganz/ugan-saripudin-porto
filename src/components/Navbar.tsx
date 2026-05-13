@@ -146,7 +146,7 @@ export function Navbar() {
 
           {/* CTA */}
           <div className="hidden lg:block">
-            <a href="mailto:oeganx1999@gmail.com"
+            <a href="mailto:oeganz1999@gmail.com"
               className="px-5 py-2.5 bg-sky-400 text-slate-900 text-xs font-bold rounded-lg hover:bg-sky-300 transition-all shadow-lg shadow-sky-400/20 hover:shadow-sky-400/40 hover:scale-[1.02]">
               Let&apos;s Talk
             </a>
@@ -206,7 +206,7 @@ export function Navbar() {
                   </Link>
                 </>
               )}
-              <a href="mailto:oeganx1999@gmail.com" className="mt-3 px-4 py-3 bg-sky-400 text-slate-900 text-sm font-bold rounded-lg text-center" onClick={() => setOpen(false)}>
+              <a href="mailto:oeganz1999@gmail.com" className="mt-3 px-4 py-3 bg-sky-400 text-slate-900 text-sm font-bold rounded-lg text-center" onClick={() => setOpen(false)}>
                 Let&apos;s Talk
               </a>
             </div>

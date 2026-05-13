@@ -23,7 +23,7 @@ export function ProjectsSection() {
             number="(03)"
             eyebrow="FEATURED PROJECTS"
             headline="Flagship Projects"
-            subheadline="The most impactful projects delivered across 9+ years — from 50M+ download telecom apps to award-winning insurance platforms."
+            subheadline="The most impactful projects delivered across 10+ years — from 50M+ download telecom apps to award-winning insurance platforms."
           />
           <div className="hidden md:flex items-center gap-2 mb-4">
             <button onClick={() => scroll('left')}

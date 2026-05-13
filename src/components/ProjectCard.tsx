@@ -28,19 +28,39 @@ const statusColors: Record<string, string> = {
 };
 
 const projectImages: Record<string, string> = {
+  // Featured - hero images
   axisnet: '/images/proj-axisnet.jpg',
   mybeepr: '/images/proj-mybeepr.jpg',
   'aku-berbagi': '/images/proj-akuberbagi.jpg',
   agriaku: '/images/proj-agriaku.jpg',
   labamu: '/images/proj-labamu.jpg',
   'go-great': '/images/proj-gogreat.jpg',
+  // Others - screenshots
+  asabri: '/images/projects/screenshots/asabri_screenshot_01.jpg',
+  bluegaz: '/images/projects/screenshots/bluegaz_screenshot_01.jpg',
+  smarco: '/images/projects/screenshots/smarco_screenshot_01.jpg',
+  'sahabat-berbagi': '/images/projects/screenshots/sahabat_screenshot_01.jpg',
+  skillbridge: '/images/projects/screenshots/skillbridge_screenshot_01.jpg',
+  'kuis-milioner': '/images/projects/screenshots/kuismilioner_hero_01.jpg',
+  'laut-nusantara': '/images/projects/screenshots/lautnusantara_screenshot_01.jpg',
+  'my-telkominfra': '/images/projects/screenshots/mytelkominfra_screenshot_01.jpg',
+  'net-gear': '/images/projects/screenshots/netgear_screenshot_01.jpg',
+  // Generated images (no originals available)
+  absensi: '/images/projects/screenshots/absensi_screenshot_01.jpg',
+  mobilegrosir: '/images/projects/screenshots/mobilegrosir_screenshot_01.jpg',
+  sacti: '/images/projects/screenshots/sacti_screenshot_01.jpg',
+  'ime-mobile': '/images/projects/screenshots/ime_mobile_screenshot_01.jpg',
+  'konsultasi-bhayangkari': '/images/projects/screenshots/konsultasi_bhayangkari_screenshot_01.jpg',
+  sentiment: '/images/projects/screenshots/sentiment_screenshot_01.jpg',
+  'mds-moments': '/images/projects/screenshots/mds_moments_screenshot_01.jpg',
 };
 
 const metricColor = (val: string): string => {
   if (val.includes('M') || val.includes('Billion')) return 'text-sky-400 border-sky-400/30';
   if (val.includes('Hospitals')) return 'text-purple-400 border-purple-400/30';
-  if (val.includes('Award') || val.includes('Champion')) return 'text-amber-400 border-amber-400/30';
+  if (val.includes('Award') || val.includes('Champion') || val.includes('CX')) return 'text-amber-400 border-amber-400/30';
   if (val.includes('Trained') || val.includes('Entrepreneurs')) return 'text-cyan-400 border-cyan-400/30';
+  if (val.includes('SME') || val.includes('Partner')) return 'text-emerald-400 border-emerald-400/30';
   return 'text-sky-400 border-sky-400/30';
 };
 
@@ -62,12 +82,20 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCardProps) {
-  const metricLabel = project.metrics.downloads ? project.metrics.downloads :
-    project.metrics.hospitals ? `${project.metrics.hospitals} Hospitals` :
-    project.metrics.heritage_funds ? project.metrics.heritage_funds :
-    project.metrics.funding ? project.metrics.funding :
-    project.metrics.entrepreneurs_trained ? `${project.metrics.entrepreneurs_trained} Entrepreneurs` :
-    project.metrics.award ? 'CX Champion 2024' : '';
+  const m = project.metrics;
+  const metricLabel = m.downloads ? m.downloads :
+    m.hospitals ? `${m.hospitals} Hospitals` :
+    m.heritage_funds ? m.heritage_funds :
+    m.certification ? m.certification :
+    m.funding ? (m.funding.includes('total') ? '$46M+ Funded' : m.funding) :
+    m.entrepreneurs_trained ? `${m.entrepreneurs_trained} Entrepreneurs` :
+    m.award ? 'CX Champion 2024' :
+    m.smes_served ? `${m.smes_served} SMEs Served` :
+    m.partner_agents ? `23,390+ Partners` :
+    m.award_cx ? 'CX Champion 2024' :
+    m.award_engagement ? 'Digital Engagement Champion' :
+    m.parent_revenue ? m.parent_revenue :
+    m.app_type ? m.app_type : '';
 
   const cardClass = variant === 'carousel'
     ? 'w-[340px] md:w-[400px] flex-shrink-0 snap-start'
@@ -77,7 +105,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
     <FadeIn key={project.id} delay={index * 0.08}>
       <Link
         to={`/projects/${project.id}`}
-        className={`group h-full ${cardClass} rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col`}
+        className={`group h-full ${cardClass} rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col cursor-pointer`}
       >
         {/* Image */}
         <div className={`relative ${variant === 'carousel' ? 'h-52' : 'h-44'} bg-slate-800 overflow-hidden`}>

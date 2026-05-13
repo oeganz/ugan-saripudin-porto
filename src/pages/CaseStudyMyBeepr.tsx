@@ -319,7 +319,7 @@ export default function CaseStudyMyBeepr() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <a
-                href="mailto:oeganx1999@gmail.com"
+                href="mailto:oeganz1999@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all"
               >
                 Let's Discuss Your Challenge

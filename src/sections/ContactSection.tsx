@@ -1,6 +1,6 @@
 import { FadeIn } from '@/components/FadeIn';
 import { SectionHeader } from '@/components/SectionHeader';
-import { Mail, MapPin, Phone, Github, Linkedin, Clock } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, Clock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 function LiveClock() {
@@ -31,22 +31,13 @@ export function ContactSection() {
 
         <FadeIn delay={0.1}>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-10">
-            <a href="mailto:oeganx1999@gmail.com" className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all group">
+            <a href="mailto:oeganz1999@gmail.com" className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all group">
               <div className="w-9 h-9 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-400/20 transition-colors">
                 <Mail className="w-4 h-4 text-sky-400" />
               </div>
               <div>
                 <div className="text-xs text-slate-500">Email</div>
-                <div className="text-sm text-slate-200 font-medium truncate">oeganx1999@gmail.com</div>
-              </div>
-            </a>
-            <a href="tel:+6281294113547" className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all group">
-              <div className="w-9 h-9 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0 group-hover:bg-sky-400/20 transition-colors">
-                <Phone className="w-4 h-4 text-sky-400" />
-              </div>
-              <div>
-                <div className="text-xs text-slate-500">Phone</div>
-                <div className="text-sm text-slate-200 font-medium">+62 812-9411-3547</div>
+                <div className="text-sm text-slate-200 font-medium truncate">oeganz1999@gmail.com</div>
               </div>
             </a>
             <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30">
@@ -55,7 +46,7 @@ export function ContactSection() {
               </div>
               <div>
                 <div className="text-xs text-slate-500">Location</div>
-                <div className="text-sm text-slate-200 font-medium">Tangerang, Indonesia</div>
+                <div className="text-sm text-slate-200 font-medium">Indonesia</div>
               </div>
             </div>
             <div className="flex items-center gap-3 p-4 rounded-xl bg-slate-800/40 border border-slate-700/30">
@@ -73,7 +64,7 @@ export function ContactSection() {
         <FadeIn delay={0.2}>
           <div className="flex flex-wrap justify-start gap-3 mt-8">
             {[
-              { icon: Github, label: 'GitHub', url: 'https://github.com/ugan' },
+              { icon: Github, label: 'oeganz | ganzapps', url: 'https://github.com/oeganz' },
               { icon: Linkedin, label: 'LinkedIn', url: 'https://linkedin.com/in/ugan' },
             ].map((s) => (
               <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer"
@@ -92,7 +83,7 @@ export function ContactSection() {
               <span className="text-cyan-400 font-semibold">full-stack development</span>, or{' '}
               <span className="text-emerald-400 font-semibold">microservices architecture</span> — I&apos;m ready.
             </p>
-            <a href="mailto:oeganx1999@gmail.com"
+            <a href="mailto:oeganz1999@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-colors text-sm">
               <Mail className="w-4 h-4" /> Start a Conversation
             </a>
