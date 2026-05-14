@@ -72,17 +72,23 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.25}>
-              <p className="mt-5 text-base text-slate-400 max-w-2xl leading-relaxed">
-                Engineering lead who builds platforms serving millions — with{' '}
-                <span className="text-sky-400 font-semibold">AI-driven workflows</span> that let teams ship reliably. Led{' '}
-                <span className="text-slate-200 font-semibold">12 developers</span> through a monolith-to-microservices migration serving{' '}
-                <span className="text-sky-400 font-semibold">100K+ SMEs</span> (18 months, zero incidents).{' '}
-                <span className="text-slate-200 font-semibold">10+ years</span> spanning HealthTech (16 Australian hospitals), FinTech ($46M-funded marketplace), and InsurTech (award-winning platform). 12 months fully remote contract with Australian stakeholders.
+              {/* Tagline — focal point after name */}
+              <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight" style={{textShadow: '0 2px 20px rgba(0,0,0,0.4)'}}>
+                <span className="text-slate-50">Engineering Lead.</span>{' '}
+                <span className="text-sky-400">AI-Native.</span>{' '}
+                <span className="text-slate-50">Zero Drama.</span>
+              </h2>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              {/* Supporting text — proof, not repetition */}
+              <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
+                10+ years shipping platforms for millions. 18 months of zero-incident migrations. Now building the AI-driven systems that make the next decade of engineering reliable.
               </p>
             </FadeIn>
 
             {/* Tag Pills */}
-            <FadeIn delay={0.3}>
+            <FadeIn delay={0.35}>
               <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2.5">
                 {tagPills.map((tag) => (
                   <span
@@ -96,7 +102,7 @@ export function HeroSection() {
             </FadeIn>
 
             {/* Buttons */}
-            <FadeIn delay={0.35}>
+            <FadeIn delay={0.4}>
               <div className="mt-7 flex flex-wrap justify-center md:justify-start gap-3">
                 <a href="#projects"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
@@ -106,7 +112,7 @@ export function HeroSection() {
             </FadeIn>
 
             {/* Social + Email */}
-            <FadeIn delay={0.4}>
+            <FadeIn delay={0.45}>
               <div className="mt-7 flex items-center justify-center md:justify-start gap-5 text-slate-500">
                 <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer" title="oeganz"
                   className="hover:text-sky-400 transition-colors" aria-label="GitHub">
