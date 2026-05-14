@@ -75,7 +75,7 @@ export function HeroSection() {
             <FadeIn delay={0.25}>
               {/* Supporting text — stakeholder + engineering team build-up */}
               <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
-                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, zero-incident migrations, and the kind of technical leadership that keeps 12 developers aligned and shipping. 10+ years, 50M+ downloads, and a track record of making complex systems feel simple.
+                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO migrations, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
               </p>
             </FadeIn>
 

@@ -69,7 +69,7 @@ const skillCategories = [
       { name: 'CI/CD', level: 4, years: 5 },
       { name: 'Git', level: 5, years: 9 },
       { name: 'GitHub Actions', level: 4, years: 3 },
-      { name: 'Azure', level: 3, years: 2 },
+      { name: 'Jenkins', level: 4, years: 6 },
       { name: 'Jira', level: 4, years: 6 },
       { name: 'Agile/Scrum', level: 4, years: 7 },
     ],
@@ -83,6 +83,7 @@ const skillCategories = [
     skills: [
       { name: 'AI Spec Workflows', level: 4, years: 2 },
       { name: 'LLM Integration', level: 4, years: 2 },
+      { name: 'AI Agent Swarm', level: 4, years: 2 },
       { name: 'Payment Gateway', level: 4, years: 5 },
       { name: 'E2E Encryption', level: 4, years: 3 },
       { name: 'GPS/Maps', level: 4, years: 6 },
@@ -126,7 +127,7 @@ function ProficiencyDots({ level }: { level: number }) {
 
 export function TechStackSection() {
   return (
-    <section className="py-24 px-4" id="stack">
+    <section className="py-16 px-4" id="stack">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(05)"
@@ -199,22 +200,6 @@ export function TechStackSection() {
           })}
         </div>
 
-        {/* Bottom stats */}
-        <FadeIn delay={0.5}>
-          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-5">
-            {[
-              { value: '10+', label: 'Years Coding' },
-              { value: '22', label: 'Production Projects' },
-              { value: '50M+', label: 'Downloads Served' },
-              { value: '7', label: 'Industries' },
-            ].map((stat) => (
-              <div key={stat.label} className="text-center p-5 rounded-xl bg-slate-800/30 border border-slate-700/20">
-                <div className="text-2xl font-bold text-cyan-400 font-mono">{stat.value}</div>
-                <div className="mt-1 text-xs text-slate-500 uppercase tracking-wider">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
       </div>
     </section>
   );

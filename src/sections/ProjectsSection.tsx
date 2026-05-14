@@ -15,7 +15,7 @@ export function ProjectsSection() {
   };
 
   return (
-    <section className="py-24 px-4 relative overflow-hidden" id="projects">
+    <section className="py-16 px-4 relative overflow-hidden" id="projects">
       {/* Subtle violet mesh */}
       <div className="absolute inset-0 pointer-events-none opacity-30" style={{backgroundImage: 'radial-gradient(circle at 30% 20%, rgba(139,92,246,0.03) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(139,92,246,0.02) 0%, transparent 40%)'}} />
       <div className="max-w-7xl mx-auto">

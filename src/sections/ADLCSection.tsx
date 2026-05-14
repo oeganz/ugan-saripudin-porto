@@ -55,19 +55,10 @@ const metrics = [
   { value: '1M+', label: 'users' }
 ]
 
-const comparisons = [
-  { aspect: 'Driver', sdlc: 'Every phase manually executed by human developers', adlc: 'Agents autonomously handle execution across phases' },
-  { aspect: 'Planning', sdlc: 'Scope, budget locked in upfront', adlc: 'Goals & PRD evolve dynamically as agents learn' },
-  { aspect: 'Development Speed', sdlc: 'Phases sequential, signed off before next', adlc: 'Sub-agents work in parallel across tasks' },
-  { aspect: 'Testing', sdlc: 'QA is a dedicated phase after design', adlc: 'Agents run tests continuously throughout coding' },
-  { aspect: 'Adaptability', sdlc: 'Changes trigger full replanning', adlc: 'Agents self-correct in real time' },
-  { aspect: 'Feedback Loop', sdlc: 'Retrospectives at the end', adlc: 'Live monitoring & anomaly detection' },
-]
-
 export function ADLCSection() {
 
   return (
-    <section id="adlc-ecosystem" className="bg-slate-900 py-[100px] md:py-[140px] relative">
+    <section id="adlc-ecosystem" className="bg-slate-900 py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Engineering Leader Value Proposition */}
         <SectionHeader number="(01)" eyebrow="FOR ENGINEERING LEADERS" headline="Delivery Without Losing Control"
@@ -153,56 +144,6 @@ export function ADLCSection() {
         {/* ADLC Flow Diagram */}
         <div className="mb-24">
           <ADLCFlowDiagram />
-        </div>
-
-        {/* SDLC vs ADLC Comparison */}
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="rounded-xl overflow-hidden border border-slate-700/50"
-            style={{ background: '#0a101f' }}
-          >
-            <div className="flex items-center justify-between px-4 py-2.5 bg-slate-800/50 border-b border-slate-700/40">
-              <span className="text-[11px] text-slate-500 font-mono">sdlc-vs-adlc.comparison</span>
-              <span className="text-[10px] text-slate-600 font-mono">v1.0</span>
-            </div>
-
-            <div className="p-4 md:p-6 overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="border-b border-slate-700/40">
-                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-400">Particulars</th>
-                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-slate-400">SDLC</th>
-                    <th className="text-left py-3 px-3 text-[10px] font-semibold uppercase tracking-wider text-sky-400">
-                      <div>ADLC</div>
-                      <div className="text-[9px] text-sky-500/70 font-normal normal-case tracking-normal mt-1">
-                        Understand how Agents have now transformed development
-                      </div>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {comparisons.map((row, i) => (
-                    <motion.tr
-                      key={row.aspect}
-                      initial={{ opacity: 0, x: -10 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.05, duration: 0.4 }}
-                      className={`${i % 2 === 0 ? 'bg-slate-800/20' : ''} border-b border-slate-700/20 last:border-0`}
-                    >
-                      <td className="py-3 px-3 text-slate-200 font-medium">{row.aspect}</td>
-                      <td className="py-3 px-3 text-slate-400">{row.sdlc}</td>
-                      <td className="py-3 px-3 text-cyan-400">{row.adlc}</td>
-                    </motion.tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </motion.div>
         </div>
 
         {/* How I Work — Old Way vs New Way */}

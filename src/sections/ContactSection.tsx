@@ -20,7 +20,7 @@ function LiveClock() {
 
 export function ContactSection() {
   return (
-    <section className="py-20 px-4" id="contact">
+    <section className="py-12 px-4" id="contact">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(06)"
