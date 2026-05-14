@@ -1,11 +1,28 @@
 import { FadeIn } from '@/components/FadeIn';
 import { SectionHeader } from '@/components/SectionHeader';
 import { getTechIcon } from '@/components/TechIcons';
-import { Smartphone, Globe, Server, Cloud, Shield, Star } from 'lucide-react';
+import { Smartphone, Globe, Server, Cloud, Shield, Star, Sparkles } from 'lucide-react';
 
 // Skill data with proficiency (1-5) and years of experience
 // Proficiency: 5=Expert (daily use, can architect), 4=Proficient (production-grade), 3=Competent (can ship), 2=Familiar (used professionally), 1=Exposure (learning/academic)
 const skillCategories = [
+  {
+    title: 'AI Tools',
+    icon: Sparkles,
+    accent: 'text-pink-400',
+    border: 'border-pink-500/20',
+    bg: 'bg-pink-500/5',
+    skills: [
+      { name: 'Claude Code', level: 4, years: 1 },
+      { name: 'OpenClaw', level: 3, years: 1 },
+      { name: 'Hermes', level: 3, years: 1 },
+      { name: 'Mission Control', level: 3, years: 1 },
+      { name: 'LLM Routing', level: 4, years: 2 },
+      { name: 'AI Spec Workflows', level: 4, years: 2 },
+      { name: 'LLM Integration', level: 4, years: 2 },
+      { name: 'AI Agent Swarm', level: 4, years: 2 },
+    ],
+  },
   {
     title: 'Mobile',
     icon: Smartphone,

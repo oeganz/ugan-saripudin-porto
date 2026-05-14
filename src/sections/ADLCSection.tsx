@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { SectionHeader } from '@/components/SectionHeader'
 import { Card } from '@/components/Card'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
@@ -48,13 +47,6 @@ const valueCards = [
   }
 ]
 
-const metrics = [
-  { value: '40%', label: 'docs reduction' },
-  { value: '18mo', label: 'zero incidents' },
-  { value: '12', label: 'devs enabled' },
-  { value: '1M+', label: 'users' }
-]
-
 export function ADLCSection() {
 
   return (
@@ -83,35 +75,6 @@ export function ADLCSection() {
             </StaggerItem>
           ))}
         </StaggerContainer>
-
-        {/* ROI Metrics Strip */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="rounded-xl bg-slate-800/50 border border-slate-700/50 p-6 mb-24"
-        >
-          <div className="text-center mb-6">
-            <p className="text-xs font-semibold uppercase tracking-[2px] text-sky-400/70 mb-2">Proven ROI</p>
-            <h3 className="text-lg font-bold text-slate-50">Real Results from Production Systems</h3>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {metrics.map((metric, i) => (
-              <motion.div
-                key={metric.label}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: 0.4 + i * 0.08 }}
-                className="text-center"
-              >
-                <div className="text-3xl md:text-4xl font-black text-sky-400 mb-1">{metric.value}</div>
-                <div className="text-xs text-slate-400 font-medium">{metric.label}</div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
 
         {/* ADLC Ecosystem */}
         <SectionHeader eyebrow="ADLC ECOSYSTEM" headline="My AI-Driven Development Lifecycle"

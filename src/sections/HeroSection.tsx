@@ -5,6 +5,7 @@ import { ParticleNetwork } from '@/components/ParticleNetwork';
 const tagPills = [
   '50M+ Downloads Delivered',
   'Zero Incidents 18mo',
+  '99.9% SLO Achieved',
   '12+ Devs Led',
   '21+ Projects Delivered',
 ];
