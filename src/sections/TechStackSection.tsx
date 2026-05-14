@@ -106,7 +106,6 @@ const skillCategories = [
       { name: 'GPS/Maps', level: 4, years: 6 },
       { name: 'Camera Integration', level: 4, years: 5 },
       { name: 'Offline-First', level: 4, years: 5 },
-      { name: 'NLP', level: 2, years: 2 },
     ],
   },
 ];

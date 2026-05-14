@@ -3,7 +3,7 @@ import { Zap, Shield, Users, Clock, TrendingUp, Award } from 'lucide-react';
 
 const stats = [
   { icon: Zap, value: '10+', label: 'Years Experience', desc: 'Engineering leadership' },
-  { icon: TrendingUp, value: '1M+', label: 'Users Delivered', desc: 'Platforms at scale' },
+  { icon: TrendingUp, value: '50M+', label: 'Users Downloaded', desc: 'Apps shipped' },
   { icon: Shield, value: '99.9%', label: 'SLO Achieved', desc: 'Production reliability' },
   { icon: Users, value: '12+', label: 'Devs Led', desc: 'Across 3 pods' },
   { icon: Clock, value: '18mo', label: 'Zero Incidents', desc: 'Production stability' },

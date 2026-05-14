@@ -2,14 +2,6 @@ import { FadeIn } from '@/components/FadeIn';
 import { ArrowRight, MapPin, Clock } from 'lucide-react';
 import { ParticleNetwork } from '@/components/ParticleNetwork';
 
-const tagPills = [
-  '50M+ Downloads Delivered',
-  'Zero Incidents 18mo',
-  '99.9% SLO Achieved',
-  '12+ Devs Led',
-  '21+ Projects Delivered',
-];
-
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" id="about">
@@ -76,22 +68,8 @@ export function HeroSection() {
             <FadeIn delay={0.25}>
               {/* Supporting text — stakeholder + engineering team build-up */}
               <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
-                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO migrations, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
+                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO Achieved, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
               </p>
-            </FadeIn>
-
-            {/* Tag Pills */}
-            <FadeIn delay={0.3}>
-              <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2.5">
-                {tagPills.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-4 py-2 rounded-full bg-slate-800/80 border border-sky-400/30 text-sm text-slate-300 font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </FadeIn>
 
             {/* Buttons */}
