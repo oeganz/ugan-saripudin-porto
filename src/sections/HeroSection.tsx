@@ -5,9 +5,8 @@ import { ParticleNetwork } from '@/components/ParticleNetwork';
 const tagPills = [
   '50M+ Downloads Delivered',
   'Zero Incidents 18mo',
-  '12 Devs Led',
-  'Australia Remote Contract',
-  '100K+ SMEs Platform',
+  '12+ Devs Led',
+  '21+ Projects Delivered',
 ];
 
 export function HeroSection() {
