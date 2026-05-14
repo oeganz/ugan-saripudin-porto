@@ -42,11 +42,13 @@ export function HeroSection() {
           <div className="flex-1 text-center md:text-left">
             {/* Label */}
             <FadeIn>
-              {/* Role title with pulsing dot badge style */}
+              {/* Role badge with tagline */}
               <div className="mb-4 flex items-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] text-sky-400 font-semibold uppercase tracking-wider">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
-                  Engineering Lead · Mobile · Web · Backend
+                  <span className="text-slate-200">Engineering Lead.</span>{' '}
+                  <span className="text-sky-400">AI-Native.</span>{' '}
+                  <span className="text-slate-200">Zero Drama.</span>
                 </span>
               </div>
             </FadeIn>
@@ -72,23 +74,14 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.25}>
-              {/* Tagline — focal point after name */}
-              <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight" style={{textShadow: '0 2px 20px rgba(0,0,0,0.4)'}}>
-                <span className="text-slate-50">Engineering Lead.</span>{' '}
-                <span className="text-sky-400">AI-Native.</span>{' '}
-                <span className="text-slate-50">Zero Drama.</span>
-              </h2>
-            </FadeIn>
-
-            <FadeIn delay={0.3}>
-              {/* Supporting text — proof, not repetition */}
+              {/* Supporting text — stakeholder + engineering team build-up */}
               <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
-                10+ years shipping platforms for millions. 18 months of zero-incident migrations. Now building the AI-driven systems that make the next decade of engineering reliable.
+                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, zero-incident migrations, and the kind of technical leadership that keeps 12 developers aligned and shipping. 10+ years, 50M+ downloads, and a track record of making complex systems feel simple.
               </p>
             </FadeIn>
 
             {/* Tag Pills */}
-            <FadeIn delay={0.35}>
+            <FadeIn delay={0.3}>
               <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2.5">
                 {tagPills.map((tag) => (
                   <span
@@ -102,7 +95,7 @@ export function HeroSection() {
             </FadeIn>
 
             {/* Buttons */}
-            <FadeIn delay={0.4}>
+            <FadeIn delay={0.35}>
               <div className="mt-7 flex flex-wrap justify-center md:justify-start gap-3">
                 <a href="#projects"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
@@ -112,7 +105,7 @@ export function HeroSection() {
             </FadeIn>
 
             {/* Social + Email */}
-            <FadeIn delay={0.45}>
+            <FadeIn delay={0.4}>
               <div className="mt-7 flex items-center justify-center md:justify-start gap-5 text-slate-500">
                 <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer" title="oeganz"
                   className="hover:text-sky-400 transition-colors" aria-label="GitHub">
