@@ -1,6 +1,6 @@
 import { FadeIn } from '@/components/FadeIn';
 import { ArrowRight, MapPin, Clock } from 'lucide-react';
-import { NeuralFlowShader } from '@/components/NeuralFlowShader';
+import { ParticleNetwork } from '@/components/ParticleNetwork';
 
 const tagPills = [
   '50M+ Downloads Delivered',
@@ -13,20 +13,21 @@ const tagPills = [
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" id="about">
-      <NeuralFlowShader />
-      <div className="absolute inset-0 bg-slate-900/80 z-10" />
+      <ParticleNetwork />
+      <div className="absolute inset-0 bg-slate-900/40 z-10" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
-          {/* LEFT: Profile Photo with Glow Ring */}
+          {/* LEFT: Profile Photo with Soft Glow */}
           <FadeIn delay={0.1}>
             <div className="flex-shrink-0">
               <div className="relative w-48 h-48 md:w-56 md:h-56">
-                {/* Glow ring */}
-                <div className="absolute -inset-1.5 rounded-full bg-sky-400/30 blur-md" />
-                <div className="absolute -inset-0.5 rounded-full bg-sky-400/20" />
+                {/* Soft outer glow */}
+                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-sky-400/15 via-cyan-400/10 to-transparent blur-xl opacity-60" />
+                {/* Subtle ring */}
+                <div className="absolute -inset-px rounded-full bg-gradient-to-br from-sky-400/40 via-cyan-300/20 to-sky-400/40" />
                 {/* Image */}
-                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-sky-400/50">
+                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-600/50 bg-slate-900">
                   <img
                     src="/images/profile-real.jpg"
                     alt="Ugan Saripudin"
@@ -41,11 +42,17 @@ export function HeroSection() {
           <div className="flex-1 text-center md:text-left">
             {/* Label */}
             <FadeIn>
-              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">Engineering Lead · AI & Mobile Platforms</p>
+              {/* Role title with pulsing dot badge style */}
+              <div className="mb-4 flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] text-sky-400 font-semibold uppercase tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+                  Engineering Lead · Mobile · Web · Backend
+                </span>
+              </div>
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]" style={{textShadow: '0 2px 30px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.3)'}}>
                 <span className="text-slate-50">UGAN</span>{' '}
                 <span className="text-sky-400">SARIPUDIN</span>
               </h1>

@@ -155,11 +155,6 @@ export function ADLCSection() {
           <ADLCFlowDiagram />
         </div>
 
-        {/* Old Way vs New Way — Chat Style */}
-        <div className="mb-24">
-          <OldWayNewWayChat />
-        </div>
-
         {/* SDLC vs ADLC Comparison */}
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -208,6 +203,11 @@ export function ADLCSection() {
               </table>
             </div>
           </motion.div>
+        </div>
+
+        {/* How I Work — Old Way vs New Way */}
+        <div className="mt-24">
+          <OldWayNewWayChat />
         </div>
       </div>
     </section>
