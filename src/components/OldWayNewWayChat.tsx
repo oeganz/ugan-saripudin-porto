@@ -66,7 +66,7 @@ export function OldWayNewWayChat() {
         {/* Result */}
         <div className="flex items-center gap-2">
           <span className="text-rose-400 text-sm">&times;</span>
-          <span className="text-sm font-semibold text-rose-400">47 min lost to context switching</span>
+          <span className="text-sm font-semibold text-rose-400">3 hours burned. Zero shipped. Team scattered.</span>
         </div>
       </motion.div>
 
@@ -107,7 +107,7 @@ export function OldWayNewWayChat() {
         {/* Result */}
         <div className="flex items-center gap-2">
           <span className="text-emerald-400 text-sm">&#10003;</span>
-          <span className="text-sm font-semibold text-emerald-400">4 hours of deep work preserved</span>
+          <span className="text-sm font-semibold text-emerald-400">4 features shipped. Team in flow. Zero meetings.</span>
         </div>
       </motion.div>
     </div>

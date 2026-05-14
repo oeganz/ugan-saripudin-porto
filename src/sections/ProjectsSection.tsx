@@ -10,25 +10,54 @@ export function ProjectsSection() {
   const animRef = useRef<number>(0);
   const scrollPosRef = useRef(0);
 
-  // Infinite auto-scroll
+  // Infinite auto-scroll + manual scroll support
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
 
     let paused = false;
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
 
     const onEnter = () => { paused = true; };
-    const onLeave = () => { paused = false; };
+    const onLeave = () => { paused = false; isDown = false; };
+
+    // Mouse wheel → horizontal scroll
+    const onWheel = (e: WheelEvent) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        el.scrollLeft += e.deltaY;
+      }
+    };
+
+    // Touch / mouse drag
+    const onMouseDown = (e: MouseEvent) => {
+      isDown = true;
+      startX = e.pageX - el.offsetLeft;
+      scrollLeft = el.scrollLeft;
+    };
+    const onMouseMove = (e: MouseEvent) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - el.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      el.scrollLeft = scrollLeft - walk;
+    };
+    const onMouseUp = () => { isDown = false; };
 
     el.addEventListener('mouseenter', onEnter);
     el.addEventListener('mouseleave', onLeave);
     el.addEventListener('touchstart', onEnter, { passive: true });
     el.addEventListener('touchend', onLeave, { passive: true });
+    el.addEventListener('wheel', onWheel, { passive: false });
+    el.addEventListener('mousedown', onMouseDown);
+    el.addEventListener('mousemove', onMouseMove);
+    el.addEventListener('mouseup', onMouseUp);
 
     const animate = () => {
-      if (!paused && el) {
+      if (!paused && el && !isDown) {
         scrollPosRef.current += 0.6;
-        // Reset when we've scrolled half (duplicated content)
         const half = el.scrollWidth / 2;
         if (scrollPosRef.current >= half) {
           scrollPosRef.current = 0;
@@ -46,6 +75,10 @@ export function ProjectsSection() {
       el.removeEventListener('mouseleave', onLeave);
       el.removeEventListener('touchstart', onEnter);
       el.removeEventListener('touchend', onLeave);
+      el.removeEventListener('wheel', onWheel);
+      el.removeEventListener('mousedown', onMouseDown);
+      el.removeEventListener('mousemove', onMouseMove);
+      el.removeEventListener('mouseup', onMouseUp);
     };
   }, []);
 
