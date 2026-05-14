@@ -26,19 +26,49 @@ export default function App() {
 
         <Navbar />
         <main id="main-content">
+          {/* 01 Hero — Dark with NeuralFlow shader */}
           <HeroSection />
-          <StatsSection />
-          <Suspense fallback={<div className="min-h-screen bg-slate-900" />}>
+
+          {/* 02 Stats — Slightly lighter band */}
+          <div className="bg-slate-800/40">
+            <StatsSection />
+          </div>
+
+          {/* 03 ADLC — Dark */}
+          <Suspense fallback={<div className="min-h-[50vh] bg-slate-900" />}>
             <ADLCSection />
-            <InsightsSection />
-            <ProjectsSection />
-            {/* <FeaturedCaseStudiesSection /> */}
-            <ExperienceSection />
-            {/* Social proof hidden */}
-            {/* <TestimonialsSection /> */}
-            <TechStackSection />
-            <ContactSection />
           </Suspense>
+
+          {/* 04 Insights — Lighter band */}
+          <div className="bg-slate-800/40">
+            <Suspense fallback={<div className="min-h-[50vh] bg-slate-800/40" />}>
+              <InsightsSection />
+            </Suspense>
+          </div>
+
+          {/* 05 Projects — Dark */}
+          <Suspense fallback={<div className="min-h-[50vh] bg-slate-900" />}>
+            <ProjectsSection />
+          </Suspense>
+
+          {/* 06 Experience — Lighter band */}
+          <div className="bg-slate-800/40">
+            <Suspense fallback={<div className="min-h-[50vh] bg-slate-800/40" />}>
+              <ExperienceSection />
+            </Suspense>
+          </div>
+
+          {/* 07 Tech Stack — Dark */}
+          <Suspense fallback={<div className="min-h-[50vh] bg-slate-900" />}>
+            <TechStackSection />
+          </Suspense>
+
+          {/* 08 Contact — Lighter band */}
+          <div className="bg-slate-800/40">
+            <Suspense fallback={<div className="min-h-[50vh] bg-slate-800/40" />}>
+              <ContactSection />
+            </Suspense>
+          </div>
         </main>
         <Footer />
       </div>

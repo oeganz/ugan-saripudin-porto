@@ -3,16 +3,16 @@ import { Zap, Shield, Users, Clock, TrendingUp, Award } from 'lucide-react';
 
 const stats = [
   { icon: Zap, value: '10+', label: 'Years Experience', desc: 'Engineering leadership' },
-  { icon: TrendingUp, value: '1M+', label: 'Users Delivered', desc: 'Platforms at scale' },
-  { icon: Shield, value: '40%', label: 'Doc Time Cut', desc: 'AI-native workflows' },
-  { icon: Users, value: '12', label: 'Devs Led', desc: 'Across 3 pods' },
+  { icon: TrendingUp, value: '50M+', label: 'Users Downloaded', desc: 'Apps shipped' },
+  { icon: Shield, value: '99.9%', label: 'SLO Achieved', desc: 'Production reliability' },
+  { icon: Users, value: '12+', label: 'Devs Led', desc: 'Across 3 pods' },
   { icon: Clock, value: '18mo', label: 'Zero Incidents', desc: 'Production stability' },
   { icon: Award, value: '98%', label: 'On-Time Delivery', desc: 'Remote contract' },
 ];
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-4 bg-slate-800/30 border-y border-slate-700/30" id="stats">
+    <section className="py-16 px-4" id="stats">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">

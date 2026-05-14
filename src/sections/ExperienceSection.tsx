@@ -7,17 +7,17 @@ const experiences = [
     period: 'September 2022 - Present',
     role: 'Technical Lead',
     company: 'Sprout Digital Labs',
-    location: 'Tangerang, Indonesia (Remote-Ready)',
+    location: 'Indonesia',
     color: 'amber',
     icon: Zap,
     isPresent: true,
-    description: <>Architecting <span className="text-sky-400 font-semibold">AI-native workflows</span>, <span className="text-cyan-400 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-emerald-400 font-semibold">1M+ download SME platform</span>. Led <span className="text-amber-400 font-semibold">3 engineering pods (12 developers)</span> through systematic AI adoption.</>,
+    description: <>Architecting <span className="text-sky-400 font-semibold">AI-driven spec workflows</span>, <span className="text-sky-400 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-sky-400 font-semibold">1M+ download SME platform</span>. Led <span className="text-sky-400 font-semibold">3 engineering pods (12 developers)</span> through systematic AI adoption.</>,
     highlights: [
-      <>Reduced documentation overhead by <span className="text-sky-400 font-semibold">40%</span> via AI-native spec-driven workflows</>,
-      <><span className="text-cyan-400 font-semibold">Zero production incidents</span> in 18 months with automated quality gates</>,
-      <>Led <span className="text-emerald-400 font-semibold">3 pods (12 devs)</span> through systematic AI capability adoption</>,
-      <>Monolith-to-microservices migration for <span className="text-amber-400 font-semibold">1M+ download platform</span></>,
-      <>Established <span className="text-purple-400 font-semibold">ADLC workflow</span> across 3+ project teams</>,
+      <>Reduced documentation overhead by <span className="text-sky-400 font-semibold">40%</span> via spec-driven workflows</>,
+      <><span className="text-sky-400 font-semibold">Zero production incidents</span> in 18 months with automated quality gates</>,
+      <>Led <span className="text-sky-400 font-semibold">3 pods (12 devs)</span> through systematic AI capability adoption</>,
+      <>Monolith-to-microservices migration for <span className="text-sky-400 font-semibold">1M+ download platform</span></>,
+      <>Established <span className="text-sky-400 font-semibold">ADLC workflow</span> across 3+ project teams</>,
     ],
   },
   {
@@ -28,43 +28,43 @@ const experiences = [
     color: 'purple',
     icon: Shield,
     isPresent: false,
-    description: <>Delivered production-grade mobile refactoring for <span className="text-sky-400 font-semibold">MyBeepr clinical messaging platform</span> serving Australian hospitals. <span className="text-cyan-400 font-semibold">98% on-time delivery</span> across 12 months of fully remote work.</>,
+    description: <>Delivered production-grade mobile refactoring for <span className="text-sky-400 font-semibold">MyBeepr clinical messaging platform</span> serving Australian hospitals. <span className="text-sky-400 font-semibold">98% on-time delivery</span> across 12 months of fully remote work.</>,
     highlights: [
       <><span className="text-sky-400 font-semibold">98% on-time delivery</span> across 12 months fully remote (2hr timezone gap)</>,
-      <><span className="text-cyan-400 font-semibold">Performance monitoring</span> & session replay tracking implementation</>,
-      <><span className="text-emerald-400 font-semibold">Compliance-ready architecture</span> under regulated healthcare requirements</>,
-      <>Deployed across <span className="text-amber-400 font-semibold">Australian hospital networks</span></>,
+      <><span className="text-sky-400 font-semibold">Performance monitoring</span> & session replay tracking implementation</>,
+      <><span className="text-sky-400 font-semibold">Compliance-ready architecture</span> under regulated healthcare requirements</>,
+      <>Deployed across <span className="text-sky-400 font-semibold">Australian hospital networks</span></>,
     ],
   },
   {
     period: 'March 2020 - September 2021',
     role: 'Senior Software Engineer',
     company: 'Sprout Digital Labs',
-    location: 'Tangerang, Indonesia',
+    location: 'Indonesia',
     color: 'sky',
     icon: TrendingUp,
     isPresent: false,
-    description: <>Designed <span className="text-sky-400 font-semibold">system architecture</span> and spec-driven workflow patterns. Collaborated with <span className="text-cyan-400 font-semibold">Product Managers and clients</span> to translate business requirements into technical specifications.</>,
+    description: <>Designed <span className="text-sky-400 font-semibold">system architecture</span> and spec-driven workflow patterns. Collaborated with <span className="text-sky-400 font-semibold">Product Managers and clients</span> to translate business requirements into technical specifications.</>,
     highlights: [
-      <>Established <span className="text-sky-400 font-semibold">spec-driven development approach</span> adopted for AI-native workflows</>,
-      <><span className="text-cyan-400 font-semibold">Cross-functional collaboration</span> with Product and clients</>,
-      <><span className="text-emerald-400 font-semibold">Full-stack delivery</span> across multiple client projects</>,
+      <>Established <span className="text-sky-400 font-semibold">AI-driven spec workflow</span> adopted across 3+ teams</>,
+      <><span className="text-sky-400 font-semibold">Cross-functional collaboration</span> with Product and clients</>,
+      <><span className="text-sky-400 font-semibold">Full-stack delivery</span> across multiple client projects</>,
     ],
   },
   {
     period: 'January 2015 - January 2019',
     role: 'Android Developer to Lead Developer',
     company: 'PT Cudocomm / PT Klik Digital Sinergi',
-    location: 'Jakarta, Indonesia',
+    location: 'Indonesia',
     color: 'blue',
     icon: Users,
     isPresent: false,
-    description: <>Built and shipped multiple <span className="text-sky-400 font-semibold">native Android applications</span>, progressing from IC to team lead. Delivered apps accumulating <span className="text-cyan-400 font-semibold">3M+ combined downloads</span>. Led AxisNet and internal TelkomInfra enterprise apps.</>,
+    description: <>Built and shipped multiple <span className="text-sky-400 font-semibold">native Android applications</span>, progressing from IC to team lead. Delivered apps accumulating <span className="text-sky-400 font-semibold">3M+ combined downloads</span>. Led AxisNet and internal TelkomInfra enterprise apps.</>,
     highlights: [
       <><span className="text-sky-400 font-semibold">AxisNet: 3M+ downloads</span> for XL Axiata self-care app</>,
-      <><span className="text-cyan-400 font-semibold">3M+ combined downloads</span> across all shipped apps</>,
-      <>Managed <span className="text-emerald-400 font-semibold">3+ developers</span>, established code review practices</>,
-      <>Led <span className="text-amber-400 font-semibold">full product lifecycle</span> from concept to Google Play</>,
+      <><span className="text-sky-400 font-semibold">3M+ combined downloads</span> across all shipped apps</>,
+      <>Managed <span className="text-sky-400 font-semibold">3+ developers</span>, established code review practices</>,
+      <>Led <span className="text-sky-400 font-semibold">full product lifecycle</span> from concept to Google Play</>,
     ],
   },
 ];
@@ -102,13 +102,13 @@ const colorMap: Record<string, { border: string; badge: string; dot: string; glo
 
 export function ExperienceSection() {
   return (
-    <section className="py-24 px-4 bg-slate-800/10" id="experience">
+    <section className="py-16 px-4" id="experience">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(04)"
           eyebrow="PROFESSIONAL EXPERIENCE"
           headline="Career Timeline"
-          subheadline="10+ years of progressive growth from Android Developer to AI Native Engineering Lead, delivering platforms at scale across 4 organizations."
+          subheadline="10+ years of progressive growth from Android Developer to Engineering Lead, delivering platforms at scale across 4 organizations."
         />
 
         <div className="mt-16 relative">

@@ -20,13 +20,13 @@ function LiveClock() {
 
 export function ContactSection() {
   return (
-    <section className="py-20 px-4" id="contact">
+    <section className="py-12 px-4" id="contact">
       <div className="max-w-7xl mx-auto">
         <SectionHeader
           number="(06)"
           eyebrow="GET IN TOUCH"
           headline="Let&apos;s Connect"
-          subheadline="Available for AI-native engineering leadership, mobile & web development, and technical consulting."
+          subheadline="Available for engineering leadership, mobile & web platform development, and technical consulting."
         />
 
         <FadeIn delay={0.1}>
@@ -79,7 +79,7 @@ export function ContactSection() {
           <div className="mt-10 p-6 rounded-2xl bg-sky-400/5 border border-sky-400/20">
             <h3 className="text-xl font-bold text-slate-100 mb-2">Ready to build something great?</h3>
             <p className="text-slate-400 text-sm max-w-md mb-5">
-              Whether you need <span className="text-sky-400 font-semibold">AI-native engineering leadership</span>,{' '}
+              Whether you need <span className="text-sky-400 font-semibold">engineering leadership</span>,{' '}
               <span className="text-cyan-400 font-semibold">full-stack development</span>, or{' '}
               <span className="text-emerald-400 font-semibold">microservices architecture</span> — I&apos;m ready.
             </p>

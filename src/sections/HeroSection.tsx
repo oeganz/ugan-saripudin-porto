@@ -1,31 +1,25 @@
 import { FadeIn } from '@/components/FadeIn';
 import { ArrowRight, MapPin, Clock } from 'lucide-react';
-import { NeuralFlowShader } from '@/components/NeuralFlowShader';
-
-const tagPills = [
-  '40% Documentation Cut',
-  'Zero Incidents 18mo',
-  '12 Devs Led',
-  '1M+ Downloads',
-];
+import { ParticleNetwork } from '@/components/ParticleNetwork';
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" id="about">
-      <NeuralFlowShader />
-      <div className="absolute inset-0 bg-slate-900/80 z-10" />
+      <ParticleNetwork />
+      <div className="absolute inset-0 bg-slate-900/40 z-10" />
 
       <div className="relative z-20 max-w-7xl mx-auto px-6 py-32 w-full">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
-          {/* LEFT: Profile Photo with Glow Ring */}
+          {/* LEFT: Profile Photo with Soft Glow */}
           <FadeIn delay={0.1}>
             <div className="flex-shrink-0">
               <div className="relative w-48 h-48 md:w-56 md:h-56">
-                {/* Glow ring */}
-                <div className="absolute -inset-1.5 rounded-full bg-sky-400/30 blur-md" />
-                <div className="absolute -inset-0.5 rounded-full bg-sky-400/20" />
+                {/* Soft outer glow */}
+                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-sky-400/15 via-cyan-400/10 to-transparent blur-xl opacity-60" />
+                {/* Subtle ring */}
+                <div className="absolute -inset-px rounded-full bg-gradient-to-br from-sky-400/40 via-cyan-300/20 to-sky-400/40" />
                 {/* Image */}
-                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-sky-400/50">
+                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-600/50 bg-slate-900">
                   <img
                     src="/images/profile-real.jpg"
                     alt="Ugan Saripudin"
@@ -40,11 +34,19 @@ export function HeroSection() {
           <div className="flex-1 text-center md:text-left">
             {/* Label */}
             <FadeIn>
-              <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-4">AI Native Engineering Lead</p>
+              {/* Role badge with tagline */}
+              <div className="mb-4 flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider">
+                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
+                  <span className="text-slate-200">Engineering Lead.</span>{' '}
+                  <span className="text-sky-400">AI-Native.</span>{' '}
+                  <span className="text-slate-200">Zero Drama.</span>
+                </span>
+              </div>
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]" style={{textShadow: '0 2px 30px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.3)'}}>
                 <span className="text-slate-50">UGAN</span>{' '}
                 <span className="text-sky-400">SARIPUDIN</span>
               </h1>
@@ -64,25 +66,10 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.25}>
-              <p className="mt-5 text-base text-slate-400 max-w-2xl leading-relaxed">
-                I architect the systems that make AI-driven development production-grade — not the models, but the workflows, governance, and infrastructure around them.{' '}
-                <span className="text-slate-200 font-semibold">10+ years</span> of engineering leadership delivering platforms at scale (
-                <span className="text-sky-400 font-semibold">1M+ to 3M+ users</span>), with deep expertise in microservices architecture, CI/CD pipeline design, and cross-platform delivery.
+              {/* Supporting text — stakeholder + engineering team build-up */}
+              <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
+                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO Achieved, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
               </p>
-            </FadeIn>
-
-            {/* Tag Pills */}
-            <FadeIn delay={0.3}>
-              <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-2.5">
-                {tagPills.map((tag) => (
-                  <span
-                    key={tag}
-                    className="px-4 py-2 rounded-full bg-slate-800/80 border border-sky-400/30 text-sm text-slate-300 font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
             </FadeIn>
 
             {/* Buttons */}
