@@ -4,16 +4,16 @@ import { ParticleNetwork } from '@/components/ParticleNetwork';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden" id="about">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="about">
       <ParticleNetwork />
       <div className="absolute inset-0 bg-slate-900/40 z-10" />
 
-      <div className="relative z-20 max-w-7xl mx-auto px-6 py-32 w-full">
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16">
+      <div className="relative z-20 max-w-3xl mx-auto px-6 py-20 w-full">
+        <div className="flex flex-col items-center gap-4 text-center">
           {/* LEFT: Profile Photo with Soft Glow */}
           <FadeIn delay={0.1}>
             <div className="flex-shrink-0">
-              <div className="relative w-48 h-48 md:w-56 md:h-56">
+              <div className="relative w-36 h-36 md:w-44 md:h-44">
                 {/* Soft outer glow */}
                 <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-sky-400/15 via-cyan-400/10 to-transparent blur-xl opacity-60" />
                 {/* Subtle ring */}
@@ -31,11 +31,11 @@ export function HeroSection() {
           </FadeIn>
 
           {/* RIGHT: Content */}
-          <div className="flex-1 text-center md:text-left">
+          <div className="flex-1 text-center">
             {/* Label */}
             <FadeIn>
               {/* Role badge with tagline */}
-              <div className="mb-4 flex items-center gap-2">
+              <div className="mb-4 flex items-center justify-center gap-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
                   <span className="text-slate-200">Engineering Lead.</span>{' '}
@@ -53,7 +53,7 @@ export function HeroSection() {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <div className="mt-4 flex flex-wrap items-center justify-center md:justify-start gap-4 text-sm text-slate-400">
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
                   Indonesia
@@ -67,14 +67,14 @@ export function HeroSection() {
 
             <FadeIn delay={0.25}>
               {/* Supporting text — stakeholder + engineering team build-up */}
-              <p className="mt-4 text-base text-slate-400 max-w-2xl leading-relaxed">
+              <p className="mt-4 text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO Achieved, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
               </p>
             </FadeIn>
 
             {/* Buttons */}
             <FadeIn delay={0.35}>
-              <div className="mt-7 flex flex-wrap justify-center md:justify-start gap-3">
+              <div className="mt-7 flex flex-wrap justify-center gap-3">
                 <a href="#projects"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
                   View My Work <ArrowRight className="w-4 h-4" />
@@ -84,7 +84,7 @@ export function HeroSection() {
 
             {/* Social + Email */}
             <FadeIn delay={0.4}>
-              <div className="mt-7 flex items-center justify-center md:justify-start gap-5 text-slate-500">
+              <div className="mt-7 flex items-center justify-center gap-5 text-slate-500">
                 <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer" title="oeganz"
                   className="hover:text-sky-400 transition-colors" aria-label="GitHub">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>

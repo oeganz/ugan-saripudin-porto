@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { FadeIn } from '@/components/FadeIn';
@@ -36,6 +37,13 @@ export default function ProjectsPage() {
   }, [catFilter, roleFilter, indFilter, statusFilter]);
 
   return (
+    <>
+      <Helmet>
+        <title>Projects — 21 Apps Across FinTech, HealthTech, Telecom & More | Ugan Saripudin</title>
+        <meta name="description" content="Portfolio of 21 projects spanning FinTech, HealthTech, Telecom, AgriTech and more. 50M+ downloads, zero incidents, AI-native delivery." />
+        <meta property="og:title" content="21 Projects — Ugan Saripudin" />
+        <meta property="og:description" content="Portfolio spanning FinTech, HealthTech, Telecom, AgriTech. 50M+ downloads delivered." />
+      </Helmet>
     <div className="min-h-screen bg-slate-900">
       <Navbar />
       <main className="pt-24 pb-16 px-4">
@@ -132,5 +140,6 @@ export default function ProjectsPage() {
       </main>
       <Footer />
     </div>
+    </>
   );
 }
