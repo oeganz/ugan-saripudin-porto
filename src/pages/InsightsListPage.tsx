@@ -54,17 +54,29 @@ export default function InsightsListPage() {
   const pageTitle = tagFilter
     ? `Articles tagged "${tagFilter}" — Insights | Ugan Saripudin`
     : 'Insights — Engineering Leadership, AI-Native Delivery & Team Building | Ugan Saripudin'
+  const pageDesc = tagFilter
+    ? `Browse articles tagged with "${tagFilter}" — practical insights on engineering leadership, AI-native development, and team building from Ugan Saripudin.`
+    : 'Practical insights on engineering leadership, AI-native development workflows, ADLC methodology, and building high-performing teams. Written by Ugan Saripudin, Engineering Lead with 10+ years experience.'
 
   return (
     <>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta name="description" content="Deep dives on engineering leadership, AI-native delivery workflows, ADLC methodology, and building high-performing remote teams." />
+        <meta name="description" content={pageDesc} />
+        <link rel="canonical" href={`${window.location.origin}/insights${tagFilter ? `?tag=${tagFilter}` : ''}`} />
+        <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content="Engineering leadership insights, AI-native workflows, and team building strategies from 10+ years of delivery." />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:url" content={`${window.location.origin}/insights`} />
+        <meta property="og:image" content={`${window.location.origin}/images/profile-real.jpg`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDesc} />
+        <meta name="twitter:image" content={`${window.location.origin}/images/profile-real.jpg`} />
       </Helmet>
-    <div className="min-h-screen bg-slate-900">
-      <Navbar />
+
+      <div className="min-h-screen bg-slate-900">
+        <Navbar />
 
       <main className="py-[100px] md:py-[140px]">
         <div className="max-w-7xl mx-auto px-6">
@@ -123,8 +135,8 @@ export default function InsightsListPage() {
         </div>
       </main>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
     </>
   )
 }
