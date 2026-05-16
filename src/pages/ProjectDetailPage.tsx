@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
 import { ScrollToTop } from '@/components/ScrollToTop';
@@ -53,7 +54,7 @@ export default function ProjectDetailPage() {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-slate-100 mb-4">Project Not Found</h1>
             <p className="text-slate-400 mb-8">The project you are looking for does not exist.</p>
-            <Link to="/#/projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-colors">
+            <Link to="/projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-colors">
               <ArrowLeft className="w-5 h-5" /> Back to Projects
             </Link>
           </div>
@@ -64,8 +65,24 @@ export default function ProjectDetailPage() {
   }
 
   const heroImage = heroImages[project.id] || '/images/projects/screenshots/' + project.id + '_screenshot_01.jpg';
+  const pageTitle = `${project.name} — ${project.industry} | Ugan Saripudin`;
+  const pageDesc = project.description.slice(0, 160);
 
   return (
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDesc} />
+        <link rel="canonical" href={`${window.location.origin}/projects/${project.id}`} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:type" content="website" />
+        {heroImage && <meta property="og:image" content={`${window.location.origin}${heroImage}`} />}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={pageDesc} />
+        {heroImage && <meta name="twitter:image" content={`${window.location.origin}${heroImage}`} />}
+      </Helmet>
     <div className="min-h-screen bg-slate-900">
       <ScrollToTop />
       <motion.div
@@ -124,5 +141,6 @@ export default function ProjectDetailPage() {
         <Footer />
       </motion.div>
     </div>
+    </>
   );
 }

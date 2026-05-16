@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
+import { ScrollToTop } from './components/ScrollToTop'
 import './index.css'
 import App from './App.tsx'
 import ProjectsPage from './pages/ProjectsPage.tsx'
@@ -20,7 +21,8 @@ const adminPath = import.meta.env.VITE_ADMIN_PATH || 'admin'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HelmetProvider>
-      <HashRouter>
+      <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/projects" element={<ProjectsPage />} />
@@ -57,7 +59,7 @@ createRoot(document.getElementById('root')!).render(
             }
           />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </HelmetProvider>
   </StrictMode>,
 )

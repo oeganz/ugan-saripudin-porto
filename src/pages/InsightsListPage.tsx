@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async'
 import { supabase } from '@/lib/supabase'
 import type { Article, ArticleStatus } from '@/types/article'
 import { Navbar } from '@/components/Navbar'
@@ -50,7 +51,18 @@ export default function InsightsListPage() {
     new Set(articles.flatMap((a) => a.tags || []))
   ).sort()
 
+  const pageTitle = tagFilter
+    ? `Articles tagged "${tagFilter}" — Insights | Ugan Saripudin`
+    : 'Insights — Engineering Leadership, AI-Native Delivery & Team Building | Ugan Saripudin'
+
   return (
+    <>
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content="Deep dives on engineering leadership, AI-native delivery workflows, ADLC methodology, and building high-performing remote teams." />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content="Engineering leadership insights, AI-native workflows, and team building strategies from 10+ years of delivery." />
+      </Helmet>
     <div className="min-h-screen bg-slate-900">
       <Navbar />
 
@@ -113,5 +125,6 @@ export default function InsightsListPage() {
 
       <Footer />
     </div>
+    </>
   )
 }

@@ -57,7 +57,7 @@ function RelatedProjectsContent({
             </div>
           </div>
           <Link
-            to="/#/projects"
+            to="/projects"
             className="hidden md:inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-sky-400 transition-colors"
           >
             View All <ArrowRight className="w-4 h-4" />
@@ -127,7 +127,7 @@ function RelatedProjectsContent({
       {/* Mobile View All link */}
       <div className="md:hidden mt-6 text-center">
         <Link
-          to="/#/projects"
+          to="/projects"
           className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-sky-400 transition-colors"
         >
           View All Projects <ArrowRight className="w-4 h-4" />

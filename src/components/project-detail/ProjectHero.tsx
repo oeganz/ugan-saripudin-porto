@@ -83,7 +83,7 @@ export function ProjectHero({ project, heroImage }: ProjectHeroProps) {
         {/* Breadcrumb */}
         <FadeIn direction="up" delay={0}>
           <Link
-            to="/#/projects"
+            to="/projects"
             className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-sky-400 transition-colors mb-6 group"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />

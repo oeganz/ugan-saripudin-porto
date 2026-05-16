@@ -66,7 +66,7 @@ export function OldWayNewWayChat() {
         {/* Result */}
         <div className="flex items-center gap-2">
           <span className="text-rose-400 text-sm">&times;</span>
-          <span className="text-sm font-semibold text-rose-400">47 min lost to context switching</span>
+          <span className="text-sm font-semibold text-rose-400">3+ hours burned in interruptions</span>
         </div>
       </motion.div>
 
