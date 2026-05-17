@@ -31,3 +31,6 @@ dist-ssr
 # Claude worktrees and artifacts
 .claude/worktrees/
 .superpowers/
+
+# Kiro agent specs and steering (local only)
+.kiro/

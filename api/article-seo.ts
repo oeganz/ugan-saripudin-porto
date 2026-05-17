@@ -8,7 +8,10 @@ import { join } from 'path';
 // Read env (safe — no side effects)
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL || '';
 const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_ANON_KEY || '';
-const HOST = (process.env.VITE_HOST_URL || 'http://localhost').replace(/\/$/, '');
+const HOST = (
+  process.env.VITE_HOST_URL ||
+  'https://ugan-saripudin-porto.vercel.app'
+).replace(/\/$/, '');
 
 // ── Types ───────────────────────────────────────────────
 type Req = { query: Record<string, string>; url?: string };
@@ -76,17 +79,34 @@ function getHtml(): string | null {
   return null;
 }
 
+// ── Testable helper — exported for unit/property-based tests ──
+/**
+ * Replaces the entire <head> meta block in html with metaBlock.
+ * The pattern `/<title[^>]*>[\s\S]*?<\/head>/` matches `<title>` with zero
+ * or more attributes (covering both `<title>` and `<title data-rh="true">`),
+ * then lazily matches everything through the closing `</head>` tag (inclusive).
+ */
+export function injectArticleMeta(html: string, metaBlock: string): string {
+  return html.replace(/<title[^>]*>[\s\S]*?<\/head>/, metaBlock + '\n  </head>');
+}
+
+/** Rewrites `./`-prefixed asset paths to absolute `/` paths for nested URL serving. */
+export function rewriteAssetPaths(html: string): string {
+  return html.replace(/(['"])\.\//g, '$1/');
+}
+
 // ── Handler ─────────────────────────────────────────────
 export default async function handler(req: Req, res: Res) {
   const t0 = Date.now();
   const slug = req.query?.slug;
 
   // 1. Read index.html
-  const html = getHtml();
-  if (!html) {
+  const rawHtml = getHtml();
+  if (!rawHtml) {
     res.setHeader('Content-Type', 'application/json');
     return res.status(500).json({ error: 'index.html not found', cwd: process.cwd() });
   }
+  const html = rewriteAssetPaths(rawHtml);
 
   // 2. Missing env vars → fallback meta
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
@@ -94,7 +114,7 @@ export default async function handler(req: Req, res: Res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('X-SEO-Status', 'missing-env');
     res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
-    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
+    return res.status(200).send(injectArticleMeta(html, m));
   }
 
   // 3. No slug → fallback meta
@@ -103,7 +123,7 @@ export default async function handler(req: Req, res: Res) {
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('X-SEO-Status', 'no-slug');
     res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
-    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
+    return res.status(200).send(injectArticleMeta(html, m));
   }
 
   // 4. Fetch article with 5s timeout
@@ -127,7 +147,7 @@ export default async function handler(req: Req, res: Res) {
       res.setHeader('X-SEO-Status', `not-found: ${error?.message || 'na'}`);
       res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
-      return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
+      return res.status(200).send(injectArticleMeta(html, m));
     }
 
     // 5. Success
@@ -145,13 +165,13 @@ export default async function handler(req: Req, res: Res) {
     res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300');
     res.setHeader('X-SEO-Status', 'ok');
     res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
-    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
+    return res.status(200).send(injectArticleMeta(html, m));
 
   } catch (err: any) {
     const m = meta({ title: 'Error', desc: err?.message || 'Error', url: `${HOST}/insights/${slug}` });
     res.setHeader('X-SEO-Status', `error: ${err?.message || '?'}`);
     res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
+    return res.status(200).send(injectArticleMeta(html, m));
   }
 }
