@@ -1,189 +1,157 @@
+// Vercel serverless function — MUST NOT hang during module init
+// All FS operations happen inside the handler with try/catch
+
 import { createClient } from '@supabase/supabase-js';
-import * as fs from 'fs';
-import * as path from 'path';
-import { fileURLToPath } from 'url';
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
-// ESM-compatible __dirname
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-
-// ── Config ──────────────────────────────────────────────
+// Read env (safe — no side effects)
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL || '';
 const SUPABASE_ANON_KEY = process.env.VITE_SUPABASE_ANON_KEY || '';
-const HOST_URL = (process.env.VITE_HOST_URL || 'http://localhost').replace(/\/$/, '');
-
-// ── Read index.html at cold-start ───────────────────────
-let indexHtml: string | null = null;
-const possiblePaths = [
-  path.join(process.cwd(), 'dist', 'index.html'),
-  path.join(process.cwd(), 'index.html'),
-  path.join(__dirname, '..', 'dist', 'index.html'),
-  path.join(__dirname, '..', '..', 'dist', 'index.html'),
-];
-
-for (const p of possiblePaths) {
-  try {
-    if (fs.existsSync(p)) {
-      indexHtml = fs.readFileSync(p, 'utf-8');
-      break;
-    }
-  } catch { /* try next */ }
-}
+const HOST = (process.env.VITE_HOST_URL || 'http://localhost').replace(/\/$/, '');
 
 // ── Types ───────────────────────────────────────────────
-interface VReq {
-  query: { slug?: string };
-  url?: string;
-}
-interface VRes {
-  status: (code: number) => VRes;
-  json: (body: unknown) => void;
-  send: (body: string) => void;
-  setHeader: (key: string, value: string) => void;
+type Req = { query: Record<string, string>; url?: string };
+type Res = {
+  setHeader(k: string, v: string): void;
+  status(n: number): Res;
+  send(s: string): void;
+  json(o: unknown): void;
+};
+
+// ── HTML escape ─────────────────────────────────────────
+function e(s: string) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
-// ── Helpers ─────────────────────────────────────────────
-function esc(str: string): string {
-  return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-function buildMeta(params: {
-  title: string;
-  description: string;
-  image?: string;
-  url: string;
-  author?: string;
-  publishedAt?: string;
-  modifiedAt?: string;
-  tags?: string[];
-}): string {
-  const img = params.image || `${HOST_URL}/images/profile-real.jpg`;
-  const keywords = (params.tags || []).join(', ');
-  const lines: (string | false)[] = [
-    `<title>${esc(params.title)} | Ugan Saripudin</title>`,
-    `<meta name="description" content="${esc(params.description)}" />`,
-    keywords && `<meta name="keywords" content="${esc(keywords)}" />`,
-    `<meta name="author" content="${esc(params.author || 'Ugan Saripudin')}" />`,
-    `<link rel="canonical" href="${esc(params.url)}" />`,
+// ── Build meta tag block ────────────────────────────────
+function meta({
+  title, desc, image, url, author, publishedAt, modifiedAt, tags,
+}: {
+  title: string; desc: string; image?: string; url: string;
+  author?: string; publishedAt?: string; modifiedAt?: string; tags?: string[];
+}) {
+  const img = image || `${HOST}/images/profile-real.jpg`;
+  const kw = (tags || []).join(', ');
+  return [
+    `<title>${e(title)} | Ugan Saripudin</title>`,
+    `<meta name="description" content="${e(desc)}" />`,
+    kw && `<meta name="keywords" content="${e(kw)}" />`,
+    `<meta name="author" content="${e(author || 'Ugan Saripudin')}" />`,
+    `<link rel="canonical" href="${e(url)}" />`,
     `<meta property="og:type" content="article" />`,
-    `<meta property="og:title" content="${esc(params.title)}" />`,
-    `<meta property="og:description" content="${esc(params.description)}" />`,
-    `<meta property="og:url" content="${esc(params.url)}" />`,
-    `<meta property="og:image" content="${esc(img)}" />`,
+    `<meta property="og:title" content="${e(title)}" />`,
+    `<meta property="og:description" content="${e(desc)}" />`,
+    `<meta property="og:url" content="${e(url)}" />`,
+    `<meta property="og:image" content="${e(img)}" />`,
     `<meta name="twitter:card" content="summary_large_image" />`,
-    `<meta name="twitter:title" content="${esc(params.title)}" />`,
-    `<meta name="twitter:description" content="${esc(params.description)}" />`,
-    `<meta name="twitter:image" content="${esc(img)}" />`,
-    params.publishedAt && `<meta property="article:published_time" content="${params.publishedAt}" />`,
-    params.modifiedAt && `<meta property="article:modified_time" content="${params.modifiedAt}" />`,
-    ...(params.tags || []).map(t => `<meta property="article:tag" content="${esc(t)}" />`),
+    `<meta name="twitter:title" content="${e(title)}" />`,
+    `<meta name="twitter:description" content="${e(desc)}" />`,
+    `<meta name="twitter:image" content="${e(img)}" />`,
+    publishedAt && `<meta property="article:published_time" content="${publishedAt}" />`,
+    modifiedAt && `<meta property="article:modified_time" content="${modifiedAt}" />`,
+    ...(tags || []).map(t => `<meta property="article:tag" content="${e(t)}" />`),
+    `<script type="application/ld+json">${JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'Article',
+      headline: title, image: img,
+      datePublished: publishedAt, dateModified: modifiedAt || publishedAt,
+      author: { '@type': 'Person', name: author || 'Ugan Saripudin' },
+      publisher: { '@type': 'Person', name: 'Ugan Saripudin' },
+      description: desc, url,
+    })}</script>`,
+  ].filter(Boolean).join('\n    ');
+}
+
+// ── Read index.html (inside handler, with fallback paths) ──
+function getHtml(): string | null {
+  const paths = [
+    join(process.cwd(), 'dist', 'index.html'),
+    join(process.cwd(), 'index.html'),
   ];
-  const jsonLd = {
-    '@context': 'https://schema.org', '@type': 'Article',
-    headline: params.title, image: img,
-    datePublished: params.publishedAt,
-    dateModified: params.modifiedAt || params.publishedAt,
-    author: { '@type': 'Person', name: params.author || 'Ugan Saripudin' },
-    publisher: { '@type': 'Person', name: 'Ugan Saripudin', logo: { '@type': 'ImageObject', url: `${HOST_URL}/images/profile-real.jpg` } },
-    description: params.description, url: params.url,
-  };
-  lines.push(`<script type="application/ld+json">${JSON.stringify(jsonLd)}</script>`);
-  return lines.filter(Boolean).join('\n    ');
+  for (const p of paths) {
+    try {
+      return readFileSync(p, 'utf-8');
+    } catch { /* try next */ }
+  }
+  return null;
 }
 
 // ── Handler ─────────────────────────────────────────────
-export default async function handler(req: VReq, res: VRes) {
+export default async function handler(req: Req, res: Res) {
+  const t0 = Date.now();
   const slug = req.query?.slug;
 
-  // Fast-fail: no index.html
-  if (!indexHtml) {
+  // 1. Read index.html
+  const html = getHtml();
+  if (!html) {
     res.setHeader('Content-Type', 'application/json');
-    return res.status(500).json({ error: 'index.html not found', searched: possiblePaths });
+    return res.status(500).json({ error: 'index.html not found', cwd: process.cwd() });
   }
 
-  // Fast-fail: missing env vars (most common issue)
+  // 2. Missing env vars → fallback meta
   if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-    const meta = buildMeta({
-      title: 'Ugan Saripudin — Engineering Lead',
-      description: 'Configuration error: Supabase env vars missing.',
-      url: `${HOST_URL}/insights/${slug || ''}`,
-    });
-    const html = indexHtml.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, meta);
+    const m = meta({ title: 'Engineering Lead', desc: 'Ugan Saripudin portfolio.', url: `${HOST}/insights/${slug || ''}` });
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('X-SEO-Status', 'missing-env-vars');
-    return res.status(200).send(html);
+    res.setHeader('X-SEO-Status', 'missing-env');
+    res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
+    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
   }
 
-  // Fast-fail: no slug
+  // 3. No slug → fallback meta
   if (!slug) {
-    const meta = buildMeta({
-      title: 'Insights',
-      description: 'Engineering insights by Ugan Saripudin.',
-      url: `${HOST_URL}/insights`,
-    });
-    const html = indexHtml.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, meta);
+    const m = meta({ title: 'Insights', desc: 'Engineering insights.', url: `${HOST}/insights` });
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('X-SEO-Status', 'no-slug');
-    return res.status(200).send(html);
+    res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
+    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
   }
 
+  // 4. Fetch article with 5s timeout
   try {
     const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
       auth: { persistSession: false, autoRefreshToken: false },
     });
 
-    // Fetch with explicit abort timeout (5s max)
-    const fetchPromise = supabase
-      .from('articles')
-      .select('*')
-      .eq('slug', slug)
-      .eq('status', 'published')
-      .lte('published_at', new Date().toISOString())
-      .single();
+    const fetchPromise = supabase.from('articles').select('*')
+      .eq('slug', slug).eq('status', 'published')
+      .lte('published_at', new Date().toISOString()).single();
 
-    const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Supabase query timeout')), 5000)
+    const timeoutPromise = new Promise<never>((_, r) =>
+      setTimeout(() => r(new Error('timeout')), 5000)
     );
 
-    const { data: article, error } = await Promise.race([fetchPromise, timeoutPromise]) as any;
+    const { data: a, error } = await Promise.race([fetchPromise, timeoutPromise]);
 
-    if (error || !article) {
-      const meta = buildMeta({
-        title: 'Article Not Found',
-        description: `Could not find article "${slug}".`,
-        url: `${HOST_URL}/insights/${slug}`,
-      });
-      const html = indexHtml.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, meta);
+    if (error || !a) {
+      const m = meta({ title: 'Article Not Found', desc: `No article: ${slug}`, url: `${HOST}/insights/${slug}` });
+      res.setHeader('X-SEO-Status', `not-found: ${error?.message || 'na'}`);
+      res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
       res.setHeader('Content-Type', 'text/html; charset=utf-8');
-      res.setHeader('X-SEO-Status', `article-not-found: ${error?.message || 'no data'}`);
-      return res.status(200).send(html);
+      return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
     }
 
-    // Success
-    const meta = buildMeta({
-      title: article.meta_title || article.title,
-      description: article.meta_description || article.excerpt || '',
-      image: article.og_image || article.cover_image,
-      url: `${HOST_URL}/insights/${slug}`,
-      author: article.author,
-      publishedAt: article.published_at,
-      modifiedAt: article.updated_at,
-      tags: article.tags || [],
+    // 5. Success
+    const m = meta({
+      title: a.meta_title || a.title,
+      desc: a.meta_description || a.excerpt || '',
+      image: a.og_image || a.cover_image,
+      url: `${HOST}/insights/${slug}`,
+      author: a.author,
+      publishedAt: a.published_at,
+      modifiedAt: a.updated_at,
+      tags: a.tags || [],
     });
-    const html = indexHtml.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, meta);
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
     res.setHeader('Cache-Control', 'public, max-age=60, s-maxage=300');
-    res.setHeader('X-SEO-Status', `ok: ${article.title}`);
-    return res.status(200).send(html);
+    res.setHeader('X-SEO-Status', 'ok');
+    res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
+    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
 
   } catch (err: any) {
-    const meta = buildMeta({
-      title: 'Error Loading Article',
-      description: err?.message || 'Failed to fetch article.',
-      url: `${HOST_URL}/insights/${slug}`,
-    });
-    const html = indexHtml.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, meta);
+    const m = meta({ title: 'Error', desc: err?.message || 'Error', url: `${HOST}/insights/${slug}` });
+    res.setHeader('X-SEO-Status', `error: ${err?.message || '?'}`);
+    res.setHeader('X-SEO-Time', `${Date.now() - t0}ms`);
     res.setHeader('Content-Type', 'text/html; charset=utf-8');
-    res.setHeader('X-SEO-Status', `error: ${err?.message || String(err)}`);
-    return res.status(200).send(html);
+    return res.status(200).send(html.replace(/<title>.*?<\/title>[\s\S]*?(?=<\/head>)/, m));
   }
 }
