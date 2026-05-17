@@ -1,4 +1,4 @@
-import { FadeIn } from '@/components/FadeIn';
+import { HeroFade } from '@/components/HeroFade';
 import { ArrowRight, MapPin, Clock } from 'lucide-react';
 import { ParticleNetwork } from '@/components/ParticleNetwork';
 
@@ -10,31 +10,31 @@ export function HeroSection() {
 
       <div className="relative z-20 max-w-3xl mx-auto px-6 py-20 w-full">
         <div className="flex flex-col items-center gap-4 text-center">
-          {/* LEFT: Profile Photo with Soft Glow */}
-          <FadeIn delay={0.1}>
+          <HeroFade delay={0.1}>
             <div className="flex-shrink-0">
               <div className="relative w-36 h-36 md:w-44 md:h-44">
-                {/* Soft outer glow */}
                 <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-sky-400/15 via-cyan-400/10 to-transparent blur-xl opacity-60" />
-                {/* Subtle ring */}
                 <div className="absolute -inset-px rounded-full bg-gradient-to-br from-sky-400/40 via-cyan-300/20 to-sky-400/40" />
-                {/* Image */}
                 <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-600/50 bg-slate-900">
-                  <img
-                    src="/images/profile-real.jpg"
-                    alt="Ugan Saripudin"
-                    className="w-full h-full object-cover"
-                  />
+                  <picture>
+                    <source srcSet="/images/profile-real.webp" type="image/webp" />
+                    <img
+                      src="/images/profile-real.jpg"
+                      alt="Ugan Saripudin"
+                      width={176}
+                      height={176}
+                      decoding="async"
+                      fetchPriority="high"
+                      className="w-full h-full object-cover"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
-          </FadeIn>
+          </HeroFade>
 
-          {/* RIGHT: Content */}
           <div className="flex-1 text-center">
-            {/* Label */}
-            <FadeIn>
-              {/* Role badge with tagline */}
+            <HeroFade>
               <div className="mb-4 flex items-center justify-center gap-2">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider">
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
@@ -43,16 +43,16 @@ export function HeroSection() {
                   <span className="text-slate-200">Zero Drama.</span>
                 </span>
               </div>
-            </FadeIn>
+            </HeroFade>
 
-            <FadeIn delay={0.15}>
+            <HeroFade delay={0.15}>
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]" style={{textShadow: '0 2px 30px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.3)'}}>
                 <span className="text-slate-50">UGAN</span>{' '}
                 <span className="text-sky-400">SARIPUDIN</span>
               </h1>
-            </FadeIn>
+            </HeroFade>
 
-            <FadeIn delay={0.2}>
+            <HeroFade delay={0.2}>
               <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
                 <span className="flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-sky-400" />
@@ -63,27 +63,24 @@ export function HeroSection() {
                   WIB (UTC+7)
                 </span>
               </div>
-            </FadeIn>
+            </HeroFade>
 
-            <FadeIn delay={0.25}>
-              {/* Supporting text — stakeholder + engineering team build-up */}
+            <HeroFade delay={0.25}>
               <p className="mt-4 text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
                 I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO Achieved, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
               </p>
-            </FadeIn>
+            </HeroFade>
 
-            {/* Buttons */}
-            <FadeIn delay={0.35}>
+            <HeroFade delay={0.35}>
               <div className="mt-7 flex flex-wrap justify-center gap-3">
                 <a href="#projects"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
                   View My Work <ArrowRight className="w-4 h-4" />
                 </a>
               </div>
-            </FadeIn>
+            </HeroFade>
 
-            {/* Social + Email */}
-            <FadeIn delay={0.4}>
+            <HeroFade delay={0.4}>
               <div className="mt-7 flex items-center justify-center gap-5 text-slate-500">
                 <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer" title="oeganz"
                   className="hover:text-sky-400 transition-colors" aria-label="GitHub">
@@ -99,7 +96,7 @@ export function HeroSection() {
                   oeganz1999@gmail.com
                 </a>
               </div>
-            </FadeIn>
+            </HeroFade>
           </div>
         </div>
       </div>

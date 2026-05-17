@@ -11,7 +11,7 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import * as fc from 'fast-check';
-import { injectArticleMeta } from '../article-seo.js';
+import { injectArticleMeta, extractAssetTags, rewriteAssetPaths } from '../article-seo.js';
 
 // ── Top-level mocks (hoisted by Vitest) ───────────────────────────────────────
 
@@ -66,6 +66,31 @@ function buildHtmlWithPlainTitle(homepageTitle: string): string {
     '<body>',
     '  <div id="root"></div>',
     '  <script type="module" src="/assets/index.js"></script>',
+    '</body>',
+    '</html>',
+  ].join('\n');
+}
+
+/**
+ * Mirrors post-Vite dist/index.html: SEO in head, asset tags before </head>.
+ */
+function buildHtmlLikeDist(homepageTitle: string): string {
+  return [
+    '<!DOCTYPE html>',
+    '<html lang="en">',
+    '<head>',
+    '  <meta charset="UTF-8" />',
+    '  <meta name="viewport" content="width=device-width, initial-scale=1.0" />',
+    `  <title data-rh="true">${homepageTitle}</title>`,
+    '  <meta data-rh="true" name="description" content="Homepage description" />',
+    '  <link data-rh="true" rel="canonical" href="https://example.com/" />',
+    '  <script type="application/ld+json">{"@type":"Person"}</script>',
+    '  <script type="module" crossorigin src="./assets/index-abc.js"></script>',
+    '  <link rel="modulepreload" crossorigin href="./assets/vendor-react.js">',
+    '  <link rel="stylesheet" crossorigin href="./assets/index.css">',
+    '</head>',
+    '<body>',
+    '  <div id="root"></div>',
     '</body>',
     '</html>',
   ].join('\n');
@@ -301,6 +326,48 @@ describe('Property 2: Preservation — Attribute-Free Title Tags Produce Identic
     // SPA shell must be preserved after replacement
     expect(result).toContain('<div id="root">');
     expect(result).toContain('<script type="module"');
+  });
+});
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ASSET TAG PRESERVATION (dist-like HTML)
+// ─────────────────────────────────────────────────────────────────────────────
+
+describe('Asset tag preservation — dist-like HTML', () => {
+  it('extractAssetTags pulls module script, modulepreload, and stylesheet from head', () => {
+    const html = buildHtmlLikeDist('Homepage');
+    const { head, body } = extractAssetTags(html);
+    expect(head).toContain('<script type="module"');
+    expect(head).toContain('modulepreload');
+    expect(head).toContain('stylesheet');
+    expect(body).toBe('');
+  });
+
+  it('injectArticleMeta keeps asset tags in head after SEO replacement', () => {
+    const html = rewriteAssetPaths(buildHtmlLikeDist('Homepage Title'));
+    const metaBlock = buildArticleMetaBlock('ADLC vs SDLC', 'Article description');
+    const result = injectArticleMeta(html, metaBlock);
+
+    expect(result).toContain('ADLC vs SDLC');
+    expect(result).not.toContain('Homepage Title');
+    expect(result).toContain('<script type="module"');
+    expect(result).toContain('/assets/index-abc.js');
+    expect(result).toContain('/assets/vendor-react.js');
+    expect(result).toContain('/assets/index.css');
+    expect(result).toContain('<div id="root">');
+    const headInner = result.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? '';
+    expect(headInner).toContain('<script type="module"');
+    expect(headInner).toContain('ADLC vs SDLC');
+  });
+
+  it('injectArticleMeta preserves body script when assets are only in body (dev index.html)', () => {
+    const html = buildHtmlWithAttributedTitle('Homepage');
+    const metaBlock = buildArticleMetaBlock('Test Article', 'Desc');
+    const result = injectArticleMeta(html, metaBlock);
+
+    expect(result).toContain('Test Article');
+    expect(result).toContain('<script type="module"');
+    expect(result).toContain('/assets/index.js');
   });
 });
 
