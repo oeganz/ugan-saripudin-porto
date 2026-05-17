@@ -79,15 +79,46 @@ function getHtml(): string | null {
   return null;
 }
 
+const ASSET_TAG_RE =
+  /<script type="module"[^>]*><\/script>|<link rel="modulepreload"[^>]*>|<link rel="stylesheet"[^>]*>/g;
+
+/** Extracts Vite-emitted script/link tags from `<head>` or `<body>`. */
+export function extractAssetTags(html: string): { head: string; body: string } {
+  const headInner = html.match(/<head[^>]*>([\s\S]*?)<\/head>/i)?.[1] ?? '';
+  const headTags = headInner.match(ASSET_TAG_RE) ?? [];
+  const bodyInner = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i)?.[1] ?? '';
+  const bodyTags = bodyInner.match(ASSET_TAG_RE) ?? [];
+  return {
+    head: headTags.join('\n    '),
+    body: bodyTags.join('\n    '),
+  };
+}
+
 // ── Testable helper — exported for unit/property-based tests ──
 /**
- * Replaces the entire <head> meta block in html with metaBlock.
- * The pattern `/<title[^>]*>[\s\S]*?<\/head>/` matches `<title>` with zero
- * or more attributes (covering both `<title>` and `<title data-rh="true">`),
- * then lazily matches everything through the closing `</head>` tag (inclusive).
+ * Replaces the SEO block from `<title>` up to (but not including) Vite asset tags
+ * or `</head>`. Preserves module scripts, modulepreload, and stylesheet tags.
  */
 export function injectArticleMeta(html: string, metaBlock: string): string {
-  return html.replace(/<title[^>]*>[\s\S]*?<\/head>/, metaBlock + '\n  </head>');
+  const { head: headAssets, body: bodyAssets } = extractAssetTags(html);
+  const assetSuffix = headAssets ? `\n    ${headAssets}` : '';
+
+  const injected = html.replace(
+    /<title[^>]*>[\s\S]*?(?=\s*(?:<script type="module"|<link rel="modulepreload"|<link rel="stylesheet"|<\/head>))/,
+    metaBlock + assetSuffix,
+  );
+
+  if (bodyAssets && !headAssets) {
+    return injected.replace(
+      /<body([^>]*)>([\s\S]*?)<\/body>/i,
+      (_m, attrs, inner) => {
+        const withoutModule = inner.replace(ASSET_TAG_RE, '').trimEnd();
+        return `<body${attrs}>${withoutModule}\n    ${bodyAssets}\n  </body>`;
+      },
+    );
+  }
+
+  return injected;
 }
 
 /** Rewrites `./`-prefixed asset paths to absolute `/` paths for nested URL serving. */
