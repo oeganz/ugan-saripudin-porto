@@ -1,18 +1,15 @@
 {
   "rewrites": [
-    { "source": "/insights/([^/]+)", "destination": "/api/article-seo?slug=$1" },
-    { "source": "/((?!api|_next|static|.*\.).*)", "destination": "/index.html" }
-  ],
-  "headers": [
+    {
+      "source": "/insights/:slug",
+      "destination": "/api/article-seo?slug=:slug"
+    },
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
     {
       "source": "/assets/(.*)",
       "headers": [
