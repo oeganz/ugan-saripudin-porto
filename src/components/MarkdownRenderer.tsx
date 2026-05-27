@@ -6,10 +6,17 @@ import DOMPurify from 'dompurify'
 import type { Components } from 'react-markdown'
 
 /**
- * Detects if content contains markdown syntax.
+ * Detects if content is Markdown vs HTML.
+ * Rule: if content has HTML tags (<tag>), treat it as HTML first.
+ * Only check markdown patterns if content contains no HTML tags.
  */
 export function isMarkdown(content: string): boolean {
   if (!content) return false
+
+  // If content has HTML tags like <p>, <a>, <strong>, etc., it's HTML — never route to markdown renderer
+  if (/<[a-z][^>]*>/i.test(content)) {
+    return false
+  }
 
   const markdownPatterns = [
     /^#{1,6}\s/m,           // headings
