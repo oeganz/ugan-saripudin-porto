@@ -22,7 +22,7 @@ export function isMarkdown(content: string): boolean {
     /\*\*[^*]+\*\*/m,      // bold
     /_[^_]+_/m,            // italic
     /---$/m,               // horizontal rules
-    /\|.+\|/m,             // tables
+    /^\|.+\|$/m,           // tables (full-line markdown table format only)
   ]
 
   return markdownPatterns.some(pattern => pattern.test(content))
@@ -44,8 +44,9 @@ export function HTMLRenderer({ content, className = 'prose prose-invert prose-lg
       'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
       'blockquote', 'code', 'pre',
       'img', 'table', 'thead', 'tbody', 'tr', 'th', 'td',
+      'figure', 'figcaption', 'hr', 'span', 'div', 'dl', 'dt', 'dd',
     ],
-    ALLOWED_ATTR: ['href', 'target', 'rel', 'src', 'alt', 'title', 'class'],
+    ALLOWED_ATTR: ['href', 'target', 'rel', 'src', 'alt', 'title', 'class', 'id'],
   })
 
   return (
