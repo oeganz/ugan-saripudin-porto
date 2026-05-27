@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
-import { sanitizeHTML } from '@/lib/sanitize'
 import type { Article, ArticleStatus } from '@/types/article'
+import { MarkdownRenderer } from '@/components/MarkdownRenderer'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { SEOHead } from '@/components/SEOHead'
 import { SocialShare } from '@/components/SocialShare'
 import { ReadingProgress } from '@/components/ReadingProgress'
 import { ArticleCard } from '@/components/ArticleCard'
-import { MarkdownRenderer } from '@/components/MarkdownRenderer'
 import { Clock, Calendar, User, ArrowLeft } from 'lucide-react'
 
 export default function ArticleDetailPage() {
