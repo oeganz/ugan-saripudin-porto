@@ -29,6 +29,7 @@ export function SEOHead({ article }: SEOHeadProps) {
       <title>{title} | Ugan Saripudin</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={url} />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
       {/* Open Graph */}
       <meta property="og:type" content="article" />
