@@ -4,6 +4,7 @@ import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import DOMPurify from 'dompurify'
 import type { Components } from 'react-markdown'
+import { MermaidChart } from './MermaidChart'
 
 /**
  * Detects if content is Markdown vs HTML.
@@ -64,6 +65,16 @@ export function HTMLRenderer({ content, className = 'prose prose-invert prose-lg
   )
 }
 
+// Extract text content from react-markdown children
+function getCodeString(children: React.ReactNode): string {
+  if (typeof children === 'string') return children
+  if (Array.isArray(children)) return children.map(getCodeString).join('')
+  if (children && typeof children === 'object' && 'props' in (children as object)) {
+    return getCodeString((children as { props: { children?: React.ReactNode } }).props.children)
+  }
+  return ''
+}
+
 // Custom components for react-markdown
 const customComponents: Components = {
   code({ node, className, children, ...props }) {
@@ -76,6 +87,12 @@ const customComponents: Components = {
           {children}
         </code>
       )
+    }
+
+    // Handle Mermaid diagrams
+    if (match && match[1] === 'mermaid') {
+      const code = getCodeString(children)
+      return <MermaidChart code={code} />
     }
 
     return (
