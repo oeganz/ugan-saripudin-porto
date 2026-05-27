@@ -157,7 +157,7 @@ export default function ArticleDetailPage() {
               </div>
             )}
 
-            <UnifiedRenderer content={article.content} className="mb-12" />
+            <UnifiedRenderer content={article.content} className="mb-12 prose prose-invert prose-lg max-w-none" />
 
             <SocialShare article={article} />
           </article>
