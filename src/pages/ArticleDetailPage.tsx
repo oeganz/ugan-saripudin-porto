@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { supabase } from '@/lib/supabase'
 import type { Article, ArticleStatus } from '@/types/article'
-import { MarkdownRenderer } from '@/components/MarkdownRenderer'
+import { UnifiedRenderer } from '@/components/MarkdownRenderer'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { SEOHead } from '@/components/SEOHead'
@@ -157,7 +157,7 @@ export default function ArticleDetailPage() {
               </div>
             )}
 
-            <MarkdownRenderer content={article.content} className="mb-12" />
+            <UnifiedRenderer content={article.content} className="mb-12 prose prose-invert prose-lg max-w-none" />
 
             <SocialShare article={article} />
           </article>
