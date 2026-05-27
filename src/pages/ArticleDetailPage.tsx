@@ -9,6 +9,7 @@ import { SEOHead } from '@/components/SEOHead'
 import { SocialShare } from '@/components/SocialShare'
 import { ReadingProgress } from '@/components/ReadingProgress'
 import { ArticleCard } from '@/components/ArticleCard'
+import { MarkdownRenderer } from '@/components/MarkdownRenderer'
 import { Clock, Calendar, User, ArrowLeft } from 'lucide-react'
 
 export default function ArticleDetailPage() {
@@ -157,10 +158,7 @@ export default function ArticleDetailPage() {
               </div>
             )}
 
-            <div
-              className="prose prose-invert prose-lg max-w-none mb-12"
-              dangerouslySetInnerHTML={{ __html: sanitizeHTML(article.content) }}
-            />
+            <MarkdownRenderer content={article.content} className="mb-12" />
 
             <SocialShare article={article} />
           </article>
