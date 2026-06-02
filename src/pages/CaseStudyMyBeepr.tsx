@@ -1,10 +1,24 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Clock, Globe, Target, Award, Shield, Users } from 'lucide-react'
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/FadeIn'
 
 export default function CaseStudyMyBeepr() {
   return (
-    <div className="min-h-screen bg-slate-900">
+    <>
+      <Helmet>
+        <title>MyBeepr: 98% On-Time Delivery Across Time Zones — Ugan Saripudin</title>
+        <meta name="description" content="Healthcare communication software delivered across Indonesia-Australia timezone with 98% on-time delivery and zero security incidents across 16 hospital deployments." />
+        <link rel="canonical" href="https://ugan.ganzapps.my.id/case-study/mybeepr" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="MyBeepr: 98% On-Time Delivery Across Time Zones" />
+        <meta property="og:description" content="Healthcare communication with 98% on-time delivery and zero security incidents across 16 hospital deployments." />
+        <meta property="og:url" content="https://ugan.ganzapps.my.id/case-study/mybeepr" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="MyBeepr: 98% On-Time Delivery Across Time Zones" />
+        <meta name="twitter:description" content="Healthcare communication with 98% on-time delivery across 16 hospital deployments." />
+      </Helmet>
+      <div className="min-h-screen bg-slate-900">
       {/* Header */}
       <header className="border-b border-slate-700/50 bg-slate-900/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -335,5 +349,6 @@ export default function CaseStudyMyBeepr() {
         </div>
       </section>
     </div>
+    </>
   )
 }

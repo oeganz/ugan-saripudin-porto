@@ -1,10 +1,24 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { ArrowLeft, Users, TrendingUp, Shield, Zap } from 'lucide-react'
 import { FadeIn, StaggerContainer, StaggerItem } from '@/components/FadeIn'
 
 export default function CaseStudyLabamu() {
   return (
-    <div className="min-h-screen bg-slate-900">
+    <>
+      <Helmet>
+        <title>Labamu: From Monolith to 86K+ Users — Ugan Saripudin</title>
+        <meta name="description" content="Case study: Led Labamu's migration from Laravel monolith to microservices, supporting 86K+ merchants and IDR 86B in funding." />
+        <link rel="canonical" href="https://ugan.ganzapps.my.id/case-study/labamu" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Labamu: From Monolith to 86K+ Users" />
+        <meta property="og:description" content="Led Labamu's migration from Laravel monolith to microservices, supporting 86K+ merchants." />
+        <meta property="og:url" content="https://ugan.ganzapps.my.id/case-study/labamu" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Labamu: From Monolith to 86K+ Users" />
+        <meta name="twitter:description" content="Led Labamu's migration from Laravel monolith to microservices." />
+      </Helmet>
+      <div className="min-h-screen bg-slate-900">
       {/* Header */}
       <header className="border-b border-slate-700/50 bg-slate-900/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
@@ -310,5 +324,6 @@ export default function CaseStudyLabamu() {
         </div>
       </section>
     </div>
+    </>
   )
 }
