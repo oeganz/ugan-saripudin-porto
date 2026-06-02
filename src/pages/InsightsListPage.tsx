@@ -8,11 +8,13 @@ import { Footer } from '@/components/Footer'
 import { SectionHeader } from '@/components/SectionHeader'
 import { ArticleCard } from '@/components/ArticleCard'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
+import { Filter } from 'lucide-react'
 
 export default function InsightsListPage() {
   const [articles, setArticles] = useState<Article[]>([])
   const [loading, setLoading] = useState(true)
   const [searchParams, setSearchParams] = useSearchParams()
+  const [showFilters, setShowFilters] = useState(false)
   const tagFilter = searchParams.get('tag')
 
   useEffect(() => {
@@ -86,31 +88,52 @@ export default function InsightsListPage() {
             headline="Original Thinking"
           />
 
+          {/* Filter Toggle */}
           {allTags.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-12">
+            <div className="flex items-center justify-between mb-6">
               <button
-                onClick={() => setSearchParams({})}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                  !tagFilter
-                    ? 'bg-sky-400 text-slate-900'
-                    : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
-                }`}
+                onClick={() => setShowFilters(!showFilters)}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800/60 text-slate-300 hover:text-sky-400 border border-slate-700/40 transition-colors"
               >
-                All
+                <Filter className="w-4 h-4" /> Filters {showFilters ? '▲' : '▼'}
               </button>
-              {allTags.map((tag) => (
-                <button
-                  key={tag}
-                  onClick={() => setSearchParams({ tag })}
-                  className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
-                    tagFilter === tag
-                      ? 'bg-sky-400 text-slate-900'
-                      : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
-                  }`}
-                >
-                  {tag}
-                </button>
-              ))}
+              <span className="text-sm text-slate-500">
+                Showing {articles.length} of {articles.length} articles
+              </span>
+            </div>
+          )}
+
+          {/* Filters */}
+          {showFilters && allTags.length > 0 && (
+            <div className="mb-8 p-6 rounded-xl bg-slate-800/40 border border-slate-700/30">
+              <div>
+                <label className="text-xs text-slate-500 uppercase tracking-wider mb-3 block">Tags</label>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    onClick={() => setSearchParams({})}
+                    className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                      !tagFilter
+                        ? 'bg-sky-400 text-slate-900'
+                        : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
+                    }`}
+                  >
+                    All
+                  </button>
+                  {allTags.map((tag) => (
+                    <button
+                      key={tag}
+                      onClick={() => setSearchParams({ tag })}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
+                        tagFilter === tag
+                          ? 'bg-sky-400 text-slate-900'
+                          : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
+                      }`}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 
