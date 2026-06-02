@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /#/adm-*
 Disallow: /#/admin*
+
+Sitemap: https://ugan.ganzapps.my.id/sitemap.xml
