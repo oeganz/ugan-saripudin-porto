@@ -13,7 +13,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
       <Card className="relative h-full group cursor-pointer hover:border-sky-400/40 transition-all">
         {article.cover_image && (
           <div className="relative w-full h-48 overflow-hidden rounded-t-lg mb-4 bg-slate-800">
-            <div className="absolute inset-0 bg-slate-800 animate-pulse" />
+            <div className="article-cover-skeleton absolute inset-0 bg-slate-700" />
             <img
               src={article.cover_image}
               alt={article.title}
@@ -22,8 +22,11 @@ export function ArticleCard({ article }: ArticleCardProps) {
               onLoad={(e) => {
                 const img = e.target as HTMLImageElement
                 img.style.opacity = '1'
+                const wrapper = img.parentElement
+                const skeleton = wrapper?.querySelector('.article-cover-skeleton') as HTMLElement
+                if (skeleton) { skeleton.style.opacity = '0'; skeleton.style.transition = 'opacity 0.3s' }
               }}
-              className="w-full h-full object-cover transition-opacity duration-500"
+              className="w-full h-full object-cover"
               style={{ opacity: 0 }}
             />
           </div>

@@ -1,10 +1,9 @@
-import { useState } from 'react'
+
 import { HeroFade } from '@/components/HeroFade';
 import { ArrowRight, MapPin, Clock } from 'lucide-react';
 import { ParticleNetwork } from '@/components/ParticleNetwork';
 
 export function HeroSection() {
-  const [avatarLoaded, setAvatarLoaded] = useState(false)
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="about">
       <ParticleNetwork />
@@ -27,11 +26,15 @@ export function HeroSection() {
                       height={176}
                       decoding="async"
                       fetchPriority="high"
-                      onLoad={() => setAvatarLoaded(true)}
-                      className="w-full h-full object-cover transition-opacity duration-500"
-                      style={{ opacity: avatarLoaded ? 1 : 0 }}
+                      onLoad={(e) => {
+                        const img = e.target as HTMLImageElement
+                        const container = img.parentElement
+                        const skeleton = container?.querySelector('.avatar-skeleton') as HTMLElement
+                        if (skeleton) { skeleton.style.opacity = '0'; skeleton.style.transition = 'opacity 0.3s' }
+                      }}
+                      className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-slate-800 rounded-full animate-pulse" style={{ opacity: avatarLoaded ? 0 : 1, transition: 'opacity 0.3s' }} />
+                    <div className="avatar-skeleton absolute inset-0 bg-slate-800 rounded-full" />
                   </picture>
                 </div>
               </div>

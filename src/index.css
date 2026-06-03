@@ -96,3 +96,38 @@ img[fetchpriority="high"] ~ .avatar-skeleton {
 img[fetchpriority="high"].loaded {
   opacity: 1 !important;
 }
+
+/* Stop skeleton pulse once image is loaded */
+img.loaded ~ .article-cover-skeleton,
+img.loaded ~ .project-img-skeleton,
+img.loaded ~ .avatar-skeleton,
+.article-cover-skeleton:has(+ img.loaded),
+.project-img-skeleton:has(+ img.loaded) {
+  animation: none !important;
+  opacity: 0 !important;
+}
+
+/* Better approach: hide skeleton when sibling img has loaded class */
+.relative:has(.article-cover-skeleton + img.loaded) .article-cover-skeleton,
+.relative:has(.project-img-skeleton + img.loaded) .project-img-skeleton,
+.absolute:has(+ img.loaded) {
+  animation: none !important;
+  opacity: 0 !important;
+}
+
+/* Skeleton animations - stop when parent opacity is 0 */
+.animate-pulse-skeleton {
+  animation: pulse-skeleton 1.5s ease-in-out infinite;
+}
+@keyframes pulse-skeleton {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+/* When image loads, hide skeleton immediately */
+.avatar-skeleton[style*="opacity: 0"],
+.avatar-skeleton[style*="opacity:0"] {
+  animation: none !important;
+  opacity: 0 !important;
+  pointer-events: none;
+}
