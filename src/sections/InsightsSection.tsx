@@ -4,7 +4,6 @@ import { supabase } from '@/lib/supabase'
 import type { Article, ArticleStatus } from '@/types/article'
 import { SectionHeader } from '@/components/SectionHeader'
 import { ArticleCard } from '@/components/ArticleCard'
-import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
 import { ArticleCardSkeleton } from '@/components/ArticleCardSkeleton'
 import { FadeIn } from '@/components/FadeIn'
 import { ArrowUpRight } from 'lucide-react'
@@ -67,13 +66,11 @@ export function InsightsSection() {
           </FadeIn>
         ) : (
           <>
-            <StaggerContainer staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {articles.map((article) => (
-                <StaggerItem key={article.id}>
-                  <ArticleCard article={article} />
-                </StaggerItem>
+                <ArticleCard key={article.id} article={article} />
               ))}
-            </StaggerContainer>
+            </div>
 
             <FadeIn delay={0.4}>
               <div className="text-center">
