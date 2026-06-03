@@ -8,6 +8,7 @@ import { Footer } from '@/components/Footer'
 import { SectionHeader } from '@/components/SectionHeader'
 import { ArticleCard } from '@/components/ArticleCard'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
+import { ArticleCardSkeleton } from '@/components/ArticleCardSkeleton'
 import { Filter } from 'lucide-react'
 
 export default function InsightsListPage() {
@@ -138,7 +139,11 @@ export default function InsightsListPage() {
           )}
 
           {loading ? (
-            <div className="text-center text-slate-400">Loading articles...</div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[...Array(6)].map((_, i) => (
+                <ArticleCardSkeleton key={i} />
+              ))}
+            </div>
           ) : articles.length === 0 ? (
             <div className="text-center text-slate-400">
               {tagFilter ? `No articles found with tag "${tagFilter}"` : 'No articles yet'}

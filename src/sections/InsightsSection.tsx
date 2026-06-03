@@ -5,6 +5,7 @@ import type { Article, ArticleStatus } from '@/types/article'
 import { SectionHeader } from '@/components/SectionHeader'
 import { ArticleCard } from '@/components/ArticleCard'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
+import { ArticleCardSkeleton } from '@/components/ArticleCardSkeleton'
 import { FadeIn } from '@/components/FadeIn'
 import { ArrowUpRight } from 'lucide-react'
 
@@ -49,7 +50,11 @@ export function InsightsSection() {
         />
 
         {loading ? (
-          <div className="text-center text-slate-400">Loading articles...</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[...Array(3)].map((_, i) => (
+                <ArticleCardSkeleton key={i} />
+              ))}
+            </div>
         ) : articles.length === 0 ? (
           <FadeIn delay={0.2}>
             <div className="text-center">
