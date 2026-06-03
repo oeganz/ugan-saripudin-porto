@@ -7,7 +7,7 @@ import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 
 import { ArticleCard } from '@/components/ArticleCard'
-import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
+
 import { ArticleCardSkeleton } from '@/components/ArticleCardSkeleton'
 import { Filter } from 'lucide-react'
 
@@ -156,16 +156,11 @@ export default function InsightsListPage() {
               {tagFilter ? `No articles found with tag "${tagFilter}"` : 'No articles yet'}
             </div>
           ) : (
-            <StaggerContainer
-              staggerDelay={0.1}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {articles.map((article) => (
-                <StaggerItem key={article.id}>
-                  <ArticleCard article={article} />
-                </StaggerItem>
+                <ArticleCard key={article.id} article={article} />
               ))}
-            </StaggerContainer>
+            </div>
           )}
         </div>
       </main>
