@@ -12,12 +12,21 @@ export function ArticleCard({ article }: ArticleCardProps) {
     <Link to={`/insights/${article.slug}`}>
       <Card className="relative h-full group cursor-pointer hover:border-sky-400/40 transition-all">
         {article.cover_image && (
-          <img
-            src={article.cover_image}
-            alt={article.title}
-            className="w-full h-48 object-cover rounded-t-lg mb-4"
-            loading="lazy"
-          />
+          <div className="relative w-full h-48 overflow-hidden rounded-t-lg mb-4 bg-slate-800">
+            <div className="absolute inset-0 bg-slate-800 animate-pulse" />
+            <img
+              src={article.cover_image}
+              alt={article.title}
+              loading="lazy"
+              decoding="async"
+              onLoad={(e) => {
+                const img = e.target as HTMLImageElement
+                img.style.opacity = '1'
+              }}
+              className="w-full h-full object-cover transition-opacity duration-500"
+              style={{ opacity: 0 }}
+            />
+          </div>
         )}
 
         <div className="flex items-center gap-2 mb-4">

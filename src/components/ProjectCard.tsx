@@ -110,16 +110,25 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
         {/* Image */}
         <div className={`relative ${variant === 'carousel' ? 'h-52' : 'h-44'} bg-slate-800 overflow-hidden`}>
           {(projectImages[project.id] || project.screenshots[0]) ? (
-            <img
-              src={projectImages[project.id] || project.screenshots[0]}
-              alt={project.name}
-              className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
-              loading="lazy"
-              onError={(e) => {
-                const t = e.target as HTMLImageElement;
-                t.style.display = 'none';
-              }}
-            />
+            <div className="relative w-full h-full overflow-hidden">
+              <div className="absolute inset-0 bg-slate-800 animate-pulse" />
+              <img
+                src={projectImages[project.id] || project.screenshots[0]}
+                alt={project.name}
+                loading="lazy"
+                decoding="async"
+                onLoad={(e) => {
+                  const img = e.target as HTMLImageElement
+                  img.style.opacity = '1'
+                }}
+                onError={(e) => {
+                  const t = e.target as HTMLImageElement;
+                  t.parentElement ? t.parentElement.style.display = 'none' : (t.style.display = 'none');
+                }}
+                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                style={{ opacity: 0 }}
+              />
+            </div>
           ) : (
             <div className="w-full h-full flex items-center justify-center bg-slate-800">
               <div className="text-4xl font-black text-slate-700">{project.name.charAt(0)}</div>

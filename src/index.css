@@ -87,3 +87,12 @@
 @keyframes shimmer {
   100% { transform: translateX(300%); }
 }
+
+/* Avatar skeleton hide when image loads */
+img[fetchpriority="high"] + .avatar-skeleton,
+img[fetchpriority="high"] ~ .avatar-skeleton {
+  display: none;
+}
+img[fetchpriority="high"].loaded {
+  opacity: 1 !important;
+}
