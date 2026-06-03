@@ -1,28 +1,42 @@
+import { Card } from '@/components/Card'
+
 export function ArticleCardSkeleton() {
   return (
-    <div className="animate-pulse">
-      {/* Image placeholder */}
-      <div className="w-full h-48 bg-slate-800 rounded-t-lg mb-4" />
-      
-      {/* Tags row */}
-      <div className="flex items-center gap-2 mb-4">
-        <div className="w-16 h-5 bg-slate-800 rounded-md" />
-        <div className="w-12 h-5 bg-slate-800 rounded-md" />
-        <div className="ml-auto w-16 h-4 bg-slate-800 rounded" />
+    <div className="relative overflow-hidden rounded-xl">
+      {/* Pulsing skeleton */}
+      <div className="animate-pulse">
+        <Card className="!border-slate-700/60">
+          {/* Image - visible block */}
+          <div className="w-full h-48 bg-slate-700/80 rounded-lg mb-4" />
+          
+          {/* Tags */}
+          <div className="flex items-center gap-2 mb-4">
+            <div className="h-5 w-16 rounded-md bg-slate-700/80" />
+            <div className="h-5 w-12 rounded-md bg-slate-700/80" />
+            <div className="ml-auto h-4 w-16 rounded bg-slate-700/80" />
+          </div>
+
+          {/* Title lines */}
+          <div className="space-y-2 mb-4">
+            <div className="h-5 w-full rounded bg-slate-700/80" />
+            <div className="h-5 w-3/4 rounded bg-slate-700/60" />
+          </div>
+
+          {/* Excerpt lines */}
+          <div className="space-y-2 mb-4">
+            <div className="h-3 w-full rounded bg-slate-700/60" />
+            <div className="h-3 w-2/3 rounded bg-slate-700/60" />
+          </div>
+
+          {/* Footer */}
+          <div className="flex items-center gap-2 pt-4 border-t border-slate-700/40">
+            <div className="h-3 w-20 rounded bg-slate-700/60" />
+          </div>
+        </Card>
       </div>
 
-      {/* Title */}
-      <div className="w-3/4 h-6 bg-slate-800 rounded mb-3" />
-      <div className="w-1/2 h-6 bg-slate-800 rounded mb-4" />
-
-      {/* Excerpt */}
-      <div className="w-full h-4 bg-slate-800 rounded mb-2" />
-      <div className="w-2/3 h-4 bg-slate-800 rounded mb-4" />
-
-      {/* Footer */}
-      <div className="flex items-center gap-2 pt-4 border-t border-slate-700/30">
-        <div className="w-20 h-3 bg-slate-800 rounded" />
-      </div>
+      {/* Shimmer overlay */}
+      <div className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-slate-600/10 to-transparent pointer-events-none" />
     </div>
   )
 }

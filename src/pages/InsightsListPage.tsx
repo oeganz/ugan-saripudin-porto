@@ -5,7 +5,7 @@ import { supabase } from '@/lib/supabase'
 import type { Article, ArticleStatus } from '@/types/article'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
-import { SectionHeader } from '@/components/SectionHeader'
+
 import { ArticleCard } from '@/components/ArticleCard'
 import { StaggerContainer, StaggerItem } from '@/components/FadeIn'
 import { ArticleCardSkeleton } from '@/components/ArticleCardSkeleton'
@@ -83,11 +83,16 @@ export default function InsightsListPage() {
 
       <main className="py-[100px] md:py-[140px]">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionHeader
-            number="(02)"
-            eyebrow="INSIGHTS"
-            headline="Original Thinking"
-          />
+          {/* Header - no animation delay */}
+          <div className="mb-10 md:mb-14">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-sm font-mono text-sky-400/70 font-semibold">(02)</span>
+              <span className="text-xs font-semibold uppercase tracking-[3px] text-sky-400/90">INSIGHTS</span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-[52px] font-extrabold leading-[1.05] tracking-[-1.5px] text-slate-50">
+              Original Thinking
+            </h2>
+          </div>
 
           {/* Filter Toggle */}
           {allTags.length > 0 && (
