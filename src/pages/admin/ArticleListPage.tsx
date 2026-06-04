@@ -5,7 +5,9 @@ import { useAuth } from '@/hooks/useAuth'
 import type { Article, ArticleStatus } from '@/types/article'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { Search, Plus, LogOut } from 'lucide-react'
+import { Search, Plus, LogOut, ExternalLink } from 'lucide-react'
+
+const HOST = import.meta.env.VITE_HOST_URL || 'https://ugan-saripudin-porto.vercel.app'
 
 export default function ArticleListPage() {
   const [articles, setArticles] = useState<Article[]>([])
@@ -62,6 +64,14 @@ export default function ArticleListPage() {
     }
 
     setFilteredArticles(filtered)
+  }
+
+  const openPreview = (slug: string) => {
+    window.open(`${HOST}/insights/${slug}?preview=true`, '_blank')
+  }
+
+  const openLive = (slug: string) => {
+    window.open(`${HOST}/insights/${slug}`, '_blank')
   }
 
   const handleSignOut = async () => {
@@ -224,6 +234,24 @@ export default function ArticleListPage() {
                             <span className="px-2 py-0.5 rounded text-xs text-slate-400">
                               +{article.tags.length - 3}
                             </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-6 py-4" onClick={e => e.stopPropagation()}>
+                        <div className="flex gap-2 flex-wrap">
+                          <button
+                            onClick={() => openPreview(article.slug)}
+                            className="flex items-center gap-1 px-2 py-1 rounded text-xs font-medium bg-amber-500/20 text-amber-400 hover:bg-amber-500/30 transition-colors"
+                          >
+                            <ExternalLink size={11} /> Preview
+                          </button>
+                          {article.status === 'published' && (
+                            <button
+                              onClick={() => openLive(article.slug)}
+                              className="flex items-center gap-1 px-2 py-1 rounded text-xs font-medium bg-green-500/20 text-green-400 hover:bg-green-500/30 transition-colors"
+                            >
+                              <ExternalLink size={11} /> Live
+                            </button>
                           )}
                         </div>
                       </td>

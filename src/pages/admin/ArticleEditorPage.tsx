@@ -13,7 +13,7 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { RichTextEditor } from '@/components/admin/RichTextEditor'
 import { ImageUpload } from '@/components/admin/ImageUpload'
-import { ArrowLeft, Save, Eye, X } from 'lucide-react'
+import { ArrowLeft, Save, Eye, X, Globe } from 'lucide-react'
 
 const articleSchema = z.object({
   title: z.string().min(1, 'Title is required').max(200, 'Title must be less than 200 characters'),
@@ -248,11 +248,21 @@ export default function ArticleEditorPage() {
             <Button
               onClick={handlePublish}
               disabled={saving}
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-500"
             >
-              <Eye size={16} />
+              <Globe size={16} />
               {saving ? 'Publishing...' : 'Publish'}
             </Button>
+            {watch('slug') && (
+              <Button
+                onClick={() => window.open(`/insights/${watch('slug')}?preview=true`, '_blank')}
+                variant="outline"
+                className="flex items-center gap-2 border-amber-500/50 text-amber-400 hover:bg-amber-500/10"
+              >
+                <Eye size={16} />
+                Preview
+              </Button>
+            )}
           </div>
         </div>
 
