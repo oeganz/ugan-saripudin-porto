@@ -22,6 +22,15 @@ export default function InsightsListPage() {
   const currentPage = Math.max(1, parseInt(searchParams.get('page') || '1', 10))
   const totalPages = Math.ceil(totalCount / PAGE_SIZE)
 
+  // Reset page to 1 when tag filter changes
+  useEffect(() => {
+    if (tagFilter && currentPage !== 1) {
+      const params = new URLSearchParams(searchParams)
+      params.delete('page')
+      setSearchParams(params, { replace: true })
+    }
+  }, [tagFilter]) // eslint-disable-line react-hooks/exhaustive-deps
+
   useEffect(() => {
     fetchArticles()
   }, [tagFilter, currentPage])
@@ -135,7 +144,7 @@ export default function InsightsListPage() {
                   <label className="text-xs text-slate-500 uppercase tracking-wider mb-3 block">Tags</label>
                   <div className="flex flex-wrap gap-2">
                     <button
-                      onClick={() => { setSearchParams({}); setPage(1) }}
+                      onClick={() => setSearchParams({})}
                       className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                         !tagFilter
                           ? 'bg-sky-400 text-slate-900'
@@ -147,7 +156,7 @@ export default function InsightsListPage() {
                     {allTags.map((tag) => (
                       <button
                         key={tag}
-                        onClick={() => { setSearchParams({ tag }); setPage(1) }}
+                        onClick={() => setSearchParams({ tag })}
                         className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                           tagFilter === tag
                             ? 'bg-sky-400 text-slate-900'
