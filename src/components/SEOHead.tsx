@@ -8,7 +8,8 @@ interface SEOHeadProps {
 export function SEOHead({ article }: SEOHeadProps) {
   const title = article.meta_title || article.title
   const description = article.meta_description || article.excerpt || ''
-  const image = article.og_image || article.cover_image || ''
+  // Fallback to the branded banner so link previews never render imageless
+  const image = article.og_image || article.cover_image || 'https://ugan.ganzapps.my.id/images/og-banner.jpg'
   const url = `${window.location.origin}/insights/${article.slug}`
 
   const structuredData = {

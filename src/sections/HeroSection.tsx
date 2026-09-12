@@ -43,12 +43,12 @@ export function HeroSection() {
 
           <div className="flex-1 text-center">
             <HeroFade>
-              <div className="mb-4 flex items-center justify-center gap-2">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider">
+              <div className="mb-4 flex items-center justify-center">
+                <span className="inline-flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider text-center">
                   <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
-                  <span className="text-slate-200">Engineering Lead.</span>{' '}
-                  <span className="text-sky-400">AI-Native.</span>{' '}
-                  <span className="text-slate-200">Zero Drama.</span>
+                  <span className="text-slate-200 whitespace-nowrap">Engineering Lead.</span>{' '}
+                  <span className="text-sky-400 whitespace-nowrap">AI-Native.</span>{' '}
+                  <span className="text-slate-200 whitespace-nowrap">Zero Drama.</span>
                 </span>
               </div>
             </HeroFade>
@@ -75,7 +75,7 @@ export function HeroSection() {
 
             <HeroFade delay={0.25}>
               <p className="mt-4 text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                I help stakeholders turn ambiguity into shipped products — from first spec to production. I help engineering teams move faster with AI-driven workflows, 99.9% SLO Achieved, and the kind of technical leadership that keeps 12+ developers aligned and shipping.
+                I turn ambiguity into shipped products — from first spec to production. AI-driven workflows, 99.9% SLO, and technical leadership that keeps 12+ developers aligned and shipping.
               </p>
             </HeroFade>
 
