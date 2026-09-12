@@ -1,112 +1,159 @@
-
 import { HeroFade } from '@/components/HeroFade';
-import { ArrowRight, MapPin, Clock } from 'lucide-react';
-import { ParticleNetwork } from '@/components/ParticleNetwork';
+import { ArrowDownRight, MapPin, Clock } from 'lucide-react';
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" id="about">
-      <ParticleNetwork />
-      <div className="absolute inset-0 bg-slate-900/40 z-10" />
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-ink-900" id="about">
+      {/* Blueprint grid + glow field */}
+      <div className="absolute inset-0 bg-blueprint" aria-hidden="true" />
+      <div className="absolute -top-40 right-[-10%] w-[42rem] h-[42rem] rounded-full bg-brand-500/[0.07] blur-[120px]" aria-hidden="true" />
+      <div className="absolute bottom-[-20%] left-[-10%] w-[36rem] h-[36rem] rounded-full bg-cyan-400/[0.05] blur-[110px]" aria-hidden="true" />
 
-      <div className="relative z-20 max-w-3xl mx-auto px-6 py-20 w-full">
-        <div className="flex flex-col items-center gap-4 text-center">
-          <HeroFade delay={0.1}>
-            <div className="flex-shrink-0">
-              <div className="relative w-36 h-36 md:w-44 md:h-44">
-                <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-sky-400/15 via-cyan-400/10 to-transparent blur-xl opacity-60" />
-                <div className="absolute -inset-px rounded-full bg-gradient-to-br from-sky-400/40 via-cyan-300/20 to-sky-400/40" />
-                <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-slate-600/50 bg-slate-900">
-                  <picture>
-                    <source srcSet="/images/profile-real.webp" type="image/webp" />
-                    <img
-                      src="/images/profile-real.jpg"
-                      alt="Ugan Saripudin"
-                      width={176}
-                      height={176}
-                      decoding="async"
-                      fetchPriority="high"
-                      onLoad={(e) => {
-                        const img = e.target as HTMLImageElement
-                        const container = img.parentElement
-                        const skeleton = container?.querySelector('.avatar-skeleton') as HTMLElement
-                        if (skeleton) { skeleton.style.opacity = '0'; skeleton.style.transition = 'opacity 0.3s' }
-                      }}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="avatar-skeleton absolute inset-0 bg-slate-800 rounded-full" />
-                  </picture>
-                </div>
-              </div>
-            </div>
-          </HeroFade>
+      {/* Frame ruler — top */}
+      <div className="absolute top-20 left-0 right-0 z-10 hidden md:flex items-center justify-between px-10 font-mono text-[10px] uppercase tracking-[0.22em] text-slate-500">
+        <span>PORTFOLIO — v3 / 2026</span>
+        <span className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-rec" aria-hidden="true" />
+          <span className="text-red-400/90">REC</span>
+          <span className="text-slate-600">·</span>
+          <span>OPEN TO OPPORTUNITIES</span>
+        </span>
+      </div>
 
-          <div className="flex-1 text-center">
-            <HeroFade>
-              <div className="mb-4 flex items-center justify-center">
-                <span className="inline-flex flex-wrap items-center justify-center gap-x-1.5 gap-y-0.5 px-3 py-1.5 rounded-md bg-sky-400/10 border border-sky-400/20 text-[11px] font-semibold uppercase tracking-wider text-center">
-                  <span className="w-1.5 h-1.5 rounded-full bg-sky-400 animate-pulse" />
-                  <span className="text-slate-200 whitespace-nowrap">Engineering Lead.</span>{' '}
-                  <span className="text-sky-400 whitespace-nowrap">AI-Native.</span>{' '}
-                  <span className="text-slate-200 whitespace-nowrap">Zero Drama.</span>
-                </span>
-              </div>
-            </HeroFade>
+      <div className="relative z-20 w-full max-w-7xl mx-auto px-6 md:px-10 pt-28 pb-24">
+        <div className="grid lg:grid-cols-[1fr_auto] gap-12 lg:gap-16 items-center">
 
-            <HeroFade delay={0.15}>
-              <h1 className="text-5xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[0.95]" style={{textShadow: '0 2px 30px rgba(0,0,0,0.6), 0 0 60px rgba(0,0,0,0.3)'}}>
-                <span className="text-slate-50">UGAN</span>{' '}
-                <span className="text-sky-400">SARIPUDIN</span>
-              </h1>
-            </HeroFade>
-
-            <HeroFade delay={0.2}>
-              <div className="mt-4 flex flex-wrap items-center justify-center gap-4 text-sm text-slate-400">
-                <span className="flex items-center gap-1.5">
-                  <MapPin className="w-3.5 h-3.5 text-sky-400" />
-                  Indonesia
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <Clock className="w-3.5 h-3.5 text-sky-400" />
-                  WIB (UTC+7)
-                </span>
-              </div>
-            </HeroFade>
-
-            <HeroFade delay={0.25}>
-              <p className="mt-4 text-base text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                I turn ambiguity into shipped products — from first spec to production. AI-driven workflows, 99.9% SLO, and technical leadership that keeps 12+ developers aligned and shipping.
+          {/* ── Left: editorial type block ── */}
+          <div className="min-w-0">
+            <HeroFade delay={0.05}>
+              <p className="font-mono text-[11px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.28em] text-brand-400 mb-6">
+                {'// Engineering Lead — Mobile / Web / Backend'}
               </p>
             </HeroFade>
 
-            <HeroFade delay={0.35}>
-              <div className="mt-7 flex flex-wrap justify-center gap-3">
+            <h1 className="font-display font-bold leading-[0.92] tracking-[-0.03em]">
+              <HeroFade delay={0.12}>
+                <span className="block text-[clamp(3.4rem,9vw,8.5rem)] text-slate-50">UGAN</span>
+              </HeroFade>
+              <HeroFade delay={0.2}>
+                <span className="block text-[clamp(3.4rem,9vw,8.5rem)] text-outline">SARIPUDIN</span>
+              </HeroFade>
+            </h1>
+
+            <HeroFade delay={0.28}>
+              <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-[11px] uppercase tracking-[0.18em] text-slate-500">
+                <span className="flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-brand-400" />
+                  Indonesia
+                </span>
+                <span className="text-slate-700">/</span>
+                <span className="flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-brand-400" />
+                  WIB — UTC+7
+                </span>
+                <span className="text-slate-700">/</span>
+                <span className="text-slate-400">Est. 2015 — still shipping</span>
+              </div>
+            </HeroFade>
+
+            <HeroFade delay={0.34}>
+              <p className="mt-7 max-w-xl text-base md:text-lg text-slate-400 leading-relaxed">
+                I turn ambiguity into shipped products — from first spec to production.
+                AI-driven workflows, <span className="text-slate-200 font-semibold">99.9% SLO</span>, and technical
+                leadership that keeps <span className="text-slate-200 font-semibold">12+ developers</span> aligned and shipping.
+              </p>
+            </HeroFade>
+
+            <HeroFade delay={0.42}>
+              <div className="mt-9 flex flex-wrap items-center gap-4">
+                <a href="#showreel"
+                  className="group inline-flex items-center gap-2 px-6 py-3.5 bg-brand-500 text-white font-semibold text-sm rounded-lg hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40">
+                  Watch the showreel
+                  <ArrowDownRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5" />
+                </a>
                 <a href="#projects"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all text-sm">
-                  View My Work <ArrowRight className="w-4 h-4" />
+                  className="inline-flex items-center gap-2 px-6 py-3.5 border border-slate-700 text-slate-200 font-semibold text-sm rounded-lg hover:border-brand-400/60 hover:text-white hover:bg-brand-500/5 transition-all">
+                  Skip to projects
                 </a>
               </div>
             </HeroFade>
 
-            <HeroFade delay={0.4}>
-              <div className="mt-7 flex items-center justify-center gap-5 text-slate-500">
-                <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer" title="oeganz"
-                  className="hover:text-sky-400 transition-colors" aria-label="GitHub">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <HeroFade delay={0.5}>
+              <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-xs text-slate-500">
+                <a href="https://github.com/oeganz" target="_blank" rel="noopener noreferrer"
+                  className="hover:text-brand-400 transition-colors flex items-center gap-1.5" aria-label="GitHub">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  github.com/oeganz
                 </a>
+                <span className="text-slate-700">·</span>
                 <a href="https://linkedin.com/in/ugan" target="_blank" rel="noopener noreferrer"
-                  className="hover:text-sky-400 transition-colors" aria-label="LinkedIn">
-                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  className="hover:text-brand-400 transition-colors flex items-center gap-1.5" aria-label="LinkedIn">
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  in/ugan
                 </a>
-                <a href="mailto:oeganz1999@gmail.com"
-                  className="flex items-center gap-2 hover:text-sky-400 transition-colors text-sm">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span className="text-slate-700">·</span>
+                <a href="mailto:oeganz1999@gmail.com" className="hover:text-brand-400 transition-colors">
                   oeganz1999@gmail.com
                 </a>
               </div>
             </HeroFade>
           </div>
+
+          {/* ── Right: portrait as viewfinder tile ── */}
+          <HeroFade delay={0.3} className="hidden lg:block">
+            <div className="relative">
+              {/* Monitor tile */}
+              <div className="corner-brackets scanlines relative w-[320px] xl:w-[360px] rounded-sm overflow-hidden border border-slate-700/50 bg-ink-800 shadow-2xl shadow-black/60">
+                <picture>
+                  <source srcSet="/images/profile-real.webp" type="image/webp" />
+                  <img
+                    src="/images/profile-real.jpg"
+                    alt="Ugan Saripudin — Engineering Lead"
+                    width={360}
+                    height={360}
+                    decoding="async"
+                    fetchPriority="high"
+                    className="w-full aspect-square object-cover grayscale-[35%] contrast-[1.05]"
+                  />
+                </picture>
+
+                {/* HUD overlays */}
+                <div className="absolute top-3 left-3 font-mono text-[9px] uppercase tracking-[0.2em] text-white/70 bg-black/45 backdrop-blur-sm px-2 py-1 rounded-sm">
+                  CAM 01 · UGAN_SARIPUDIN
+                </div>
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 font-mono text-[9px] text-red-400/90 bg-black/45 backdrop-blur-sm px-2 py-1 rounded-sm">
+                  <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-rec" aria-hidden="true" /> LIVE
+                </div>
+                <div className="absolute bottom-3 left-3 font-mono text-[9px] uppercase tracking-[0.2em] text-white/60 bg-black/45 backdrop-blur-sm px-2 py-1 rounded-sm">
+                  ISO 50 · 1/60 · f1.8
+                </div>
+                {/* Crosshair center */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+                  <span className="w-5 h-5 border border-brand-400/50 rounded-full" />
+                  <span className="absolute w-px h-3 bg-brand-400/50" />
+                  <span className="absolute h-px w-3 bg-brand-400/50" />
+                </div>
+              </div>
+
+              {/* Under-tile caption */}
+              <div className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.2em] text-slate-600">
+                <span>FIG. 01 — THE ENGINEER</span>
+                <span>10+ YRS IN FRAME</span>
+              </div>
+
+              {/* Ghost glow */}
+              <div className="absolute -inset-8 -z-10 bg-brand-500/[0.06] blur-3xl rounded-full" aria-hidden="true" />
+            </div>
+          </HeroFade>
         </div>
+
+        {/* Scroll cue — mobile bar is fixed at bottom of hero */}
+        <HeroFade delay={0.6}>
+          <div className="mt-16 lg:mt-20 flex items-center gap-3 font-mono text-[10px] uppercase tracking-[0.25em] text-slate-600">
+            <span className="h-px w-10 bg-slate-700" aria-hidden="true" />
+            <span>Scroll to play ▸</span>
+          </div>
+        </HeroFade>
       </div>
     </section>
   );
