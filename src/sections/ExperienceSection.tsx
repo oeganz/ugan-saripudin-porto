@@ -11,13 +11,13 @@ const experiences = [
     color: 'amber',
     icon: Zap,
     isPresent: true,
-    description: <>Architecting <span className="text-sky-400 font-semibold">AI-driven spec workflows</span>, <span className="text-sky-400 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-sky-400 font-semibold">1M+ download SME platform</span>. Led <span className="text-sky-400 font-semibold">3 engineering pods (12 developers)</span> through systematic AI adoption.</>,
+    description: <>Architecting <span className="text-brand-500 font-semibold">AI-driven spec workflows</span>, <span className="text-brand-500 font-semibold">CI/CD pipelines</span>, and monolith-to-microservices migration for a <span className="text-brand-500 font-semibold">1M+ download SME platform</span>. Led <span className="text-brand-500 font-semibold">3 engineering pods (12 developers)</span> through systematic AI adoption.</>,
     highlights: [
-      <>Reduced documentation overhead by <span className="text-sky-400 font-semibold">40%</span> via spec-driven workflows</>,
-      <><span className="text-sky-400 font-semibold">Zero production incidents</span> in 18 months with automated quality gates</>,
-      <>Led <span className="text-sky-400 font-semibold">3 pods (12 devs)</span> through systematic AI capability adoption</>,
-      <>Monolith-to-microservices migration for <span className="text-sky-400 font-semibold">1M+ download platform</span></>,
-      <>Established <span className="text-sky-400 font-semibold">ADLC workflow</span> across 3+ project teams</>,
+      <>Reduced documentation overhead by <span className="text-brand-500 font-semibold">40%</span> via spec-driven workflows</>,
+      <><span className="text-brand-500 font-semibold">Zero production incidents</span> in 18 months with automated quality gates</>,
+      <>Led <span className="text-brand-500 font-semibold">3 pods (12 devs)</span> through systematic AI capability adoption</>,
+      <>Monolith-to-microservices migration for <span className="text-brand-500 font-semibold">1M+ download platform</span></>,
+      <>Established <span className="text-brand-500 font-semibold">ADLC workflow</span> across 3+ project teams</>,
     ],
   },
   {
@@ -28,27 +28,27 @@ const experiences = [
     color: 'purple',
     icon: Shield,
     isPresent: false,
-    description: <>Delivered production-grade mobile refactoring for <span className="text-sky-400 font-semibold">MyBeepr clinical messaging platform</span> serving Australian hospitals. <span className="text-sky-400 font-semibold">98% on-time delivery</span> across 12 months of fully remote work.</>,
+    description: <>Delivered production-grade mobile refactoring for <span className="text-brand-500 font-semibold">MyBeepr clinical messaging platform</span> serving Australian hospitals. <span className="text-brand-500 font-semibold">98% on-time delivery</span> across 12 months of fully remote work.</>,
     highlights: [
-      <><span className="text-sky-400 font-semibold">98% on-time delivery</span> across 12 months fully remote (2hr timezone gap)</>,
-      <><span className="text-sky-400 font-semibold">Performance monitoring</span> & session replay tracking implementation</>,
-      <><span className="text-sky-400 font-semibold">Compliance-ready architecture</span> under regulated healthcare requirements</>,
-      <>Deployed across <span className="text-sky-400 font-semibold">Australian hospital networks</span></>,
+      <><span className="text-brand-500 font-semibold">98% on-time delivery</span> across 12 months fully remote (2hr timezone gap)</>,
+      <><span className="text-brand-500 font-semibold">Performance monitoring</span> & session replay tracking implementation</>,
+      <><span className="text-brand-500 font-semibold">Compliance-ready architecture</span> under regulated healthcare requirements</>,
+      <>Deployed across <span className="text-brand-500 font-semibold">Australian hospital networks</span></>,
     ],
   },
   {
-    period: 'March 2020 - September 2021',
+    period: 'February 2019 - September 2021',
     role: 'Senior Software Engineer',
     company: 'Sprout Digital Labs',
     location: 'Indonesia',
     color: 'sky',
     icon: TrendingUp,
     isPresent: false,
-    description: <>Designed <span className="text-sky-400 font-semibold">system architecture</span> and spec-driven workflow patterns. Collaborated with <span className="text-sky-400 font-semibold">Product Managers and clients</span> to translate business requirements into technical specifications.</>,
+    description: <>Designed <span className="text-brand-500 font-semibold">system architecture</span> and spec-driven workflow patterns. Collaborated with <span className="text-brand-500 font-semibold">Product Managers and clients</span> to translate business requirements into technical specifications.</>,
     highlights: [
-      <>Established <span className="text-sky-400 font-semibold">AI-driven spec workflow</span> adopted across 3+ teams</>,
-      <><span className="text-sky-400 font-semibold">Cross-functional collaboration</span> with Product and clients</>,
-      <><span className="text-sky-400 font-semibold">Full-stack delivery</span> across multiple client projects</>,
+      <>Established <span className="text-brand-500 font-semibold">AI-driven spec workflow</span> adopted across 3+ teams</>,
+      <><span className="text-brand-500 font-semibold">Cross-functional collaboration</span> with Product and clients</>,
+      <><span className="text-brand-500 font-semibold">Full-stack delivery</span> across multiple client projects</>,
     ],
   },
   {
@@ -59,12 +59,12 @@ const experiences = [
     color: 'blue',
     icon: Users,
     isPresent: false,
-    description: <>Built and shipped multiple <span className="text-sky-400 font-semibold">native Android applications</span>, progressing from IC to team lead. Delivered apps accumulating <span className="text-sky-400 font-semibold">3M+ combined downloads</span>. Led AxisNet and internal TelkomInfra enterprise apps.</>,
+    description: <>Built and shipped multiple <span className="text-brand-500 font-semibold">native Android applications</span>, progressing from IC to team lead. Delivered apps accumulating <span className="text-brand-500 font-semibold">3M+ combined downloads</span>. Led AxisNet and internal TelkomInfra enterprise apps.</>,
     highlights: [
-      <><span className="text-sky-400 font-semibold">AxisNet: 3M+ downloads</span> for XL Axiata self-care app</>,
-      <><span className="text-sky-400 font-semibold">3M+ combined downloads</span> across all shipped apps</>,
-      <>Managed <span className="text-sky-400 font-semibold">3+ developers</span>, established code review practices</>,
-      <>Led <span className="text-sky-400 font-semibold">full product lifecycle</span> from concept to Google Play</>,
+      <><span className="text-brand-500 font-semibold">AxisNet: 3M+ downloads</span> for XL Axiata self-care app</>,
+      <><span className="text-brand-500 font-semibold">3M+ combined downloads</span> across all shipped apps</>,
+      <>Managed <span className="text-brand-500 font-semibold">3+ developers</span>, established code review practices</>,
+      <>Led <span className="text-brand-500 font-semibold">full product lifecycle</span> from concept to Google Play</>,
     ],
   },
 ];
@@ -85,11 +85,11 @@ const colorMap: Record<string, { border: string; badge: string; dot: string; glo
     lineGlow: 'from-purple-400/40',
   },
   sky: {
-    border: 'border-sky-400/15 hover:border-sky-400/35',
-    badge: 'bg-sky-400/15 text-sky-400 border border-sky-400/25',
-    dot: 'bg-sky-400',
-    glow: 'shadow-sky-400/10',
-    lineGlow: 'from-sky-400/40',
+    border: 'border-brand-500/15 hover:border-brand-500/35',
+    badge: 'bg-brand-500/15 text-brand-500 border border-brand-500/25',
+    dot: 'bg-brand-500',
+    glow: 'shadow-brand-500/10',
+    lineGlow: 'from-brand-500/40',
   },
   blue: {
     border: 'border-blue-400/15 hover:border-blue-400/35',
@@ -108,12 +108,12 @@ export function ExperienceSection() {
           number="(04)"
           eyebrow="PROFESSIONAL EXPERIENCE"
           headline="Career Timeline"
-          subheadline="10+ years of progressive growth from Android Developer to Engineering Lead, delivering platforms at scale across 4 organizations."
+          subheadline="A continuous line since January 2015 — from Android Developer to Engineering Lead, delivering platforms at scale across 4 organizations."
         />
 
         <div className="mt-16 relative">
           {/* Center vertical line */}
-          <div className="absolute left-5 md:left-6 top-0 bottom-0 w-px bg-slate-700/30" />
+          <div className="absolute left-5 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-brand-500/40 via-slate-700/30 to-slate-700/30" />
 
           <div className="space-y-6">
             {experiences.map((exp, i) => {
@@ -136,10 +136,10 @@ export function ExperienceSection() {
                             <div className="absolute -inset-2 rounded-full border border-amber-400/30 animate-ping" style={{ animationDuration: '2.5s' }} />
                             <div className="absolute -inset-3.5 rounded-full border border-amber-400/15 animate-ping" style={{ animationDuration: '3s', animationDelay: '0.4s' }} />
                             {/* Core dot */}
-                            <div className="relative w-5 h-5 rounded-full bg-amber-400 border-[3px] border-slate-900 shadow-lg shadow-amber-400/40" />
+                            <div className="relative w-5 h-5 rounded-full bg-amber-400 border-[3px] border-ink-900 shadow-lg shadow-amber-400/40" />
                           </div>
                         ) : (
-                          <div className={`w-4 h-4 rounded-full ${c.dot} border-[3px] border-slate-900 shadow-md ${c.glow}`} />
+                          <div className={`w-4 h-4 rounded-full ${c.dot} border-[3px] border-ink-900 shadow-md ${c.glow}`} />
                         )}
                       </div>
 
@@ -150,10 +150,10 @@ export function ExperienceSection() {
                     {/* Card */}
                     <div className="flex-1 pb-2 pl-2">
                       <div
-                        className={`relative rounded-xl bg-slate-800/30 border p-6 md:p-7 overflow-hidden transition-all duration-500 ${
+                        className={`relative rounded-xl bg-ink-800/30 border p-6 md:p-7 overflow-hidden transition-all duration-500 ${
                           exp.isPresent
                             ? 'border-amber-400/30 shadow-lg shadow-amber-400/10 hover:shadow-xl hover:shadow-amber-400/20'
-                            : `${c.border} hover:bg-slate-800/45`
+                            : `${c.border} hover:bg-ink-800/45`
                         }`}
                       >
                         {/* Present: subtle glow overlay */}
@@ -175,6 +175,11 @@ export function ExperienceSection() {
 
                         {/* Top gradient line */}
                         <div className={`absolute top-0 left-0 right-0 h-px bg-gradient-to-r ${c.lineGlow} to-transparent`} />
+
+                        {/* Ghost index — editorial numbering */}
+                        <span className="absolute top-4 right-5 font-mono text-4xl md:text-5xl font-bold text-white/[0.045] select-none pointer-events-none leading-none">
+                          {String(i + 1).padStart(2, '0')}
+                        </span>
 
                         <div className="relative flex flex-col md:flex-row md:items-start gap-4 md:gap-7">
                           {/* Left: Meta */}
