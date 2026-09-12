@@ -131,3 +131,15 @@ img.loaded ~ .avatar-skeleton,
   opacity: 0 !important;
   pointer-events: none;
 }
+
+/* ============================================================
+   Print & fallback safety for scroll-reveal (framer-motion)
+   Section wrappers carry .motion-reveal. When printing / saving
+   to PDF, force revealed state so sections are never blank.
+   ============================================================ */
+@media print {
+  .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
