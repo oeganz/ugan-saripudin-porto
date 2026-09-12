@@ -39,7 +39,7 @@ const platformConfig: Record<string, { icon: React.ReactNode; color: string; lab
   },
   Web: {
     icon: <Globe className="w-4 h-4" />,
-    color: 'bg-sky-500/10 text-sky-400 border-sky-500/20 hover:bg-sky-500/20 hover:border-sky-500/40',
+    color: 'bg-brand-600/10 text-brand-500 border-brand-600/20 hover:bg-brand-600/20 hover:border-brand-600/40',
     label: 'Web',
   },
 };
@@ -83,7 +83,7 @@ export function ProjectInfoBar({ metrics, platform, urls }: ProjectInfoBarProps)
     <section className="relative z-20 -mt-1">
       <div className="max-w-7xl mx-auto px-4">
         <FadeIn direction="up" delay={0.15}>
-          <div className="bg-slate-800/80 backdrop-blur-xl border border-slate-700/40 rounded-2xl p-6 md:p-8 shadow-2xl shadow-slate-950/50">
+          <div className="bg-ink-800/80 backdrop-blur-xl border border-slate-700/40 rounded-2xl p-6 md:p-8 shadow-2xl shadow-ink-950/50">
             <div className="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8">
 
               {/* Platform + Metrics */}
@@ -120,7 +120,7 @@ export function ProjectInfoBar({ metrics, platform, urls }: ProjectInfoBarProps)
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
                   {displayMetrics.map(([key, value]) => (
                     <div key={key} className="text-center">
-                      <p className="text-lg md:text-xl font-bold text-sky-400 leading-tight">{value}</p>
+                      <p className="text-lg md:text-xl font-bold text-brand-500 leading-tight">{value}</p>
                       <p className="text-[10px] text-slate-500 uppercase tracking-wider">{metricLabels[key]}</p>
                     </div>
                   ))}
@@ -144,7 +144,7 @@ export function ProjectInfoBar({ metrics, platform, urls }: ProjectInfoBarProps)
                   )}
                   {urls.website && (
                     <a href={urls.website} target="_blank" rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium hover:bg-sky-500/20 hover:border-sky-500/40 transition-all">
+                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-600/10 border border-brand-600/20 text-brand-500 text-sm font-medium hover:bg-brand-600/20 hover:border-brand-600/40 transition-all">
                       <Globe className="w-4 h-4" />
                       Website
                       <ExternalLink className="w-3 h-3 opacity-60" />

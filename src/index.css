@@ -143,3 +143,69 @@ img.loaded ~ .avatar-skeleton,
     transform: none !important;
   }
 }
+
+/* ============================================================
+   GanzApps design tone — editorial "control room" system
+   ink #0A0E1A / brand #4F7CFF / cyan #22D3EE
+   ============================================================ */
+
+::selection {
+  background: #4f7cff;
+  color: #fff;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #1e2a44 #0a0e1a;
+}
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #0a0e1a; }
+::-webkit-scrollbar-thumb { background: #1e2a44; border-radius: 8px; border: 2px solid #0a0e1a; }
+::-webkit-scrollbar-thumb:hover { background: #2e4dc0; }
+
+
+/* Outlined display type */
+.text-outline {
+  color: transparent;
+  -webkit-text-stroke: 1.2px rgba(143, 176, 255, 0.5);
+}
+@media (min-width: 768px) {
+  .text-outline { -webkit-text-stroke-width: 1.8px; }
+}
+
+/* Blueprint grid backdrop */
+.bg-blueprint {
+  background-image:
+    linear-gradient(rgba(79, 124, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 124, 255, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, black 30%, transparent 78%);
+  -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, black 30%, transparent 78%);
+}
+
+/* Faint grid texture for service cards (reference style) */
+.bg-blueprint-card {
+  background-image:
+    linear-gradient(rgba(79, 124, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 124, 255, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-color: rgba(13, 19, 34, 0.55); /* ink-800/55 */
+}
+
+
+/* Marquee ticker */
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee-x 45s linear infinite;
+  will-change: transform;
+}
+.marquee-hover:hover .animate-marquee { animation-play-state: paused; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+}
+

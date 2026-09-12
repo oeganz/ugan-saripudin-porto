@@ -35,7 +35,7 @@ const statusColors: Record<string, string> = {
 const categoryColors: Record<string, string> = {
   Telecom: 'text-cyan-400 bg-cyan-400/10',
   HealthTech: 'text-emerald-400 bg-emerald-400/10',
-  FinTech: 'text-sky-400 bg-sky-400/10',
+  FinTech: 'text-brand-500 bg-brand-500/10',
   AgriTech: 'text-green-400 bg-green-400/10',
   InsurTech: 'text-amber-400 bg-amber-400/10',
   Enterprise: 'text-slate-300 bg-slate-400/10',
@@ -60,8 +60,8 @@ export function ProjectHero({ project, heroImage }: ProjectHeroProps) {
               alt={project.name}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40" />
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/60 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-ink-900 via-ink-900/80 to-ink-900/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-ink-900/60 to-transparent" />
           </>
         ) : (
           <ProjectHeroSVG project={project} />
@@ -84,7 +84,7 @@ export function ProjectHero({ project, heroImage }: ProjectHeroProps) {
         <FadeIn direction="up" delay={0}>
           <Link
             to="/projects"
-            className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-sky-400 transition-colors mb-6 group"
+            className="inline-flex items-center gap-2 text-sm text-slate-400 hover:text-brand-500 transition-colors mb-6 group"
           >
             <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
             Back to Projects
@@ -113,11 +113,11 @@ export function ProjectHero({ project, heroImage }: ProjectHeroProps) {
           {/* Company */}
           <div className="flex flex-wrap items-center gap-6 text-slate-300">
             <div className="flex items-center gap-2">
-              <Building2 className="w-5 h-5 text-sky-400" />
+              <Building2 className="w-5 h-5 text-brand-500" />
               <span className="text-lg font-medium">{project.company}</span>
             </div>
             <div className="flex items-center gap-2">
-              <Calendar className="w-5 h-5 text-sky-400" />
+              <Calendar className="w-5 h-5 text-brand-500" />
               <span className="text-lg">{project.timeline}</span>
             </div>
           </div>

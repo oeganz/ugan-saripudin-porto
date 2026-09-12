@@ -211,14 +211,14 @@ export default function ArticleEditorPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+      <div className="min-h-screen bg-ink-900 flex items-center justify-center">
         <div className="text-slate-400">Loading article...</div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-ink-900">
       <div className="max-w-5xl mx-auto px-6 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
@@ -274,7 +274,7 @@ export default function ArticleEditorPage() {
 
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
           {/* Basic Info */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">Basic Information</h2>
 
             <div className="space-y-4">
@@ -333,7 +333,7 @@ export default function ArticleEditorPage() {
           </div>
 
           {/* Cover Image */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">Cover Image</h2>
             <ImageUpload
               value={watch('cover_image')}
@@ -346,7 +346,7 @@ export default function ArticleEditorPage() {
           </div>
 
           {/* Content */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">Content *</h2>
             <RichTextEditor
               content={watch('content')}
@@ -361,7 +361,7 @@ export default function ArticleEditorPage() {
           </div>
 
           {/* SEO */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">SEO Settings</h2>
 
             <div className="space-y-4">
@@ -411,7 +411,7 @@ export default function ArticleEditorPage() {
           </div>
 
           {/* Tags */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">Tags</h2>
 
             <div className="flex gap-2 mb-4">
@@ -436,13 +436,13 @@ export default function ArticleEditorPage() {
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-sky-400/10 text-sky-400 border border-sky-400/20"
+                  className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-500/10 text-brand-500 border border-brand-500/20"
                 >
                   {tag}
                   <button
                     type="button"
                     onClick={() => handleRemoveTag(tag)}
-                    className="hover:text-sky-300"
+                    className="hover:text-brand-400"
                   >
                     <X size={14} />
                   </button>
@@ -452,7 +452,7 @@ export default function ArticleEditorPage() {
           </div>
 
           {/* Publishing */}
-          <div className="bg-slate-800 rounded-lg p-6 border border-slate-700">
+          <div className="bg-ink-800 rounded-lg p-6 border border-slate-700">
             <h2 className="text-xl font-bold text-slate-50 mb-4">Publishing</h2>
 
             <div className="space-y-4">
@@ -461,7 +461,7 @@ export default function ArticleEditorPage() {
                 <select
                   id="status"
                   {...register('status')}
-                  className="mt-1 w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded-lg text-slate-300 focus:outline-none focus:ring-2 focus:ring-sky-400"
+                  className="mt-1 w-full px-3 py-2 bg-ink-900 border border-slate-700 rounded-lg text-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                 >
                   <option value="draft">Draft</option>
                   <option value="published">Published</option>

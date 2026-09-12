@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 
 const colors = [
-  'text-sky-400',
+  'text-brand-500',
   'text-cyan-400',
   'text-emerald-400',
   'text-amber-400',

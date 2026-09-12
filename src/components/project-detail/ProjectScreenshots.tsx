@@ -23,7 +23,7 @@ export function ProjectScreenshots({ screenshots, projectName }: ProjectScreensh
 
   return (
     <>
-      <section className="py-24 px-4 bg-slate-800/30">
+      <section className="py-24 px-4 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-100 mb-8">Screenshots</h2>
@@ -33,11 +33,11 @@ export function ProjectScreenshots({ screenshots, projectName }: ProjectScreensh
           {!isMobile && (
             <div className="flex justify-end gap-2 mb-4">
               <button onClick={() => scroll('left')}
-                className="p-2 rounded-lg bg-slate-700/50 border border-slate-600 text-slate-400 hover:text-sky-400 hover:border-sky-400/40 transition-all">
+                className="p-2 rounded-lg bg-slate-700/50 border border-slate-600 text-slate-400 hover:text-brand-500 hover:border-brand-500/40 transition-all">
                 <ChevronLeft className="w-5 h-5" />
               </button>
               <button onClick={() => scroll('right')}
-                className="p-2 rounded-lg bg-slate-700/50 border border-slate-600 text-slate-400 hover:text-sky-400 hover:border-sky-400/40 transition-all">
+                className="p-2 rounded-lg bg-slate-700/50 border border-slate-600 text-slate-400 hover:text-brand-500 hover:border-brand-500/40 transition-all">
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
@@ -67,9 +67,9 @@ export function ProjectScreenshots({ screenshots, projectName }: ProjectScreensh
 
       {/* Lightbox */}
       {selectedIndex !== null && (
-        <div className="fixed inset-0 z-50 bg-slate-900/95 flex items-center justify-center p-4"
+        <div className="fixed inset-0 z-50 bg-ink-900/95 flex items-center justify-center p-4"
           onClick={() => setSelectedIndex(null)}>
-          <button className="absolute top-4 right-4 p-2 rounded-lg bg-slate-800 text-slate-400 hover:text-white z-10">
+          <button className="absolute top-4 right-4 p-2 rounded-lg bg-ink-800 text-slate-400 hover:text-white z-10">
             <X className="w-6 h-6" />
           </button>
           <img

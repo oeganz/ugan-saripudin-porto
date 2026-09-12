@@ -38,7 +38,7 @@ export function InsightsSection() {
   }
 
   return (
-    <section id="insights" className="bg-slate-900 py-20 md:py-28 relative overflow-hidden">
+    <section id="insights" className="bg-ink-900 py-20 md:py-28 relative overflow-hidden">
       {/* Subtle sky mesh */}
       <div className="absolute inset-0 pointer-events-none opacity-30" style={{backgroundImage: 'radial-gradient(circle at 80% 30%, rgba(14,165,233,0.03) 0%, transparent 50%), radial-gradient(circle at 20% 70%, rgba(14,165,233,0.02) 0%, transparent 40%)'}} />
       <div className="max-w-7xl mx-auto px-6">
@@ -57,7 +57,7 @@ export function InsightsSection() {
         ) : articles.length === 0 ? (
           <FadeIn delay={0.2}>
             <div className="text-center">
-              <div className="inline-flex items-center gap-3 px-8 py-5 rounded-xl bg-slate-800/30 border border-slate-700/50">
+              <div className="inline-flex items-center gap-3 px-8 py-5 rounded-xl bg-ink-800/30 border border-slate-700/50">
                 <p className="text-sm text-slate-400">
                   Technical articles in progress — focused on shipping production systems.
                 </p>
@@ -76,7 +76,7 @@ export function InsightsSection() {
               <div className="text-center">
                 <Link
                   to="/insights"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-500 text-slate-900 font-semibold hover:bg-brand-400 transition-all"
                 >
                   View All Articles
                   <ArrowUpRight size={16} />

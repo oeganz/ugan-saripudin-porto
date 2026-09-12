@@ -28,7 +28,7 @@ const caseStudies = [
 
 export function FeaturedCaseStudiesSection() {
   return (
-    <section className="py-16 md:py-24 bg-slate-800/20">
+    <section className="py-16 md:py-24 bg-ink-800/20">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           number="(05)"
@@ -41,25 +41,25 @@ export function FeaturedCaseStudiesSection() {
           {caseStudies.map((cs, i) => {
             const Icon = cs.icon
             const colorClass = cs.color === 'sky'
-              ? 'border-sky-400/30 hover:border-sky-400/50'
+              ? 'border-brand-500/30 hover:border-brand-500/50'
               : 'border-emerald-400/30 hover:border-emerald-400/50'
 
             return (
               <FadeIn key={cs.id} delay={i * 0.1}>
                 <Link
                   to={cs.slug}
-                  className={`group block bg-slate-800/50 border ${colorClass} rounded-xl p-6 transition-all duration-300 hover:bg-slate-800/70 hover:scale-[1.02]`}
+                  className={`group block bg-ink-800/50 border ${colorClass} rounded-xl p-6 transition-colors duration-300 hover:bg-ink-800/70`}
                 >
                   <div className="flex items-start justify-between mb-4">
-                    <div className={`p-3 rounded-lg ${cs.color === 'sky' ? 'bg-sky-400/10' : 'bg-emerald-400/10'}`}>
-                      <Icon className={`w-6 h-6 ${cs.color === 'sky' ? 'text-sky-400' : 'text-emerald-400'}`} />
+                    <div className={`p-3 rounded-lg ${cs.color === 'sky' ? 'bg-brand-500/10' : 'bg-emerald-400/10'}`}>
+                      <Icon className={`w-6 h-6 ${cs.color === 'sky' ? 'text-brand-500' : 'text-emerald-400'}`} />
                     </div>
-                    <span className={`text-xs font-medium px-2 py-1 rounded-full ${cs.color === 'sky' ? 'bg-sky-400/10 text-sky-400' : 'bg-emerald-400/10 text-emerald-400'}`}>
+                    <span className={`text-xs font-medium px-2 py-1 rounded-full ${cs.color === 'sky' ? 'bg-brand-500/10 text-brand-500' : 'bg-emerald-400/10 text-emerald-400'}`}>
                       {cs.category}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-50 mb-2 group-hover:text-sky-400 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-50 mb-2 group-hover:text-brand-500 transition-colors">
                     {cs.title}
                   </h3>
 
@@ -75,7 +75,7 @@ export function FeaturedCaseStudiesSection() {
                     ))}
                   </div>
 
-                  <div className="flex items-center gap-2 text-sm font-medium text-slate-400 group-hover:text-sky-400 transition-colors">
+                  <div className="flex items-center gap-2 text-sm font-medium text-slate-400 group-hover:text-brand-500 transition-colors">
                     <BookOpen className="w-4 h-4" />
                     Read Case Study
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

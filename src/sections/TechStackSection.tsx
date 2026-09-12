@@ -43,9 +43,9 @@ const skillCategories = [
   {
     title: 'Frontend',
     icon: Globe,
-    accent: 'text-sky-400',
-    border: 'border-sky-500/20',
-    bg: 'bg-sky-500/5',
+    accent: 'text-brand-500',
+    border: 'border-brand-600/20',
+    bg: 'bg-brand-600/5',
     skills: [
       { name: 'React', level: 5, years: 5 },
       { name: 'TypeScript', level: 5, years: 5 },
@@ -120,7 +120,7 @@ const proficiencyLabels: Record<number, string> = {
 
 const proficiencyColors: Record<number, string> = {
   5: 'bg-emerald-400',
-  4: 'bg-sky-400',
+  4: 'bg-brand-500',
   3: 'bg-amber-400',
   2: 'bg-slate-500',
   1: 'bg-slate-700',
@@ -174,7 +174,7 @@ export function TechStackSection() {
                 <div className={`rounded-2xl border ${cat.border} ${cat.bg} p-6 hover:border-opacity-60 transition-all`}>
                   {/* Category header */}
                   <div className="flex items-center gap-2.5 mb-5">
-                    <div className={`w-8 h-8 rounded-lg bg-slate-800/60 flex items-center justify-center`}>
+                    <div className={`w-8 h-8 rounded-lg bg-ink-800/60 flex items-center justify-center`}>
                       <Icon className={`w-4 h-4 ${cat.accent}`} />
                     </div>
                     <h3 className={`text-sm font-bold ${cat.accent} uppercase tracking-wider`}>{cat.title}</h3>

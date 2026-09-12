@@ -6,7 +6,7 @@ mermaid.initialize({
   startOnLoad: false,
   theme: 'dark',
   themeVariables: {
-    primaryColor: '#0ea5e9',    // sky-500
+    primaryColor: '#0ea5e9',    // brand-600
     primaryTextColor: '#f1f5f9', // slate-100
     primaryBorderColor: '#334155', // slate-700
     lineColor: '#64748b',         // slate-500
@@ -42,7 +42,7 @@ export function MermaidChart({ code, className = '' }: MermaidChartProps) {
         }
       } catch (err) {
         if (containerRef.current) {
-          containerRef.current.innerHTML = `<pre class="text-red-400 text-sm p-4 bg-slate-800 rounded-lg overflow-x-auto">${code.trim()}</pre>`
+          containerRef.current.innerHTML = `<pre class="text-red-400 text-sm p-4 bg-ink-800 rounded-lg overflow-x-auto">${code.trim()}</pre>`
         }
         console.error('Mermaid render error:', err)
       }

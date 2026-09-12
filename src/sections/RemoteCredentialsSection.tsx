@@ -7,10 +7,10 @@ const tools = [
 
 export function RemoteCredentialsSection() {
   return (
-    <section className="py-24 px-4 bg-slate-800/20" id="remote-credentials">
+    <section className="py-24 px-4 bg-ink-800/20" id="remote-credentials">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-          <p className="text-xs font-medium uppercase tracking-[2px] text-sky-400 mb-3">(03) REMOTE CREDENTIALS</p>
+          <p className="text-xs font-medium uppercase tracking-[2px] text-brand-500 mb-3">(03) REMOTE CREDENTIALS</p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-50 mb-4">Remote-First, Async-Native</h2>
           <p className="text-base text-slate-400 max-w-2xl mb-12">
             Proven distributed team leader with 2+ years of remote-capable leadership and 12 months of fully remote contract work with Australian stakeholders.
@@ -31,8 +31,8 @@ export function RemoteCredentialsSection() {
             { icon: Globe, label: '3+ Timezones', sub: 'Team Leadership' },
             { icon: Wifi, label: 'Full Remote Setup', sub: 'Development Environment' },
           ].map((s) => (
-            <div key={s.label} className="p-4 rounded-xl border border-slate-700/50 bg-slate-800/30">
-              <s.icon className="w-5 h-5 text-sky-400 mb-2" />
+            <div key={s.label} className="p-4 rounded-xl border border-slate-700/50 bg-ink-800/30">
+              <s.icon className="w-5 h-5 text-brand-500 mb-2" />
               <p className="text-sm font-semibold text-slate-200">{s.label}</p>
               <p className="text-xs text-slate-500">{s.sub}</p>
             </div>
@@ -66,7 +66,7 @@ export function RemoteCredentialsSection() {
           <p className="text-sm font-semibold text-slate-300 mb-4">Tools I use daily</p>
           <div className="flex flex-wrap gap-2">
             {tools.map((t) => (
-              <span key={t} className="px-3 py-1.5 rounded-lg bg-slate-800/60 border border-slate-700/40 text-sm text-slate-300">
+              <span key={t} className="px-3 py-1.5 rounded-lg bg-ink-800/60 border border-slate-700/40 text-sm text-slate-300">
                 {t}
               </span>
             ))}

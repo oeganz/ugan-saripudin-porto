@@ -29,12 +29,12 @@ const techCategories = [
     id: 'frontend',
     label: 'Frontend',
     icon: Layout,
-    accent: 'text-sky-400',
-    bg: 'bg-sky-400/10',
-    border: 'border-sky-400/20',
-    chipBg: 'bg-sky-400/8',
-    chipBorder: 'border-sky-400/15',
-    chipText: 'text-sky-300',
+    accent: 'text-brand-500',
+    bg: 'bg-brand-500/10',
+    border: 'border-brand-500/20',
+    chipBg: 'bg-brand-500/8',
+    chipBorder: 'border-brand-500/15',
+    chipText: 'text-brand-400',
     keywords: ['React', 'Next.js', 'Vue.js', 'TypeScript', 'JavaScript', 'Tailwind', 'Redux', 'HTML5/CSS3'],
   },
   {
@@ -154,8 +154,8 @@ export function ProjectTechStack({ techStack }: ProjectTechStackProps) {
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="flex items-center gap-4 mb-10">
-            <div className="w-10 h-10 rounded-xl bg-sky-400/10 border border-sky-400/20 flex items-center justify-center">
-              <Cpu className="w-5 h-5 text-sky-400" />
+            <div className="w-10 h-10 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center">
+              <Cpu className="w-5 h-5 text-brand-500" />
             </div>
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-slate-100">Technology Stack</h2>
@@ -169,7 +169,7 @@ export function ProjectTechStack({ techStack }: ProjectTechStackProps) {
             const CatIcon = group.cat.icon;
             return (
               <FadeIn key={group.cat.id} delay={gi * 0.08}>
-                <div className={`rounded-2xl border ${group.cat.border} bg-slate-800/30 p-5 hover:bg-slate-800/50 transition-all`}>
+                <div className={`rounded-2xl border ${group.cat.border} bg-ink-800/30 p-5 hover:bg-ink-800/50 transition-all`}>
                   {/* Category header */}
                   <div className="flex items-center gap-2.5 mb-4">
                     <div className={`w-8 h-8 rounded-lg ${group.cat.bg} flex items-center justify-center`}>
@@ -188,7 +188,7 @@ export function ProjectTechStack({ techStack }: ProjectTechStackProps) {
                       return (
                         <span
                           key={tech}
-                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${group.cat.chipBg} border ${group.cat.chipBorder} ${group.cat.chipText} text-xs font-medium transition-all hover:scale-[1.03]`}
+                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${group.cat.chipBg} border ${group.cat.chipBorder} ${group.cat.chipText} text-xs font-medium transition-colors`}
                         >
                           <span className="opacity-70">
                             {IconComp ? <IconComp /> : FallbackIcon ? <FallbackIcon className="w-3 h-3" /> : <DefaultTechIcon />}

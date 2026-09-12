@@ -44,18 +44,18 @@ export default function ProjectsPage() {
         <meta property="og:title" content="21 Projects — Ugan Saripudin" />
         <meta property="og:description" content="Portfolio spanning FinTech, HealthTech, Telecom, AgriTech. 50M+ downloads delivered." />
       </Helmet>
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-ink-900">
       <Navbar />
       <main className="pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <FadeIn>
             <div className="mb-10">
-              <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-sky-400 transition-colors mb-6">
+              <Link to="/" className="inline-flex items-center gap-2 text-slate-500 hover:text-brand-500 transition-colors mb-6">
                 <ArrowLeft className="w-4 h-4" /> Back to Home
               </Link>
               <h1 className="text-4xl md:text-5xl font-black text-slate-100 tracking-tight">
-                All <span className="text-sky-400">21 Projects</span>
+                All <span className="text-brand-500">21 Projects</span>
               </h1>
               <p className="mt-4 text-slate-400 max-w-2xl text-lg">
                 A comprehensive portfolio spanning mobile apps, web platforms, and enterprise solutions across 7 industries.
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
             <div className="flex items-center justify-between mb-6">
               <button
                 onClick={() => setShowFilters(!showFilters)}
-                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800/60 text-slate-300 hover:text-sky-400 border border-slate-700/40 transition-colors"
+                className="flex items-center gap-2 px-4 py-2 rounded-lg bg-ink-800/60 text-slate-300 hover:text-brand-500 border border-slate-700/40 transition-colors"
               >
                 <Filter className="w-4 h-4" /> Filters {showFilters ? '▲' : '▼'}
               </button>
@@ -81,14 +81,14 @@ export default function ProjectsPage() {
           {/* Filters */}
           {showFilters && (
             <FadeIn>
-              <div className="mb-8 p-6 rounded-xl bg-slate-800/40 border border-slate-700/30 space-y-4">
+              <div className="mb-8 p-6 rounded-xl bg-ink-800/40 border border-slate-700/30 space-y-4">
                 {/* Role Filter */}
                 <div>
                   <label className="text-xs text-slate-500 uppercase tracking-wider mb-2 block">Role</label>
                   <div className="flex flex-wrap gap-2">
                     {roleFilters.map((r) => (
                       <button key={r} onClick={() => setRoleFilter(r)}
-                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${roleFilter === r ? 'bg-sky-400 text-slate-900' : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${roleFilter === r ? 'bg-brand-500 text-slate-900' : 'bg-ink-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
                         {r}
                       </button>
                     ))}
@@ -100,7 +100,7 @@ export default function ProjectsPage() {
                   <div className="flex flex-wrap gap-2">
                     {industryFilters.map((r) => (
                       <button key={r} onClick={() => setIndFilter(r)}
-                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${indFilter === r ? 'bg-sky-400 text-slate-900' : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${indFilter === r ? 'bg-brand-500 text-slate-900' : 'bg-ink-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
                         {r}
                       </button>
                     ))}
@@ -112,7 +112,7 @@ export default function ProjectsPage() {
                   <div className="flex flex-wrap gap-2">
                     {statusFilters.map((r) => (
                       <button key={r} onClick={() => setStatusFilter(r)}
-                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${statusFilter === r ? 'bg-sky-400 text-slate-900' : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${statusFilter === r ? 'bg-brand-500 text-slate-900' : 'bg-ink-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'}`}>
                         {r}
                       </button>
                     ))}
@@ -133,7 +133,7 @@ export default function ProjectsPage() {
             <div className="text-center py-20">
               <p className="text-slate-500">No projects match the selected filters.</p>
               <button onClick={() => { setCatFilter('All'); setRoleFilter('All'); setIndFilter('All'); setStatusFilter('All'); }}
-                className="mt-4 text-sky-400 hover:underline">Clear all filters</button>
+                className="mt-4 text-brand-500 hover:underline">Clear all filters</button>
             </div>
           )}
         </div>

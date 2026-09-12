@@ -99,14 +99,14 @@ export default function InsightsListPage() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDesc} />
         <meta property="og:url" content={`${window.location.origin}/insights`} />
-        <meta property="og:image" content={`${window.location.origin}/images/profile-real.jpg`} />
+        <meta property="og:image" content={`${window.location.origin}/images/og-banner.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDesc} />
-        <meta name="twitter:image" content={`${window.location.origin}/images/profile-real.jpg`} />
+        <meta name="twitter:image" content={`${window.location.origin}/images/og-banner.jpg`} />
       </Helmet>
 
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-ink-900">
         <Navbar />
 
         <main className="py-[100px] md:py-[140px]">
@@ -114,8 +114,8 @@ export default function InsightsListPage() {
             {/* Header */}
             <div className="mb-10 md:mb-14">
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-sm font-mono text-sky-400/70 font-semibold">(02)</span>
-                <span className="text-xs font-semibold uppercase tracking-[3px] text-sky-400/90">INSIGHTS</span>
+                <span className="text-sm font-mono text-brand-500/70 font-semibold">(02)</span>
+                <span className="text-xs font-semibold uppercase tracking-[3px] text-brand-500/90">INSIGHTS</span>
               </div>
               <h2 className="text-3xl sm:text-4xl md:text-[52px] font-extrabold leading-[1.05] tracking-[-1.5px] text-slate-50">
                 Original Thinking
@@ -127,7 +127,7 @@ export default function InsightsListPage() {
               <div className="flex items-center justify-between mb-6">
                 <button
                   onClick={() => setShowFilters(!showFilters)}
-                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800/60 text-slate-300 hover:text-sky-400 border border-slate-700/40 transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 rounded-lg bg-ink-800/60 text-slate-300 hover:text-brand-500 border border-slate-700/40 transition-colors"
                 >
                   <Filter className="w-4 h-4" /> Filters {showFilters ? '▲' : '▼'}
                 </button>
@@ -139,7 +139,7 @@ export default function InsightsListPage() {
 
             {/* Filters */}
             {showFilters && allTags.length > 0 && (
-              <div className="mb-8 p-6 rounded-xl bg-slate-800/40 border border-slate-700/30">
+              <div className="mb-8 p-6 rounded-xl bg-ink-800/40 border border-slate-700/30">
                 <div>
                   <label className="text-xs text-slate-500 uppercase tracking-wider mb-3 block">Tags</label>
                   <div className="flex flex-wrap gap-2">
@@ -147,8 +147,8 @@ export default function InsightsListPage() {
                       onClick={() => setSearchParams({})}
                       className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                         !tagFilter
-                          ? 'bg-sky-400 text-slate-900'
-                          : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
+                          ? 'bg-brand-500 text-slate-900'
+                          : 'bg-ink-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
                       }`}
                     >
                       All
@@ -159,8 +159,8 @@ export default function InsightsListPage() {
                         onClick={() => setSearchParams({ tag })}
                         className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${
                           tagFilter === tag
-                            ? 'bg-sky-400 text-slate-900'
-                            : 'bg-slate-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
+                            ? 'bg-brand-500 text-slate-900'
+                            : 'bg-ink-800/60 text-slate-400 border border-slate-700/40 hover:text-slate-200'
                         }`}
                       >
                         {tag}
@@ -197,7 +197,7 @@ export default function InsightsListPage() {
                     <button
                       onClick={() => setPage(currentPage - 1)}
                       disabled={currentPage <= 1}
-                      className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-slate-800/60 text-slate-300 hover:text-sky-400 border border-slate-700/40"
+                      className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-ink-800/60 text-slate-300 hover:text-brand-500 border border-slate-700/40"
                     >
                       <ChevronLeft size={16} />
                       Prev
@@ -209,8 +209,8 @@ export default function InsightsListPage() {
                         onClick={() => setPage(page)}
                         className={`w-9 h-9 rounded-lg text-sm font-medium transition-all ${
                           page === currentPage
-                            ? 'bg-sky-400 text-slate-900'
-                            : 'bg-slate-800/60 text-slate-400 hover:text-sky-400 border border-slate-700/40'
+                            ? 'bg-brand-500 text-slate-900'
+                            : 'bg-ink-800/60 text-slate-400 hover:text-brand-500 border border-slate-700/40'
                         }`}
                       >
                         {page}
@@ -220,7 +220,7 @@ export default function InsightsListPage() {
                     <button
                       onClick={() => setPage(currentPage + 1)}
                       disabled={currentPage >= totalPages}
-                      className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-slate-800/60 text-slate-300 hover:text-sky-400 border border-slate-700/40"
+                      className="flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-ink-800/60 text-slate-300 hover:text-brand-500 border border-slate-700/40"
                     >
                       Next
                       <ChevronRight size={16} />

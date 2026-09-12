@@ -29,8 +29,8 @@ export default function LoginPage() {
 
   if (sent) {
     return (
-      <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
-        <div className="max-w-md w-full bg-slate-800 rounded-lg p-8 border border-slate-700">
+      <div className="min-h-screen bg-ink-900 flex items-center justify-center px-4">
+        <div className="max-w-md w-full bg-ink-800 rounded-lg p-8 border border-slate-700">
           <h1 className="text-2xl font-bold text-slate-50 mb-4">Check your email</h1>
           <p className="text-slate-400 mb-6">
             We've sent a magic link to <strong className="text-slate-300">{email}</strong>.
@@ -49,8 +49,8 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
-      <div className="max-w-md w-full bg-slate-800 rounded-lg p-8 border border-slate-700">
+    <div className="min-h-screen bg-ink-900 flex items-center justify-center px-4">
+      <div className="max-w-md w-full bg-ink-800 rounded-lg p-8 border border-slate-700">
         <h1 className="text-2xl font-bold text-slate-50 mb-2">Admin Login</h1>
         <p className="text-slate-400 mb-6">Enter your email to receive a magic link</p>
 
