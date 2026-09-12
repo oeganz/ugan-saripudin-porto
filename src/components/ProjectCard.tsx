@@ -27,6 +27,15 @@ const statusColors: Record<string, string> = {
   discontinued: 'bg-red-400/20 text-red-400',
 };
 
+// Badge text describes the PRODUCT state, not the engagement — avoids
+// confusion when the candidate's involvement ended years ago (e.g. AXISnet).
+const statusLabels: Record<string, string> = {
+  active: 'Live Product',
+  inactive: 'Archived',
+  internal: 'Internal Tool',
+  discontinued: 'Discontinued',
+};
+
 const projectImages: Record<string, string> = {
   // Featured - hero images
   axisnet: '/images/proj-axisnet.jpg',
@@ -137,8 +146,8 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
           <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors" />
           {/* Status */}
           <div className="absolute top-3 right-3">
-            <span className={`px-2.5 py-1 rounded-full text-xs font-medium capitalize ${statusColors[project.status]}`}>
-              {project.status}
+            <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${statusColors[project.status]}`}>
+              {statusLabels[project.status] ?? project.status}
             </span>
           </div>
           {/* Metric */}
