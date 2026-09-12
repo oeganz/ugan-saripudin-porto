@@ -6,7 +6,6 @@ import { useScrolled } from '@/hooks/useScrolled'
 
 const navLinks = [
   { label: 'My Profile', href: '#about' },
-  { label: '(00) Reel', href: '#showreel' },
   { label: '(01) ADLC', href: '#adlc-ecosystem' },
   { label: '(02) Insights', href: '#insights', page: '/insights' },
   { label: '(03) Projects', href: '#projects', page: '/projects' },
@@ -148,7 +147,7 @@ export function Navbar() {
           {/* CTA */}
           <div className="hidden lg:block">
             <a href="mailto:oeganz1999@gmail.com"
-              className="px-5 py-2.5 bg-brand-500 text-slate-900 text-xs font-bold rounded-lg hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/20 hover:shadow-brand-500/40 hover:scale-[1.02]">
+              className="px-5 py-2.5 bg-brand-500 text-white text-xs font-bold rounded-lg hover:bg-brand-400 transition-colors">
               Let&apos;s Talk
             </a>
           </div>

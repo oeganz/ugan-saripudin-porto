@@ -6,7 +6,6 @@ import { StatsSection } from '@/sections/StatsSection'
 import { TickerStrip } from '@/components/TickerStrip'
 
 // Lazy load heavy sections
-const ShowreelSection = lazy(() => import('@/sections/ShowreelSection').then(m => ({ default: m.ShowreelSection })))
 const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
 const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
@@ -17,7 +16,7 @@ const ContactSection = lazy(() => import('@/sections/ContactSection').then(m => 
 export default function App() {
   return (
     <>
-      <div className="min-h-screen bg-ink-900 grain">
+      <div className="min-h-screen bg-ink-900">
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-500 focus:text-slate-900 focus:rounded-lg focus:font-semibold">
           Skip to main content
@@ -35,11 +34,6 @@ export default function App() {
           <div className="bg-ink-800/40">
             <StatsSection />
           </div>
-
-          {/* 00c Showreel — scroll-driven film frames */}
-          <Suspense fallback={<div className="min-h-[50vh] bg-ink-950" />}>
-            <ShowreelSection />
-          </Suspense>
 
           {/* 01 ADLC — Dark */}
           <Suspense fallback={<div className="min-h-[50vh] bg-ink-900" />}>
