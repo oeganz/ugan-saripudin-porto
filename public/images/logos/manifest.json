@@ -1,0 +1,158 @@
+{
+  "axisnet": {
+    "source": "https://play.google.com/store/apps/details?id=com.axis.net",
+    "kind": "play",
+    "file": "axisnet.png",
+    "bytes": 21722,
+    "dims": [
+      512,
+      512
+    ]
+  },
+  "agriaku-app": {
+    "source": "https://play.google.com/store/apps/details?id=id.co.sprout.agriku_franchise_app",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "asabri": {
+    "source": "https://play.google.com/store/apps/details?id=com.ganz.asabri",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "bluegaz": {
+    "source": "https://play.google.com/store/apps/details?id=id.sprout.bluegaz",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "smarco": {
+    "source": "https://play.google.com/store/apps/details?id=id.co.sprout.smarco",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "sahabat-berbagi": {
+    "source": "https://play.google.com/store/apps/details?id=com.generali.sahabat",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "skillbridge": {
+    "source": "https://play.google.com/store/apps/details?id=id.co.sprout.skill_bridge",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "laut-nusantara": {
+    "source": "https://play.google.com/store/apps/details?id=com.klik.lautnusantara",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "my-telkominfra": {
+    "source": "https://play.google.com/store/apps/details?id=com.telkominfra.portal",
+    "kind": "play",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "mybeepr": {
+    "source": "https://mybeepr.com",
+    "kind": "site",
+    "file": "mybeepr.jpg",
+    "bytes": 71139,
+    "dims": [
+      860,
+      700
+    ],
+    "via": "https://assets.avant.org.au/cdf6134c-01d7-0292-26f5-2f5cf1db96f8/eebadce3-a3b5-40bf-823f-ad7edef4c66b/Phub%20website%20%202%20%281%29.jpg"
+  },
+  "aku-berbagi": {
+    "source": "https://akuberbagi.com",
+    "kind": "site",
+    "error": "<urlopen error [Errno -5] No address associated with hostname>"
+  },
+  "agriaku": {
+    "source": "https://agriaku.com",
+    "kind": "site",
+    "file": "agriaku.png",
+    "bytes": 4740,
+    "dims": [
+      96,
+      96
+    ],
+    "via": "https://agriaku.com/wp-content/uploads/2021/06/Final-Logo-mini-icon-96x96-1.png"
+  },
+  "labamu": {
+    "source": "https://labamu.co.id",
+    "kind": "site",
+    "file": "labamu.png",
+    "bytes": 2889,
+    "dims": [
+      512,
+      94
+    ],
+    "via": "https://labamu.co.id/wp-content/uploads/2025/09/Labamu-Logo-Color-WO-Tagline-e1761731596870.png"
+  },
+  "mds-moments": {
+    "source": "https://mds-moments.id/",
+    "kind": "site",
+    "file": "mds-moments.png",
+    "bytes": 17907,
+    "dims": [
+      132,
+      91
+    ],
+    "via": "https://mds-moments.id/icon.png"
+  },
+  "co-xlaxiata": {
+    "source": "https://www.xlaxiata.co.id",
+    "kind": "site",
+    "error": "cannot identify image file <_io.BytesIO object at 0x7fe89a29b100>"
+  },
+  "co-telkominfra": {
+    "source": "https://www.telkominfra.co.id",
+    "kind": "site",
+    "file": "co-telkominfra.jpg",
+    "bytes": 51968,
+    "dims": [
+      1200,
+      1200
+    ],
+    "via": "https://telkominfra.co.id/uploads/seo/5112634f-9a91-4c4c-a13b-888f38ff3615.jpg"
+  },
+  "co-greateastern": {
+    "source": "https://www.greateasternlife.com/id/en/index.html",
+    "kind": "site",
+    "file": "co-greateastern.svg",
+    "bytes": 6649,
+    "dims": null,
+    "via": "https://www.greateasternlife.com/etc/clientlibs/greateastern_id/favicons/ge-favicon.svg"
+  },
+  "co-generali": {
+    "source": "https://www.generali.co.id",
+    "kind": "site",
+    "file": "co-generali.jpg",
+    "bytes": 124060,
+    "dims": [
+      1200,
+      630
+    ],
+    "via": "https://www.generali.co.id/storage/app/resized/804/583/519/generali_logo_resized_8045835192c6ddfcff287130a120c278c81f9aa5.jpg"
+  },
+  "co-asabri": {
+    "source": "https://www.asabri.co.id",
+    "kind": "site",
+    "file": "co-asabri.jpg",
+    "bytes": 4170,
+    "dims": [
+      200,
+      200
+    ],
+    "via": "https://www.asabri.co.id/asset/images/sprite/logo_asabri_kotak.jpg"
+  },
+  "co-scventures": {
+    "source": "https://scventures.io",
+    "kind": "site",
+    "file": "co-scventures.jpg",
+    "bytes": 113155,
+    "dims": [
+      1440,
+      650
+    ],
+    "via": "https://scventures.io/wp-content/uploads/Home-Hero.jpg"
+  }
+}

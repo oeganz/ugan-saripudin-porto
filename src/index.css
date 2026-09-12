@@ -183,6 +183,16 @@ html {
   -webkit-mask-image: radial-gradient(ellipse 90% 80% at 50% 40%, black 30%, transparent 78%);
 }
 
+/* Faint grid texture for service cards (reference style) */
+.bg-blueprint-card {
+  background-image:
+    linear-gradient(rgba(79, 124, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 124, 255, 0.045) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-color: rgba(13, 19, 34, 0.55); /* ink-800/55 */
+}
+
+
 /* Marquee ticker */
 @keyframes marquee-x {
   from { transform: translateX(0); }

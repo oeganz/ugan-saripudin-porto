@@ -1,212 +1,94 @@
-import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { FadeIn } from './FadeIn';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
-const footerLinks = {
-  work: [
-    { label: 'Projects', href: '/projects' },
-    { label: 'Case Studies', href: '/projects' },
-    { label: 'Tech Stack', href: '/#stack' },
-  ],
-  about: [
-    { label: 'Experience', href: '/#experience' },
-    { label: 'Leadership', href: '/#adlc-ecosystem' },
-  ],
-  connect: [
-    { label: 'GitHub', href: 'https://github.com/oeganz', external: true },
-    { label: 'LinkedIn', href: 'https://linkedin.com/in/ugan', external: true },
-    { label: 'Email', href: 'mailto:oeganz1999@gmail.com', external: false },
-  ],
-};
+/**
+ * Footer — reference-style: oversized name wordmark with a fading
+ * silver gradient, centered nav, socials, and a legal line.
+ */
+const nav = [
+  { label: 'Home', href: '/' },
+  { label: 'Work', href: '/#projects' },
+  { label: 'Process', href: '/#process' },
+  { label: 'About', href: '/#about' },
+  { label: 'Insights', href: '/insights' },
+  { label: 'Projects', href: '/projects' },
+];
 
-/* ── Smart link: external | hash-anchor | internal ── */
-function FooterLink({
-  href,
-  external,
-  children,
-}: {
-  href: string;
-  external?: boolean;
-  children: React.ReactNode;
-}) {
-  const location = useLocation();
-  const navigate = useNavigate();
+const socials = [
+  { icon: Github, href: 'https://github.com/oeganz', label: 'GitHub' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/ugan', label: 'LinkedIn' },
+  { icon: Mail, href: 'mailto:oeganz1999@gmail.com', label: 'Email' },
+];
 
-  const baseClass =
-    'text-sm text-slate-400 hover:text-brand-500 transition-colors inline-flex items-center gap-1';
-
-  /* 1. External link */
-  if (external) {
-    return (
-      <a
-        href={href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={baseClass}
-      >
-        {children}
-        <ArrowUpRight className="w-3 h-3 opacity-50" />
-      </a>
-    );
-  }
-
-  /* 2. Hash anchor → /#section */
-  if (href.startsWith('/#')) {
-    const targetId = href.slice(2); // remove '/#'
-
-    const handleClick = (e: React.MouseEvent) => {
-      e.preventDefault();
-
-      if (location.pathname === '/') {
-        /* Same page → smooth scroll directly */
-        const el = document.getElementById(targetId);
-        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      } else {
-        /* Different page → navigate, ScrollToTop handles the rest */
-        navigate(`/#${targetId}`);
-      }
-    };
-
-    return (
-      <a href={href} onClick={handleClick} className={baseClass}>
-        {children}
-      </a>
-    );
-  }
-
-  /* 3. Internal page link */
-  return (
-    <Link to={href} className={baseClass.replace('inline-flex items-center gap-1', '')}>
-      {children}
-    </Link>
-  );
+function smooth(hash: string) {
+  const el = document.getElementById(hash);
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 export function Footer() {
   return (
-    <footer className="relative">
-      {/* Pre-footer CTA band */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-500/5 to-transparent" />
-        <FadeIn>
-          <div className="relative max-w-5xl mx-auto px-6 py-20 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[3px] text-brand-500/70 mb-4">
-              Open to Opportunities
-            </p>
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-100 mb-5 tracking-tight">
-              Let&apos;s Ship Something Great
-            </h3>
-            <p className="text-base text-slate-400 max-w-xl mx-auto mb-8 leading-relaxed">
-              Engineering lead for hire. 12+ developers led. 50M+ downloads delivered.
-              Zero-drama execution from spec to production.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <a
-                href="mailto:oeganz1999@gmail.com"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-brand-500 text-white font-bold text-sm hover:bg-brand-400 transition-colors"
-              >
-                <Mail className="w-4 h-4" />
-                Start a Conversation
-              </a>
-              <Link
-                to="/projects"
-                className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-brand-500 transition-colors font-medium"
-              >
-                View Projects <ArrowUpRight className="w-3.5 h-3.5" />
-              </Link>
-            </div>
-          </div>
-        </FadeIn>
+    <footer className="relative border-t border-white/[0.06] bg-ink-950 overflow-hidden">
+      {/* Giant wordmark */}
+      <div className="pt-14 md:pt-20 pb-6 px-4 select-none" aria-hidden="true">
+        <p className="text-center font-display font-bold leading-[0.95] tracking-[-0.02em] text-[clamp(2.6rem,10.5vw,9rem)] whitespace-nowrap bg-gradient-to-b from-slate-100 via-slate-400 to-slate-700 bg-clip-text text-transparent">
+          UGAN SARIPUDIN
+        </p>
       </div>
+      <span className="sr-only">Ugan Saripudin</span>
 
-      {/* Main Footer */}
-      <div className="border-t border-ink-800/70">
-        <div className="max-w-7xl mx-auto px-6 py-14">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
+      {/* Nav + socials */}
+      <div className="max-w-6xl mx-auto px-6 pb-10">
+        <nav aria-label="Footer" className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-8">
+          {nav.map((l) =>
+            l.href.startsWith('/#') ? (
+              <a
+                key={l.label}
+                href={l.href}
+                onClick={(e) => {
+                  e.preventDefault();
+                  smooth(l.href.slice(2));
+                }}
+                className="text-sm text-slate-400 hover:text-white transition-colors"
+              >
+                {l.label}
+              </a>
+            ) : (
+              <Link key={l.label} to={l.href} className="text-sm text-slate-400 hover:text-white transition-colors">
+                {l.label}
+              </Link>
+            ),
+          )}
+        </nav>
 
-            {/* Brand Column */}
-            <div className="col-span-2 md:col-span-1">
-              <p className="text-lg font-bold text-slate-100 tracking-tight">Ugan Saripudin</p>
-              <p className="text-sm text-slate-500 mt-2 leading-relaxed max-w-xs">
-                Engineering Lead building platforms that ship.
-                10+ years. AI-native. Zero drama.
-              </p>
-              <div className="flex items-center gap-4 mt-5">
-                <a
-                  href="https://github.com/oeganz"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="GitHub"
-                  className="text-slate-500 hover:text-brand-500 transition-colors"
-                >
-                  <Github className="w-4.5 h-4.5" />
-                </a>
-                <a
-                  href="https://linkedin.com/in/ugan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="LinkedIn"
-                  className="text-slate-500 hover:text-brand-500 transition-colors"
-                >
-                  <Linkedin className="w-4.5 h-4.5" />
-                </a>
-                <a
-                  href="mailto:oeganz1999@gmail.com"
-                  aria-label="Email"
-                  className="text-slate-500 hover:text-brand-500 transition-colors"
-                >
-                  <Mail className="w-4.5 h-4.5" />
-                </a>
-              </div>
-            </div>
-
-            {/* Work Links */}
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[2px] text-slate-500 mb-4">Work</p>
-              <ul className="space-y-3">
-                {footerLinks.work.map((link) => (
-                  <li key={link.label}>
-                    <FooterLink href={link.href}>{link.label}</FooterLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* About Links */}
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[2px] text-slate-500 mb-4">About</p>
-              <ul className="space-y-3">
-                {footerLinks.about.map((link) => (
-                  <li key={link.label}>
-                    <FooterLink href={link.href}>{link.label}</FooterLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Connect Links */}
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[2px] text-slate-500 mb-4">Connect</p>
-              <ul className="space-y-3">
-                {footerLinks.connect.map((link) => (
-                  <li key={link.label}>
-                    <FooterLink href={link.href} external={link.external}>
-                      {link.label}
-                    </FooterLink>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
+        <div className="flex items-center justify-center gap-4 mb-10">
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.href}
+              target={s.href.startsWith('http') ? '_blank' : undefined}
+              rel="noopener noreferrer"
+              aria-label={s.label}
+              className="w-11 h-11 rounded-full border border-white/10 bg-white/[0.03] flex items-center justify-center text-slate-400 hover:text-brand-400 hover:border-brand-500/40 transition-colors"
+            >
+              <s.icon className="w-4 h-4" />
+            </a>
+          ))}
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            aria-label="Back to top"
+            className="w-11 h-11 rounded-full border border-white/10 bg-white/[0.03] flex items-center justify-center text-slate-400 hover:text-brand-400 hover:border-brand-500/40 transition-colors"
+          >
+            <ArrowUp className="w-4 h-4" />
+          </button>
         </div>
 
-        {/* Copyright bar */}
-        <div className="border-t border-ink-800/50">
-          <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p className="text-xs text-slate-600">
-              &copy; {new Date().getFullYear()} Ugan Saripudin. All rights reserved.
-            </p>
-          </div>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 border-t border-white/[0.06]">
+          <p className="text-xs text-slate-600">
+            © 2026 Ugan Saripudin — GanzApps. All rights reserved.
+          </p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slate-700">
+            React · TypeScript · Tailwind
+          </p>
         </div>
       </div>
     </footer>
