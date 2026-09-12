@@ -48,7 +48,7 @@ export function FeaturedCaseStudiesSection() {
               <FadeIn key={cs.id} delay={i * 0.1}>
                 <Link
                   to={cs.slug}
-                  className={`group block bg-ink-800/50 border ${colorClass} rounded-xl p-6 transition-all duration-300 hover:bg-ink-800/70 hover:scale-[1.02]`}
+                  className={`group block bg-ink-800/50 border ${colorClass} rounded-xl p-6 transition-colors duration-300 hover:bg-ink-800/70`}
                 >
                   <div className="flex items-start justify-between mb-4">
                     <div className={`p-3 rounded-lg ${cs.color === 'sky' ? 'bg-brand-500/10' : 'bg-emerald-400/10'}`}>

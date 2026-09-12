@@ -188,7 +188,7 @@ export function ProjectTechStack({ techStack }: ProjectTechStackProps) {
                       return (
                         <span
                           key={tech}
-                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${group.cat.chipBg} border ${group.cat.chipBorder} ${group.cat.chipText} text-xs font-medium transition-all hover:scale-[1.03]`}
+                          className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg ${group.cat.chipBg} border ${group.cat.chipBorder} ${group.cat.chipText} text-xs font-medium transition-colors`}
                         >
                           <span className="opacity-70">
                             {IconComp ? <IconComp /> : FallbackIcon ? <FallbackIcon className="w-3 h-3" /> : <DefaultTechIcon />}

@@ -70,7 +70,7 @@ function RelatedProjectsContent({
           <FadeIn key={project.id} delay={i * 0.1}>
             <Link
               to={`/projects/${project.id}`}
-              className="group block rounded-2xl bg-ink-800/40 border border-slate-700/30 hover:border-brand-500/30 transition-all overflow-hidden hover:shadow-lg hover:shadow-brand-500/5"
+              className="group block rounded-2xl bg-ink-800/40 border border-slate-700/30 hover:border-brand-500/30 transition-colors overflow-hidden"
             >
               {/* Image */}
               <div className="relative h-44 overflow-hidden">

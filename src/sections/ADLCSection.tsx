@@ -84,7 +84,7 @@ export function ADLCSection() {
           {cards.map(c => (
             <StaggerItem key={c.num}>
               <Card className="relative h-full group">
-                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-brand-500 text-slate-900 font-bold text-sm flex items-center justify-center border-4 border-ink-900 z-10 group-hover:scale-110 transition-transform">
+                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-brand-500 text-slate-900 font-bold text-sm flex items-center justify-center border-4 border-ink-900 z-10 transition-colors">
                   {c.num}
                 </div>
                 <div className="flex items-center gap-3 mb-3">

@@ -103,7 +103,7 @@ export function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
                 href="mailto:oeganz1999@gmail.com"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-brand-500 text-slate-900 font-bold text-sm hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/20"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-brand-500 text-white font-bold text-sm hover:bg-brand-400 transition-colors"
               >
                 <Mail className="w-4 h-4" />
                 Start a Conversation

@@ -79,9 +79,9 @@ export function ContactSection() {
           <div className="mt-10 p-6 rounded-2xl bg-brand-500/5 border border-brand-500/20">
             <h3 className="text-xl font-bold text-slate-100 mb-2">Ready to build something great?</h3>
             <p className="text-slate-400 text-sm max-w-md mb-5">
-              Whether you need <span className="text-brand-500 font-semibold">engineering leadership</span>,{' '}
-              <span className="text-cyan-400 font-semibold">full-stack development</span>, or{' '}
-              <span className="text-emerald-400 font-semibold">microservices architecture</span> — I&apos;m ready.
+              Whether you need <span className="text-slate-200 font-medium">engineering leadership</span>,{' '}
+              <span className="text-slate-200 font-medium">full-stack development</span>, or{' '}
+              <span className="text-slate-200 font-medium">microservices architecture</span> — I&apos;m ready.
             </p>
             <a href="mailto:oeganz1999@gmail.com"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-brand-500 text-slate-900 font-semibold hover:bg-brand-400 transition-colors text-sm">

@@ -1,13 +1,12 @@
 import { FadeIn } from '@/components/FadeIn';
-import { Zap, Shield, Users, Clock, TrendingUp, Award } from 'lucide-react';
 
 const stats = [
-  { icon: Zap, value: '10+', label: 'Years Experience', desc: 'Engineering leadership' },
-  { icon: TrendingUp, value: '50M+', label: 'Users Downloaded', desc: 'Apps shipped' },
-  { icon: Shield, value: '99.9%', label: 'SLO Achieved', desc: 'Production reliability' },
-  { icon: Users, value: '12+', label: 'Devs Led', desc: 'Across 3 pods' },
-  { icon: Clock, value: '18mo', label: 'Zero Incidents', desc: 'Production stability' },
-  { icon: Award, value: '98%', label: 'On-Time Delivery', desc: 'Remote contract' },
+  { value: '10+', label: 'Years Experience', desc: 'Engineering leadership' },
+  { value: '50M+', label: 'Users Downloaded', desc: 'Apps shipped' },
+  { value: '99.9%', label: 'SLO Achieved', desc: 'Production reliability' },
+  { value: '12+', label: 'Devs Led', desc: 'Across 3 pods' },
+  { value: '18mo', label: 'Zero Incidents', desc: 'Production stability' },
+  { value: '98%', label: 'On-Time Delivery', desc: 'Remote contract' },
 ];
 
 export function StatsSection() {
@@ -15,23 +14,30 @@ export function StatsSection() {
     <section className="py-16 px-4" id="stats">
       <div className="max-w-7xl mx-auto">
         <FadeIn>
-          <div className="text-center mb-12">
-            <p className="text-xs font-medium uppercase tracking-[1px] text-brand-500 mb-3">Impact at Scale</p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-50">Numbers That Matter</h2>
+          <div className="mb-10 flex items-center gap-3">
+            <span className="font-mono text-[11px] uppercase tracking-[0.28em] text-slate-500">
+              Impact at scale
+            </span>
+            <span className="h-px flex-1 bg-slate-800" aria-hidden="true" />
           </div>
         </FadeIn>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {stats.map((s, i) => (
-            <FadeIn key={s.label} delay={i * 0.06}>
-              <div className="text-center p-5 rounded-xl bg-ink-800/40 border border-slate-700/30 hover:border-brand-500/20 transition-all">
-                <s.icon className="w-5 h-5 text-brand-500 mx-auto mb-3" />
-                <div className="text-2xl md:text-3xl font-black text-brand-500">{s.value}</div>
-                <div className="mt-1 text-sm font-semibold text-slate-200">{s.label}</div>
-                <div className="text-xs text-slate-500 mt-0.5">{s.desc}</div>
+
+        {/* Editorial hairline grid — one surface, cells divided by 1px lines */}
+        <FadeIn delay={0.1}>
+          <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-px bg-slate-800/60 border-y border-slate-800/60">
+            {stats.map((s) => (
+              <div key={s.label} className="bg-ink-900 flex flex-col py-7 px-5">
+                <dd className="order-1 font-display text-3xl md:text-[2.1rem] font-bold text-slate-50 tracking-tight leading-none">
+                  {s.value}
+                </dd>
+                <dt className="order-2 mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slate-500">
+                  {s.label}
+                </dt>
+                <dd className="order-3 mt-1 text-xs text-slate-600">{s.desc}</dd>
               </div>
-            </FadeIn>
-          ))}
-        </div>
+            ))}
+          </dl>
+        </FadeIn>
       </div>
     </section>
   );
