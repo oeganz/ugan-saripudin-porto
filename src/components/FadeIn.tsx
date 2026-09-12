@@ -20,11 +20,11 @@ export function FadeIn({
 
   return (
     <motion.div
+      className={`motion-reveal ${className}`}
       initial={{ opacity: 0, y: direction === 'up' ? 30 : 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration, delay, ease }}
-      className={className}
     >
       {children}
     </motion.div>
@@ -42,11 +42,11 @@ export function StaggerContainer({
 
   return (
     <motion.div
+      className={`motion-reveal ${className ?? ''}`}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.15 }}
       variants={{ hidden: {}, visible: { transition: { staggerChildren: staggerDelay, delayChildren: initialDelay } } }}
-      className={className}
     >
       {children}
     </motion.div>
@@ -60,8 +60,8 @@ export function StaggerItem({ children, className = '' }: { children: ReactNode;
 
   return (
     <motion.div
+      className={`motion-reveal ${className}`}
       variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease } } }}
-      className={className}
     >
       {children}
     </motion.div>
