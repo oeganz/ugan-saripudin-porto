@@ -5,6 +5,22 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        /* GanzApps brand tone (from ganzapps.my.id logo/site) */
+        brand: {
+          200: '#B6C7FF',
+          300: '#8FB0FF',
+          400: '#6E93FF',
+          500: '#4F7CFF',
+          600: '#3B63E6',
+          700: '#2E4DC0',
+        },
+        /* Near-black blue-cast backgrounds */
+        ink: {
+          700: '#141C31',
+          800: '#0D1322',
+          900: '#0A0E1A',
+          950: '#05070D',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -55,6 +71,11 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
         xs: "calc(var(--radius) - 6px)",
+      },
+      fontFamily: {
+        sans: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
       },
       boxShadow: {
         xs: "0 1px 2px 0 rgb(0 0 0 / 0.05)",

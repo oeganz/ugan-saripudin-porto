@@ -21,7 +21,7 @@ const ArticleEditorPage = lazy(() => import('./pages/admin/ArticleEditorPage.tsx
 const adminPath = import.meta.env.VITE_ADMIN_PATH || 'admin'
 
 function RouteFallback() {
-  return <div className="min-h-[50vh] bg-slate-900" aria-busy="true" />;
+  return <div className="min-h-[50vh] bg-ink-900" aria-busy="true" />;
 }
 
 createRoot(document.getElementById('root')!).render(

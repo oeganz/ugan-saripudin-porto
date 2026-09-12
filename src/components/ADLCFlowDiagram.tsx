@@ -167,7 +167,7 @@ export function ADLCFlowDiagram() {
       className="rounded-xl overflow-hidden border border-slate-700/50 bg-[#0a101f] mb-8"
     >
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-2.5 bg-slate-800/50 border-b border-slate-700/40">
+      <div className="flex items-center justify-between px-4 py-2.5 bg-ink-800/50 border-b border-slate-700/40">
         <div className="flex items-center gap-2">
           <div className="flex gap-1.5">
             <span className="w-2.5 h-2.5 rounded-full bg-red-500/50"></span>

@@ -47,14 +47,14 @@ export default function ProjectDetailPage() {
 
   if (!project) {
     return (
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-ink-900">
         <ScrollToTop />
         <Navbar />
         <main className="flex items-center justify-center min-h-[60vh]">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-slate-100 mb-4">Project Not Found</h1>
             <p className="text-slate-400 mb-8">The project you are looking for does not exist.</p>
-            <Link to="/projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-colors">
+            <Link to="/projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-500 text-slate-900 font-semibold hover:bg-brand-400 transition-colors">
               <ArrowLeft className="w-5 h-5" /> Back to Projects
             </Link>
           </div>
@@ -83,7 +83,7 @@ export default function ProjectDetailPage() {
         <meta name="twitter:description" content={pageDesc} />
         {heroImage && <meta name="twitter:image" content={`${window.location.origin}${heroImage}`} />}
       </Helmet>
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-ink-900">
       <ScrollToTop />
       <motion.div
         initial={{ opacity: 0 }}
@@ -126,7 +126,7 @@ export default function ProjectDetailPage() {
           </section>
 
           {/* Features */}
-          <section className="py-16 px-4 bg-slate-800/20">
+          <section className="py-16 px-4 bg-ink-800/20">
             <div className="max-w-7xl mx-auto">
               <ProjectFeatures features={project.features} industry={project.industry} />
             </div>

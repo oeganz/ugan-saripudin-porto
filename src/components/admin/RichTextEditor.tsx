@@ -22,7 +22,7 @@ export function RichTextEditor({ content, onChange }: RichTextEditorProps) {
       Link.configure({
         openOnClick: false,
         HTMLAttributes: {
-          class: 'text-sky-400 underline',
+          class: 'text-brand-500 underline',
         },
       }),
     ],
@@ -54,8 +54,8 @@ export function RichTextEditor({ content, onChange }: RichTextEditorProps) {
   }
 
   return (
-    <div className="border border-slate-700 rounded-lg overflow-hidden bg-slate-800">
-      <div className="flex gap-1 p-2 border-b border-slate-700 bg-slate-900">
+    <div className="border border-slate-700 rounded-lg overflow-hidden bg-ink-800">
+      <div className="flex gap-1 p-2 border-b border-slate-700 bg-ink-900">
         <Button
           type="button"
           variant="ghost"

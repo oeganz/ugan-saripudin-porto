@@ -18,11 +18,11 @@ export default function CaseStudyLabamu() {
         <meta name="twitter:title" content="Labamu: From Monolith to 86K+ Users" />
         <meta name="twitter:description" content="Led Labamu's migration from Laravel monolith to microservices." />
       </Helmet>
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-ink-900">
       {/* Header */}
-      <header className="border-b border-slate-700/50 bg-slate-900/95 backdrop-blur sticky top-0 z-50">
+      <header className="border-b border-slate-700/50 bg-ink-900/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
+          <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-500 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Portfolio
           </Link>
@@ -33,7 +33,7 @@ export default function CaseStudyLabamu() {
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
-            <div className="inline-block px-3 py-1 rounded-full bg-sky-400/10 border border-sky-400/30 text-sky-400 text-xs font-semibold mb-6">
+            <div className="inline-block px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/30 text-brand-500 text-xs font-semibold mb-6">
               CASE STUDY
             </div>
             <h1 className="text-5xl md:text-6xl font-black text-slate-50 mb-6">
@@ -47,19 +47,19 @@ export default function CaseStudyLabamu() {
           <FadeIn delay={0.2}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
               <div>
-                <div className="text-3xl font-bold text-sky-400">7,500+</div>
+                <div className="text-3xl font-bold text-brand-500">7,500+</div>
                 <div className="text-sm text-slate-500">Active Users</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">Zero</div>
+                <div className="text-3xl font-bold text-brand-500">Zero</div>
                 <div className="text-sm text-slate-500">Downtime</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">12</div>
+                <div className="text-3xl font-bold text-brand-500">12</div>
                 <div className="text-sm text-slate-500">Developers Led</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">ISO 27001</div>
+                <div className="text-3xl font-bold text-brand-500">ISO 27001</div>
                 <div className="text-sm text-slate-500">Certified</div>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function CaseStudyLabamu() {
       </section>
 
       {/* Challenge */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">The Challenge</h2>
@@ -115,10 +115,10 @@ export default function CaseStudyLabamu() {
 
           <StaggerContainer staggerDelay={0.1} className="space-y-6">
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sky-400 font-bold">1</span>
+                  <div className="w-10 h-10 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-brand-500 font-bold">1</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-50 mb-2">Domain Analysis & Service Boundaries</h3>
@@ -134,10 +134,10 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sky-400 font-bold">2</span>
+                  <div className="w-10 h-10 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-brand-500 font-bold">2</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-50 mb-2">ADLC Framework Implementation</h3>
@@ -156,10 +156,10 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sky-400 font-bold">3</span>
+                  <div className="w-10 h-10 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-brand-500 font-bold">3</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-50 mb-2">Microservices Architecture</h3>
@@ -167,20 +167,20 @@ export default function CaseStudyLabamu() {
                       Extracted 4 core services with independent deployment pipelines:
                     </p>
                     <div className="grid grid-cols-2 gap-3 text-sm">
-                      <div className="bg-slate-900/50 p-3 rounded-lg">
-                        <div className="text-sky-400 font-semibold">Inventory Service</div>
+                      <div className="bg-ink-900/50 p-3 rounded-lg">
+                        <div className="text-brand-500 font-semibold">Inventory Service</div>
                         <div className="text-slate-500">Stock management, suppliers</div>
                       </div>
-                      <div className="bg-slate-900/50 p-3 rounded-lg">
-                        <div className="text-sky-400 font-semibold">Sales Service</div>
+                      <div className="bg-ink-900/50 p-3 rounded-lg">
+                        <div className="text-brand-500 font-semibold">Sales Service</div>
                         <div className="text-slate-500">POS, transactions, receipts</div>
                       </div>
-                      <div className="bg-slate-900/50 p-3 rounded-lg">
-                        <div className="text-sky-400 font-semibold">Reporting Service</div>
+                      <div className="bg-ink-900/50 p-3 rounded-lg">
+                        <div className="text-brand-500 font-semibold">Reporting Service</div>
                         <div className="text-slate-500">Analytics, dashboards</div>
                       </div>
-                      <div className="bg-slate-900/50 p-3 rounded-lg">
-                        <div className="text-sky-400 font-semibold">Auth Service</div>
+                      <div className="bg-ink-900/50 p-3 rounded-lg">
+                        <div className="text-brand-500 font-semibold">Auth Service</div>
                         <div className="text-slate-500">Users, permissions, audit</div>
                       </div>
                     </div>
@@ -190,10 +190,10 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-sky-400/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sky-400 font-bold">4</span>
+                  <div className="w-10 h-10 rounded-lg bg-brand-500/10 flex items-center justify-center flex-shrink-0">
+                    <span className="text-brand-500 font-bold">4</span>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-slate-50 mb-2">Quality Gates & Observability</h3>
@@ -215,7 +215,7 @@ export default function CaseStudyLabamu() {
       </section>
 
       {/* Results */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">The Results</h2>
@@ -223,8 +223,8 @@ export default function CaseStudyLabamu() {
 
           <StaggerContainer staggerDelay={0.1} className="grid md:grid-cols-2 gap-6 mt-8">
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
-                <TrendingUp className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
+                <TrendingUp className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-xl font-bold text-slate-50 mb-2">40% Documentation Reduction</h3>
                 <p className="text-slate-400">
                   AI-assisted documentation generation freed up 6+ hours per developer per week, allowing focus on architecture and feature development.
@@ -233,8 +233,8 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
-                <Shield className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
+                <Shield className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-xl font-bold text-slate-50 mb-2">18 Months Zero Incidents</h3>
                 <p className="text-slate-400">
                   Quality gates and automated testing caught issues before production. No critical incidents since migration completion.
@@ -243,8 +243,8 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
-                <Users className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
+                <Users className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-xl font-bold text-slate-50 mb-2">3x Faster Deployments</h3>
                 <p className="text-slate-400">
                   Independent service deployments enabled parallel team workflows. Deployment frequency increased from weekly to daily.
@@ -253,8 +253,8 @@ export default function CaseStudyLabamu() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
-                <Zap className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
+                <Zap className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-xl font-bold text-slate-50 mb-2">ISO 27001 Certified</h3>
                 <p className="text-slate-400">
                   Achieved security certification with automated audit trails and compliance monitoring built into ADLC workflows.
@@ -271,21 +271,21 @@ export default function CaseStudyLabamu() {
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">Lessons Learned</h2>
             <div className="space-y-6">
-              <div className="bg-slate-800/50 border-l-4 border-sky-400 p-6 rounded-r-xl">
+              <div className="bg-ink-800/50 border-l-4 border-brand-500 p-6 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Start with Observability</h3>
                 <p className="text-slate-400">
                   We instrumented the monolith first to understand service boundaries through actual usage patterns. This data-driven approach prevented premature optimization.
                 </p>
               </div>
 
-              <div className="bg-slate-800/50 border-l-4 border-cyan-400 p-6 rounded-r-xl">
+              <div className="bg-ink-800/50 border-l-4 border-cyan-400 p-6 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">AI Workflows Need Governance</h3>
                 <p className="text-slate-400">
                   Early AI-generated code lacked consistency. We established clear guidelines and review processes to maintain quality while preserving speed benefits.
                 </p>
               </div>
 
-              <div className="bg-slate-800/50 border-l-4 border-emerald-400 p-6 rounded-r-xl">
+              <div className="bg-ink-800/50 border-l-4 border-emerald-400 p-6 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Team Enablement Over Automation</h3>
                 <p className="text-slate-400">
                   Success came from enabling 12 developers to work autonomously, not just automating tasks. ADLC framework provided structure for independent decision-making.
@@ -297,7 +297,7 @@ export default function CaseStudyLabamu() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto text-center">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-4">
@@ -309,13 +309,13 @@ export default function CaseStudyLabamu() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:oeganz1999@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-500 text-slate-900 font-semibold hover:bg-brand-400 transition-all"
               >
                 Schedule a Call
               </a>
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-ink-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 transition-all"
               >
                 View More Projects
               </Link>

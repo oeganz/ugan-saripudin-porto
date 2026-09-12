@@ -15,7 +15,7 @@ interface Particle {
 function StaticHeroBackground() {
   return (
     <div
-      className="absolute inset-0 z-0 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950"
+      className="absolute inset-0 z-0 bg-gradient-to-b from-ink-900 via-ink-900 to-ink-950"
       aria-hidden
     />
   );

@@ -50,7 +50,7 @@ const valueCards = [
 export function ADLCSection() {
 
   return (
-    <section id="adlc-ecosystem" className="bg-slate-900 py-20 md:py-28 relative">
+    <section id="adlc-ecosystem" className="bg-ink-900 py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Engineering Leader Value Proposition */}
         <SectionHeader number="(01)" eyebrow="FOR ENGINEERING LEADERS" headline="Delivery Without Losing Control"
@@ -60,8 +60,8 @@ export function ADLCSection() {
             <StaggerItem key={card.title}>
               <Card className="h-full group">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 rounded-lg bg-sky-400/10 group-hover:bg-sky-400/20 transition-colors">
-                    <card.icon size={24} className="text-sky-400" />
+                  <div className="p-3 rounded-lg bg-brand-500/10 group-hover:bg-brand-500/20 transition-colors">
+                    <card.icon size={24} className="text-brand-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-slate-50 mb-2">{card.title}</h3>
@@ -84,19 +84,19 @@ export function ADLCSection() {
           {cards.map(c => (
             <StaggerItem key={c.num}>
               <Card className="relative h-full group">
-                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-sky-400 text-slate-900 font-bold text-sm flex items-center justify-center border-4 border-slate-900 z-10 group-hover:scale-110 transition-transform">
+                <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-brand-500 text-slate-900 font-bold text-sm flex items-center justify-center border-4 border-ink-900 z-10 group-hover:scale-110 transition-transform">
                   {c.num}
                 </div>
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-sky-400/10 group-hover:bg-sky-400/20 transition-colors">
-                    <c.icon size={20} className="text-sky-400" />
+                  <div className="p-2 rounded-lg bg-brand-500/10 group-hover:bg-brand-500/20 transition-colors">
+                    <c.icon size={20} className="text-brand-500" />
                   </div>
                   <h3 className="text-lg font-bold text-slate-50">{c.title}</h3>
                 </div>
                 <p className="text-sm leading-relaxed text-slate-400 mb-4">{c.desc}</p>
                 <div className="flex flex-wrap gap-2">
                   {c.tags.map(t => (
-                    <span key={t} className="text-xs px-2 py-1 rounded-md bg-slate-700/50 text-sky-400 font-medium border border-sky-400/20">{t}</span>
+                    <span key={t} className="text-xs px-2 py-1 rounded-md bg-slate-700/50 text-brand-500 font-medium border border-brand-500/20">{t}</span>
                   ))}
                 </div>
               </Card>

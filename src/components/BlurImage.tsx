@@ -12,7 +12,7 @@ export function BlurImage({ src, alt, className = '', lowSrc, ...props }: BlurIm
       {/* Blur placeholder */}
       {!loaded && (
         <div 
-          className="absolute inset-0 bg-slate-800 animate-pulse transition-opacity duration-300"
+          className="absolute inset-0 bg-ink-800 animate-pulse transition-opacity duration-300"
           style={{
             backgroundImage: lowSrc ? `url(${lowSrc})` : undefined,
             backgroundSize: 'cover',

@@ -81,7 +81,7 @@ export default function ArticleDetailPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-slate-900 flex items-center justify-center">
+      <div className="min-h-screen bg-ink-900 flex items-center justify-center">
         <div className="text-slate-400">Loading...</div>
       </div>
     )
@@ -89,11 +89,11 @@ export default function ArticleDetailPage() {
 
   if (!article) {
     return (
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-ink-900">
         <Navbar />
         <main className="py-[100px] text-center">
           <h1 className="text-3xl font-bold text-slate-50 mb-4">Article Not Found</h1>
-          <Link to="/insights" className="text-sky-400 hover:underline">
+          <Link to="/insights" className="text-brand-500 hover:underline">
             ← Back to Insights
           </Link>
         </main>
@@ -120,14 +120,14 @@ export default function ArticleDetailPage() {
 
       <ReadingProgress />
 
-      <div className="min-h-screen bg-slate-900" style={isPreview ? { paddingTop: '40px' } : undefined}>
+      <div className="min-h-screen bg-ink-900" style={isPreview ? { paddingTop: '40px' } : undefined}>
         <Navbar />
 
         <main className="py-[100px]">
           <article className="max-w-4xl mx-auto px-6">
             <Link
               to="/insights"
-              className="inline-flex items-center gap-2 text-sky-400 hover:underline mb-8"
+              className="inline-flex items-center gap-2 text-brand-500 hover:underline mb-8"
             >
               <ArrowLeft size={16} />
               Back to Insights
@@ -181,7 +181,7 @@ export default function ArticleDetailPage() {
                   <Link
                     key={tag}
                     to={`/insights?tag=${encodeURIComponent(tag)}`}
-                    className="px-3 py-1 text-xs font-semibold rounded-md border text-sky-400 bg-sky-400/10 border-sky-400/20 hover:bg-sky-400/20 transition-colors"
+                    className="px-3 py-1 text-xs font-semibold rounded-md border text-brand-500 bg-brand-500/10 border-brand-500/20 hover:bg-brand-500/20 transition-colors"
                   >
                     {tag}
                   </Link>

@@ -65,19 +65,19 @@ const projectImages: Record<string, string> = {
 };
 
 const metricColor = (val: string): string => {
-  if (val.includes('M') || val.includes('Billion')) return 'text-sky-400 border-sky-400/30';
+  if (val.includes('M') || val.includes('Billion')) return 'text-brand-500 border-brand-500/30';
   if (val.includes('Hospitals')) return 'text-purple-400 border-purple-400/30';
   if (val.includes('Award') || val.includes('Champion') || val.includes('CX')) return 'text-amber-400 border-amber-400/30';
   if (val.includes('Trained') || val.includes('Entrepreneurs')) return 'text-cyan-400 border-cyan-400/30';
   if (val.includes('SME') || val.includes('Partner')) return 'text-emerald-400 border-emerald-400/30';
-  return 'text-sky-400 border-sky-400/30';
+  return 'text-brand-500 border-brand-500/30';
 };
 
 function TechTag({ name }: { name: string }) {
   const IconComp = getTechIcon(name);
   const Icon = IconComp || DefaultTechIcon;
   return (
-    <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-slate-900/60 text-xs text-slate-400 border border-slate-700/30 hover:border-slate-500/40 transition-colors">
+    <span className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-ink-900/60 text-xs text-slate-400 border border-slate-700/30 hover:border-slate-500/40 transition-colors">
       <Icon />
       <span>{name}</span>
     </span>
@@ -114,13 +114,13 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
     <FadeIn key={project.id} delay={index * 0.08}>
       <Link
         to={`/projects/${project.id}`}
-        className={`group h-full ${cardClass} rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/40 transition-all duration-300 overflow-hidden flex flex-col cursor-pointer`}
+        className={`group h-full ${cardClass} rounded-xl bg-ink-800/40 border border-slate-700/30 hover:border-brand-500/40 transition-all duration-300 overflow-hidden flex flex-col cursor-pointer`}
       >
         {/* Image */}
-        <div className={`relative ${variant === 'carousel' ? 'h-52' : 'h-44'} bg-slate-800 overflow-hidden`}>
+        <div className={`relative ${variant === 'carousel' ? 'h-52' : 'h-44'} bg-ink-800 overflow-hidden`}>
           {(projectImages[project.id] || project.screenshots[0]) ? (
             <div className="relative w-full h-full overflow-hidden">
-              <div className="absolute inset-0 bg-slate-800 animate-pulse" />
+              <div className="absolute inset-0 bg-ink-800 animate-pulse" />
               <img
                 src={projectImages[project.id] || project.screenshots[0]}
                 alt={project.name}
@@ -139,11 +139,11 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
               />
             </div>
           ) : (
-            <div className="w-full h-full flex items-center justify-center bg-slate-800">
+            <div className="w-full h-full flex items-center justify-center bg-ink-800">
               <div className="text-4xl font-black text-slate-700">{project.name.charAt(0)}</div>
             </div>
           )}
-          <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/0 transition-colors" />
+          <div className="absolute inset-0 bg-ink-900/10 group-hover:bg-ink-900/0 transition-colors" />
           {/* Status */}
           <div className="absolute top-3 right-3">
             <span className={`px-2.5 py-1 rounded-full text-xs font-medium ${statusColors[project.status]}`}>
@@ -153,7 +153,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
           {/* Metric */}
           {metricLabel && (
             <div className="absolute bottom-3 left-3">
-              <span className={`px-3 py-1.5 rounded-lg bg-slate-900/90 text-sm font-bold border ${metricColor(metricLabel)}`}>
+              <span className={`px-3 py-1.5 rounded-lg bg-ink-900/90 text-sm font-bold border ${metricColor(metricLabel)}`}>
                 {metricLabel}
               </span>
             </div>
@@ -162,7 +162,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
 
         {/* Content */}
         <div className="p-5 flex-1 flex flex-col">
-          <h3 className="text-lg font-bold text-slate-100 group-hover:text-sky-400 transition-colors truncate">
+          <h3 className="text-lg font-bold text-slate-100 group-hover:text-brand-500 transition-colors truncate">
             {project.name}
           </h3>
           <p className="text-xs text-slate-500 mb-3 truncate">{project.company}</p>
@@ -200,7 +200,7 @@ export function ProjectCard({ project, variant = 'grid', index = 0 }: ProjectCar
             {project.urls.website && (
               <button
                 onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(project.urls.website, '_blank', 'noopener,noreferrer'); }}
-                className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-sky-400 transition-colors">
+                className="inline-flex items-center gap-1.5 text-xs text-slate-400 hover:text-brand-500 transition-colors">
                 <ExternalLink className="w-3.5 h-3.5" />
                 Website
               </button>

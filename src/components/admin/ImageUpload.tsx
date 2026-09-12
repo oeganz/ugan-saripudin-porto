@@ -79,7 +79,7 @@ export function ImageUpload({ value, onChange, label = 'Upload Image' }: ImageUp
           </Button>
         </div>
       ) : (
-        <label className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-slate-700 rounded-lg cursor-pointer hover:border-sky-400 transition-colors">
+        <label className="flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-slate-700 rounded-lg cursor-pointer hover:border-brand-500 transition-colors">
           <div className="flex flex-col items-center justify-center pt-5 pb-6">
             <Upload className="w-10 h-10 mb-3 text-slate-400" />
             <p className="mb-2 text-sm text-slate-400">

@@ -147,12 +147,12 @@ export function ProjectsSection() {
 
         {/* Carousel */}
         <div className="relative group">
-          <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-10 bg-gradient-to-r from-ink-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-10 bg-gradient-to-l from-ink-900 to-transparent z-10 pointer-events-none" />
 
           <button
             onClick={scrollPrev}
-            className="absolute left-1 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-slate-800/90 border border-slate-600/60 text-slate-200 flex items-center justify-center shadow-lg hover:bg-sky-400/20 hover:border-sky-400/50 hover:text-sky-400 transition-all active:scale-95 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            className="absolute left-1 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-ink-800/90 border border-slate-600/60 text-slate-200 flex items-center justify-center shadow-lg hover:bg-brand-500/20 hover:border-brand-500/50 hover:text-brand-500 transition-all active:scale-95 opacity-100 md:opacity-0 md:group-hover:opacity-100"
             aria-label="Previous"
             type="button"
           >
@@ -160,7 +160,7 @@ export function ProjectsSection() {
           </button>
           <button
             onClick={scrollNext}
-            className="absolute right-1 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-slate-800/90 border border-slate-600/60 text-slate-200 flex items-center justify-center shadow-lg hover:bg-sky-400/20 hover:border-sky-400/50 hover:text-sky-400 transition-all active:scale-95 opacity-100 md:opacity-0 md:group-hover:opacity-100"
+            className="absolute right-1 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-ink-800/90 border border-slate-600/60 text-slate-200 flex items-center justify-center shadow-lg hover:bg-brand-500/20 hover:border-brand-500/50 hover:text-brand-500 transition-all active:scale-95 opacity-100 md:opacity-0 md:group-hover:opacity-100"
             aria-label="Next"
             type="button"
           >
@@ -203,7 +203,7 @@ export function ProjectsSection() {
                 if (!el) return;
                 el.scrollTo({ left: i * (getCardWidth() + CARD_GAP), behavior: 'smooth' });
               }}
-              className="w-2 h-2 rounded-full bg-slate-600 hover:bg-sky-400 transition-colors"
+              className="w-2 h-2 rounded-full bg-slate-600 hover:bg-brand-500 transition-colors"
               aria-label={`Project ${i + 1}`}
               type="button"
             />
@@ -213,7 +213,7 @@ export function ProjectsSection() {
         <FadeIn delay={0.5}>
           <div className="mt-8 text-center">
             <a href="/projects"
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-slate-800/60 border border-slate-600 text-slate-200 font-semibold hover:bg-sky-400/10 hover:border-sky-400/40 hover:text-sky-400 transition-all text-sm">
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-ink-800/60 border border-slate-600 text-slate-200 font-semibold hover:bg-brand-500/10 hover:border-brand-500/40 hover:text-brand-500 transition-all text-sm">
               View All Projects <ArrowUpRight className="w-4 h-4" />
             </a>
           </div>

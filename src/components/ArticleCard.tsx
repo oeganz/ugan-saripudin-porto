@@ -10,9 +10,9 @@ interface ArticleCardProps {
 export function ArticleCard({ article }: ArticleCardProps) {
   return (
     <Link to={`/insights/${article.slug}`}>
-      <Card className="relative h-full group cursor-pointer hover:border-sky-400/40 transition-all">
+      <Card className="relative h-full group cursor-pointer hover:border-brand-500/40 transition-all">
         {article.cover_image && (
-          <div className="relative w-full h-48 overflow-hidden rounded-t-lg mb-4 bg-slate-800">
+          <div className="relative w-full h-48 overflow-hidden rounded-t-lg mb-4 bg-ink-800">
             <div className="article-cover-skeleton absolute inset-0 bg-slate-700" />
             <img
               src={article.cover_image}
@@ -36,7 +36,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
           {article.tags?.slice(0, 2).map((tag) => (
             <span
               key={tag}
-              className="text-xs font-semibold px-2.5 py-1 rounded-md border text-sky-400 bg-sky-400/10 border-sky-400/20"
+              className="text-xs font-semibold px-2.5 py-1 rounded-md border text-brand-500 bg-brand-500/10 border-brand-500/20"
             >
               {tag}
             </span>
@@ -47,7 +47,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
           </span>
         </div>
 
-        <h3 className="text-xl font-bold text-slate-50 mb-3 leading-tight group-hover:text-sky-400 transition-colors">
+        <h3 className="text-xl font-bold text-slate-50 mb-3 leading-tight group-hover:text-brand-500 transition-colors">
           {article.title}
         </h3>
 

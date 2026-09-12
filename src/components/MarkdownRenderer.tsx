@@ -83,7 +83,7 @@ const customComponents: Components = {
 
     if (isInline) {
       return (
-        <code className="px-1.5 py-0.5 rounded bg-slate-700 text-sky-300 text-sm font-mono" {...props}>
+        <code className="px-1.5 py-0.5 rounded bg-slate-700 text-brand-400 text-sm font-mono" {...props}>
           {children}
         </code>
       )
@@ -103,7 +103,7 @@ const customComponents: Components = {
   },
   pre({ children, ...props }) {
     return (
-      <pre className="p-4 rounded-lg bg-slate-800 overflow-x-auto my-4" {...props}>
+      <pre className="p-4 rounded-lg bg-ink-800 overflow-x-auto my-4" {...props}>
         {children}
       </pre>
     )
@@ -113,7 +113,7 @@ const customComponents: Components = {
     return (
       <a
         href={href}
-        className="text-sky-400 hover:underline"
+        className="text-brand-500 hover:underline"
         target={isExternal ? '_blank' : undefined}
         rel={isExternal ? 'noopener noreferrer' : undefined}
         {...props}

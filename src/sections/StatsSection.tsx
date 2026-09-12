@@ -16,16 +16,16 @@ export function StatsSection() {
       <div className="max-w-7xl mx-auto">
         <FadeIn>
           <div className="text-center mb-12">
-            <p className="text-xs font-medium uppercase tracking-[1px] text-sky-400 mb-3">Impact at Scale</p>
+            <p className="text-xs font-medium uppercase tracking-[1px] text-brand-500 mb-3">Impact at Scale</p>
             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-50">Numbers That Matter</h2>
           </div>
         </FadeIn>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {stats.map((s, i) => (
             <FadeIn key={s.label} delay={i * 0.06}>
-              <div className="text-center p-5 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:border-sky-400/20 transition-all">
-                <s.icon className="w-5 h-5 text-sky-400 mx-auto mb-3" />
-                <div className="text-2xl md:text-3xl font-black text-sky-400">{s.value}</div>
+              <div className="text-center p-5 rounded-xl bg-ink-800/40 border border-slate-700/30 hover:border-brand-500/20 transition-all">
+                <s.icon className="w-5 h-5 text-brand-500 mx-auto mb-3" />
+                <div className="text-2xl md:text-3xl font-black text-brand-500">{s.value}</div>
                 <div className="mt-1 text-sm font-semibold text-slate-200">{s.label}</div>
                 <div className="text-xs text-slate-500 mt-0.5">{s.desc}</div>
               </div>

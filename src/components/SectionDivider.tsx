@@ -4,9 +4,9 @@ interface SectionDividerProps {
 }
 
 const gradientMap: Record<string, string> = {
-  cyan: 'from-cyan-500/30 via-sky-400/20 to-transparent',
+  cyan: 'from-cyan-500/30 via-brand-500/20 to-transparent',
   emerald: 'from-emerald-500/30 via-emerald-400/20 to-transparent',
-  sky: 'from-sky-500/30 via-cyan-400/20 to-transparent',
+  sky: 'from-brand-600/30 via-cyan-400/20 to-transparent',
   violet: 'from-violet-500/30 via-purple-400/20 to-transparent',
   amber: 'from-amber-500/30 via-orange-400/20 to-transparent',
   rose: 'from-rose-500/30 via-pink-400/20 to-transparent',
@@ -36,7 +36,7 @@ export function SectionBreak({ variant = 'cyan' }: { variant?: SectionDividerPro
   const colors: Record<string, string> = {
     cyan: 'border-cyan-500/20',
     emerald: 'border-emerald-500/20',
-    sky: 'border-sky-500/20',
+    sky: 'border-brand-600/20',
     violet: 'border-violet-500/20',
     amber: 'border-amber-500/20',
     rose: 'border-rose-500/20',
@@ -46,7 +46,7 @@ export function SectionBreak({ variant = 'cyan' }: { variant?: SectionDividerPro
   const dotColors: Record<string, string> = {
     cyan: 'bg-cyan-400',
     emerald: 'bg-emerald-400',
-    sky: 'bg-sky-400',
+    sky: 'bg-brand-500',
     violet: 'bg-violet-400',
     amber: 'bg-amber-400',
     rose: 'bg-rose-400',

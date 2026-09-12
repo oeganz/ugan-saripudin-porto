@@ -18,11 +18,11 @@ export default function CaseStudyMyBeepr() {
         <meta name="twitter:title" content="MyBeepr: 98% On-Time Delivery Across Time Zones" />
         <meta name="twitter:description" content="Healthcare communication with 98% on-time delivery across 16 hospital deployments." />
       </Helmet>
-      <div className="min-h-screen bg-slate-900">
+      <div className="min-h-screen bg-ink-900">
       {/* Header */}
-      <header className="border-b border-slate-700/50 bg-slate-900/95 backdrop-blur sticky top-0 z-50">
+      <header className="border-b border-slate-700/50 bg-ink-900/95 backdrop-blur sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-sky-400 transition-colors">
+          <Link to="/" className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-500 transition-colors">
             <ArrowLeft className="w-4 h-4" />
             Back to Portfolio
           </Link>
@@ -47,19 +47,19 @@ export default function CaseStudyMyBeepr() {
           <FadeIn delay={0.2}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
               <div>
-                <div className="text-3xl font-bold text-sky-400">98%</div>
+                <div className="text-3xl font-bold text-brand-500">98%</div>
                 <div className="text-sm text-slate-500">On-Time Delivery</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">16</div>
+                <div className="text-3xl font-bold text-brand-500">16</div>
                 <div className="text-sm text-slate-500">Hospital Deployments</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">2hr</div>
+                <div className="text-3xl font-bold text-brand-500">2hr</div>
                 <div className="text-sm text-slate-500">Timezone Gap</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-sky-400">Zero</div>
+                <div className="text-3xl font-bold text-brand-500">Zero</div>
                 <div className="text-sm text-slate-500">Security Incidents</div>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function CaseStudyMyBeepr() {
       </section>
 
       {/* Context */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">The Context</h2>
@@ -99,8 +99,8 @@ export default function CaseStudyMyBeepr() {
 
           <StaggerContainer staggerDelay={0.1} className="grid md:grid-cols-3 gap-6 mt-8">
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
-                <Globe className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
+                <Globe className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Timezone Gap</h3>
                 <p className="text-slate-400 text-sm">
                   Only 2 hours of overlap between WIB (UTC+7) and Australian business hours. Communication had to be structured differently.
@@ -109,8 +109,8 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
-                <Target className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
+                <Target className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Healthcare Compliance</h3>
                 <p className="text-slate-400 text-sm">
                   Australian healthcare standards (HL7 FHIR, privacy requirements) demanded rigorous documentation and audit trails.
@@ -119,8 +119,8 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6">
-                <Clock className="w-8 h-8 text-sky-400 mb-4" />
+              <div className="bg-ink-800/50 border border-slate-700/50 rounded-xl p-6">
+                <Clock className="w-8 h-8 text-brand-500 mb-4" />
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Strict Deadlines</h3>
                 <p className="text-slate-400 text-sm">
                   Hospital deployment windows were fixed. Delays meant waiting months for the next implementation slot.
@@ -132,7 +132,7 @@ export default function CaseStudyMyBeepr() {
       </section>
 
       {/* Approach */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">The Approach</h2>
@@ -143,11 +143,11 @@ export default function CaseStudyMyBeepr() {
 
           <StaggerContainer staggerDelay={0.15} className="space-y-6">
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-slate-50 mb-4">Async-First Communication</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="text-sky-400 font-semibold mb-2">Documentation Standards</h4>
+                    <h4 className="text-brand-500 font-semibold mb-2">Documentation Standards</h4>
                     <ul className="space-y-2 text-slate-400 text-sm">
                       <li>• Every decision documented with context and rationale</li>
                       <li>• Meeting notes shared within 30 minutes of completion</li>
@@ -169,26 +169,26 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-slate-50 mb-4">AI-Assisted Documentation</h3>
                 <p className="text-slate-400 mb-4">
                   Implementing the ADLC framework, we automated documentation generation:
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-slate-800/50 p-4 rounded-lg">
-                    <div className="text-sky-400 font-semibold mb-2">Code → Docs</div>
+                  <div className="bg-ink-800/50 p-4 rounded-lg">
+                    <div className="text-brand-500 font-semibold mb-2">Code → Docs</div>
                     <p className="text-slate-500 text-sm">
                       AI-generated API documentation from code comments and types
                     </p>
                   </div>
-                  <div className="bg-slate-800/50 p-4 rounded-lg">
-                    <div className="text-sky-400 font-semibold mb-2">Specs → Tests</div>
+                  <div className="bg-ink-800/50 p-4 rounded-lg">
+                    <div className="text-brand-500 font-semibold mb-2">Specs → Tests</div>
                     <p className="text-slate-500 text-sm">
                       Automated test case generation from requirements
                     </p>
                   </div>
-                  <div className="bg-slate-800/50 p-4 rounded-lg">
-                    <div className="text-sky-400 font-semibold mb-2">Logs → Reports</div>
+                  <div className="bg-ink-800/50 p-4 rounded-lg">
+                    <div className="text-brand-500 font-semibold mb-2">Logs → Reports</div>
                     <p className="text-slate-500 text-sm">
                       AI-generated progress reports for stakeholders
                     </p>
@@ -198,7 +198,7 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-900/50 border border-slate-700/50 rounded-xl p-6">
+              <div className="bg-ink-900/50 border border-slate-700/50 rounded-xl p-6">
                 <h3 className="text-xl font-bold text-slate-50 mb-4">Quality Gates</h3>
                 <p className="text-slate-400 mb-4">
                   Strict pre-deployment quality gates ensured zero production issues:
@@ -236,7 +236,7 @@ export default function CaseStudyMyBeepr() {
 
           <StaggerContainer staggerDelay={0.1} className="grid md:grid-cols-2 gap-8 mt-8">
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-emerald-400/30 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-emerald-400/30 rounded-xl p-6">
                 <Award className="w-10 h-10 text-emerald-400 mb-4" />
                 <h3 className="text-2xl font-bold text-slate-50 mb-2">98% On-Time Delivery</h3>
                 <p className="text-slate-400 mb-4">
@@ -249,7 +249,7 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-emerald-400/30 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-emerald-400/30 rounded-xl p-6">
                 <Shield className="w-10 h-10 text-emerald-400 mb-4" />
                 <h3 className="text-2xl font-bold text-slate-50 mb-2">Zero Security Incidents</h3>
                 <p className="text-slate-400 mb-4">
@@ -262,7 +262,7 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-emerald-400/30 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-emerald-400/30 rounded-xl p-6">
                 <Clock className="w-10 h-10 text-emerald-400 mb-4" />
                 <h3 className="text-2xl font-bold text-slate-50 mb-2">22 Minutes Saved Per Clinical Loop</h3>
                 <p className="text-slate-400 mb-4">
@@ -275,7 +275,7 @@ export default function CaseStudyMyBeepr() {
             </StaggerItem>
 
             <StaggerItem>
-              <div className="bg-slate-800/50 border border-emerald-400/30 rounded-xl p-6">
+              <div className="bg-ink-800/50 border border-emerald-400/30 rounded-xl p-6">
                 <Users className="w-10 h-10 text-emerald-400 mb-4" />
                 <h3 className="text-2xl font-bold text-slate-50 mb-2">Team Morale & Retention</h3>
                 <p className="text-slate-400 mb-4">
@@ -291,26 +291,26 @@ export default function CaseStudyMyBeepr() {
       </section>
 
       {/* Lessons */}
-      <section className="py-16 px-6 bg-slate-800/30">
+      <section className="py-16 px-6 bg-ink-800/30">
         <div className="max-w-7xl mx-auto">
           <FadeIn>
             <h2 className="text-3xl font-bold text-slate-50 mb-6">Key Takeaways</h2>
             <div className="space-y-4">
-              <div className="bg-slate-900/50 border-l-4 border-sky-400 p-5 rounded-r-xl">
+              <div className="bg-ink-900/50 border-l-4 border-brand-500 p-5 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Documentation is Infrastructure</h3>
                 <p className="text-slate-400">
                   In async-first teams, documentation isn't overhead — it's the communication medium. Invest in tools and processes that make documentation effortless.
                 </p>
               </div>
 
-              <div className="bg-slate-900/50 border-l-4 border-cyan-400 p-5 rounded-r-xl">
+              <div className="bg-ink-900/50 border-l-4 border-cyan-400 p-5 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Overlap Time is Precious</h3>
                 <p className="text-slate-400">
                   With only 2 hours of overlap, every meeting must be prepped and every discussion must have an agenda. Respect the constraint by being efficient.
                 </p>
               </div>
 
-              <div className="bg-slate-900/50 border-l-4 border-emerald-400 p-5 rounded-r-xl">
+              <div className="bg-ink-900/50 border-l-4 border-emerald-400 p-5 rounded-r-xl">
                 <h3 className="text-lg font-bold text-slate-50 mb-2">Trust Through Transparency</h3>
                 <p className="text-slate-400">
                   Remote work requires visible progress. Daily async updates, decision logs, and progress dashboards built trust with Australian stakeholders.
@@ -334,13 +334,13 @@ export default function CaseStudyMyBeepr() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:oeganz1999@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-sky-400 text-slate-900 font-semibold hover:bg-sky-300 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-brand-500 text-slate-900 font-semibold hover:bg-brand-400 transition-all"
               >
                 Let's Discuss Your Challenge
               </a>
               <Link
                 to="/"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 transition-all"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-ink-800 border border-slate-600 text-slate-200 font-medium hover:bg-slate-700 transition-all"
               >
                 View More Projects
               </Link>

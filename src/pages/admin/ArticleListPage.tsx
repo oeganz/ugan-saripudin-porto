@@ -111,7 +111,7 @@ export default function ArticleListPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-900">
+    <div className="min-h-screen bg-ink-900">
       <div className="max-w-7xl mx-auto px-6 py-8">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
@@ -186,10 +186,10 @@ export default function ArticleListPage() {
               : 'No articles yet. Create your first article!'}
           </div>
         ) : (
-          <div className="bg-slate-800 rounded-lg border border-slate-700 overflow-hidden">
+          <div className="bg-ink-800 rounded-lg border border-slate-700 overflow-hidden">
             <div className="overflow-x-auto">
               <table className="w-full">
-                <thead className="bg-slate-900 border-b border-slate-700">
+                <thead className="bg-ink-900 border-b border-slate-700">
                   <tr>
                     <th className="text-left px-6 py-4 text-sm font-semibold text-slate-300">
                       Title
@@ -225,7 +225,7 @@ export default function ArticleListPage() {
                           {article.tags?.slice(0, 3).map((tag) => (
                             <span
                               key={tag}
-                              className="px-2 py-0.5 rounded text-xs bg-sky-400/10 text-sky-400 border border-sky-400/20"
+                              className="px-2 py-0.5 rounded text-xs bg-brand-500/10 text-brand-500 border border-brand-500/20"
                             >
                               {tag}
                             </span>

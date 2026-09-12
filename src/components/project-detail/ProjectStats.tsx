@@ -23,7 +23,7 @@ export function ProjectStats({ metrics, status, platform }: ProjectStatsProps) {
   const displayMetrics = Object.entries(metrics).slice(0, 4);
 
   return (
-    <section className="bg-slate-800/50 border-y border-slate-700/30 py-8">
+    <section className="bg-ink-800/50 border-y border-slate-700/30 py-8">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Status */}
@@ -40,7 +40,7 @@ export function ProjectStats({ metrics, status, platform }: ProjectStatsProps) {
             <div className="text-center">
               <div className="flex justify-center gap-1 mb-2">
                 {platform.map((p) => (
-                  <span key={p} className="w-8 h-8 rounded-md bg-slate-700/50 flex items-center justify-center text-xs font-bold text-sky-400">
+                  <span key={p} className="w-8 h-8 rounded-md bg-slate-700/50 flex items-center justify-center text-xs font-bold text-brand-500">
                     {platformIcons[p] || p.charAt(0)}
                   </span>
                 ))}
@@ -53,7 +53,7 @@ export function ProjectStats({ metrics, status, platform }: ProjectStatsProps) {
           {displayMetrics.map(([key, value], i) => (
             <FadeIn key={key} delay={0.1 + i * 0.05}>
               <div className="text-center">
-                <p className="text-2xl font-bold text-sky-400 mb-1">{value}</p>
+                <p className="text-2xl font-bold text-brand-500 mb-1">{value}</p>
                 <p className="text-xs text-slate-500 capitalize">{key.replace(/_/g, ' ')}</p>
               </div>
             </FadeIn>

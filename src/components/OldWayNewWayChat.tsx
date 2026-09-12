@@ -25,7 +25,7 @@ export function OldWayNewWayChat() {
         transition={{ duration: 0.5 }}
         className="text-center mb-8"
       >
-        <p className="text-xs font-semibold uppercase tracking-[2px] text-sky-400/70 mb-2">How I Work</p>
+        <p className="text-xs font-semibold uppercase tracking-[2px] text-brand-500/70 mb-2">How I Work</p>
         <h3 className="text-2xl md:text-3xl font-bold text-slate-50">Old Way vs. How I Deliver</h3>
       </motion.div>
 

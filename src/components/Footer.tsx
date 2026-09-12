@@ -33,7 +33,7 @@ function FooterLink({
   const navigate = useNavigate();
 
   const baseClass =
-    'text-sm text-slate-400 hover:text-sky-400 transition-colors inline-flex items-center gap-1';
+    'text-sm text-slate-400 hover:text-brand-500 transition-colors inline-flex items-center gap-1';
 
   /* 1. External link */
   if (external) {
@@ -87,10 +87,10 @@ export function Footer() {
     <footer className="relative">
       {/* Pre-footer CTA band */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-sky-400/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-500/5 to-transparent" />
         <FadeIn>
           <div className="relative max-w-5xl mx-auto px-6 py-20 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[3px] text-sky-400/70 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-[3px] text-brand-500/70 mb-4">
               Open to Opportunities
             </p>
             <h3 className="text-3xl md:text-4xl font-bold text-slate-100 mb-5 tracking-tight">
@@ -103,14 +103,14 @@ export function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
                 href="mailto:oeganz1999@gmail.com"
-                className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-sky-400 text-slate-900 font-bold text-sm hover:bg-sky-300 transition-all shadow-lg shadow-sky-400/20"
+                className="inline-flex items-center gap-2 px-7 py-3 rounded-lg bg-brand-500 text-slate-900 font-bold text-sm hover:bg-brand-400 transition-all shadow-lg shadow-brand-500/20"
               >
                 <Mail className="w-4 h-4" />
                 Start a Conversation
               </a>
               <Link
                 to="/projects"
-                className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-sky-400 transition-colors font-medium"
+                className="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-brand-500 transition-colors font-medium"
               >
                 View Projects <ArrowUpRight className="w-3.5 h-3.5" />
               </Link>
@@ -120,7 +120,7 @@ export function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="border-t border-slate-800/70">
+      <div className="border-t border-ink-800/70">
         <div className="max-w-7xl mx-auto px-6 py-14">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-8">
 
@@ -137,7 +137,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
-                  className="text-slate-500 hover:text-sky-400 transition-colors"
+                  className="text-slate-500 hover:text-brand-500 transition-colors"
                 >
                   <Github className="w-4.5 h-4.5" />
                 </a>
@@ -146,14 +146,14 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="text-slate-500 hover:text-sky-400 transition-colors"
+                  className="text-slate-500 hover:text-brand-500 transition-colors"
                 >
                   <Linkedin className="w-4.5 h-4.5" />
                 </a>
                 <a
                   href="mailto:oeganz1999@gmail.com"
                   aria-label="Email"
-                  className="text-slate-500 hover:text-sky-400 transition-colors"
+                  className="text-slate-500 hover:text-brand-500 transition-colors"
                 >
                   <Mail className="w-4.5 h-4.5" />
                 </a>
@@ -201,7 +201,7 @@ export function Footer() {
         </div>
 
         {/* Copyright bar */}
-        <div className="border-t border-slate-800/50">
+        <div className="border-t border-ink-800/50">
           <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p className="text-xs text-slate-600">
               &copy; {new Date().getFullYear()} Ugan Saripudin. All rights reserved.

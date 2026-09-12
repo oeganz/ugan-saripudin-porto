@@ -40,7 +40,7 @@ const metrics = [
 
 export function CTOValueSection() {
   return (
-    <section id="cto-value" className="bg-slate-900 py-[100px] md:py-[140px] relative">
+    <section id="cto-value" className="bg-ink-900 py-[100px] md:py-[140px] relative">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           number="(00)"
@@ -54,8 +54,8 @@ export function CTOValueSection() {
             <StaggerItem key={card.title}>
               <Card className="h-full group">
                 <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 rounded-lg bg-sky-400/10 group-hover:bg-sky-400/20 transition-colors">
-                    <card.icon size={24} className="text-sky-400" />
+                  <div className="p-3 rounded-lg bg-brand-500/10 group-hover:bg-brand-500/20 transition-colors">
+                    <card.icon size={24} className="text-brand-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-bold text-slate-50 mb-2">{card.title}</h3>
@@ -76,10 +76,10 @@ export function CTOValueSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="rounded-xl bg-slate-800/50 border border-slate-700/50 p-6"
+          className="rounded-xl bg-ink-800/50 border border-slate-700/50 p-6"
         >
           <div className="text-center mb-6">
-            <p className="text-xs font-semibold uppercase tracking-[2px] text-sky-400/70 mb-2">Proven ROI</p>
+            <p className="text-xs font-semibold uppercase tracking-[2px] text-brand-500/70 mb-2">Proven ROI</p>
             <h3 className="text-lg font-bold text-slate-50">Real Results from Production Systems</h3>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -92,7 +92,7 @@ export function CTOValueSection() {
                 transition={{ duration: 0.4, delay: 0.4 + i * 0.08 }}
                 className="text-center"
               >
-                <div className="text-3xl md:text-4xl font-black text-sky-400 mb-1">{metric.value}</div>
+                <div className="text-3xl md:text-4xl font-black text-brand-500 mb-1">{metric.value}</div>
                 <div className="text-xs text-slate-400 font-medium">{metric.label}</div>
               </motion.div>
             ))}
