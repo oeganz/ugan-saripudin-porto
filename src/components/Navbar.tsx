@@ -1,17 +1,16 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, ArrowUpRight } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { useScrolled } from '@/hooks/useScrolled'
 
 const navLinks = [
-  { label: 'My Profile', href: '#about' },
-  { label: '(01) ADLC', href: '#adlc-ecosystem' },
-  { label: '(02) Insights', href: '#insights', page: '/insights' },
-  { label: '(03) Projects', href: '#projects', page: '/projects' },
-  { label: '(04) Experience', href: '#experience' },
-  { label: '(05) Stack', href: '#stack' },
-  { label: '(06) Contact', href: '#contact' },
+  { label: 'Projects', href: '#projects', page: '/projects' },
+  { label: 'Services', href: '#services' },
+  { label: 'Process', href: '#process' },
+  { label: 'About', href: '#about-me' },
+  { label: 'Insights', href: '#insights', page: '/insights' },
+  { label: 'FAQs', href: '#faqs' },
 ]
 
 export function Navbar() {
@@ -25,7 +24,7 @@ export function Navbar() {
   useEffect(() => {
     if (!isHome) return
     const handleScroll = () => {
-      const offset = window.innerHeight * 0.35 + 64 // navbar height + viewport midpoint
+      const offset = window.innerHeight * 0.35 + 64
       let closest: string | null = null
       let closestDist = Infinity
       navLinks.forEach(l => {
@@ -41,7 +40,7 @@ export function Navbar() {
       if (closest) setActiveSection(closest)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
-    handleScroll() // initial
+    handleScroll()
     return () => window.removeEventListener('scroll', handleScroll)
   }, [isHome])
 
@@ -56,110 +55,79 @@ export function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 h-16 transition-all duration-300 ${isScrolled ? 'bg-ink-900/95 shadow-xl shadow-black/20' : 'bg-ink-900/70'} backdrop-blur-2xl border-b border-slate-700/30`}>
-        <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="text-sm font-bold tracking-tight group">
-            <span className="text-slate-50 group-hover:text-brand-500 transition-colors">Ugan</span>{' '}
-            <span className="text-brand-500 group-hover:text-brand-400 transition-colors">Saripudin</span>
-          </Link>
+      <div className="fixed top-0 inset-x-0 z-50 px-4 pt-4">
+        <nav
+          className={`mx-auto max-w-5xl rounded-full border transition-all duration-300 ${
+            isScrolled
+              ? 'bg-ink-950/90 border-brand-500/15 shadow-xl shadow-black/30 backdrop-blur-2xl'
+              : 'bg-ink-950/60 border-white/[0.06] backdrop-blur-xl'
+          }`}
+        >
+          <div className="h-14 px-5 flex items-center justify-between gap-4">
+            {/* Name */}
+            <Link to="/" className="text-sm font-bold tracking-tight whitespace-nowrap group">
+              <span className="text-slate-50 group-hover:text-brand-400 transition-colors">Ugan </span>
+              <span className="text-slate-400 group-hover:text-brand-400 transition-colors">Saripudin</span>
+            </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-0.5">
-            {isHome && navLinks.map((l) => (
-              <div key={l.href} className="flex items-center"
-              >
-                <a
-                  href={l.href}
-                  onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
-                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all duration-200 ${
-                    isActive(l.href)
-                      ? 'text-brand-500 bg-brand-500/10'
-                      : 'text-slate-400 hover:text-slate-100 hover:bg-ink-800/50'
-                  }`}
-                >
-                  {l.label}
-                  {/* Animated underline */}
-                  {isActive(l.href) && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute bottom-0 left-2 right-2 h-px bg-brand-500"
-                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                    />
-                  )}
-                </a>
-                {l.page && (
-                  <Link
-                    to={l.page}
-                    title={`Open ${l.label.replace(/^\(\d+\)\s*/, '')} page`}
-                    className="px-1 py-2 text-slate-500 hover:text-brand-500 transition-colors"
+            {/* Desktop links */}
+            <div className="hidden lg:flex items-center gap-1">
+              {isHome && navLinks.map((l) => (
+                <div key={l.href} className="flex items-center">
+                  <a
+                    href={l.href}
+                    onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
+                    className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${
+                      isActive(l.href)
+                        ? 'text-white bg-white/[0.08]'
+                        : 'text-slate-400 hover:text-white'
+                    }`}
                   >
-                    <ArrowUpRight size={10} />
-                  </Link>
-                )}
-              </div>
-            ))}
-            {!isHome && (
-              <>
-                <Link
-                  to="/"
-                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname === '/' ? 'text-brand-500 bg-brand-500/10' : 'text-slate-400 hover:text-slate-100 hover:bg-ink-800/50'}`}
-                >
-                  Home
-                  {loc.pathname === '/' && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute bottom-0 left-2 right-2 h-px bg-brand-500"
-                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                    />
+                    {l.label}
+                  </a>
+                  {l.page && (
+                    <Link
+                      to={l.page}
+                      title={`Open ${l.label} page`}
+                      className="-ml-1 mr-1 text-slate-600 hover:text-brand-400 transition-colors text-[10px]"
+                    >
+                      ↗
+                    </Link>
                   )}
-                </Link>
-                <Link
-                  to="/insights"
-                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname.includes('/insights') ? 'text-brand-500 bg-brand-500/10' : 'text-slate-400 hover:text-slate-100 hover:bg-ink-800/50'}`}
-                >
-                  Insights
-                  {loc.pathname.includes('/insights') && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute bottom-0 left-2 right-2 h-px bg-brand-500"
-                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                    />
-                  )}
-                </Link>
-                <Link
-                  to="/projects"
-                  className={`relative px-3 py-2 rounded-md text-xs font-medium transition-all flex items-center gap-0.5 ${loc.pathname.includes('/projects') ? 'text-brand-500 bg-brand-500/10' : 'text-slate-400 hover:text-slate-100 hover:bg-ink-800/50'}`}
-                >
-                  Projects
-                  {loc.pathname.includes('/projects') && (
-                    <motion.div
-                      layoutId="activeNav"
-                      className="absolute bottom-0 left-2 right-2 h-px bg-brand-500"
-                      transition={{ type: 'spring', stiffness: 400, damping: 30 }}
-                    />
-                  )}
-                </Link>
-              </>
-            )}
+                </div>
+              ))}
+              {!isHome && (
+                <>
+                  <Link to="/" className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${loc.pathname === '/' ? 'text-white bg-white/[0.08]' : 'text-slate-400 hover:text-white'}`}>Home</Link>
+                  <Link to="/projects" className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${loc.pathname.includes('/projects') ? 'text-white bg-white/[0.08]' : 'text-slate-400 hover:text-white'}`}>Projects</Link>
+                  <Link to="/insights" className={`px-3 py-1.5 rounded-full text-[13px] font-medium transition-colors ${loc.pathname.includes('/insights') ? 'text-white bg-white/[0.08]' : 'text-slate-400 hover:text-white'}`}>Insights</Link>
+                </>
+              )}
+            </div>
+
+            {/* CTA */}
+            <div className="hidden lg:block">
+              <a
+                href="mailto:oeganz1999@gmail.com"
+                className="inline-flex items-center px-5 py-2 rounded-full bg-brand-500 text-white text-[13px] font-semibold shadow-lg shadow-brand-500/25 hover:bg-brand-400 transition-colors whitespace-nowrap"
+              >
+                Book a call
+              </a>
+            </div>
+
+            {/* Mobile toggle */}
+            <button
+              className="lg:hidden text-slate-50 p-2 rounded-full hover:bg-white/[0.06] transition-colors"
+              onClick={() => setOpen(!open)}
+              aria-label={open ? 'Close menu' : 'Open menu'}
+            >
+              {open ? <X size={20} /> : <Menu size={20} />}
+            </button>
           </div>
+        </nav>
+      </div>
 
-          {/* CTA */}
-          <div className="hidden lg:block">
-            <a href="mailto:oeganz1999@gmail.com"
-              className="px-5 py-2.5 bg-brand-500 text-white text-xs font-bold rounded-lg hover:bg-brand-400 transition-colors">
-              Let&apos;s Talk
-            </a>
-          </div>
-
-          {/* Mobile Toggle */}
-          <button className="lg:hidden text-slate-50 p-2 rounded-lg hover:bg-ink-800/50 transition-colors" onClick={() => setOpen(!open)} aria-label="menu">
-            <Menu size={20} />
-          </button>
-        </div>
-      </nav>
-
-      {/* Mobile Menu */}
+      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -167,7 +135,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-x-0 top-16 z-40 bg-ink-900/98 backdrop-blur-2xl border-b border-slate-700/50 p-6 lg:hidden"
+            className="fixed inset-x-4 top-[4.5rem] z-40 rounded-3xl bg-ink-950/97 backdrop-blur-2xl border border-white/[0.08] shadow-2xl shadow-black/50 p-5 lg:hidden"
           >
             <div className="flex flex-col gap-1">
               {isHome && navLinks.map((l) => (
@@ -175,10 +143,10 @@ export function Navbar() {
                   key={l.href}
                   href={l.href}
                   onClick={(e) => { e.preventDefault(); handleHashLink(l.href) }}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${
+                  className={`px-4 py-3 rounded-2xl text-sm font-medium transition-colors flex items-center justify-between ${
                     isActive(l.href)
-                      ? 'text-brand-500 bg-brand-500/10'
-                      : 'text-slate-300 hover:text-slate-50 hover:bg-ink-800/60'
+                      ? 'text-white bg-white/[0.08]'
+                      : 'text-slate-300 hover:text-white hover:bg-white/[0.05]'
                   }`}
                 >
                   <span>{l.label}</span>
@@ -186,28 +154,26 @@ export function Navbar() {
                     <Link
                       to={l.page}
                       onClick={(e) => e.stopPropagation()}
-                      className="text-slate-500 hover:text-brand-500 transition-colors"
+                      className="text-slate-500 hover:text-brand-400 transition-colors"
                     >
-                      <ArrowUpRight size={14} />
+                      ↗
                     </Link>
                   )}
                 </a>
               ))}
               {!isHome && (
                 <>
-                  <Link to="/" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname === '/' ? 'text-brand-500 bg-brand-500/10' : 'text-slate-300 hover:text-slate-50 hover:bg-ink-800/60'}`} onClick={() => setOpen(false)}>
-                    <span>Home</span>
-                  </Link>
-                  <Link to="/insights" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname.includes('/insights') ? 'text-brand-500 bg-brand-500/10' : 'text-slate-300 hover:text-slate-50 hover:bg-ink-800/60'}`} onClick={() => setOpen(false)}>
-                    <span>Insights</span>
-                  </Link>
-                  <Link to="/projects" className={`px-4 py-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between ${loc.pathname.includes('/projects') ? 'text-brand-500 bg-brand-500/10' : 'text-slate-300 hover:text-slate-50 hover:bg-ink-800/60'}`} onClick={() => setOpen(false)}>
-                    <span>Projects</span>
-                  </Link>
+                  <Link to="/" className="px-4 py-3 rounded-2xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05]" onClick={() => setOpen(false)}>Home</Link>
+                  <Link to="/projects" className="px-4 py-3 rounded-2xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05]" onClick={() => setOpen(false)}>Projects</Link>
+                  <Link to="/insights" className="px-4 py-3 rounded-2xl text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.05]" onClick={() => setOpen(false)}>Insights</Link>
                 </>
               )}
-              <a href="mailto:oeganz1999@gmail.com" className="mt-3 px-4 py-3 bg-brand-500 text-slate-900 text-sm font-bold rounded-lg text-center" onClick={() => setOpen(false)}>
-                Let&apos;s Talk
+              <a
+                href="mailto:oeganz1999@gmail.com"
+                className="mt-3 px-4 py-3 bg-brand-500 text-white text-sm font-semibold rounded-full text-center shadow-lg shadow-brand-500/25"
+                onClick={() => setOpen(false)}
+              >
+                Book a call
               </a>
             </div>
           </motion.div>

@@ -2,21 +2,23 @@ import { lazy, Suspense } from 'react'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import { HeroSection } from '@/sections/HeroSection'
+import { TrustedBySection } from '@/sections/TrustedBySection'
+import { FeaturedProjectsSection } from '@/sections/FeaturedProjectsSection'
+import { ServicesSection } from '@/sections/ServicesSection'
 import { StatsSection } from '@/sections/StatsSection'
-import { TickerStrip } from '@/components/TickerStrip'
+import { ProcessSection } from '@/sections/ProcessSection'
+import { MidCTASection } from '@/sections/MidCTASection'
+import { AboutSection } from '@/sections/AboutSection'
+import { FAQSection } from '@/sections/FAQSection'
+import { ContactSection } from '@/sections/ContactSection'
 
-// Lazy load heavy sections
-const ADLCSection = lazy(() => import('@/sections/ADLCSection').then(m => ({ default: m.ADLCSection })))
+// Lazy load heavier sections
 const InsightsSection = lazy(() => import('@/sections/InsightsSection').then(m => ({ default: m.InsightsSection })))
-const ProjectsSection = lazy(() => import('@/sections/ProjectsSection').then(m => ({ default: m.ProjectsSection })))
-const ExperienceSection = lazy(() => import('@/sections/ExperienceSection').then(m => ({ default: m.ExperienceSection })))
-const TechStackSection = lazy(() => import('@/sections/TechStackSection').then(m => ({ default: m.TechStackSection })))
-const ContactSection = lazy(() => import('@/sections/ContactSection').then(m => ({ default: m.ContactSection })))
 
 export default function App() {
   return (
     <>
-      <div className="min-h-screen bg-ink-900">
+      <div className="min-h-screen bg-ink-950">
         {/* Skip to main content for accessibility */}
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-500 focus:text-slate-900 focus:rounded-lg focus:font-semibold">
           Skip to main content
@@ -24,52 +26,42 @@ export default function App() {
 
         <Navbar />
         <main id="main-content">
-          {/* 00 Hero — editorial viewfinder */}
+          {/* 00 Hero — split greeting + halo portrait + floating stat chips */}
           <HeroSection />
 
-          {/* Ticker divider */}
-          <TickerStrip />
+          {/* 00b Trusted by */}
+          <TrustedBySection />
 
-          {/* 00b Stats — Slightly lighter band */}
-          <div className="bg-ink-800/40">
-            <StatsSection />
-          </div>
+          {/* 01 Recent Projects — featured grid */}
+          <FeaturedProjectsSection />
 
-          {/* 01 ADLC — Dark */}
-          <Suspense fallback={<div className="min-h-[50vh] bg-ink-900" />}>
-            <ADLCSection />
-          </Suspense>
+          {/* 02 Services */}
+          <ServicesSection />
 
-          {/* 04 Insights — Lighter band */}
-          <div className="bg-ink-800/40">
-            <Suspense fallback={<div className="min-h-[50vh] bg-ink-800/40" />}>
+          {/* 03 Stats band */}
+          <StatsSection />
+
+          {/* 04 Process — AI-augmented lifecycle */}
+          <ProcessSection />
+
+          {/* 05 Mid CTA banner */}
+          <MidCTASection />
+
+          {/* 06 About — profile card + bio + stack + experience */}
+          <AboutSection />
+
+          {/* 07 Insights — lighter band */}
+          <div className="bg-[#090D18]">
+            <Suspense fallback={<div className="min-h-[50vh] bg-[#090D18]" />}>
               <InsightsSection />
             </Suspense>
           </div>
 
-          {/* 05 Projects — Dark */}
-          <Suspense fallback={<div className="min-h-[50vh] bg-ink-900" />}>
-            <ProjectsSection />
-          </Suspense>
+          {/* 08 FAQs */}
+          <FAQSection />
 
-          {/* 06 Experience — Lighter band */}
-          <div className="bg-ink-800/40">
-            <Suspense fallback={<div className="min-h-[50vh] bg-ink-800/40" />}>
-              <ExperienceSection />
-            </Suspense>
-          </div>
-
-          {/* 07 Tech Stack — Dark */}
-          <Suspense fallback={<div className="min-h-[50vh] bg-ink-900" />}>
-            <TechStackSection />
-          </Suspense>
-
-          {/* 08 Contact — Lighter band */}
-          <div className="bg-ink-800/40">
-            <Suspense fallback={<div className="min-h-[50vh] bg-ink-800/40" />}>
-              <ContactSection />
-            </Suspense>
-          </div>
+          {/* 09 Contact panel */}
+          <ContactSection />
         </main>
         <Footer />
       </div>
