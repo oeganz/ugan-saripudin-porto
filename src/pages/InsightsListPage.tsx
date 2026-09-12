@@ -99,11 +99,11 @@ export default function InsightsListPage() {
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDesc} />
         <meta property="og:url" content={`${window.location.origin}/insights`} />
-        <meta property="og:image" content={`${window.location.origin}/images/profile-real.jpg`} />
+        <meta property="og:image" content={`${window.location.origin}/images/og-banner.jpg`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDesc} />
-        <meta name="twitter:image" content={`${window.location.origin}/images/profile-real.jpg`} />
+        <meta name="twitter:image" content={`${window.location.origin}/images/og-banner.jpg`} />
       </Helmet>
 
       <div className="min-h-screen bg-slate-900">
